@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-export default StyleSheet.create({
+export default {
   // Display
   flex: { display: 'flex' },
   hidden: { display: 'none' },
@@ -43,4 +43,4 @@ export default StyleSheet.create({
   z30: { zIndex: 30 },
   z40: { zIndex: 40 },
   z50: { zIndex: 50 }
-})
+} as StyleSheet.NamedStyles<any>

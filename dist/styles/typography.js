@@ -1,6 +1,6 @@
-import { Platform, StyleSheet } from 'react-native';
+import { Platform } from 'react-native';
 import theme from '../theme';
-export default StyleSheet.create({
+export default {
     // Font Family
     // - The default Sans Serif font
     fontSans: { fontWeight: 'normal', fontStyle: 'normal', fontFamily: theme.fontFamilies.sans },
@@ -92,5 +92,5 @@ export default StyleSheet.create({
     alignTop: { textAlignVertical: 'top' },
     alignBottom: { textAlignVertical: 'bottom' },
     alignCenter: { textAlignVertical: 'center' }
-});
+};
 //# sourceMappingURL=typography.js.map

@@ -1,8 +1,14 @@
 {
   "name": "react-native-whirlwind",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Whirlwind is a utility-first CSS framework specifically designed for React Native. It is heavily inspired by both Tachyons and Tailwind CSS and uses low-level building blocks for rapidly building custom designs.",
   "main": "dist/index.js",
+  "files": [
+    "dist",
+    "package.json",
+    "CHANGELOG.md",
+    "README.md"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist/ && tsc",

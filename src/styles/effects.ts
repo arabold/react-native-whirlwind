@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native'
 
-export default StyleSheet.create({
+export default {
   // Box Shadow
   shadow: {
     shadowColor: 'rgba(0, 0, 0, 0.1)',
@@ -105,4 +105,4 @@ export default StyleSheet.create({
   opacity20: { opacity: 0.2 },
   opacity10: { opacity: 0.1 },
   opacity0: { opacity: 0 }
-})
+} as StyleSheet.NamedStyles<any>

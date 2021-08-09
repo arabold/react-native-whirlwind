@@ -1,5 +1,4 @@
-import { StyleSheet } from 'react-native';
-export default StyleSheet.create({
+export default {
     flex: { display: 'flex' },
     // Flex Direction
     flexCol: { display: 'flex', flexDirection: 'column' },
@@ -57,5 +56,5 @@ export default StyleSheet.create({
     flexShrink2: { flexShrink: 2 },
     flexShrink3: { flexShrink: 3 },
     flexShrink4: { flexShrink: 4 }
-});
+};
 //# sourceMappingURL=flexbox.js.map

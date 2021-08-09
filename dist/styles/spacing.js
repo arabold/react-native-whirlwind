@@ -1,6 +1,5 @@
-import { StyleSheet } from 'react-native';
 import theme from '../theme';
-export default StyleSheet.create({
+export default {
     // Padding
     pAuto: { padding: 'auto' },
     p0: { padding: 0 },
@@ -219,5 +218,5 @@ export default StyleSheet.create({
     mE8: { marginEnd: theme.spacing.xl3 },
     mE9: { marginEnd: theme.spacing.xl4 },
     mE10: { marginEnd: theme.spacing.xl5 }
-});
+};
 //# sourceMappingURL=spacing.js.map
