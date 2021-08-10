@@ -1,7 +1,6 @@
 ---
 title: Border Color
 parent: Borders
-description: "Control an element's border color."
 classes:
   name: border
   key: borderColor
@@ -40,10 +39,10 @@ classes:
   <tbody>
     {%- for value in page.classes.values -%}
       <tr>
-        <td><span>t</span>.{{ page.classes.name }}{{ value[0] | capitalize }}</td>
+        <td>t.{{ page.classes.name }}{{ value[0] | capitalize }}</td>
         <td>{{ page.classes.key }}: '{{ value[1] }}'</td>
         {%- assign colorValue = value[1] -%}
-        <td><div style="border: 1px solid {{ colorValue }}; height: 20px"></div></td>
+        <td><div style="border-width: 2px; border-style: solid; border-color: {{ colorValue }}; height: 20px"></div></td>
       </tr>
     {%- endfor -%}
   </tbody>

@@ -1,40 +1,20 @@
 ---
 title: Border Width
 parent: Borders
-description: "Control an element's border width."
 classes:
   name: border
   key: borderWidth
-  values:
-    [
-      ['', '1'],
-      ['0', '0'],
-      ['0_5', '2'],
-      ['1', '4'],
-      ['2', '8'],
-      ['3', '12'],
-      ['4', '16'],
-      ['5', '20'],
-      ['6', '24'],
-      ['7', '28'],
-      ['8', '32']
-    ]
+  values: { '': 1, 0: 0, 0_5: 2, 1: 4, 2: 8, 3: 12, 4: 16, 5: 20, 6: 24, 7: 28, 8: 32 }
   directions:
     {
-      T: { borderTopLeftRadius, borderTopRightRadius },
-      R: { borderTopRightRadius, borderBottomRightRadius },
-      B: { borderBottomLeftRadius, borderBottomRightRadius },
-      L: { borderTopLeftRadius, borderBottomLeftRadius },
-      Tl: { borderTopLeftRadius },
-      Tr: { borderTopRightRadius },
-      Br: { borderBottomRightRadius },
-      Bl: { borderBottomLeftRadius },
-      S: { borderTopStartRadius, borderBottomStartRadius },
-      E: { borderTopEndRadius, borderBottomEndRadius },
-      Ts: { borderTopStartRadius },
-      Te: { borderTopEndRadius },
-      Be: { borderBottomEndRadius },
-      Bs: { borderBottomStartRadius }
+      X: { borderRightWidth, borderLeftWidth },
+      Y: { borderTopWidth, borderBottomWidth },
+      T: { borderTopWidth },
+      R: { borderRightWidth },
+      B: { borderBottomWidth },
+      L: { borderLeftWidth },
+      E: { borderEndWidth },
+      S: { borderStartWidth }
     }
 ---
 

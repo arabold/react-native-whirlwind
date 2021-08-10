@@ -1,6 +1,7 @@
 ---
-title: 'Getting Started'
-nav_order: 1
+title: Installation
+parent: Getting Started
+nav_order: 0
 ---
 
 ## 1. Install React Native Whirlwind
@@ -17,10 +18,10 @@ yarn add react-native-whirlwind
 
 **Whirlwind** has a built-in default theme but allows customization of default fonts, spacings, and colors. Whirlwind's theming system is very barebone and is designed to work in conjunction with any theming system of the UI component library you might be using. For an example of how to integrate **Whirlwind** with different UI component libraries, check out the sections below.
 
-Create a new file `theme.tsx` and call the `createTheme` function from `react-native-whirlwind`. To customize your theme, simply pass your desired colors and other properties as parameter:
+Create a new file `theme.jsx` somewhere in your project source folder, e.g. next to your `App.jsx`, and call the `createTheme` function from `react-native-whirlwind`. To customize your theme, simply pass your desired colors and other properties as parameter:
 
-```tsx
-// theme.tsx
+```jsx
+// theme.jsx
 import { createTheme } from 'react-native-whirlwind'
 
 const t = createTheme({
@@ -37,10 +38,11 @@ This will customize the primary and secondary colors of your app. The exported c
 
 ## 3. Use Your Theme
 
-Import your `theme.tsx` in your app and components where needed:
+Import your `theme.jsx` in your app and components where needed:
 
-```tsx
-// app.tsx
+```jsx
+// App.jsx
+import { View, Text } from 'react-native'
 import t from './theme'
 
 export default function App() {

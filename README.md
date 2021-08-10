@@ -1,34 +1,24 @@
 # React Native Whirlwind 🌪️
 
+A utility-first CSS framework designed for React Native.
+
+<p>
+    <!-- <a href="https://github.com/arabold/react-native-whirlwind/actions"><img src="https://img.shields.io/github/workflow/status/arabold/react-native-whirlwind/Node.js%20CI" alt="Build Status"></a> -->
+    <a href="https://www.npmjs.com/package/react-native-whirlwind"><img src="https://img.shields.io/npm/dt/react-native-whirlwind.svg" alt="Total Downloads"></a>
+    <a href="https://github.com/react-native-whirlwind/react-native-whirlwind/releases"><img src="https://img.shields.io/npm/v/react-native-whirlwind.svg" alt="Latest Release"></a>
+    <a href="https://github.com/react-native-whirlwind/react-native-whirlwind/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/react-native-whirlwind.svg" alt="License"></a>
+</p>
+
+---
+
 **Whirlwind** is a utility-first CSS framework specifically designed for [React Native](https://reactnative.dev/). It is heavily inspired by both [Tachyons](https://tachyons.io/) and [Tailwind CSS](https://tailwindcss.com/) and uses low-level building blocks for rapidly building custom designs.
 
 - Readable 👀 - all classes follow a simple, consistent naming convention
 - Lightweight 🏋️ - no 3rd party dependencies
 - Composable 🧱 - combinable classes for rapid prototyping
-- Performant 🚀 - No unnecessary calculations, no unnecessary string parsing, just pure and fast CSS
+- Performant 🚀 - No unnecessary calculations, no unnecessary string parsing, just pure and fast static CSS
 - Reusable ♻️ - Promote reusability in your team and reduce redundancies in your codebase
-- React Native first 🥇 - built for React Native for a best-in-class developer experience
-
-## Why another CSS Framework?
-
-For many developers using utility-first CSS classes seems like a bad idea, violating the concept of "separation of concerns". For years we have learned that HTML should only contain content, while all styling details should exclusively be defined in CSS. CSS is very powerful when it comes to styling components as a whole, with efficient ways of defining styles for subcomponents, siblings, etc. In specific, I'm quite fond of [Styled Components](https://styled-components.com/) for my web projects as they offer an easy and efficient way of creating fully styled, reusable React components.
-
-However, when using React Native, CSS suddenly becomes very limited as it doesn't provide a way of selecting a child or siblings. You can't use pseudo-classes like `:hover` or `:focus` to style a component. You can't use media queries. You can't use the `:before` and `:after`, `:first-child` and `:last-child`, and you can't use the `:nth-child` pseudo-class either. These limitations make it cumbersome and verbatim to style components, especially in React Native.
-
-While there are many CSS frameworks for the web, I have found little that fits my needs. I wanted a framework that was built specifically for React Native, and that kept these limitations in mind. Some concepts and code are directly derived from [react-native-tailwindcss](https://github.com/TVke/react-native-tailwindcss).
-
-### Semantic CSS, Functional CSS and the "Separation of Concerns"
-
-Adam Wathan, the author of [Tailwind CSS](https://tailwindcss.com/) wrote about his motivation to create utility-first CSS classes [here](https://adamwathan.me/css-utility-classes-and-separation-of-concerns/). So I won't repeat all of his points here, but I will try to give a brief summary.
-
-Similar components should use similar styles. However, more than a few times you'll find yourself in a situation where your existing `.author-bio` class can't be reused for the new article component you just created. So, you either end up renaming your `.author-bio` class to something more generic and content-agnostic that you can use in both cases, eventually leading to a `.card` or `.content` class. Alternatively, you copy-paste your `.author-bio` styles into your new component, leading to code duplication. So, essentially you're left with two choices:
-
-1. Naming your styles after the component they are styling creates _CSS that depends on HTML_.
-2. Naming your styles in a content-agnostic way, like `.card` or `.content` in which case your _HTML becomes dependent on your CSS_.
-
-So what do you prefer: Restyleable HTML or reusable CSS?
-
-In my experience, no website or application I ever created, made use of the flexibility the first option offers. Either the site remained pretty much unchanged for a very long time without us touching the CSS code ever again, or we did a major redesign that required us not only to change a handful of CSS classes but also to change the HTML structure itself. In both cases, there's no real benefit of using semantic CSS. Adding new developers to the team that aren't familiar with the existing styles can exacerbate the problem and lead to more duplication of classes. I found that the use of functional CSS was leading to faster results, and, to my surprise, a more consistent design.
+- React Native and TypeScript first 🥇 - built for React Native and using 100% TypeScript for a best-in-class developer experience
 
 ## Getting Started
 
@@ -36,22 +26,22 @@ React Native has a little-known feature that allows you to pass an _array of sty
 
 ### 1. Install React Native Whirlwind
 
-```sh
-npm install react-native-whirlwind
-```
+Install [react-native-whirlwind](https://www.npmjs.com/package/react-native-whirlwind) using `npm` or `yarn`:
 
 ```sh
+# Using npm
+npm install react-native-whirlwind
+
+# Using yarn
 yarn add react-native-whirlwind
 ```
 
 ### 2. Create Your Theme Definition
 
-**Whirlwind** has a built-in default theme but allows customization of default fonts, spacings, and colors. Whirlwind's theming system is very barebone and is designed to work in conjunction with any theming system of the UI component library you might be using. For an example of how to integrate **Whirlwind** with different UI component libraries, check out the sections below.
+Create a new file `theme.jsx` somewhere in your project source folder, e.g. next to your `App.jsx`, and call the `createTheme` function from `react-native-whirlwind`. To customize your theme, simply pass your desired colors and other properties as parameter:
 
-Create a new file `theme.tsx` and call the `createTheme` function from `react-native-whirlwind`. To customize your theme, simply pass your desired colors and other properties as parameter:
-
-```tsx
-// theme.tsx
+```jsx
+// theme.jsx
 import { createTheme } from 'react-native-whirlwind'
 
 const t = createTheme({
@@ -61,17 +51,18 @@ const t = createTheme({
   }
 })
 
-export default t
+export default createTheme()
 ```
 
 This will customize the primary and secondary colors of your app. The exported constant `t` acts as the entry point to the Whirlwind style system. You can use any variable name but we recommend using something short and memorable, as it will be heavily used throughout your application. `t` has proven to be a useful pattern and is recommended for consistency with the documentation and other apps based on Whirlwind.
 
 ### 3. Use Your Theme
 
-Import your `theme.tsx` in your app and components where needed:
+Import your `theme.jsx` in your app and components where needed:
 
-```tsx
-// app.tsx
+```jsx
+// App.jsx
+import { View, Text } from 'react-native'
 import t from './theme'
 
 export default function App() {
@@ -83,186 +74,11 @@ export default function App() {
 }
 ```
 
-## Overview
+## Documentation
 
-### Style Classes
+For full documentation, visit [https://arabold.github.io/react-native-whirlwind/](https://arabold.github.io/react-native-whirlwind/).
 
-tbd; provide an overview of the available classes
-
-### Spacing
-
-tbd; explain how the spacing system works
-
-### Reusablility
-
-Whirlwind follows a simple philosophy when it comes to reusability: _Make your components reusable, not the styles_!
-
-Instead of creating a `.card` CSS class that is used in multiple components, create a `Card` component that can be used in multiple places. Create customizability by adding properties to the component, or even allow overriding your predefined style by providing your own `styles` prop.
-
-In the following example, we create a `Card` component and use the React Native [Stylesheet.compose](https://reactnative.dev/docs/stylesheet#compose) API to allow customization of the default style:
-
-```tsx
-import { PropsWithChildren, ViewProps, Stylesheet } from 'react-native'
-
-const Card = ({ style, children, ...props }: PropsWithChildren<ViewProps>) => (
-  <View style={Stylesheet.compose([t.m4, t.p2, t.rounded, t.bgGray2], style)} {...props}>
-    {children}
-  </View>
-)
-
-const MyPage = () => (
-  <View>
-    <Card>
-      <Text>Card with default style</Text>
-    </Card>
-    <Card style={[t.bgPrimary]}>
-      <Text>Card with different background color</Text>
-    </Card Cal, preferably in the `index.js` file.
-  </View>
-)
-```
-
-Whirlwind also plays nice with [Styled Components](https://styled-components.com). See below for additional info!
-
-### Fonts
-
-React Native [is not directly able to mix a custom `fontFamily` with different weights and styles](https://reactnative.dev/docs/text#limited-style-inheritance). The trick is to use different fonts that already have the different styles baked in and omit the `fontWeight` and `fontStyle` attributes.
-
-To make the use of custom fonts in React Native easier, **Whirlwind** provides font classes that you can use to set the font family and weight for your components:
-
-#### Sans-Serif Font
-
-```
-t.fontSans
-t.fontSansItalic
-t.fontSansMedium
-t.fontSansMediumItalic
-t.fontSansBold
-t.fontSansBoldItalic
-```
-
-#### Monoscript Font
-
-```
-t.fontMono
-t.fontMonoItalic
-t.fontMonoMedium
-t.fontMonoMediumItalic
-t.fontMonoBold
-t.fontMonoBoldItalic
-```
-
-#### Serif Font
-
-```
-t.fontSerif
-t.fontSerifItalic
-t.fontSerifMedium
-t.fontSerifMediumItalic
-t.fontSerifBold
-t.fontSerifBoldItalic
-```
-
-Those classes are composable with font sizes, text color, and other typography-related classes as usual:
-
-```tsx
-<Text style={[t.fontSansMedium, t.textXl, t.textPrimary, t.uppercase]}>
-  Custom Header
-<Text>
-```
-
-### Custom Fonts
-
-Download the custom font family you need, for example from [Google Fonts](https://fonts.google.com/). This will download a set of files, typically `.ttf` files following a naming convention similar to the one below:
-
-```
-{fontFamilyName}
-{fontFamilyName}-Italic
-{fontFamilyName}-Medium
-{fontFamilyName}-MediumItalic
-{fontFamilyName}-Bold
-{fontFamilyName}-BoldItalic
-```
-
-Now, in your `theme.tsx`, set the respective font family as follows:
-
-```tsx
-// theme.tsx
-import { createTheme } from 'react-native-whirlwind'
-
-const t = createTheme({
-  fontFamilies: {
-    sans: '{fontFamilyName}',
-    sansItalic: '{fontFamilyName}-Italic',
-    sansMedium: '{fontFamilyName}-Medium',
-    sansMediumItalic: '{fontFamilyName}-MediumItalic',
-    sansBold: '{fontFamilyName}-Bold',
-    sansBoldItalic: '{fontFamilyName}-BoldItalic'
-  }
-})
-
-export default t
-```
-
-This works for sans serif, serif, and monoscript fonts. However, you should only customize the fonts you need as each included `.ttf` file will add additional weight to your app.
-
-### Usage with Styled Components
-
-[react-native-whirlwind](https://github.com/arabold/react-native-whirlwind) plays nicely with [Styled Components](https://styled-components.com/).
-
-```tsx
-import { Text, View } from 'react-native'
-import { s } from 'react-native-whirlwind'
-import styled from 'styled-components/native'
-
-const StyledView = styled(View)`
-  ${[s.m4, s.p2, s.rounded, s.bgGray2]}
-`
-
-const MyPage = () => (
-  <StyledView>
-    <Text>Some unstyled text in a styled view</Text>
-  </StyledView>
-)
-```
-
-### Usage with React Native Elements
-
-You can also use the [react-native-whirlwind](https://github.com/arabold/react-native-whirlwind) classes with your favorite UI components library, like [React Native Elements](https://reactnativeelements.com/):
-
-```tsx
-import { View } from 'react-native'
-// Import the theme provider from React Native Elements
-import { ThemeProvider, FullTheme, Button } from 'react-native-elements'
-// Import our Whirlwind style definitions
-import t from './theme.tsx'
-
-// Create a new React Native Elements theme with a customized Button component
-const theme: Partial<FullTheme> = {
-  Button: {
-    raised: false,
-    titleStyle: [s.flexGrow, s.fontSansBold, s.textBase, s.textCenter],
-    iconContainerStyle: [s.mX3],
-    buttonStyle: [{ borderRadius: s.h12.height / 2 }, s.h12, s.pX5, s.overflowHidden],
-    containerStyle: [{ borderRadius: s.h12.height / 2 }, s.overflowHidden],
-    disabledStyle: [s.bgGray3],
-    disabledTitleStyle: [s.textWhite]
-  }
-}
-
-// Initialize the React Native Elements theme in your App
-export default function App() {
-  return (
-    <ThemeProvider theme={theme}>
-      <View style={[t.flex1, t.bgWhite, t.justifyCenter, t.itemsCenter]}>
-        <Button title="My Styled Button" />
-      </View>
-    </ThemeProvider>
-  )
-}
-```
-
-### Who Is Using Whirlwind?
+## Who Is Using Whirlwind?
 
 I'm using the predecessor and variants of **Whirlwind** for several years now and in many different commercial projects. Some of them have several 100,000s of installs across the App Store and Google Play. Finally, I decided to open source it and make it available to the community. This is how Whilehirlow was born.
 

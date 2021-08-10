@@ -1,9 +1,8 @@
 ---
 title: Border Radius
 parent: Borders
-description: "Control an element's border radius."
 classes:
-  name: border
+  name: rounded
   key: borderRadius
   values: { '': 16, None: 0, Sm: 8, Lg: 32, Full: 9999 }
   directions:
@@ -36,7 +35,7 @@ classes:
     {%- for direction in page.classes.directions -%}
       {%- for value in page.classes.values -%}
         <tr>
-          <td><span>t</span>.{{ page.classes.name }}{{ direction[0] }}{{ value[0] | capitalize }}</td>
+          <td>t.{{ page.classes.name }}{{ direction[0] }}{{ value[0] | capitalize }}</td>
           <td colspan="2">
           {%- for directionItem in direction[1] -%}
             <p>{{ directionItem }}: {{ value[1] }} </p>

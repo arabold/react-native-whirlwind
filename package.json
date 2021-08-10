@@ -2,11 +2,18 @@
   "name": "react-native-whirlwind",
   "version": "0.1.0",
   "description": "Whirlwind is a utility-first CSS framework designed for React Native. It is heavily inspired by Tachyons and Tailwind CSS and uses low-level building blocks for rapidly building custom designs.",
+  "homepage": "https://arabold.github.io/react-native-whirlwind/",
   "main": "dist/index.js",
+  "author": "Andre Rabold",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arabold/react-native-whirlwind/issues"
+  },
   "files": [
     "dist",
     "package.json",
     "CHANGELOG.md",
+    "LICENSE.md",
     "README.md"
   ],
   "scripts": {
@@ -19,12 +26,6 @@
     "type": "git",
     "url": "git+https://github.com/arabold/react-native-whirlwind.git"
   },
-  "author": "Andre Rabold",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/arabold/react-native-whirlwind/issues"
-  },
-  "homepage": "https://github.com/arabold/react-native-whirlwind#readme",
   "peerDependencies": {
     "react-native": ">=0.63.0"
   },

@@ -1,6 +1,7 @@
 ---
-title: 'Intro'
+title: Getting Started
 nav_order: 0
+has_children: true
 ---
 
 **Whirlwind** is a utility-first CSS framework specifically designed for [React Native](https://reactnative.dev/). It is heavily inspired by both [Tachyons](https://tachyons.io/) and [Tailwind CSS](https://tailwindcss.com/) and uses low-level building blocks for rapidly building custom designs.
@@ -22,11 +23,13 @@ While there are many CSS frameworks for the web, I have found little that fits m
 
 ## How Does It Work?
 
-React Native has a little-known feature that allows you to pass an _array of styles_ rather than just a single object to the `style` prop of a component. This can be used to inherit styles and that's exactly what **Whirlwind** does.
+React Native has a powerful feature that allows you to pass an _array of styles_ rather than just a single object to the `style` prop of a component. This can be used to inherit styles and that's exactly what **Whirlwind** is built on.
 
 ### The "Common" Way
 
-```js
+Typically you would define your styles using React Native's `StyleSheet` class, e.g. as shown below:
+
+```jsx
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
@@ -58,7 +61,7 @@ export default LotsOfStyles
 
 ### Whirlwind Way
 
-```js
+```jsx
 import React from 'react'
 import { Text, View } from 'react-native'
 import t from './theme'
