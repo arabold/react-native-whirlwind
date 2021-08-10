@@ -30,7 +30,7 @@ So what do you prefer: Restyleable HTML or reusable CSS?
 
 In my experience, no website or application I ever created, made use of the flexibility the first option offers. Either the site remained pretty much unchanged for a very long time without us touching the CSS code ever again, or we did a major redesign that required us not only to change a handful of CSS classes but also to change the HTML structure itself. In both cases, there's no real benefit of using semantic CSS. Adding new developers to the team that aren't familiar with the existing styles can exacerbate the problem and lead to more duplication of classes. I found that the use of functional CSS was leading to faster results, and, to my surprise, a more consistent design.
 
-## Overview
+## Getting Started
 
 React Native has a little-known feature that allows you to pass an _array of styles_ rather than just a single object to the `style` prop of a component. This can be used to inherit styles and that's exactly what **Whirlwind** does.
 
@@ -41,14 +41,14 @@ npm install react-native-whirlwind
 ```
 
 ```sh
-yarn install react-native-whirlwind
+yarn add react-native-whirlwind
 ```
 
-### 2. Create Your Own Theme Definition
+### 2. Create Your Theme Definition
 
 **Whirlwind** has a built-in default theme but allows customization of default fonts, spacings, and colors. Whirlwind's theming system is very barebone and is designed to work in conjunction with any theming system of the UI component library you might be using. For an example of how to integrate **Whirlwind** with different UI component libraries, check out the sections below.
 
-To initialize your own theme, pass your own colors and formats to the `createTheme` function. Create a new file `theme.tsx` and place the following in it:
+Create a new file `theme.tsx` and call the `createTheme` function from `react-native-whirlwind`. To customize your theme, simply pass your desired colors and other properties as parameter:
 
 ```tsx
 // theme.tsx
@@ -64,7 +64,7 @@ const t = createTheme({
 export default t
 ```
 
-This will customize the primary and secondary colors of your app and act as the entry point for Whirlwind.
+This will customize the primary and secondary colors of your app. The exported constant `t` acts as the entry point to the Whirlwind style system. You can use any variable name but we recommend using something short and memorable, as it will be heavily used throughout your application. `t` has proven to be a useful pattern and is recommended for consistency with the documentation and other apps based on Whirlwind.
 
 ### 3. Use Your Theme
 
@@ -82,6 +82,16 @@ export default function App() {
   )
 }
 ```
+
+## Overview
+
+### Style Classes
+
+tbd; provide an overview of the available classes
+
+### Spacing
+
+tbd; explain how the spacing system works
 
 ### Reusablility
 
@@ -112,16 +122,11 @@ const MyPage = () => (
 )
 ```
 
-### Custom Fonts
+Whirlwind also plays nice with [Styled Components](https://styled-components.com). See below for additional info!
 
-React Native [is not directly able to mix a custom `fontFamily` with different weights and styles](https://reactnative.dev/docs/text#limited-style-inheritance). The trick is to use different fonts that already have the different styles baked in and omit the `fontWeight` and `fontStyle` attributes. Download the custom font family you need, for example from [Google Fonts](https://fonts.google.com/). This will download a set of files, typically `.ttf` files following a naming convention similar to the one below:
+### Fonts
 
-```
-{fontFamilyName}
-{fontFamilyName}-Bold
-{fontFamilyName}-Italic
-{fontFamilyName}-BoldItalic
-```
+React Native [is not directly able to mix a custom `fontFamily` with different weights and styles](https://reactnative.dev/docs/text#limited-style-inheritance). The trick is to use different fonts that already have the different styles baked in and omit the `fontWeight` and `fontStyle` attributes.
 
 To make the use of custom fonts in React Native easier, **Whirlwind** provides font classes that you can use to set the font family and weight for your components:
 
@@ -165,6 +170,41 @@ Those classes are composable with font sizes, text color, and other typography-r
   Custom Header
 <Text>
 ```
+
+### Custom Fonts
+
+Download the custom font family you need, for example from [Google Fonts](https://fonts.google.com/). This will download a set of files, typically `.ttf` files following a naming convention similar to the one below:
+
+```
+{fontFamilyName}
+{fontFamilyName}-Italic
+{fontFamilyName}-Medium
+{fontFamilyName}-MediumItalic
+{fontFamilyName}-Bold
+{fontFamilyName}-BoldItalic
+```
+
+Now, in your `theme.tsx`, set the respective font family as follows:
+
+```tsx
+// theme.tsx
+import { createTheme } from 'react-native-whirlwind'
+
+const t = createTheme({
+  fontFamilies: {
+    sans: '{fontFamilyName}',
+    sansItalic: '{fontFamilyName}-Italic',
+    sansMedium: '{fontFamilyName}-Medium',
+    sansMediumItalic: '{fontFamilyName}-MediumItalic',
+    sansBold: '{fontFamilyName}-Bold',
+    sansBoldItalic: '{fontFamilyName}-BoldItalic'
+  }
+})
+
+export default t
+```
+
+This works for sans serif, serif, and monoscript fonts. However, you should only customize the fonts you need as each included `.ttf` file will add additional weight to your app.
 
 ### Usage with Styled Components
 
@@ -221,3 +261,9 @@ export default function App() {
   )
 }
 ```
+
+### Who Is Using Whirlwind?
+
+I'm using the predecessor and variants of **Whirlwind** for several years now and in many different commercial projects. Some of them have several 100,000s of installs across the App Store and Google Play. Finally, I decided to open source it and make it available to the community. This is how Whilehirlow was born.
+
+If you're using it in your project and like to see it listed here, please let me know!
