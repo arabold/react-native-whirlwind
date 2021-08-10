@@ -1,5 +1,6 @@
 ---
-title: 'Border Color'
+title: Border Color
+parent: Borders
 description: "Control an element's border color."
 classes:
   name: border

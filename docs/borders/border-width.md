@@ -1,5 +1,6 @@
 ---
-title: 'Border Width'
+title: Border Width
+parent: Borders
 description: "Control an element's border width."
 classes:
   name: border

@@ -1,5 +1,6 @@
 ---
 title: 'Background Color'
+parent: 'Background'
 description: "Control an element's background color."
 classes:
   name: bg

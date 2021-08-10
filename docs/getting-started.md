@@ -1,5 +1,6 @@
 ---
 title: 'Getting Started'
+nav_order: 1
 ---
 
 ## 1. Install React Native Whirlwind

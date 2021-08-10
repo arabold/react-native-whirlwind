@@ -1,5 +1,6 @@
 ---
-title: 'Border Radius'
+title: Border Radius
+parent: Borders
 description: "Control an element's border radius."
 classes:
   name: border
