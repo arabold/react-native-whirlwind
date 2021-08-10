@@ -17,13 +17,13 @@ has_children: true
 
 For many developers using utility-first CSS classes seems like a bad idea, violating the concept of "separation of concerns". For years we have learned that HTML should only contain content, while all styling details should exclusively be defined in CSS. CSS is very powerful when it comes to styling components as a whole, with efficient ways of defining styles for subcomponents, siblings, etc. In specific, I'm quite fond of [Styled Components](https://styled-components.com/) for my web projects as they offer an easy and efficient way of creating fully styled, reusable React components.
 
-However, when using React Native, CSS suddenly becomes very limited as it doesn't provide a way of selecting a child or siblings. You can't use pseudo-classes like `:hover` or `:focus` to style a component. You can't use media queries. You can't use the `:before` and `:after`, `:first-child` and `:last-child`, and you can't use the `:nth-child` pseudo-class either. These limitations make it cumbersome and verbatim to style components, especially in React Native.
+However, when using React Native, styling suddenly becomes very limited as it doesn't provide a way of selecting a child or siblings. The reason is that React Native uses the [Yoga](https://yogalayout.com/) layout engine rather than CSS like a web page. You can't use pseudo-classes like `:hover` or `:focus` to style a component. You can't use media queries. You can't use the `:before` and `:after`, `:first-child` and `:last-child`, and you can't use the `:nth-child` pseudo-class either. These limitations make it cumbersome and verbatim to define reusable styles, and many learnings from working on responsive websites simply don't apply to React Native.
 
-While there are many CSS frameworks for the web, I have found little that fits my needs. I wanted a framework that was built specifically for React Native, and that kept these limitations in mind. Some concepts and code are directly derived from [react-native-tailwindcss](https://github.com/TVke/react-native-tailwindcss).
+While there are many CSS frameworks for the web, I have found only a few for React Native that would fit my needs. I wanted a framework that was built specifically for React Native, and that kept these limitations in mind. Some concepts and source code of Whirlwind is directly derived from [react-native-tailwindcss](https://github.com/TVke/react-native-tailwindcss).
 
 ## How Does It Work?
 
-React Native has a powerful feature that allows you to pass an _array of styles_ rather than just a single object to the `style` prop of a component. This can be used to inherit styles and that's exactly what **Whirlwind** is built on.
+React Native has a powerful feature that allows you to pass an _array of styles_ rather than just a single object to the `style` prop of a component. This can be used to inherit styles and that's exactly what **Whirlwind** relies on.
 
 ### The "Common" Way
 
@@ -61,7 +61,7 @@ export default LotsOfStyles
 
 ### Whirlwind Way
 
-Instead of using semantic CSS classes, **Whirlwind** encourages the use of utility classes.
+Instead of using semantic CSS classes, **Whirlwind** encourages the use of utility classes that are freely combined to design your final look and feel:
 
 ```jsx
 import React from 'react'
@@ -80,7 +80,9 @@ const LotsOfStyles = () => {
 export default LotsOfStyles
 ```
 
-Instead of defining stylesheets for every component, we use simple utility classes to directly style our elements.
+The utility classes are reusable building blocks that come with a built-in theme that you can easily change. For example, `t.mT9` and `t.mT2` both define a top-margin (our default theme initializes it to 48 pixels and 4 pixels respectively), `t.sansBold` is a utility class to choose a sans-serif font with a bold weight, and `t.font3Xl` increases the default font size. Finally, `t.textPrimary` selects the primary color to render the text.
+
+By reusing the same building blocks throughout your app, you ensure a consistent look and feel, while still providing the necessary flexibility through Whirlwind's theming engine.
 
 ## Semantic CSS, Functional CSS and the "Separation of Concerns"
 
