@@ -1,4 +1,4 @@
-# Whirlwind 🌪️
+# React Native Whirlwind 🌪️
 
 **Whirlwind** is a utility-first CSS framework specifically designed for [React Native](https://reactnative.dev/). It is heavily inspired by both [Tachyons](https://tachyons.io/) and [Tailwind CSS](https://tailwindcss.com/) and uses low-level building blocks for rapidly building custom designs.
 
