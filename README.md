@@ -5,8 +5,8 @@ A utility-first CSS framework designed for React Native.
 <p>
     <!-- <a href="https://github.com/arabold/react-native-whirlwind/actions"><img src="https://img.shields.io/github/workflow/status/arabold/react-native-whirlwind/Node.js%20CI" alt="Build Status"></a> -->
     <a href="https://www.npmjs.com/package/react-native-whirlwind"><img src="https://img.shields.io/npm/dt/react-native-whirlwind.svg" alt="Total Downloads"></a>
-    <a href="https://github.com/react-native-whirlwind/react-native-whirlwind/releases"><img src="https://img.shields.io/npm/v/react-native-whirlwind.svg" alt="Latest Release"></a>
-    <a href="https://github.com/react-native-whirlwind/react-native-whirlwind/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/react-native-whirlwind.svg" alt="License"></a>
+    <a href="https://github.com/arabold/react-native-whirlwind/releases"><img src="https://img.shields.io/npm/v/react-native-whirlwind.svg" alt="Latest Release"></a>
+    <a href="https://github.com/arabold/react-native-whirlwind/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/react-native-whirlwind.svg" alt="License"></a>
 </p>
 
 ---
@@ -30,10 +30,10 @@ Install [react-native-whirlwind](https://www.npmjs.com/package/react-native-whir
 
 ```sh
 # Using npm
-npm install react-native-whirlwind@alpha
+npm install react-native-whirlwind
 
 # Using yarn
-yarn add react-native-whirlwind@alpha
+yarn add react-native-whirlwind
 ```
 
 ### 2. Create Your Theme Definition
