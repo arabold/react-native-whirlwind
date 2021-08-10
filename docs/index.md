@@ -11,7 +11,7 @@ has_children: true
 - Composable 🧱 - combinable classes for rapid prototyping
 - Performant 🚀 - No unnecessary calculations, no unnecessary string parsing, just pure and fast CSS
 - Reusable ♻️ - Promote reusability in your team and reduce redundancies in your codebase
-- React Native first 🥇 - built for React Native for a best-in-class developer experience
+- React Native and TypeScript first 🥇 - built for React Native and 100% written in TypeScript for a best-in-class developer experience
 
 ## Why another CSS Framework?
 

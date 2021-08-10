@@ -18,7 +18,7 @@ A utility-first CSS framework designed for React Native.
 - Composable 🧱 - combinable classes for rapid prototyping
 - Performant 🚀 - No unnecessary calculations, no unnecessary string parsing, just pure and fast static CSS
 - Reusable ♻️ - Promote reusability in your team and reduce redundancies in your codebase
-- React Native and TypeScript first 🥇 - built for React Native and using 100% TypeScript for a best-in-class developer experience
+- React Native and TypeScript first 🥇 - built for React Native and 100% written in TypeScript for a best-in-class developer experience
 
 ## Getting Started
 
@@ -80,6 +80,6 @@ For full documentation, visit [https://arabold.github.io/react-native-whirlwind/
 
 ## Who Is Using Whirlwind?
 
-I'm using the predecessor and variants of **Whirlwind** for several years now and in many different commercial projects. Some of them have several 100,000s of installs across the App Store and Google Play. Finally, I decided to open source it and make it available to the community. This is how Whilehirlow was born.
+I'm using the predecessor and variants of **Whirlwind** for several years now and in many different commercial projects. Some of them have several 100,000s of installs across the App Store and Google Play. Finally, I decided to open source it and make it available to the community. This is how **Whirlwind** was born.
 
 If you're using it in your project and like to see it listed here, please let me know!
