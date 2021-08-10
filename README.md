@@ -30,10 +30,10 @@ Install [react-native-whirlwind](https://www.npmjs.com/package/react-native-whir
 
 ```sh
 # Using npm
-npm install react-native-whirlwind
+npm install react-native-whirlwind@alpha
 
 # Using yarn
-yarn add react-native-whirlwind
+yarn add react-native-whirlwind@alpha
 ```
 
 ### 2. Create Your Theme Definition

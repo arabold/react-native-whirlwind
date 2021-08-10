@@ -61,6 +61,8 @@ export default LotsOfStyles
 
 ### Whirlwind Way
 
+Instead of using semantic CSS classes, **Whirlwind** encourages the use of utility classes.
+
 ```jsx
 import React from 'react'
 import { Text, View } from 'react-native'

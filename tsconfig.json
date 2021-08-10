@@ -16,5 +16,5 @@
     "sourceMap": true,
     "jsx": "react-native"
   },
-  "exclude": ["node_modules", "dist", "examples"]
+  "exclude": ["node_modules", "docs", "dist", "examples"]
 }

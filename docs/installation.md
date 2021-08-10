@@ -6,12 +6,14 @@ nav_order: 0
 
 ## 1. Install React Native Whirlwind
 
-```sh
-npm install react-native-whirlwind
-```
+Install [react-native-whirlwind](https://www.npmjs.com/package/react-native-whirlwind) using `npm` or `yarn`:
 
 ```sh
-yarn add react-native-whirlwind
+# Using npm
+npm install react-native-whirlwind@alpha
+
+# Using yarn
+yarn add react-native-whirlwind@alpha
 ```
 
 ## 2. Create Your Theme Definition
