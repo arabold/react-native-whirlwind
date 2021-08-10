@@ -1,9 +1,21 @@
 export default {
-    sans: 'Montserrat_300Light',
-    sansItalic: 'Montserrat_300Light_Italic',
-    sansMedium: 'Montserrat_500Medium',
-    sansMediumItalic: 'Montserrat_500Medium_Italic',
-    sansBold: 'Montserrat_700Bold',
-    sansBoldItalic: 'Montserrat_700Bold_Italic'
+    sans: undefined,
+    sansItalic: undefined,
+    sansMedium: undefined,
+    sansMediumItalic: undefined,
+    sansBold: undefined,
+    sansBoldItalic: undefined,
+    serif: undefined,
+    serifItalic: undefined,
+    serifMedium: undefined,
+    serifMediumItalic: undefined,
+    serifBold: undefined,
+    serifBoldItalic: undefined,
+    mono: undefined,
+    monoItalic: undefined,
+    monoMedium: undefined,
+    monoMediumItalic: undefined,
+    monoBold: undefined,
+    monoBoldItalic: undefined
 };
 //# sourceMappingURL=fontFamilies.js.map

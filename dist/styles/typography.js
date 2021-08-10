@@ -1,33 +1,61 @@
 import { Platform } from 'react-native';
-import theme from '../theme';
-export default {
+import { createStyles } from '../theme';
+const defaultSans = Platform.OS === 'android' ? 'Roboto' : Platform.OS === 'ios' ? 'HelveticaNeue' : 'Helvetica';
+const defaultMono = Platform.OS === 'android' ? 'monospace' : Platform.OS === 'ios' ? 'Menlo' : 'Courier';
+const defaultSerif = Platform.OS === 'android' ? 'serif' : Platform.OS === 'ios' ? 'Georgia' : 'Georgia';
+export default createStyles(theme => ({
     // Font Family
     // - The default Sans Serif font
-    fontSans: { fontWeight: 'normal', fontStyle: 'normal', fontFamily: theme.fontFamilies.sans },
-    fontSansItalic: { fontWeight: 'normal', fontStyle: 'normal', fontFamily: theme.fontFamilies.sansItalic },
-    fontSansMedium: { fontWeight: 'normal', fontStyle: 'normal', fontFamily: theme.fontFamilies.sansMedium },
-    fontSansMediumItalic: { fontWeight: 'normal', fontStyle: 'normal', fontFamily: theme.fontFamilies.sansMediumItalic },
-    fontSansBold: { fontWeight: 'normal', fontStyle: 'normal', fontFamily: theme.fontFamilies.sansBold },
-    fontSansBoldItalic: { fontWeight: 'normal', fontStyle: 'normal', fontFamily: theme.fontFamilies.sansBoldItalic },
+    fontSans: theme.fontFamilies.sans ? { fontFamily: theme.fontFamilies.sans } : { fontFamily: defaultSans },
+    fontSansItalic: theme.fontFamilies.sansItalic
+        ? { fontFamily: theme.fontFamilies.sansItalic }
+        : { fontStyle: 'italic', fontFamily: defaultSans },
+    fontSansMedium: theme.fontFamilies.sansMedium
+        ? { fontFamily: theme.fontFamilies.sansMedium }
+        : { fontWeight: '500', fontFamily: defaultSans },
+    fontSansMediumItalic: theme.fontFamilies.sansMediumItalic
+        ? { fontFamily: theme.fontFamilies.sansMediumItalic }
+        : { fontWeight: '500', fontStyle: 'italic', fontFamily: defaultSans },
+    fontSansBold: theme.fontFamilies.sansBold
+        ? { fontFamily: theme.fontFamilies.sansBold }
+        : { fontWeight: 'bold', fontFamily: defaultSans },
+    fontSansBoldItalic: theme.fontFamilies.sansBoldItalic
+        ? { fontFamily: theme.fontFamilies.sansBoldItalic }
+        : { fontWeight: 'bold', fontStyle: 'italic', fontFamily: defaultSans },
     // - Monospace font
-    fontMono: {
-        fontFamily: Platform.OS === 'android' ? 'monospace' : Platform.OS === 'ios' ? 'Menlo' : 'Courier',
-        fontWeight: 'normal'
-    },
-    fontMonoBold: {
-        fontFamily: Platform.OS === 'android' ? 'monospace' : Platform.OS === 'ios' ? 'Menlo' : 'Courier',
-        fontWeight: 'bold'
-    },
-    fontMonoBoldItalic: {
-        fontFamily: Platform.OS === 'android' ? 'monospace' : Platform.OS === 'ios' ? 'Menlo' : 'Courier',
-        fontWeight: 'bold',
-        fontStyle: 'italic'
-    },
-    fontMonoItalic: {
-        fontFamily: Platform.OS === 'android' ? 'monospace' : Platform.OS === 'ios' ? 'Menlo' : 'Courier',
-        fontWeight: 'normal',
-        fontStyle: 'italic'
-    },
+    fontMono: theme.fontFamilies.mono ? { fontFamily: theme.fontFamilies.mono } : { fontFamily: defaultMono },
+    fontMonoItalic: theme.fontFamilies.monoItalic
+        ? { fontFamily: theme.fontFamilies.monoItalic }
+        : { fontStyle: 'italic', fontFamily: defaultMono },
+    fontMonoMedium: theme.fontFamilies.monoMedium
+        ? { fontFamily: theme.fontFamilies.monoMedium }
+        : { fontWeight: '500', fontFamily: defaultMono },
+    fontMonoMediumItalic: theme.fontFamilies.monoMediumItalic
+        ? { fontFamily: theme.fontFamilies.monoMediumItalic }
+        : { fontWeight: '500', fontStyle: 'italic', fontFamily: defaultMono },
+    fontMonoBold: theme.fontFamilies.monoBold
+        ? { fontFamily: theme.fontFamilies.monoBold }
+        : { fontWeight: 'bold', fontFamily: defaultMono },
+    fontMonoBoldItalic: theme.fontFamilies.monoBoldItalic
+        ? { fontFamily: theme.fontFamilies.monoBoldItalic }
+        : { fontWeight: 'bold', fontStyle: 'italic', fontFamily: defaultMono },
+    // - Serif font
+    fontSerif: theme.fontFamilies.mono ? { fontFamily: theme.fontFamilies.serif } : { fontFamily: defaultSerif },
+    fontSerifItalic: theme.fontFamilies.serifItalic
+        ? { fontFamily: theme.fontFamilies.serifItalic }
+        : { fontStyle: 'italic', fontFamily: defaultSerif },
+    fontSerifMedium: theme.fontFamilies.serifMedium
+        ? { fontFamily: theme.fontFamilies.serifMedium }
+        : { fontWeight: '500', fontFamily: defaultSerif },
+    fontSerifMediumItalic: theme.fontFamilies.serifMediumItalic
+        ? { fontFamily: theme.fontFamilies.serifMediumItalic }
+        : { fontWeight: '500', fontStyle: 'italic', fontFamily: defaultSerif },
+    fontSerifBold: theme.fontFamilies.serifBold
+        ? { fontFamily: theme.fontFamilies.serifBold }
+        : { fontWeight: 'bold', fontFamily: defaultSerif },
+    fontSerifBoldItalic: theme.fontFamilies.serifBoldItalic
+        ? { fontFamily: theme.fontFamilies.serifBoldItalic }
+        : { fontWeight: 'bold', fontStyle: 'italic', fontFamily: defaultSerif },
     // Font Size
     textXxs: { fontSize: theme.fontSizes.xs2 },
     textXs: { fontSize: theme.fontSizes.xs },
@@ -92,5 +120,5 @@ export default {
     alignTop: { textAlignVertical: 'top' },
     alignBottom: { textAlignVertical: 'bottom' },
     alignCenter: { textAlignVertical: 'center' }
-};
+}));
 //# sourceMappingURL=typography.js.map

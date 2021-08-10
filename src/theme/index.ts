@@ -1,18 +1,14 @@
-import Theme from './Theme'
-import defaultTheme from './defaultTheme'
+import Theme from './ThemeProps'
+import { StyleSheet } from 'react-native'
 
-export { default as Theme } from './Theme'
+export { default as ThemeProps } from './ThemeProps'
+export { default as defaultTheme } from './defaultTheme'
 
-let theme: Theme = defaultTheme
-
-export function setTheme(newTheme: Partial<Theme>) {
-  theme = {
-    ...newTheme, // copy any custom mixins that aren't part of the official theme
-    colors: { ...defaultTheme.colors, ...(newTheme?.colors ?? {}) },
-    fontFamilies: { ...defaultTheme.fontFamilies, ...(newTheme?.fontFamilies ?? {}) },
-    fontSizes: { ...defaultTheme.fontSizes, ...(newTheme?.fontSizes ?? {}) },
-    spacing: { ...defaultTheme.spacing, ...(newTheme?.spacing ?? {}) }
-  }
+/**
+ * Simple helper function that does nothing but retain the TypeScript signature of a style definition.
+ */
+export function createStyles<T>(
+  styles: (theme: Theme) => StyleSheet.NamedStyles<T>
+): (theme: Theme) => StyleSheet.NamedStyles<T> {
+  return styles
 }
-
-export default theme

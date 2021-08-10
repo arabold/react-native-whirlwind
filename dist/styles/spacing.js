@@ -1,5 +1,5 @@
-import theme from '../theme';
-export default {
+import { createStyles } from '../theme';
+export default createStyles(theme => ({
     // Padding
     pAuto: { padding: 'auto' },
     p0: { padding: 0 },
@@ -218,5 +218,5 @@ export default {
     mE8: { marginEnd: theme.spacing.xl3 },
     mE9: { marginEnd: theme.spacing.xl4 },
     mE10: { marginEnd: theme.spacing.xl5 }
-};
+}));
 //# sourceMappingURL=spacing.js.map

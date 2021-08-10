@@ -1,4 +1,4 @@
-export default interface Theme {
+export default interface ThemeProps {
     colors: {
         black: string;
         white: string;
@@ -17,12 +17,24 @@ export default interface Theme {
         transparent: string;
     };
     fontFamilies: {
-        sans: string;
-        sansItalic: string;
-        sansMedium: string;
-        sansMediumItalic: string;
-        sansBold: string;
-        sansBoldItalic: string;
+        sans: string | undefined;
+        sansItalic: string | undefined;
+        sansMedium: string | undefined;
+        sansMediumItalic: string | undefined;
+        sansBold: string | undefined;
+        sansBoldItalic: string | undefined;
+        serif: string | undefined;
+        serifItalic: string | undefined;
+        serifMedium: string | undefined;
+        serifMediumItalic: string | undefined;
+        serifBold: string | undefined;
+        serifBoldItalic: string | undefined;
+        mono: string | undefined;
+        monoItalic: string | undefined;
+        monoMedium: string | undefined;
+        monoMediumItalic: string | undefined;
+        monoBold: string | undefined;
+        monoBoldItalic: string | undefined;
     };
     fontSizes: {
         xs2: number;

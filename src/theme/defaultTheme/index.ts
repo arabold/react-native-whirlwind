@@ -3,7 +3,7 @@ import fontFamilies from './fontFamilies'
 import fontSizes from './fontSizes'
 import spacing from './spacing'
 
-import Theme from '../Theme'
+import Theme from '../ThemeProps'
 
 const defaultTheme: Theme = { colors, fontFamilies, fontSizes, spacing }
 

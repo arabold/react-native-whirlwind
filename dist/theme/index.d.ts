@@ -1,5 +1,8 @@
-import Theme from './Theme';
-export { default as Theme } from './Theme';
-declare let theme: Theme;
-export declare function setTheme(newTheme: Partial<Theme>): void;
-export default theme;
+import Theme from './ThemeProps';
+import { StyleSheet } from 'react-native';
+export { default as ThemeProps } from './ThemeProps';
+export { default as defaultTheme } from './defaultTheme';
+/**
+ * Simple helper function that does nothing but retain the TypeScript signature of a style definition.
+ */
+export declare function createStyles<T>(styles: (theme: Theme) => StyleSheet.NamedStyles<T>): (theme: Theme) => StyleSheet.NamedStyles<T>;

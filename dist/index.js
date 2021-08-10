@@ -1,4 +1,3 @@
-import s from './styles';
-import theme, { setTheme } from './theme';
-export { s, theme, setTheme };
+import { createTheme } from './styles';
+export { createTheme };
 //# sourceMappingURL=index.js.map

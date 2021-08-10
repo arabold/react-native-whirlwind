@@ -34,38 +34,54 @@ In my experience, no website or application I ever created, made use of the flex
 
 React Native has a little-known feature that allows you to pass an _array of styles_ rather than just a single object to the `style` prop of a component. This can be used to inherit styles and that's exactly what **Whirlwind** does.
 
-Let's take a look at the following example:
+### 1. Install React Native Whirlwind
 
-```tsx
-import { Text, View } from 'react-native'
-import { s } from 'react-native-whirlwind'
-
-const MyPage = () => (
-  <View style={[s.m4, s.p2, s.rounded, s.bgGray2]}>
-    <Text>Some unstyled text in a styled view</Text>
-  </View>
-)
+```sh
+npm install react-native-whirlwind
 ```
 
-### Theming
+```sh
+yarn install react-native-whirlwind
+```
 
-**Whirlwind** has a built-in default theme but allows customization of default fonts, spacings and colors. Whirlwind's theming system is very barebone and is designed to work in conjunction with any theming system of the UI component library you might be using. For an example on how to integrate **Whirlwind** with different UI component libraries, check out the sections below.
+### 2. Create Your Own Theme Definition
 
-To initialize your own theme, you can use the `setTheme` function:
+**Whirlwind** has a built-in default theme but allows customization of default fonts, spacings, and colors. Whirlwind's theming system is very barebone and is designed to work in conjunction with any theming system of the UI component library you might be using. For an example of how to integrate **Whirlwind** with different UI component libraries, check out the sections below.
+
+To initialize your own theme, pass your own colors and formats to the `createTheme` function. Create a new file `theme.tsx` and place the following in it:
 
 ```tsx
-import { setTheme } from 'react-native-whirlwind'
+// theme.tsx
+import { createTheme } from 'react-native-whirlwind'
 
-// Call this once at the start of your app, preferably in your "index.js" file
-setTheme({
+const t = createTheme({
   colors: {
-    primary: '#3F51B5',
-    secondary: '#FF5722'
+    primary: 'orange',
+    secondary: 'blue'
   }
 })
+
+export default t
 ```
 
-This will customize the primary and secondary colors of your app. Call `setTheme` as early as possible in your app, preferably in the `index.js` file.
+This will customize the primary and secondary colors of your app and act as the entry point for Whirlwind.
+
+### 3. Use Your Theme
+
+Import your `theme.tsx` in your app and components where needed:
+
+```tsx
+// app.tsx
+import t from './theme'
+
+export default function App() {
+  return (
+    <View style={[t.flex1, t.bgWhite, t.justifyCenter, t.itemsCenter]}>
+      <Text>Welcome to Whirlwind</Text>
+    </View>
+  )
+}
+```
 
 ### Reusablility
 
@@ -79,7 +95,7 @@ In the following example, we create a `Card` component and use the React Native 
 import { PropsWithChildren, ViewProps, Stylesheet } from 'react-native'
 
 const Card = ({ style, children, ...props }: PropsWithChildren<ViewProps>) => (
-  <View style={Stylesheet.compose([s.m4, s.p2, s.rounded, s.bgGray2], style)} {...props}>
+  <View style={Stylesheet.compose([t.m4, t.p2, t.rounded, t.bgGray2], style)} {...props}>
     {children}
   </View>
 )
@@ -89,7 +105,7 @@ const MyPage = () => (
     <Card>
       <Text>Card with default style</Text>
     </Card>
-    <Card style={[s.bgPrimary]}>
+    <Card style={[t.bgPrimary]}>
       <Text>Card with different background color</Text>
     </Card Cal, preferably in the `index.js` file.
   </View>
@@ -109,19 +125,45 @@ React Native [is not directly able to mix a custom `fontFamily` with different w
 
 To make the use of custom fonts in React Native easier, **Whirlwind** provides font classes that you can use to set the font family and weight for your components:
 
+#### Sans-Serif Font
+
 ```
-s.fontSans
-s.fontSansItalic
-s.fontSansMedium
-s.fontSansMediumItalic
-s.fontSansBold
-s.fontSansBoldItalic
+t.fontSans
+t.fontSansItalic
+t.fontSansMedium
+t.fontSansMediumItalic
+t.fontSansBold
+t.fontSansBoldItalic
 ```
 
-Those classes are composable with font sizes, text color, and other typography related classes: Cal, preferably in the `index.js` file.
+#### Monoscript Font
+
+```
+t.fontMono
+t.fontMonoItalic
+t.fontMonoMedium
+t.fontMonoMediumItalic
+t.fontMonoBold
+t.fontMonoBoldItalic
+```
+
+#### Serif Font
+
+```
+t.fontSerif
+t.fontSerifItalic
+t.fontSerifMedium
+t.fontSerifMediumItalic
+t.fontSerifBold
+t.fontSerifBoldItalic
+```
+
+Those classes are composable with font sizes, text color, and other typography-related classes as usual:
 
 ```tsx
-<Text style={[s.fontSansMedium, s.textXl, s.textPrimary, s.uppercase]}>Custom Header<Text>
+<Text style={[t.fontSansMedium, t.textXl, t.textPrimary, t.uppercase]}>
+  Custom Header
+<Text>
 ```
 
 ### Usage with Styled Components
@@ -149,9 +191,13 @@ const MyPage = () => (
 You can also use the [react-native-whirlwind](https://github.com/arabold/react-native-whirlwind) classes with your favorite UI components library, like [React Native Elements](https://reactnativeelements.com/):
 
 ```tsx
-import { FullTheme } from 'react-native-elements'
-import { s } from 'react-native-whirlwind'
+import { View } from 'react-native'
+// Import the theme provider from React Native Elements
+import { ThemeProvider, FullTheme, Button } from 'react-native-elements'
+// Import our Whirlwind style definitions
+import t from './theme.tsx'
 
+// Create a new React Native Elements theme with a customized Button component
 const theme: Partial<FullTheme> = {
   Button: {
     raised: false,
@@ -162,5 +208,16 @@ const theme: Partial<FullTheme> = {
     disabledStyle: [s.bgGray3],
     disabledTitleStyle: [s.textWhite]
   }
+}
+
+// Initialize the React Native Elements theme in your App
+export default function App() {
+  return (
+    <ThemeProvider theme={theme}>
+      <View style={[t.flex1, t.bgWhite, t.justifyCenter, t.itemsCenter]}>
+        <Button title="My Styled Button" />
+      </View>
+    </ThemeProvider>
+  )
 }
 ```

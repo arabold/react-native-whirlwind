@@ -4,7 +4,7 @@ export default {
   primary: '#7d70ba',
   secondary: '#93867f',
   link: '#dec1ff',
-  success: '##28a745',
+  success: '#28a745',
   error: '#dc3545',
   warning: '#343a40',
   gray5: '#f6f6f6',

@@ -1,9 +1,21 @@
 declare const _default: {
-    sans: string;
-    sansItalic: string;
-    sansMedium: string;
-    sansMediumItalic: string;
-    sansBold: string;
-    sansBoldItalic: string;
+    sans: undefined;
+    sansItalic: undefined;
+    sansMedium: undefined;
+    sansMediumItalic: undefined;
+    sansBold: undefined;
+    sansBoldItalic: undefined;
+    serif: undefined;
+    serifItalic: undefined;
+    serifMedium: undefined;
+    serifMediumItalic: undefined;
+    serifBold: undefined;
+    serifBoldItalic: undefined;
+    mono: undefined;
+    monoItalic: undefined;
+    monoMedium: undefined;
+    monoMediumItalic: undefined;
+    monoBold: undefined;
+    monoBoldItalic: undefined;
 };
 export default _default;

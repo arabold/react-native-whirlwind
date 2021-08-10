@@ -1,4 +1,4 @@
-import s from './styles'
-import theme, { Theme, setTheme } from './theme'
+import { createTheme } from './styles'
+import { ThemeProps } from './theme'
 
-export { s, theme, setTheme, Theme }
+export { createTheme, ThemeProps }

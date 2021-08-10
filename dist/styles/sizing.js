@@ -1,5 +1,5 @@
-import theme from '../theme';
-export default {
+import { createStyles } from '../theme';
+export default createStyles(theme => ({
     // Width
     wAuto: { width: 'auto' },
     wPx: { width: 1 },
@@ -82,5 +82,5 @@ export default {
     maxH10: { maxHeight: theme.spacing.xl3 },
     maxH12: { maxHeight: theme.spacing.xl4 },
     maxH16: { maxHeight: theme.spacing.xl5 }
-};
+}));
 //# sourceMappingURL=sizing.js.map

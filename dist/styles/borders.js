@@ -1,5 +1,5 @@
-import theme from '../theme';
-export default {
+import { createStyles } from '../theme';
+export default createStyles(theme => ({
     // Border Colors
     borderTransparent: { borderColor: 'transparent' },
     borderBlack: { borderColor: '#000' },
@@ -141,5 +141,5 @@ export default {
     roundedTeFull: { borderTopEndRadius: 9999 },
     roundedBeFull: { borderBottomEndRadius: 9999 },
     roundedBsFull: { borderBottomStartRadius: 9999 }
-};
+}));
 //# sourceMappingURL=borders.js.map

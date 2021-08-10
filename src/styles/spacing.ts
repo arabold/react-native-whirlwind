@@ -1,8 +1,6 @@
-import { StyleSheet } from 'react-native'
+import { createStyles } from '../theme'
 
-import theme from '../theme'
-
-export default {
+export default createStyles(theme => ({
   // Padding
   pAuto: { padding: 'auto' },
   p0: { padding: 0 },
@@ -221,4 +219,4 @@ export default {
   mE8: { marginEnd: theme.spacing.xl3 },
   mE9: { marginEnd: theme.spacing.xl4 },
   mE10: { marginEnd: theme.spacing.xl5 }
-} as StyleSheet.NamedStyles<any>
+}))

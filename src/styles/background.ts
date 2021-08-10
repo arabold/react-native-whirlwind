@@ -1,7 +1,6 @@
-import { StyleSheet } from 'react-native'
-import theme from '../theme'
+import { createStyles } from '../theme'
 
-export default {
+export default createStyles(theme => ({
   // Background Colors
   bgTransparent: { backgroundColor: 'transparent' },
   bgBlack: { backgroundColor: '#000' },
@@ -18,4 +17,4 @@ export default {
   bgGray3: { backgroundColor: theme.colors.gray3 },
   bgGray4: { backgroundColor: theme.colors.gray4 },
   bgGray5: { backgroundColor: theme.colors.gray5 }
-} as StyleSheet.NamedStyles<any>
+}))

@@ -1,4 +1,5 @@
-export default {
+import { createStyles } from '../theme';
+export default createStyles(theme => ({
     flex: { display: 'flex' },
     // Flex Direction
     flexCol: { display: 'flex', flexDirection: 'column' },
@@ -56,5 +57,5 @@ export default {
     flexShrink2: { flexShrink: 2 },
     flexShrink3: { flexShrink: 3 },
     flexShrink4: { flexShrink: 4 }
-};
+}));
 //# sourceMappingURL=flexbox.js.map

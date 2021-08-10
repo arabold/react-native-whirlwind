@@ -1,7 +1,6 @@
-import { StyleSheet } from 'react-native'
-import theme from '../theme'
+import { createStyles } from '../theme'
 
-export default {
+export default createStyles(theme => ({
   // Border Colors
   borderTransparent: { borderColor: 'transparent' },
   borderBlack: { borderColor: '#000' },
@@ -143,4 +142,4 @@ export default {
   roundedTeFull: { borderTopEndRadius: 9999 },
   roundedBeFull: { borderBottomEndRadius: 9999 },
   roundedBsFull: { borderBottomStartRadius: 9999 }
-} as StyleSheet.NamedStyles<any>
+}))
