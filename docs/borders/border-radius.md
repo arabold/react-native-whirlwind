@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Border Radius'
 description: "Control an element's border radius."
 classes:

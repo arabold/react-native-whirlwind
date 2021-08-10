@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Border Color'
 description: "Control an element's border color."
 classes:

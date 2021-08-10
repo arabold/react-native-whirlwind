@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Border Width'
 description: "Control an element's border width."
 classes:

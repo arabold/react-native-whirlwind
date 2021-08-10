@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Background Color'
 description: "Control an element's background color."
 classes:
