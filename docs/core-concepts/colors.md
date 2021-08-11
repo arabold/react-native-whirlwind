@@ -1,6 +1,7 @@
 ---
 title: Colors
 parent: Core Concepts
+nav_order: 1
 classes:
   values:
     {

@@ -25,15 +25,15 @@ While there are many CSS frameworks for the web, I have found only a few for Rea
 
 React Native has a powerful feature that allows you to pass an _array of styles_ rather than just a single object to the `style` prop of a component. This can be used to inherit styles and that's exactly what **Whirlwind** relies on.
 
-### The "Common" Way
+### The "Traditional" Way: Custom Designs Require Custom Styles
 
-Typically you would define your styles using React Native's `StyleSheet` class, e.g. as shown below:
+Traditionally you would define your styles using React Native's `StyleSheet` class, with one style class for each element of your design:
 
 ```jsx
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const LotsOfStyles = () => {
+const SimpleCard = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Some title</Text>
@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     marginTop: 48
   },
   title: {
-    color: 'blue', // primary color
+    color: 'blue',
     fontWeight: 'bold',
     fontSize: 30
   },
@@ -56,10 +56,10 @@ const styles = StyleSheet.create({
   }
 })
 
-export default LotsOfStyles
+export default SimpleCard
 ```
 
-### Whirlwind Way
+### Whirlwind Way: Using Utility Classes Without Writing Styles
 
 Instead of using semantic CSS classes, **Whirlwind** encourages the use of utility classes that are freely combined to design your final look and feel:
 
@@ -68,7 +68,7 @@ import React from 'react'
 import { Text, View } from 'react-native'
 import t from './theme'
 
-const LotsOfStyles = () => {
+const SimpleCard = () => {
   return (
     <View style={[t.mT9]}>
       <Text style={[t.sansBold, t.font3Xl, t.textPrimary]}>Some title</Text>
@@ -77,12 +77,19 @@ const LotsOfStyles = () => {
   )
 }
 
-export default LotsOfStyles
+export default SimpleCard
 ```
 
-The utility classes are reusable building blocks that come with a built-in theme that you can easily change. For example, `t.mT9` and `t.mT2` both define a top-margin (our default theme initializes it to 48 pixels and 4 pixels respectively), `t.sansBold` is a utility class to choose a sans-serif font with a bold weight, and `t.font3Xl` increases the default font size. Finally, `t.textPrimary` selects the primary color to render the text.
+The utility classes are reusable building blocks that come with a built-in theme that you can easily change. In the above design we used:
 
-By reusing the same building blocks throughout your app, you ensure a consistent look and feel, while still providing the necessary flexibility through Whirlwind's theming engine.
+- `t.mT9` and `t.mT2` to define a top-margin. Our default theme initializes it to 48 pixels and 4 pixels respectively.
+- `t.sansBold`, a utility class to choose a sans-serif font with a bold weight,
+- and `t.font3Xl` to use a larger font size.
+- Finally, `t.textPrimary` renders the text in our primary color, which we can define in our theme.
+
+This approach allows us to implement a completely custom component design without defining a single custom style class. By reusing the same building blocks throughout your app, you ensure a consistent look and feel, while still providing a lot of flexibility through Whirlwind's theming engine.
+
+Using utility classes still sounds atrocious? Trust me, it will feel natural soon, **but you probably have to try it out to see how it works**!
 
 ## Semantic CSS, Functional CSS and the "Separation of Concerns"
 
@@ -90,9 +97,13 @@ Adam Wathan, the author of [Tailwind CSS](https://tailwindcss.com/) wrote about 
 
 Similar components should use similar styles. However, more than a few times you'll find yourself in a situation where your existing `.author-bio` class can't be reused for the new article component you just created. So, you either end up renaming your `.author-bio` class to something more generic and content-agnostic that you can use in both cases, eventually leading to a `.card` or `.content` class. Alternatively, you copy-paste your `.author-bio` styles into your new component, leading to code duplication. So, essentially you're left with two choices:
 
-1. Naming your styles after the component they are styling creates _CSS that depends on HTML_.
-2. Naming your styles in a content-agnostic way, like `.card` or `.content` in which case your _HTML becomes dependent on your CSS_.
+1. Naming your styles after the component they are styling (such as `.author-bio`), creates _CSS that depends on HTML_. In this model, your HTML is restyleable, but your CSS is not reusable
+2. Naming your styles in a content-agnostic way, like `.card` or `.content` in which case your _HTML becomes dependent on your CSS_. In this model, your CSS is reusable, but your HTML is not restyleable.
 
-So what do you prefer: Restyleable HTML or reusable CSS?
+**So what do you prefer**: Restyleable HTML or reusable CSS?
 
-In my experience, no website or application I ever created, made use of the flexibility the first option offers. Either the site remained pretty much unchanged for a very long time without us touching the CSS code ever again, or we did a major redesign that required us not only to change a handful of CSS classes but also to change the HTML structure itself. In both cases, there's no real benefit of using semantic CSS. Adding new developers to the team who aren't familiar with the existing styles can exacerbate the problem and lead to more duplication of classes. I found that the use of functional CSS was leading to faster results, and, a little to my surprise, a more consistent overall design.
+In my experience, no website or application I ever created, made use of the flexibility the first option offers. Professional websites don't change all that often and when they do, it's usually due to a major redesign with many new pages and components anyway, not just a simple change in the styling. That's why I prefer the second option: reusability over the option to restyle my HTML. Utility classes drive this choice to an extreme: Classes become simpler and simpler to a point that a single CSS class only does a single thing.
+
+- **Stop worrying about class names**. Don't waste brain energy on `.author-bio`, `.author-bio-wrapper`, `.author-bio-inner-container`, `.author-bio-title`, `.author-bio-title-wrapper` and other silly names like that for something that's just a flexbox anyway.
+- **Make your design more robust**. No more worrying about breaking the design in one place if you change it on another. Reusing complex CSS classes across multiple pages and components comes with hidden, hard to manage dependencies. Changing a common class often leads to unforeseen consequences. But with utility classes, updating the design of a component is as easy as switching out the necessary class with zero side effects.
+- **Onboard engineers quicker**. Whirlwind's utility classes are already defined and you can start using them right away. They always behave in exactly the specified way. Using a consistent color and spacing scheme makes it easy to keep consistency throughout the whole application.

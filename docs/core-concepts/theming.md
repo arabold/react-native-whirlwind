@@ -1,6 +1,7 @@
 ---
 title: Theming
 parent: Core Concepts
+nav_order: 0
 ---
 
 If the default theme doesn't suit your needs (it probably won't), Whirlwind allows you to use customized colors and spacing for your app. To do this, simply pass in your customizations to the `createTheme` function.

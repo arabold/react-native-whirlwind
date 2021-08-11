@@ -5,3 +5,11 @@ description: >-
   Whirlwind is a utility-first CSS framework designed for React Native. It is 
   heavily inspired by Tachyons and Tailwind CSS and uses low-level building 
   blocks for rapidly building custom designs.
+
+# Aux links for the upper right navigation
+aux_links:
+  'Whirlwind on GitHub':
+    - 'https://github.com/arabold/react-native-whirlwind'
+
+# Makes Aux links open in a new tab. Default is false
+aux_links_new_tab: true
