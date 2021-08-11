@@ -50,7 +50,7 @@ import t from './theme'
 export default function App() {
   return (
     <View style={[t.flex1, t.bgWhite, t.justifyCenter, t.itemsCenter]}>
-      <Text>Welcome to Whirlwind</Text>
+      <Text style={[t.textPrimary]}>Welcome to Whirlwind</Text>
     </View>
   )
 }

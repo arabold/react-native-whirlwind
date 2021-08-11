@@ -6,12 +6,12 @@ has_children: true
 
 **Whirlwind** is a utility-first CSS framework specifically designed for [React Native](https://reactnative.dev/). It is heavily inspired by both [Tachyons](https://tachyons.io/) and [Tailwind CSS](https://tailwindcss.com/) and uses low-level building blocks for rapidly building custom designs.
 
-- Readable 👀 - all classes follow a simple, consistent naming convention
-- Lightweight 🏋️ - no 3rd party dependencies
-- Composable 🧱 - combinable classes for rapid prototyping
-- Performant 🚀 - No unnecessary calculations, no unnecessary string parsing, just pure and fast CSS
-- Reusable ♻️ - Promote reusability in your team and reduce redundancies in your codebase
-- React Native and TypeScript first 🥇 - built for React Native and 100% written in TypeScript for a best-in-class developer experience
+- **Readable** 👀 - all classes follow a simple, consistent naming convention
+- **Lightweight** 🪶 - no 3rd party dependencies
+- **Composable** 🧱 - combinable classes for rapid prototyping
+- **Performant** 🚀 - No unnecessary calculations, no unnecessary string parsing, just pure and fast static CSS
+- **Reusable** ♻️ - Promote reusability in your team and reduce redundancies in your codebase
+- **React Native and TypeScript first** 🥇 - built for React Native and 100% written in TypeScript for a best-in-class developer experience
 
 ## Why another CSS Framework?
 
