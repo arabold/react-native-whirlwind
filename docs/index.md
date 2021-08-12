@@ -9,7 +9,7 @@ has_children: true
 - **Readable** 👀 - all classes follow a simple, consistent naming convention
 - **Lightweight** 🪶 - no 3rd party dependencies
 - **Composable** 🧱 - combinable classes for rapid prototyping
-- **Performant** 🚀 - No unnecessary calculations, no unnecessary string parsing, just pure and fast static CSS
+- **Performant** 🚀 - No unnecessary calculations, no unnecessary string parsing, just pure and fast static styles
 - **Reusable** ♻️ - Promote reusability in your team and reduce redundancies in your codebase
 - **React Native and TypeScript first** 🥇 - built for React Native and 100% written in TypeScript for a best-in-class developer experience
 
@@ -19,7 +19,7 @@ For many developers using utility-first CSS classes seems like a bad idea, viola
 
 However, when using React Native, styling suddenly becomes very limited as it doesn't provide a way of selecting a child or siblings. The reason is that React Native uses the [Yoga](https://yogalayout.com/) layout engine rather than CSS like a web page. You can't use pseudo-classes like `:hover` or `:focus` to style a component. You can't use media queries. You can't use the `:before` and `:after`, `:first-child` and `:last-child`, and you can't use the `:nth-child` pseudo-class either. These limitations make it cumbersome and verbatim to define reusable styles, and many learnings from working on responsive websites simply don't apply to React Native.
 
-While there are many CSS frameworks for the web, I have found only a few for React Native that would fit my needs. I wanted a framework that was built specifically for React Native, and that kept these limitations in mind. Some concepts and source code of Whirlwind is directly derived from [react-native-tailwindcss](https://github.com/TVke/react-native-tailwindcss).
+While there are many CSS frameworks for the web, I have found only a few for React Native that would fit my needs. I wanted a framework that was built specifically for React Native, and that kept these limitations in mind. As mentioned before, I'm a fan of [Tailwind CSS](https://tailwindcss.com/) for plain React web pages. However, the various React Native (re-)implementations didn't convince me: [tailwind-rn](https://github.com/vadimdemedes/tailwind-rn) and [tailwind-react-native-classnames](https://github.com/jaredh159/tailwind-react-native-classnames) both use a custom string literal to emulate tailwind's CSS class system. But unfortunately both fell short in providing any autocompletion hints in Visual Studio Code, which makes them difficult to use and error prone for new developers on your team who aren't familiar with Tailwind yet. Personally I was more in favor of the style class system implemented by [react-native-tailwindcss](https://github.com/TVke/react-native-tailwindcss). But the lack of Typescript support was an immediate showstopper for me. Nonetheless some concepts and source code of Whirlwind is directly derived from [react-native-tailwindcss](https://github.com/TVke/react-native-tailwindcss).
 
 ## How Does It Work?
 

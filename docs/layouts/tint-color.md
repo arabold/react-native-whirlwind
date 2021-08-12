@@ -1,9 +1,10 @@
 ---
-title: Border Color
-parent: Borders
+title: Tint Color
+parent: Layouts
+nav_order: 6
 classes:
-  name: border
-  key: borderColor
+  name: tint
+  key: tintColor
   values:
     black: '#000000'
     white: '#ffffff'
@@ -39,7 +40,7 @@ classes:
       <tr>
         <td>t.{{ page.classes.name }}{{ value[0] | capitalize }}</td>
         <td>{{ page.classes.key }}: '{{ value[1] }}'</td>
-        <td><div style="border-width: 2px; border-style: solid; border-color: {{ value[1] }}; height: 20px"></div></td>
+        <td style="background-color: {{ value[1] }}"></td>
       </tr>
     {%- endfor -%}
   </tbody>
@@ -47,4 +48,4 @@ classes:
 
 ## Usage
 
-Set the border color of an element using the <code>t.border{Color}</code> utility classes.
+Changes the color of all the non-transparent pixels of an `Image` to the `tintColor`.

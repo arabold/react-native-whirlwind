@@ -1,12 +1,11 @@
 import { createStyles } from '../theme'
 
 export default createStyles(theme => ({
-  flex: { display: 'flex' },
   // Flex Direction
-  flexCol: { display: 'flex', flexDirection: 'column' },
-  flexRow: { display: 'flex', flexDirection: 'row' },
-  flexColReverse: { display: 'flex', flexDirection: 'column-reverse' },
-  flexRowReverse: { display: 'flex', flexDirection: 'row-reverse' },
+  flexCol: { flexDirection: 'column' },
+  flexRow: { flexDirection: 'row' },
+  flexColReverse: { flexDirection: 'column-reverse' },
+  flexRowReverse: { flexDirection: 'row-reverse' },
   // Flex Wrap
   flexWrap: { flexWrap: 'wrap' },
   flexWrapReverse: { flexWrap: 'wrap-reverse' },

@@ -4,18 +4,17 @@ parent: Borders
 classes:
   name: border
   key: borderWidth
-  values: { '': 1, 0: 0, 0_5: 2, 1: 4, 2: 8, 3: 12, 4: 16, 5: 20, 6: 24, 7: 28, 8: 32 }
+  values: { '': 1, 0: 0, '0_5': 2, 1: 4, 2: 8, 3: 12, 4: 16, 5: 20, 6: 24, 7: 28, 8: 32 }
   directions:
-    {
-      X: { borderRightWidth, borderLeftWidth },
-      Y: { borderTopWidth, borderBottomWidth },
-      T: { borderTopWidth },
-      R: { borderRightWidth },
-      B: { borderBottomWidth },
-      L: { borderLeftWidth },
-      E: { borderEndWidth },
-      S: { borderStartWidth }
-    }
+    '': { borderWidth }
+    X: { borderRightWidth, borderLeftWidth }
+    Y: { borderTopWidth borderBottomWidth }
+    T: { borderTopWidth }
+    R: { borderRightWidth }
+    B: { borderBottomWidth }
+    L: { borderLeftWidth }
+    E: { borderEndWidth }
+    S: { borderStartWidth }
 ---
 
 <table>

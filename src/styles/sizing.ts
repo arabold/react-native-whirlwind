@@ -2,7 +2,6 @@ import { createStyles } from '../theme'
 
 export default createStyles(theme => ({
   // Width
-  wAuto: { width: 'auto' },
   wFull: { width: '100%' },
   w0: { width: theme.spacing[0] },
   wPx: { width: theme.spacing.px },
@@ -140,7 +139,6 @@ export default createStyles(theme => ({
   maxWScreenXl: { maxWidth: theme.screens.xl },
   maxWScreen2xl: { maxWidth: theme.screens['2xl'] },
   // Height
-  hAuto: { height: 'auto' },
   hFull: { height: '100%' },
   hScreen: { height: '100vh' },
   h0: { height: theme.spacing[0] },
@@ -177,11 +175,9 @@ export default createStyles(theme => ({
   h96: { height: theme.spacing[96] },
   // Min Height
   minHFull: { minHeight: '100%' },
-  minHScreen: { minHeight: '100vh' },
   minH0: { minHeight: theme.spacing[0] },
   // Max Height
   maxHFull: { maxHeight: '100%' },
-  maxHScreen: { maxHeight: '100vh' },
   maxH0: { maxHeight: theme.spacing[0] },
   maxHPx: { maxHeight: theme.spacing.px },
   maxH0_5: { maxHeight: theme.spacing[0.5] },

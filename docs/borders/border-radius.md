@@ -6,22 +6,21 @@ classes:
   key: borderRadius
   values: { '': 16, None: 0, Sm: 8, Lg: 32, Full: 9999 }
   directions:
-    {
-      T: { borderTopLeftRadius, borderTopRightRadius },
-      R: { borderTopRightRadius, borderBottomRightRadius },
-      B: { borderBottomLeftRadius, borderBottomRightRadius },
-      L: { borderTopLeftRadius, borderBottomLeftRadius },
-      Tl: { borderTopLeftRadius },
-      Tr: { borderTopRightRadius },
-      Br: { borderBottomRightRadius },
-      Bl: { borderBottomLeftRadius },
-      S: { borderTopStartRadius, borderBottomStartRadius },
-      E: { borderTopEndRadius, borderBottomEndRadius },
-      Ts: { borderTopStartRadius },
-      Te: { borderTopEndRadius },
-      Be: { borderBottomEndRadius },
-      Bs: { borderBottomStartRadius }
-    }
+    '': { borderRadius }
+    T: { borderTopLeftRadius, borderTopRightRadius }
+    R: { borderTopRightRadius, borderBottomRightRadius }
+    B: { borderBottomLeftRadius, borderBottomRightRadius }
+    L: { borderTopLeftRadius, borderBottomLeftRadius }
+    Tl: { borderTopLeftRadius }
+    Tr: { borderTopRightRadius }
+    Br: { borderBottomRightRadius }
+    Bl: { borderBottomLeftRadius }
+    S: { borderTopStartRadius, borderBottomStartRadius }
+    E: { borderTopEndRadius, borderBottomEndRadius }
+    Ts: { borderTopStartRadius }
+    Te: { borderTopEndRadius }
+    Be: { borderBottomEndRadius }
+    Bs: { borderBottomStartRadius }
 ---
 
 <table>

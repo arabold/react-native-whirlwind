@@ -4,7 +4,10 @@ parent: Borders
 classes:
   name: border
   key: borderStyle
-  values: { Solid: 'solid', Dashed: 'dashed', Dotted: 'dotted' }
+  values:
+    Solid: 'solid'
+    Dashed: 'dashed'
+    Dotted: 'dotted'
 ---
 
 <table>
