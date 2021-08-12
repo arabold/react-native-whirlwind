@@ -1,9 +1,9 @@
 ---
-title: 'Background Color'
-parent: 'Background'
+title: Text Color
+parent: Typography
 classes:
-  name: bg
-  key: backgroundColor
+  name: text
+  key: color
   values:
     black: '#000000'
     white: '#ffffff'
@@ -39,11 +39,7 @@ classes:
       <tr>
         <td>t.{{ page.classes.name }}{{ value[0] | capitalize }}</td>
         <td>{{ page.classes.key }}: '{{ value[1] }}'</td>
-        {%- if value[1] == 'rgba(0,0,0,0)' -%}
-          <td style="background-size: 24px 24px;background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2 2'%3E%3Cpath fill='rgb(200,200,200)' fill-rule='evenodd' d='M0 0h1v1H0V0zm1 1h1v1H1V1z'/%3E%3C/svg%3E&quot;);"></td>
-        {%- else -%}
-          <td style="background-color: {{ value[1] }}"></td>
-        {%- endif -%}
+        <td><span style="color: {{ value[1] }}; font-weight: bold; font-size: 1.5em">Aa</span></td>
       </tr>
     {%- endfor -%}
   </tbody>
@@ -51,4 +47,4 @@ classes:
 
 ## Usage
 
-Set the background color of an element using the <code>t.bg{Color}</code> utility classes.
+Set the border color of an element using the <code>t.border{Color}</code> utility classes.

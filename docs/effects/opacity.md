@@ -34,7 +34,9 @@ classes:
       <tr>
         <td>t.{{ page.classes.name }}{{ value[0] }}</td>
         <td>{{ page.classes.key }}: {{ value[1] }}</td>
-        <td style="background-color: black; opacity: {{ value[1] }}; color: white; text-align: center">{{ value[1] | times: 100 }}%</td>
+        <td style="padding: 0; background-size: 24px 24px;background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2 2'%3E%3Cpath fill='rgb(200,200,200)' fill-rule='evenodd' d='M0 0h1v1H0V0zm1 1h1v1H1V1z'/%3E%3C/svg%3E&quot;);">
+          <div style="height: 38px; background-color: black; opacity: {{ value[1] }}; color: white; text-align: center; font-size: 1.5em; font-weight: bold">Aa</div>
+        </td>
       </tr>
     {%- endfor -%}
   </tbody>
