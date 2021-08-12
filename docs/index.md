@@ -23,7 +23,7 @@ While there are many CSS frameworks for the web, I have found only a few for Rea
 
 ## How Does It Work?
 
-React Native has a powerful feature that allows you to pass an _array of styles_ rather than just a single object to the `style` prop of a component. This can be used to inherit styles and that's exactly what **Whirlwind** relies on.
+React Native has a powerful feature that allows you to pass an _array of styles_ rather than just a single object to the `style` prop of a component. This can be used to inherit styles. **Whirlwind** relies on this mechanic to provide a simple, composable API for building custom designs.
 
 ### The "Traditional" Way: Custom Designs Require Custom Styles
 

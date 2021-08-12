@@ -22,7 +22,7 @@ A utility-first CSS framework designed for React Native.
 
 ## Getting Started
 
-React Native has a little-known feature that allows you to pass an _array of styles_ rather than just a single object to the `style` prop of a component. This can be used to inherit styles and that's exactly what **Whirlwind** does.
+React Native has a powerful feature that allows you to pass an _array of styles_ rather than just a single object to the `style` prop of a component. This can be used to inherit styles. **Whirlwind** relies on this mechanic to provide a simple, composable API for building custom designs.
 
 ### 1. Install React Native Whirlwind
 
