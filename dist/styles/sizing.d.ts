@@ -1,5 +1,4 @@
 declare const _default: (theme: import("../theme").ThemeProps) => import("react-native").StyleSheet.NamedStyles<{
-    wAuto: unknown;
     wFull: unknown;
     w0: unknown;
     wPx: unknown;
@@ -134,7 +133,6 @@ declare const _default: (theme: import("../theme").ThemeProps) => import("react-
     maxWScreenLg: unknown;
     maxWScreenXl: unknown;
     maxWScreen2xl: unknown;
-    hAuto: unknown;
     hFull: unknown;
     hScreen: unknown;
     h0: unknown;
@@ -170,10 +168,8 @@ declare const _default: (theme: import("../theme").ThemeProps) => import("react-
     h80: unknown;
     h96: unknown;
     minHFull: unknown;
-    minHScreen: unknown;
     minH0: unknown;
     maxHFull: unknown;
-    maxHScreen: unknown;
     maxH0: unknown;
     maxHPx: unknown;
     maxH0_5: unknown;

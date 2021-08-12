@@ -1,5 +1,4 @@
 declare const _default: (theme: import("../theme").ThemeProps) => import("react-native").StyleSheet.NamedStyles<{
-    flex: unknown;
     flexCol: unknown;
     flexRow: unknown;
     flexColReverse: unknown;

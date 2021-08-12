@@ -49,6 +49,14 @@ declare const _default: (theme: import("../theme").ThemeProps) => import("react-
     borderL0: unknown;
     borderE0: unknown;
     borderS0: unknown;
+    borderX0_5: unknown;
+    borderY0_5: unknown;
+    borderT0_5: unknown;
+    borderR0_5: unknown;
+    borderB0_5: unknown;
+    borderL0_5: unknown;
+    borderE0_5: unknown;
+    borderS0_5: unknown;
     borderX1: unknown;
     borderY1: unknown;
     borderT1: unknown;
