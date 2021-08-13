@@ -14,14 +14,16 @@ type MakeOptional<T> = {
   [P in keyof T]?: MakeOptional<T[P]>
 }
 
-export function createTheme(newTheme?: MakeOptional<ThemeProps>) {
+export function createTheme(newTheme: MakeOptional<ThemeProps> = {}) {
   const theme = {
     ...newTheme, // copy any custom mixins that aren't part of the official theme
-    colors: { ...defaultTheme.colors, ...(newTheme?.colors ?? {}) },
-    fontFamilies: { ...defaultTheme.fontFamilies, ...(newTheme?.fontFamilies ?? {}) },
-    fontSizes: { ...defaultTheme.fontSizes, ...(newTheme?.fontSizes ?? {}) },
-    screens: { ...defaultTheme.screens, ...(newTheme?.screens ?? {}) },
-    spacing: { ...defaultTheme.spacing, ...(newTheme?.spacing ?? {}) }
+    colors: { ...defaultTheme.colors, ...(newTheme.colors ?? {}) },
+    fontFamilies: { ...defaultTheme.fontFamilies, ...(newTheme.fontFamilies ?? {}) },
+    fontSizes: { ...defaultTheme.fontSizes, ...(newTheme.fontSizes ?? {}) },
+    leading: { ...defaultTheme.leading, ...(newTheme.leading ?? {}) },
+    letterSpacing: { ...defaultTheme.letterSpacing, ...(newTheme.letterSpacing ?? {}) },
+    screens: { ...defaultTheme.screens, ...(newTheme.screens ?? {}) },
+    spacing: { ...defaultTheme.spacing, ...(newTheme.spacing ?? {}) }
   }
   return StyleSheet.create({
     ...background(theme),

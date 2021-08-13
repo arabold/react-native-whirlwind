@@ -1,6 +1,6 @@
-import { Platform } from 'react-native'
+import ThemeProps from '../ThemeProps'
 
-export default {
+const fontFamilies: ThemeProps['fontFamilies'] = {
   sans: undefined, // use system font
   sansItalic: undefined,
   sansMedium: undefined,
@@ -20,3 +20,5 @@ export default {
   monoBold: undefined,
   monoBoldItalic: undefined
 }
+
+export default fontFamilies

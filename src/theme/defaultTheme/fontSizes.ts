@@ -1,4 +1,6 @@
-export default {
+import ThemeProps from '../ThemeProps'
+
+const fontSizes: ThemeProps['fontSizes'] = {
   '2xs': 8,
   xs: 12,
   sm: 14,
@@ -10,3 +12,5 @@ export default {
   '4xl': 36,
   '5xl': 48
 }
+
+export default fontSizes

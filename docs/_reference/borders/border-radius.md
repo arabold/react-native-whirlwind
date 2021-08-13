@@ -34,7 +34,7 @@ classes:
     {%- for direction in page.classes.directions -%}
       {%- for value in page.classes.values -%}
         <tr>
-          <td>t.{{ page.classes.name }}{{ direction[0] }}{{ value[0] | capitalize }}</td>
+          <td>t.{{ page.classes.name }}{{ direction[0] }}{{ value[0] }}</td>
           <td colspan="2">
           {%- for directionItem in direction[1] -%}
             <p>{{ directionItem }}: {{ value[1] }} </p>

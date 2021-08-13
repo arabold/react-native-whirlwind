@@ -1,11 +1,13 @@
 import colors from './colors'
 import fontFamilies from './fontFamilies'
 import fontSizes from './fontSizes'
+import leading from './leading'
+import letterSpacing from './letterSpacing'
 import screens from './screens'
 import spacing from './spacing'
 
-import Theme from '../ThemeProps'
+import ThemeProps from '../ThemeProps'
 
-const defaultTheme: Theme = { colors, fontFamilies, fontSizes, screens, spacing }
+const defaultTheme: ThemeProps = { colors, fontFamilies, fontSizes, leading, letterSpacing, screens, spacing }
 
 export default defaultTheme

@@ -49,7 +49,11 @@ Whirlwind does not define the same colors as Tailwind CSS. Instead of offering v
 - `success`
 - `error`
 - `warning`
-- `disabled`
+- etc.
+
+Every color comes in three different shades (the default, `light`, and `dark`), and a `contrast` variant.
+
+To replace your existing Tailwind CSS colors, choose an adequate semantic color from this list and replace the color name in your style with the new one:
 
 | Tailwind CSS   | Whirlwind       |
 | -------------- | --------------- |
@@ -57,4 +61,4 @@ Whirlwind does not define the same colors as Tailwind CSS. Instead of offering v
 | bg-{color}     | t.bg{Color}     |
 | border-{color} | t.border{Color} |
 
-Refer to the [Colors](./colors.md) page for more information.
+Refer to the [Colors](../core-concepts/colors) page for more information.
