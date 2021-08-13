@@ -1,15 +1,35 @@
 export default interface ThemeProps {
     colors: {
-        black: string;
-        white: string;
         primary: string;
+        primaryLight: string;
+        primaryDark: string;
+        primaryContrast: string;
         secondary: string;
-        link: string;
+        secondaryLight: string;
+        secondaryDark: string;
+        secondaryContrast: string;
         info: string;
+        infoLight: string;
+        infoDark: string;
+        infoContrast: string;
         success: string;
+        successLight: string;
+        successDark: string;
+        successContrast: string;
         error: string;
+        errorLight: string;
+        errorDark: string;
+        errorContrast: string;
         warning: string;
+        warningLight: string;
+        warningDark: string;
+        warningContrast: string;
+        paper: string;
+        selected: string;
         disabled: string;
+        focused: string;
+        muted: string;
+        white: string;
         gray100: string;
         gray200: string;
         gray300: string;
@@ -19,27 +39,28 @@ export default interface ThemeProps {
         gray700: string;
         gray800: string;
         gray900: string;
+        black: string;
         transparent: string;
     };
     fontFamilies: {
-        sans: string | undefined;
-        sansItalic: string | undefined;
-        sansMedium: string | undefined;
-        sansMediumItalic: string | undefined;
-        sansBold: string | undefined;
-        sansBoldItalic: string | undefined;
-        serif: string | undefined;
-        serifItalic: string | undefined;
-        serifMedium: string | undefined;
-        serifMediumItalic: string | undefined;
-        serifBold: string | undefined;
-        serifBoldItalic: string | undefined;
-        mono: string | undefined;
-        monoItalic: string | undefined;
-        monoMedium: string | undefined;
-        monoMediumItalic: string | undefined;
-        monoBold: string | undefined;
-        monoBoldItalic: string | undefined;
+        sans: string | null | undefined;
+        sansItalic: string | null | undefined;
+        sansMedium: string | null | undefined;
+        sansMediumItalic: string | null | undefined;
+        sansBold: string | null | undefined;
+        sansBoldItalic: string | null | undefined;
+        serif: string | null | undefined;
+        serifItalic: string | null | undefined;
+        serifMedium: string | null | undefined;
+        serifMediumItalic: string | null | undefined;
+        serifBold: string | null | undefined;
+        serifBoldItalic: string | null | undefined;
+        mono: string | null | undefined;
+        monoItalic: string | null | undefined;
+        monoMedium: string | null | undefined;
+        monoMediumItalic: string | null | undefined;
+        monoBold: string | null | undefined;
+        monoBoldItalic: string | null | undefined;
     };
     fontSizes: {
         '2xs': number;
@@ -52,6 +73,22 @@ export default interface ThemeProps {
         '3xl': number;
         '4xl': number;
         '5xl': number;
+    };
+    leading: {
+        none: number;
+        tight: number;
+        snug: number;
+        normal: number;
+        relaxed: number;
+        loose: number;
+    };
+    letterSpacing: {
+        tighter: number;
+        tight: number;
+        normal: number;
+        wide: number;
+        wider: number;
+        widest: number;
     };
     screens: {
         sm: number;

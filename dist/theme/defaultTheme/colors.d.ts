@@ -1,23 +1,6 @@
-declare const _default: {
-    black: string;
-    white: string;
-    primary: string;
-    secondary: string;
-    link: string;
-    info: string;
-    success: string;
-    error: string;
-    warning: string;
-    disabled: string;
-    gray100: string;
-    gray200: string;
-    gray300: string;
-    gray400: string;
-    gray500: string;
-    gray600: string;
-    gray700: string;
-    gray800: string;
-    gray900: string;
-    transparent: string;
-};
-export default _default;
+import ThemeProps from '../ThemeProps';
+/**
+ * This color scheme resembles the [default theme of Material UI](https://material-ui.com/customization/default-theme/)
+ */
+declare const colors: ThemeProps['colors'];
+export default colors;

@@ -1,6 +1,6 @@
 import fontSizes from './fontSizes';
 const scale = fontSizes.base;
-export default {
+const spacing = {
     px: 1,
     0: 0,
     0.5: 0.125 * scale,
@@ -34,4 +34,5 @@ export default {
     80: 20 * scale,
     96: 24 * scale
 };
+export default spacing;
 //# sourceMappingURL=spacing.js.map

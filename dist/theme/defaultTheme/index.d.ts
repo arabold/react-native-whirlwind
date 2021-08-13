@@ -1,3 +1,3 @@
-import Theme from '../ThemeProps';
-declare const defaultTheme: Theme;
+import ThemeProps from '../ThemeProps';
+declare const defaultTheme: ThemeProps;
 export default defaultTheme;

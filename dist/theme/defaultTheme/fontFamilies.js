@@ -1,4 +1,4 @@
-export default {
+const fontFamilies = {
     sans: undefined,
     sansItalic: undefined,
     sansMedium: undefined,
@@ -18,4 +18,5 @@ export default {
     monoBold: undefined,
     monoBoldItalic: undefined
 };
+export default fontFamilies;
 //# sourceMappingURL=fontFamilies.js.map

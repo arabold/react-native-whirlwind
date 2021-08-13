@@ -8,14 +8,16 @@ import layouts from './layouts';
 import sizing from './sizing';
 import spacing from './spacing';
 import typography from './typography';
-export function createTheme(newTheme) {
+export function createTheme(newTheme = {}) {
     const theme = {
         ...newTheme,
-        colors: { ...defaultTheme.colors, ...(newTheme?.colors ?? {}) },
-        fontFamilies: { ...defaultTheme.fontFamilies, ...(newTheme?.fontFamilies ?? {}) },
-        fontSizes: { ...defaultTheme.fontSizes, ...(newTheme?.fontSizes ?? {}) },
-        screens: { ...defaultTheme.screens, ...(newTheme?.screens ?? {}) },
-        spacing: { ...defaultTheme.spacing, ...(newTheme?.spacing ?? {}) }
+        colors: { ...defaultTheme.colors, ...(newTheme.colors ?? {}) },
+        fontFamilies: { ...defaultTheme.fontFamilies, ...(newTheme.fontFamilies ?? {}) },
+        fontSizes: { ...defaultTheme.fontSizes, ...(newTheme.fontSizes ?? {}) },
+        leading: { ...defaultTheme.leading, ...(newTheme.leading ?? {}) },
+        letterSpacing: { ...defaultTheme.letterSpacing, ...(newTheme.letterSpacing ?? {}) },
+        screens: { ...defaultTheme.screens, ...(newTheme.screens ?? {}) },
+        spacing: { ...defaultTheme.spacing, ...(newTheme.spacing ?? {}) }
     };
     return StyleSheet.create({
         ...background(theme),
