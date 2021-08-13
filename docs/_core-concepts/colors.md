@@ -1,7 +1,6 @@
 ---
 title: Colors
-parent: Core Concepts
-nav_order: 1
+nav_order: 2
 classes:
   values:
     black: '#000000'
@@ -25,6 +24,8 @@ classes:
     gray900: '#1a202c'
     transparent: 'rgba(0,0,0,0)'
 ---
+
+# Colors
 
 Whirlwind uses semantic color names. While this seems counterintuitive considering that Whirlwind uses utility classes instead of semantic class names, this has shown advantageous for several reasons: When developing commercial products in which the application designs are created by a design team, we are typically using a limited set of colors based on an external branding guideline. The use of `primary` and `secondary` as color names allows tweaking the branding without having to go back and change the shade of the colors throughout the codebase again. And the use of a limited set of semantic color names also more easily enforces a consistent set of colors throughout the application.
 

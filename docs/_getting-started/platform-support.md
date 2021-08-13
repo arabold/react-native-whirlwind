@@ -1,8 +1,9 @@
 ---
 title: Platform Support
-parent: Getting Started
-nav_order: 1
+nav_order: 2
 ---
+
+# Platform Support
 
 Whirlwind requires at React Native 0.63 or higher and supports the following platforms:
 
@@ -13,7 +14,7 @@ We also support [React Native for Web](https://necolas.github.io/react-native-we
 
 Whirlwind has not yet been tested on [React Native for Windows and Mac](https://microsoft.github.io/react-native-windows/).
 
-# How About Supporting Plain React?
+## How About Supporting Plain React?
 
 While it may seem desired to use Whirlwind also in your plain React web projects, it hasn't been designed for that. Regular web pages don't support the same style notation as React Native. CSS is also more powerful than React Native's Yoga layout engine. Pseudo-classes make it possible to achieve more complex and flexible designs with less code. It just wouldn't make sense to backport Whirlwind to plain React. It simply wouldn't be as useful under these conditions.
 

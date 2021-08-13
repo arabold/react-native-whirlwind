@@ -1,8 +1,9 @@
 ---
 title: Migration Guide
-parent: Getting Started
-nav_order: 2
+nav_order: 3
 ---
+
+# Migration Guide
 
 ## Migrating from Tailwind CSS
 

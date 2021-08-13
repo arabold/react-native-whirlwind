@@ -1,4 +1,6 @@
 ---
-title: Effects
+title: Layouts
 has_children: true
 ---
+
+# Layouts

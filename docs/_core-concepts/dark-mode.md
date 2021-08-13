@@ -1,22 +1,23 @@
 ---
 title: Dark Mode
-parent: Core Concepts
-nav_order: 2
+nav_order: 4
 ---
+
+# Dark Mode
 
 While Whirlwind doesn't have a built-in dark mode, it's still easy to make your app aware of your user's preferred color scheme (light or dark). Use a library such as [react-native-appearance](https://www.npmjs.com/package/react-native-appearance) to make your app aware of the user's chosen appearance. In the following example, we make use of the `useColorScheme` hook provided by `react-native-appearance`. It will automatically refresh our layout when the user preferences change without having to restart the app:
 
 ```jsx
 // App.jsx
 import { View, Text } from 'react-native'
-import { useColorScheme } from 'react-native-appearance';
+import { useColorScheme } from 'react-native-appearance'
 import t from './theme'
 
 /**
  * Subscribe to color scheme changes with a hook
  */
 function MyComponent() {
-  const colorScheme = useColorScheme();
+  const colorScheme = useColorScheme()
   return (
     <View style={[colorScheme === 'dark' ? t.bgBlack : t.bgWhite]}>
       <Text style={[t.textPrimary]}>Hello World!</Text>
@@ -27,7 +28,7 @@ function MyComponent() {
 export default function App() {
   return (
     <AppearanceProvider>
-      <MyComponent>
+      <MyComponent />
     </AppearanceProvider>
   )
 }
@@ -76,7 +77,7 @@ And use it in our app like this:
 ```jsx
 // App.jsx
 import { View, Text } from 'react-native'
-import { useColorScheme } from 'react-native-appearance';
+import { useColorScheme } from 'react-native-appearance'
 import useTheme from './useTheme'
 
 /**
@@ -84,7 +85,7 @@ import useTheme from './useTheme'
  */
 function MyComponent() {
   const colorScheme = useColorScheme()
-  const t = useTheme();
+  const t = useTheme()
   return (
     <View style={[colorScheme === 'dark' ? t.bgBlack : t.bgWhite]}>
       <Text style={[t.textPrimary]}>Hello World!</Text>
@@ -95,7 +96,7 @@ function MyComponent() {
 export default function App() {
   return (
     <AppearanceProvider>
-      <MyComponent>
+      <MyComponent />
     </AppearanceProvider>
   )
 }

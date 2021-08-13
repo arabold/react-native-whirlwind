@@ -1,10 +1,11 @@
 ---
-title: Custom Fonts
-parent: Core Concepts
+title: Fonts
 nav_order: 3
 ---
 
-React Native [is not directly able to mix a custom `fontFamily` with different weights and styles](https://reactnative.dev/docs/text#limited-style-inheritance). The trick is to use different fonts that already have the different styles baked in and omit the `fontWeight` and `fontStyle` attributes.
+# Fonts
+
+React Native [is not able to mix a custom `fontFamily` with different weights and styles](https://reactnative.dev/docs/text#limited-style-inheritance). The trick is to use different fonts that already have the different styles baked in and omit the `fontWeight` and `fontStyle` attributes.
 
 To make the use of custom fonts in React Native easier, **Whirlwind** provides font classes that you can use to set the font family and weight for your components:
 

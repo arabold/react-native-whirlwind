@@ -1,5 +1,5 @@
 title: Whirlwind 🌪️
-remote_theme: pmarsceill/just-the-docs
+remote_theme: arabold/just-the-docs
 
 description: >-
   Whirlwind is a utility-first CSS framework designed for React Native. It is 
@@ -13,3 +13,48 @@ aux_links:
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
+
+collections:
+  getting-started:
+    output: true
+    permalink: /:collection/:name
+  core-concepts:
+    output: true
+    permalink: /:collection/:name
+  reference:
+    output: true
+    permalink: /:collection/:name
+
+just_the_docs:
+  # Define which collections are used in just-the-docs
+  collections:
+    getting-started:
+      name: Getting Started
+      nav_exclude: false
+      search_exclude: false
+    core-concepts:
+      name: Core Concepts
+      nav_exclude: false
+      search_exclude: false
+    reference:
+      name: Reference
+      nav_exclude: false
+      # nav_fold: true
+      search_exclude: false
+
+defaults:
+  - scope:
+      path: ''
+      type: getting-started
+    values:
+      layout: default
+  - scope:
+      path: ''
+      type: core-concepts
+    values:
+      layout: default
+  - scope:
+      path: ''
+      type: reference
+    values:
+      layout: default
