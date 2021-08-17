@@ -51,7 +51,7 @@ const t = createTheme({
   }
 })
 
-export default createTheme()
+export default t
 ```
 
 This will customize the primary and secondary colors of your app. The exported constant `t` acts as the entry point to the Whirlwind style system. You can use any variable name but we recommend using something short and memorable, as it will be heavily used throughout your application. `t` has proven to be a useful pattern and is recommended for consistency with the documentation and other apps based on Whirlwind.
