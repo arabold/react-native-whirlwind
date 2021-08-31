@@ -14,9 +14,10 @@ import { useColorScheme } from 'react-native-appearance'
 import t from './theme'
 
 /**
- * Subscribe to color scheme changes with a hook
+ * Color scheme aware component
  */
 function MyComponent() {
+  // Subscribe to color scheme changes with a hook
   const colorScheme = useColorScheme()
   return (
     <View style={[colorScheme === 'dark' ? t.bgBlack : t.bgWhite]}>
@@ -66,6 +67,9 @@ import { View, Text } from 'react-native'
 import { useColorScheme } from 'react-native-appearance'
 import { dark, light } from './theme'
 
+/**
+ * Chooses light or dark theme depending on the user's color scheme
+ */
 export default function useTheme() {
   const colorScheme = useColorScheme()
   return colorScheme === 'dark' ? dark : light
@@ -77,17 +81,16 @@ And use it in our app like this:
 ```jsx
 // App.jsx
 import { View, Text } from 'react-native'
-import { useColorScheme } from 'react-native-appearance'
 import useTheme from './useTheme'
 
 /**
- * Subscribe to color scheme changes with a hook
+ * Color scheme aware component
  */
 function MyComponent() {
-  const colorScheme = useColorScheme()
+  // Now use our custom hook to get the theme
   const t = useTheme()
   return (
-    <View style={[colorScheme === 'dark' ? t.bgBlack : t.bgWhite]}>
+    <View style={[t.bgPaper]}>
       <Text style={[t.textPrimary]}>Hello World!</Text>
     </View>
   )

@@ -110,6 +110,8 @@ Similar components should use similar styles. However, more than a few times you
 
 In my experience, no website or application I ever created, made use of the flexibility the first option offers. Professional websites don't change all that often and when they do, it's usually due to a major redesign with many new pages and components anyway, not just a simple change in the styling. That's why I prefer the second option: reusability over the option to restyle my HTML. Utility classes drive this choice to an extreme: Classes become simpler and simpler to a point that a single CSS class only does a single thing.
 
+This approach gives us a couple of advantages:
+
 - **Stop worrying about class names**. Don't waste brain energy on `.author-bio`, `.author-bio-wrapper`, `.author-bio-inner-container`, `.author-bio-title`, `.author-bio-title-wrapper` and other silly names like that for something that's just a flexbox anyway.
 - **Make your design more robust**. No more worrying about breaking the design in one place if you change it on another. Reusing complex CSS classes across multiple pages and components comes with hidden, hard-to-manage dependencies. Changing a common class often leads to unforeseen consequences. But with utility classes, updating the design of a component is as easy as switching out the necessary class with zero side effects.
 - **Onboard engineers quicker**. Whirlwind's utility classes are already defined and you can start using them right away. They always behave in exactly the specified way. Using a consistent color and spacing scheme makes it easy to keep consistency throughout the whole application.
