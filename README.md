@@ -3,10 +3,10 @@
 A utility-first CSS framework designed for React Native.
 
 <p>
-    <!-- <a href="https://github.com/arabold/react-native-whirlwind/actions"><img src="https://img.shields.io/github/workflow/status/arabold/react-native-whirlwind/Node.js%20CI" alt="Build Status"></a> -->
-    <a href="https://www.npmjs.com/package/react-native-whirlwind"><img src="https://img.shields.io/npm/dt/react-native-whirlwind.svg" alt="Total Downloads"></a>
-    <a href="https://github.com/arabold/react-native-whirlwind/releases"><img src="https://img.shields.io/npm/v/react-native-whirlwind.svg" alt="Latest Release"></a>
-    <a href="https://github.com/arabold/react-native-whirlwind/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/react-native-whirlwind.svg" alt="License"></a>
+  <!-- <a href="https://github.com/arabold/react-native-whirlwind/actions"><img src="https://img.shields.io/github/workflow/status/arabold/react-native-whirlwind/Node.js%20CI" alt="Build Status"></a> -->
+  <a href="https://www.npmjs.com/package/react-native-whirlwind"><img src="https://img.shields.io/npm/dt/react-native-whirlwind.svg" alt="Total Downloads"></a>
+  <a href="https://github.com/arabold/react-native-whirlwind/releases"><img src="https://img.shields.io/npm/v/react-native-whirlwind.svg" alt="Latest Release"></a>
+  <a href="https://github.com/arabold/react-native-whirlwind/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/react-native-whirlwind.svg" alt="License"></a>
 </p>
 
 ---
@@ -81,6 +81,17 @@ For full documentation, visit [https://arabold.github.io/react-native-whirlwind/
 ## Live Example
 
 https://snack.expo.dev/@arabold/react-native-whirlwind
+
+## Platform Support
+
+[![supports Expo Go](https://img.shields.io/badge/Expo%20Go-4630EB.svg?style=for-the-badge&logo=EXPO&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
+[![supports iOS](https://img.shields.io/badge/iOS-555555.svg?style=for-the-badge&logo=APPLE&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
+[![supports Android](https://img.shields.io/badge/Android-A4C639.svg?style=for-the-badge&logo=ANDROID&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
+[![supports web](https://img.shields.io/badge/Web-4285F4.svg?style=for-the-badge&logo=GOOGLE-CHROME&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
+
+**Whirlwind** is 100% compatible with the [Expo Framework](https://expo.io/) and works with both [Expo Go](https://expo.dev/client) and in the [bare workflow](https://docs.expo.dev/bare/exploring-bare-workflow/).
+
+For more details refer to the [Platform Support](https://arabold.github.io/react-native-whirlwind/getting-started/platform-support) section in the documentation.
 
 ## Who Is Using Whirlwind?
 

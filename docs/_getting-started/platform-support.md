@@ -5,14 +5,24 @@ nav_order: 2
 
 # Platform Support
 
-Whirlwind requires at React Native 0.63 or higher and supports the following platforms:
+[![runs on Expo](https://img.shields.io/badge/Runs%20on%20Expo-4630EB.svg?style=for-the-badge&logo=EXPO&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
+[![supports iOS](https://img.shields.io/badge/iOS-4630EB.svg?style=for-the-badge&logo=APPLE&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
+[![supports Android](https://img.shields.io/badge/Android-4630EB.svg?style=for-the-badge&logo=ANDROID&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
+[![supports web](https://img.shields.io/badge/Web-4630EB.svg?style=for-the-badge&logo=GOOGLE-CHROME&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
+
+Whirlwind requires React Native 0.63 or higher and supports the following platforms:
 
 - iOS
 - Android
+- Web
 
-We also support [React Native for Web](https://necolas.github.io/react-native-web/) although there are some [incompatibilities in its `StyleSheet` implementation](https://github.com/necolas/react-native-web/issues/1377).
+Although [React Native for Web](https://necolas.github.io/react-native-web/) is fully supported, there are some [incompatibilities in its `StyleSheet` implementation](https://github.com/necolas/react-native-web/issues/1377) to be aware of.
 
-Whirlwind has not yet been tested on [React Native for Windows and Mac](https://microsoft.github.io/react-native-windows/).
+Whirlwind has not yet been tested on [React Native for Windows and macOS](https://microsoft.github.io/react-native-windows/).
+
+## Expo Framework
+
+Whirlwind is 100% compatible with the [Expo Framework](https://expo.io/) and works with both [Expo Go](https://expo.dev/client) and in the [bare workflow](https://docs.expo.dev/bare/exploring-bare-workflow/).
 
 ## How About Supporting Plain React?
 
