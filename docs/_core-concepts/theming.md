@@ -56,6 +56,7 @@ In the following example, we create a `Card` component and use the React Native 
 
 ```tsx
 import { PropsWithChildren, ViewProps, Stylesheet } from 'react-native'
+import t from './theme'
 
 const Card = ({ style, children, ...props }: PropsWithChildren<ViewProps>) => (
   <View style={Stylesheet.compose([t.m4, t.p2, t.rounded, t.bgGray2], style)} {...props}>
@@ -70,12 +71,45 @@ const MyPage = () => (
     </Card>
     <Card style={[t.bgPrimary]}>
       <Text>Card with different background color</Text>
-    </Card Cal, preferably in the `index.js` file.
+    </Card>
   </View>
 )
 ```
 
 Whirlwind also plays nice with [Styled Components](https://styled-components.com). See below for additional info!
+
+## Customizing Individual Classes
+
+Generally, you will want to customize the theme using `createTheme` as described before. However, in some rare circumstances, you may want to customize a single style class.
+
+Because React Native Whirlwind is using just regular React Native style classes, this is easy to achieve using the spread syntax (`...`).
+
+```jsx
+// theme.jsx
+import { createTheme } from 'react-native-whirlwind'
+
+const t = {
+  // Define your theme as usual but note the spread operator
+  ...createTheme({
+    colors: {
+      primary: 'orange',
+      secondary: 'blue'
+    }
+  }),
+  // Override the existing `textPrimary` class
+  textPrimary: {
+    color: 'red'
+  },
+  // Or add a completely new class
+  textHighlight: {
+    color: 'yellow'
+  }
+}
+
+export default t
+```
+
+Then you can use these custom classes just as usual. For example, in the `MyPage` example above, you can use the new `t.textHighlight` class now to style the `Card` component.
 
 ## Usage with Styled Components
 
@@ -114,9 +148,9 @@ const theme: Partial<FullTheme> = {
     raised: false,
     titleStyle: [s.flexGrow, s.fontSansBold, s.textBase, s.textCenter],
     iconContainerStyle: [s.mX3],
-    buttonStyle: [{ borderRadius: s.h12.height / 2 }, s.h12, s.pX5, s.overflowHidden],
-    containerStyle: [{ borderRadius: s.h12.height / 2 }, s.overflowHidden],
-    disabledStyle: [s.bgGray3],
+    buttonStyle: [s.rounded, s.h12, s.pX5, s.overflowHidden],
+    containerStyle: [s.rounded, s.overflowHidden],
+    disabledStyle: [s.bgGray700],
     disabledTitleStyle: [s.textWhite]
   }
 }
