@@ -88,7 +88,8 @@ Because React Native Whirlwind is using just regular React Native style classes,
 // theme.jsx
 import { createTheme } from 'react-native-whirlwind'
 
-const t = {
+// Wrap your new styles in a `StyleSheet.create` to avoid recreation on every render
+const t = StyleSheet.create({
   // Define your theme as usual but note the spread operator
   ...createTheme({
     colors: {
@@ -104,12 +105,32 @@ const t = {
   textHighlight: {
     color: 'yellow'
   }
-}
+})
 
 export default t
 ```
 
 Then you can use these custom classes just as usual. For example, in the `MyPage` example above, you can use the new `t.textHighlight` class now to style the `Card` component.
+
+## Usage with `StyleSheet.create`
+
+Sometimes you may want to use the `StyleSheet.create` API to create a new style sheet with more complex definitions. For example, if you want to create a new style sheet for common text formatting that is used in multiple places, you can use the `StyleSheet.create` API to create a new style sheet and then use it in your component.
+
+```tsx
+import { StyleSheet } from 'react-native'
+import t from './theme'
+
+const TextStyles = StyleSheet.create(
+  caption: {
+    ...t.textBase,
+    ...t.fontSansMedium,
+    ...t.leadingLoose,
+    ...t.capitalize
+  }
+)
+
+export default TextStyles
+```
 
 ## Usage with Styled Components
 
@@ -117,11 +138,11 @@ Then you can use these custom classes just as usual. For example, in the `MyPage
 
 ```tsx
 import { Text, View } from 'react-native'
-import { s } from 'react-native-whirlwind'
 import styled from 'styled-components/native'
+import t from './theme'
 
 const StyledView = styled(View)`
-  ${[s.m4, s.p2, s.rounded, s.bgGray2]}
+  ${[t.m4, t.p2, t.rounded, t.bgGray2]}
 `
 
 const MyPage = () => (
@@ -146,12 +167,12 @@ import t from './theme'
 const theme: Partial<FullTheme> = {
   Button: {
     raised: false,
-    titleStyle: [s.flexGrow, s.fontSansBold, s.textBase, s.textCenter],
-    iconContainerStyle: [s.mX3],
-    buttonStyle: [s.rounded, s.h12, s.pX5, s.overflowHidden],
-    containerStyle: [s.rounded, s.overflowHidden],
-    disabledStyle: [s.bgGray700],
-    disabledTitleStyle: [s.textWhite]
+    titleStyle: [t.flexGrow, t.fontSansBold, t.textBase, t.textCenter],
+    iconContainerStyle: [t.mX3],
+    buttonStyle: [t.rounded, t.h12, t.pX5, t.overflowHidden],
+    containerStyle: [t.rounded, t.overflowHidden],
+    disabledStyle: [t.bgGray700],
+    disabledTitleStyle: [t.textWhite]
   }
 }
 

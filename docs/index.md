@@ -10,6 +10,7 @@ nav_order: 0
 - **Readable** 👀 - all classes follow a simple, consistent naming convention
 - **Lightweight** 🪶 - no 3rd party dependencies
 - **Composable** 🧱 - combinable classes for rapid prototyping
+- **Customizable** 💅 - Define your colors, typography, and spacing for your app in one place
 - **Performant** 🚀 - No unnecessary calculations, no unnecessary string parsing, just pure and fast static styles
 - **Reusable** ♻️ - Promote reusability in your team and reduce redundancies in your codebase
 - **React Native and TypeScript first** 🥇 - built for React Native and 100% written in TypeScript for a best-in-class developer experience
