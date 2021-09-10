@@ -5,10 +5,10 @@ nav_order: 2
 
 # Platform Support
 
-[![runs on Expo](https://img.shields.io/badge/Runs%20on%20Expo-4630EB.svg?style=for-the-badge&logo=EXPO&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
-[![supports iOS](https://img.shields.io/badge/iOS-4630EB.svg?style=for-the-badge&logo=APPLE&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
-[![supports Android](https://img.shields.io/badge/Android-4630EB.svg?style=for-the-badge&logo=ANDROID&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
-[![supports web](https://img.shields.io/badge/Web-4630EB.svg?style=for-the-badge&logo=GOOGLE-CHROME&labelColor=000&logoColor=fff)](https://github.com/expo/expo)
+[![supports Expo](https://img.shields.io/badge/Expo-4630EB.svg?style=for-the-badge&logo=EXPO&labelColor=000&logoColor=fff)](https://expo.dev/)
+[![supports iOS](https://img.shields.io/badge/iOS-555555.svg?style=for-the-badge&logo=APPLE&labelColor=000&logoColor=fff)](https://reactnative.dev/)
+[![supports Android](https://img.shields.io/badge/Android-A4C639.svg?style=for-the-badge&logo=ANDROID&labelColor=000&logoColor=fff)](https://reactnative.dev/)
+[![supports web](https://img.shields.io/badge/Web-4285F4.svg?style=for-the-badge&logo=GOOGLE-CHROME&labelColor=000&logoColor=fff)](https://necolas.github.io/react-native-web/)
 
 Whirlwind requires React Native 0.63 or higher and supports the following platforms:
 
