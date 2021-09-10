@@ -5,7 +5,7 @@ nav_order: 1
 
 # Theming
 
-If the default theme doesn't suit your needs (it probably won't), Whirlwind allows you to use customized colors and spacing for your app. To do this, simply pass in your customizations to the `createTheme` function.
+If the default theme doesn't suit your needs (it probably won't), Whirlwind allows you to use customized colors, typography, and spacing for your app. To do this, simply pass in your customizations to the `createTheme` function.
 
 ```jsx
 // theme.jsx
@@ -120,14 +120,14 @@ Sometimes you may want to use the `StyleSheet.create` API to create a new style 
 import { StyleSheet } from 'react-native'
 import t from './theme'
 
-const TextStyles = StyleSheet.create(
+const TextStyles = StyleSheet.create({
   caption: {
     ...t.textBase,
     ...t.fontSansMedium,
     ...t.leadingLoose,
     ...t.capitalize
   }
-)
+})
 
 export default TextStyles
 ```
