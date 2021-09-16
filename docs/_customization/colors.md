@@ -74,11 +74,13 @@ The default palette is inspired by [Material UI](https://material-ui.com/).
 
 ## Flavors
 
-Colors come in four flavors: the default or main variant, a _light_ variant, a _dark_ variant, and a _contrast_ variant. The light and dark variants can be useful for using as background and border colors respectively. The contrast variants can be useful for using as text colors. Ultimately it's up to you to decide which colors to use, but I recommend to create a branding guideline defining which color is used for which part of a component, that you can use as a reference for your product.
+Most colors come in four flavors: the default or main variant, a _light_ variant, a _dark_ variant, and a _contrast_ variant. The light and dark variants can be useful for using as background and border colors respectively. The contrast variants can be useful as text colors and should always have a high contrast compared to the base color for better readability.
 
-### Example
+Ultimately it's up to you to decide which colors to use, but I recommend creating a branding guideline defining which color is used for which part of a component, that you can use as a reference for your product. If you are using a UI component library such as [React Native Elements](https://reactnativeelements.com/), I recommend to spend some time defining the base theme, to avoid styling every individual instance of a component. See [Integration](../core-concepts/integrations) for examples.
 
-#### React Native
+## Example
+
+#### Source Code
 
 ```tsx
 <View style={[t.backgroundWarningLight, t.borderWarningDark, t.border, t.rounded, t.p2]}>
@@ -86,7 +88,7 @@ Colors come in four flavors: the default or main variant, a _light_ variant, a _
 </View>
 ```
 
-#### Sample Output
+#### Result
 
 <div style="background-color: #ffb74d; border-color: #f57c00; border-width: 1px; border-style: solid; border-radius: 8px; padding: 8px;">
   <div style="color: rgba(0,0,0,0.87)">Warning Message</div>

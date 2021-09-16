@@ -9,7 +9,7 @@ React Native [is not able to mix a custom `fontFamily` with different weights an
 
 To make the use of custom fonts in React Native easier, **Whirlwind** provides font classes that you can use to set the font family and weight for your components:
 
-#### Sans-Serif Font
+### Sans-Serif Font
 
 ```
 t.fontSans
@@ -20,7 +20,7 @@ t.fontSansBold
 t.fontSansBoldItalic
 ```
 
-#### Monoscript Font
+### Monoscript Font
 
 ```
 t.fontMono
@@ -31,7 +31,7 @@ t.fontMonoBold
 t.fontMonoBoldItalic
 ```
 
-#### Serif Font
+### Serif Font
 
 ```
 t.fontSerif
@@ -50,7 +50,7 @@ Those classes are composable with font sizes, text color, and other typography-r
 <Text>
 ```
 
-### Custom Fonts
+## Custom Fonts
 
 Download the custom font family you need, for example from [Google Fonts](https://fonts.google.com/). This will download a set of files, typically `.ttf` files following a naming convention similar to the one below:
 

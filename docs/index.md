@@ -113,6 +113,6 @@ In my experience, no website or application I ever created, made use of the flex
 
 This approach gives us a couple of advantages:
 
-- **Stop worrying about class names**. Don't waste brain energy on `.author-bio`, `.author-bio-wrapper`, `.author-bio-inner-container`, `.author-bio-title`, `.author-bio-title-wrapper` and other silly names like that for something that's just a flexbox anyway.
+- **Stop worrying about class names**. Don't waste brain energy on `.author-bio`, `.author-bio-wrapper`, `.author-bio-inner-container`, `.author-bio-title`, `.author-bio-title-wrapper` and other silly names for something that's just a flexbox anyway.
 - **Make your design more robust**. No more worrying about breaking the design in one place if you change it on another. Reusing complex CSS classes across multiple pages and components comes with hidden, hard-to-manage dependencies. Changing a common class often leads to unforeseen consequences. But with utility classes, updating the design of a component is as easy as switching out the necessary class with zero side effects.
 - **Onboard engineers quicker**. Whirlwind's utility classes are already defined and you can start using them right away. They always behave in exactly the specified way. Using a consistent color and spacing scheme makes it easy to keep consistency throughout the whole application.

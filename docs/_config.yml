@@ -21,6 +21,9 @@ collections:
   core-concepts:
     output: true
     permalink: /:collection/:name
+  customization:
+    output: true
+    permalink: /:collection/:name
   reference:
     output: true
     permalink: /:collection/:name
@@ -36,6 +39,10 @@ just_the_docs:
       name: Core Concepts
       nav_exclude: false
       search_exclude: false
+    customization:
+      name: Customization
+      nav_exclude: false
+      search_exclude: false
     reference:
       name: Reference
       nav_exclude: false
@@ -46,6 +53,11 @@ defaults:
   - scope:
       path: ''
       type: getting-started
+    values:
+      layout: default
+  - scope:
+      path: ''
+      type: customization
     values:
       layout: default
   - scope:

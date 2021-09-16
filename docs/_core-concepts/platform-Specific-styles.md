@@ -1,6 +1,6 @@
 ---
 title: Platform Specific Styles
-nav_order: 4
+nav_order: 3
 ---
 
 # Platform Specific Styles
