@@ -61,4 +61,4 @@ To replace your existing Tailwind CSS colors, choose an adequate semantic color 
 | bg-{color}     | t.bg{Color}     |
 | border-{color} | t.border{Color} |
 
-Refer to the [Colors](../core-concepts/colors) page for more information.
+Refer to the [Colors](../customization/colors) page for more information.

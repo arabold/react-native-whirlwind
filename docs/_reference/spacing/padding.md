@@ -73,3 +73,7 @@ classes:
     {%- endfor -%}
   </tbody>
 </table>
+
+## Usage
+
+Set the padding of an element using the <code>t.p{Direction}{Width}</code> utility classes. To set a negative padding use <code>t.\_p{Direction}{Width}</code>.

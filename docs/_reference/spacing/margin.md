@@ -73,3 +73,7 @@ classes:
     {%- endfor -%}
   </tbody>
 </table>
+
+## Usage
+
+Set the margin of an element using the <code>t.m{Direction}{Width}</code> utility classes. To set a negative margin use <code>t.\_m{Direction}{Width}</code>.
