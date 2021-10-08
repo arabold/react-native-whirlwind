@@ -12,3 +12,5 @@ export function createStyles<T>(
 ): (theme: Theme) => StyleSheet.NamedStyles<T> {
   return styles
 }
+
+export type CreateStylesFunc<TObject, TStyle> = (props: Theme) => { [TProperty in keyof TObject]: TStyle }
