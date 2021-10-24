@@ -1,14 +1,7 @@
-import { TextStyle, ViewStyle } from 'react-native'
-import { ThemeProps, CreateStylesFunc } from '../theme'
+import { createStyles } from '../theme'
 
-export default (theme: ThemeProps) =>
-  ({
-    ...boxShadow(theme),
-    ...textShadow(theme),
-    ...opacity(theme)
-  } as const)
-
-const boxShadow = createBoxShadowStyles(theme => ({
+export default createStyles(theme => ({
+  // Box Shadow
   shadow: {
     shadowColor: 'rgba(0, 0, 0, 0.1)',
     shadowOffset: { width: 0, height: 1 },
@@ -56,56 +49,49 @@ const boxShadow = createBoxShadowStyles(theme => ({
     shadowOffset: { width: 0, height: 0 },
     shadowRadius: 0,
     elevation: 0
-  }
-}))
-
-const textShadow = createTextShadowStyles(
-  theme =>
-    ({
-      textShadow: {
-        textShadowColor: 'rgba(0, 0, 0, 0.1)',
-        textShadowOffset: { width: 0, height: 1 },
-        textShadowRadius: 3
-      },
-      textShadowMd: {
-        textShadowColor: 'rgba(0, 0, 0, 0.1)',
-        textShadowOffset: { width: 0, height: 4 },
-        textShadowRadius: 6
-      },
-      textShadowLg: {
-        textShadowColor: 'rgba(0, 0, 0, 0.1)',
-        textShadowOffset: { width: 0, height: 10 },
-        textShadowRadius: 15
-      },
-      textShadowXl: {
-        textShadowColor: 'rgba(0, 0, 0, 0.1)',
-        textShadowOffset: { width: 0, height: 20 },
-        textShadowRadius: 25
-      },
-      textShadow2xl: {
-        textShadowColor: 'rgba(0, 0, 0, 0.25)',
-        textShadowOffset: { width: 0, height: 25 },
-        textShadowRadius: 50
-      },
-      textShadowInner: {
-        textShadowColor: 'rgba(0, 0, 0, 0.06)',
-        textShadowOffset: { width: 0, height: 2 },
-        textShadowRadius: 4
-      },
-      textShadowOutline: {
-        textShadowColor: 'rgba(0, 0, 0, 1.0)',
-        textShadowOffset: { width: 0, height: 0 },
-        textShadowRadius: 3
-      },
-      textShadowNone: {
-        textShadowColor: 'rgba(0, 0, 0, 0)',
-        textShadowOffset: { width: 0, height: 0 },
-        textShadowRadius: 0
-      }
-    } as const)
-)
-
-const opacity = createOpacityStyles(theme => ({
+  },
+  // Text Shadow
+  textShadow: {
+    textShadowColor: 'rgba(0, 0, 0, 0.1)',
+    textShadowOffset: { width: 0, height: 1 },
+    textShadowRadius: 3
+  },
+  textShadowMd: {
+    textShadowColor: 'rgba(0, 0, 0, 0.1)',
+    textShadowOffset: { width: 0, height: 4 },
+    textShadowRadius: 6
+  },
+  textShadowLg: {
+    textShadowColor: 'rgba(0, 0, 0, 0.1)',
+    textShadowOffset: { width: 0, height: 10 },
+    textShadowRadius: 15
+  },
+  textShadowXl: {
+    textShadowColor: 'rgba(0, 0, 0, 0.1)',
+    textShadowOffset: { width: 0, height: 20 },
+    textShadowRadius: 25
+  },
+  textShadow2xl: {
+    textShadowColor: 'rgba(0, 0, 0, 0.25)',
+    textShadowOffset: { width: 0, height: 25 },
+    textShadowRadius: 50
+  },
+  textShadowInner: {
+    textShadowColor: 'rgba(0, 0, 0, 0.06)',
+    textShadowOffset: { width: 0, height: 2 },
+    textShadowRadius: 4
+  },
+  textShadowOutline: {
+    textShadowColor: 'rgba(0, 0, 0, 1.0)',
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 3
+  },
+  textShadowNone: {
+    textShadowColor: 'rgba(0, 0, 0, 0)',
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 0
+  },
+  // Opacity
   opacity100: { opacity: 1 },
   opacity90: { opacity: 0.9 },
   opacity80: { opacity: 0.8 },
@@ -120,19 +106,3 @@ const opacity = createOpacityStyles(theme => ({
   opacity10: { opacity: 0.1 },
   opacity0: { opacity: 0 }
 }))
-
-function createBoxShadowStyles<T>(
-  styles: CreateStylesFunc<T, Required<Pick<ViewStyle, 'shadowColor' | 'shadowOffset' | 'shadowRadius' | 'elevation'>>>
-) {
-  return styles
-}
-
-function createTextShadowStyles<T>(
-  styles: CreateStylesFunc<T, Required<Pick<TextStyle, 'textShadowColor' | 'textShadowOffset' | 'textShadowRadius'>>>
-) {
-  return styles
-}
-
-function createOpacityStyles<T>(styles: CreateStylesFunc<T, Required<Pick<ViewStyle, 'opacity'>>>) {
-  return styles
-}
