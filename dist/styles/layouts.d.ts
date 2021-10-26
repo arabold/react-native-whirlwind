@@ -1,849 +1,2921 @@
-declare const _default: (theme: import("../theme").ThemeProps) => import("react-native").StyleSheet.NamedStyles<{
-    flex: unknown;
-    hidden: unknown;
-    resizeContain: unknown;
-    resizeCover: unknown;
-    resizeStretch: unknown;
-    resizeCenter: unknown;
-    resizeRepeat: unknown;
-    overflowVisible: unknown;
-    overflowHidden: unknown;
-    relative: unknown;
-    absolute: unknown;
-    inset0: unknown;
-    insetPx: unknown;
-    inset0_5: unknown;
-    inset1: unknown;
-    inset2: unknown;
-    inset3: unknown;
-    inset4: unknown;
-    inset5: unknown;
-    inset6: unknown;
-    inset7: unknown;
-    inset8: unknown;
-    inset9: unknown;
-    inset10: unknown;
-    inset11: unknown;
-    inset12: unknown;
-    inset14: unknown;
-    inset16: unknown;
-    inset20: unknown;
-    inset24: unknown;
-    inset28: unknown;
-    inset32: unknown;
-    inset36: unknown;
-    inset40: unknown;
-    inset44: unknown;
-    inset48: unknown;
-    inset52: unknown;
-    inset56: unknown;
-    inset60: unknown;
-    inset64: unknown;
-    inset72: unknown;
-    inset80: unknown;
-    inset96: unknown;
-    inset1_2: unknown;
-    inset1_3: unknown;
-    inset2_3: unknown;
-    inset1_4: unknown;
-    inset2_4: unknown;
-    inset3_4: unknown;
-    inset1_5: unknown;
-    inset2_5: unknown;
-    inset3_5: unknown;
-    inset4_5: unknown;
-    insetY0: unknown;
-    insetYPx: unknown;
-    insetY0_5: unknown;
-    insetY1: unknown;
-    insetY2: unknown;
-    insetY3: unknown;
-    insetY4: unknown;
-    insetY5: unknown;
-    insetY6: unknown;
-    insetY7: unknown;
-    insetY8: unknown;
-    insetY9: unknown;
-    insetY10: unknown;
-    insetY11: unknown;
-    insetY12: unknown;
-    insetY14: unknown;
-    insetY16: unknown;
-    insetY20: unknown;
-    insetY24: unknown;
-    insetY28: unknown;
-    insetY32: unknown;
-    insetY36: unknown;
-    insetY40: unknown;
-    insetY44: unknown;
-    insetY48: unknown;
-    insetY52: unknown;
-    insetY56: unknown;
-    insetY60: unknown;
-    insetY64: unknown;
-    insetY72: unknown;
-    insetY80: unknown;
-    insetY96: unknown;
-    insetX0: unknown;
-    insetXPx: unknown;
-    insetX0_5: unknown;
-    insetX1: unknown;
-    insetX2: unknown;
-    insetX3: unknown;
-    insetX4: unknown;
-    insetX5: unknown;
-    insetX6: unknown;
-    insetX7: unknown;
-    insetX8: unknown;
-    insetX9: unknown;
-    insetX10: unknown;
-    insetX11: unknown;
-    insetX12: unknown;
-    insetX14: unknown;
-    insetX16: unknown;
-    insetX20: unknown;
-    insetX24: unknown;
-    insetX28: unknown;
-    insetX32: unknown;
-    insetX36: unknown;
-    insetX40: unknown;
-    insetX44: unknown;
-    insetX48: unknown;
-    insetX52: unknown;
-    insetX56: unknown;
-    insetX60: unknown;
-    insetX64: unknown;
-    insetX72: unknown;
-    insetX80: unknown;
-    insetX96: unknown;
-    _inset0: unknown;
-    _insetPx: unknown;
-    _inset0_5: unknown;
-    _inset1: unknown;
-    _inset2: unknown;
-    _inset3: unknown;
-    _inset4: unknown;
-    _inset5: unknown;
-    _inset6: unknown;
-    _inset7: unknown;
-    _inset8: unknown;
-    _inset9: unknown;
-    _inset10: unknown;
-    _inset11: unknown;
-    _inset12: unknown;
-    _inset14: unknown;
-    _inset16: unknown;
-    _inset20: unknown;
-    _inset24: unknown;
-    _inset28: unknown;
-    _inset32: unknown;
-    _inset36: unknown;
-    _inset40: unknown;
-    _inset44: unknown;
-    _inset48: unknown;
-    _inset52: unknown;
-    _inset56: unknown;
-    _inset60: unknown;
-    _inset64: unknown;
-    _inset72: unknown;
-    _inset80: unknown;
-    _inset96: unknown;
-    _inset1_2: unknown;
-    _inset1_3: unknown;
-    _inset2_3: unknown;
-    _inset1_4: unknown;
-    _inset2_4: unknown;
-    _inset3_4: unknown;
-    _inset1_5: unknown;
-    _inset2_5: unknown;
-    _inset3_5: unknown;
-    _inset4_5: unknown;
-    _insetY0: unknown;
-    _insetYPx: unknown;
-    _insetY0_5: unknown;
-    _insetY1: unknown;
-    _insetY2: unknown;
-    _insetY3: unknown;
-    _insetY4: unknown;
-    _insetY5: unknown;
-    _insetY6: unknown;
-    _insetY7: unknown;
-    _insetY8: unknown;
-    _insetY9: unknown;
-    _insetY10: unknown;
-    _insetY11: unknown;
-    _insetY12: unknown;
-    _insetY14: unknown;
-    _insetY16: unknown;
-    _insetY20: unknown;
-    _insetY24: unknown;
-    _insetY28: unknown;
-    _insetY32: unknown;
-    _insetY36: unknown;
-    _insetY40: unknown;
-    _insetY44: unknown;
-    _insetY48: unknown;
-    _insetY52: unknown;
-    _insetY56: unknown;
-    _insetY60: unknown;
-    _insetY64: unknown;
-    _insetY72: unknown;
-    _insetY80: unknown;
-    _insetY96: unknown;
-    _insetX0: unknown;
-    _insetXPx: unknown;
-    _insetX0_5: unknown;
-    _insetX1: unknown;
-    _insetX2: unknown;
-    _insetX3: unknown;
-    _insetX4: unknown;
-    _insetX5: unknown;
-    _insetX6: unknown;
-    _insetX7: unknown;
-    _insetX8: unknown;
-    _insetX9: unknown;
-    _insetX10: unknown;
-    _insetX11: unknown;
-    _insetX12: unknown;
-    _insetX14: unknown;
-    _insetX16: unknown;
-    _insetX20: unknown;
-    _insetX24: unknown;
-    _insetX28: unknown;
-    _insetX32: unknown;
-    _insetX36: unknown;
-    _insetX40: unknown;
-    _insetX44: unknown;
-    _insetX48: unknown;
-    _insetX52: unknown;
-    _insetX56: unknown;
-    _insetX60: unknown;
-    _insetX64: unknown;
-    _insetX72: unknown;
-    _insetX80: unknown;
-    _insetX96: unknown;
-    top0: unknown;
-    topPx: unknown;
-    top0_5: unknown;
-    top1: unknown;
-    top2: unknown;
-    top3: unknown;
-    top4: unknown;
-    top5: unknown;
-    top6: unknown;
-    top7: unknown;
-    top8: unknown;
-    top9: unknown;
-    top10: unknown;
-    top11: unknown;
-    top12: unknown;
-    top14: unknown;
-    top16: unknown;
-    top20: unknown;
-    top24: unknown;
-    top28: unknown;
-    top32: unknown;
-    top36: unknown;
-    top40: unknown;
-    top44: unknown;
-    top48: unknown;
-    top52: unknown;
-    top56: unknown;
-    top60: unknown;
-    top64: unknown;
-    top72: unknown;
-    top80: unknown;
-    top96: unknown;
-    top1_2: unknown;
-    top1_3: unknown;
-    top2_3: unknown;
-    top1_4: unknown;
-    top2_4: unknown;
-    top3_4: unknown;
-    top1_5: unknown;
-    top2_5: unknown;
-    top3_5: unknown;
-    top4_5: unknown;
-    top1_6: unknown;
-    top2_6: unknown;
-    top3_6: unknown;
-    top4_6: unknown;
-    top5_6: unknown;
-    topFull: unknown;
-    _top0: unknown;
-    _topPx: unknown;
-    _top0_5: unknown;
-    _top1: unknown;
-    _top2: unknown;
-    _top3: unknown;
-    _top4: unknown;
-    _top5: unknown;
-    _top6: unknown;
-    _top7: unknown;
-    _top8: unknown;
-    _top9: unknown;
-    _top10: unknown;
-    _top11: unknown;
-    _top12: unknown;
-    _top14: unknown;
-    _top16: unknown;
-    _top20: unknown;
-    _top24: unknown;
-    _top28: unknown;
-    _top32: unknown;
-    _top36: unknown;
-    _top40: unknown;
-    _top44: unknown;
-    _top48: unknown;
-    _top52: unknown;
-    _top56: unknown;
-    _top60: unknown;
-    _top64: unknown;
-    _top72: unknown;
-    _top80: unknown;
-    _top96: unknown;
-    _top1_2: unknown;
-    _top1_3: unknown;
-    _top2_3: unknown;
-    _top1_4: unknown;
-    _top2_4: unknown;
-    _top3_4: unknown;
-    _top1_5: unknown;
-    _top2_5: unknown;
-    _top3_5: unknown;
-    _top4_5: unknown;
-    _top1_6: unknown;
-    _top2_6: unknown;
-    _top3_6: unknown;
-    _top4_6: unknown;
-    _top5_6: unknown;
-    _topFull: unknown;
-    right0: unknown;
-    rightPx: unknown;
-    right0_5: unknown;
-    right1: unknown;
-    right2: unknown;
-    right3: unknown;
-    right4: unknown;
-    right5: unknown;
-    right6: unknown;
-    right7: unknown;
-    right8: unknown;
-    right9: unknown;
-    right10: unknown;
-    right11: unknown;
-    right12: unknown;
-    right14: unknown;
-    right16: unknown;
-    right20: unknown;
-    right24: unknown;
-    right28: unknown;
-    right32: unknown;
-    right36: unknown;
-    right40: unknown;
-    right44: unknown;
-    right48: unknown;
-    right52: unknown;
-    right56: unknown;
-    right60: unknown;
-    right64: unknown;
-    right72: unknown;
-    right80: unknown;
-    right96: unknown;
-    right1_2: unknown;
-    right1_3: unknown;
-    right2_3: unknown;
-    right1_4: unknown;
-    right2_4: unknown;
-    right3_4: unknown;
-    right1_5: unknown;
-    right2_5: unknown;
-    right3_5: unknown;
-    right4_5: unknown;
-    right1_6: unknown;
-    right2_6: unknown;
-    right3_6: unknown;
-    right4_6: unknown;
-    right5_6: unknown;
-    rightFull: unknown;
-    _right0: unknown;
-    _rightPx: unknown;
-    _right0_5: unknown;
-    _right1: unknown;
-    _right2: unknown;
-    _right3: unknown;
-    _right4: unknown;
-    _right5: unknown;
-    _right6: unknown;
-    _right7: unknown;
-    _right8: unknown;
-    _right9: unknown;
-    _right10: unknown;
-    _right11: unknown;
-    _right12: unknown;
-    _right14: unknown;
-    _right16: unknown;
-    _right20: unknown;
-    _right24: unknown;
-    _right28: unknown;
-    _right32: unknown;
-    _right36: unknown;
-    _right40: unknown;
-    _right44: unknown;
-    _right48: unknown;
-    _right52: unknown;
-    _right56: unknown;
-    _right60: unknown;
-    _right64: unknown;
-    _right72: unknown;
-    _right80: unknown;
-    _right96: unknown;
-    _right1_2: unknown;
-    _right1_3: unknown;
-    _right2_3: unknown;
-    _right1_4: unknown;
-    _right2_4: unknown;
-    _right3_4: unknown;
-    _right1_5: unknown;
-    _right2_5: unknown;
-    _right3_5: unknown;
-    _right4_5: unknown;
-    _right1_6: unknown;
-    _right2_6: unknown;
-    _right3_6: unknown;
-    _right4_6: unknown;
-    _right5_6: unknown;
-    _rightFull: unknown;
-    bottom0: unknown;
-    bottomPx: unknown;
-    bottom0_5: unknown;
-    bottom1: unknown;
-    bottom2: unknown;
-    bottom3: unknown;
-    bottom4: unknown;
-    bottom5: unknown;
-    bottom6: unknown;
-    bottom7: unknown;
-    bottom8: unknown;
-    bottom9: unknown;
-    bottom10: unknown;
-    bottom11: unknown;
-    bottom12: unknown;
-    bottom14: unknown;
-    bottom16: unknown;
-    bottom20: unknown;
-    bottom24: unknown;
-    bottom28: unknown;
-    bottom32: unknown;
-    bottom36: unknown;
-    bottom40: unknown;
-    bottom44: unknown;
-    bottom48: unknown;
-    bottom52: unknown;
-    bottom56: unknown;
-    bottom60: unknown;
-    bottom64: unknown;
-    bottom72: unknown;
-    bottom80: unknown;
-    bottom96: unknown;
-    bottom1_2: unknown;
-    bottom1_3: unknown;
-    bottom2_3: unknown;
-    bottom1_4: unknown;
-    bottom2_4: unknown;
-    bottom3_4: unknown;
-    bottom1_5: unknown;
-    bottom2_5: unknown;
-    bottom3_5: unknown;
-    bottom4_5: unknown;
-    bottom1_6: unknown;
-    bottom2_6: unknown;
-    bottom3_6: unknown;
-    bottom4_6: unknown;
-    bottom5_6: unknown;
-    bottomFull: unknown;
-    _bottom0: unknown;
-    _bottomPx: unknown;
-    _bottom0_5: unknown;
-    _bottom1: unknown;
-    _bottom2: unknown;
-    _bottom3: unknown;
-    _bottom4: unknown;
-    _bottom5: unknown;
-    _bottom6: unknown;
-    _bottom7: unknown;
-    _bottom8: unknown;
-    _bottom9: unknown;
-    _bottom10: unknown;
-    _bottom11: unknown;
-    _bottom12: unknown;
-    _bottom14: unknown;
-    _bottom16: unknown;
-    _bottom20: unknown;
-    _bottom24: unknown;
-    _bottom28: unknown;
-    _bottom32: unknown;
-    _bottom36: unknown;
-    _bottom40: unknown;
-    _bottom44: unknown;
-    _bottom48: unknown;
-    _bottom52: unknown;
-    _bottom56: unknown;
-    _bottom60: unknown;
-    _bottom64: unknown;
-    _bottom72: unknown;
-    _bottom80: unknown;
-    _bottom96: unknown;
-    _bottom1_2: unknown;
-    _bottom1_3: unknown;
-    _bottom2_3: unknown;
-    _bottom1_4: unknown;
-    _bottom2_4: unknown;
-    _bottom3_4: unknown;
-    _bottom1_5: unknown;
-    _bottom2_5: unknown;
-    _bottom3_5: unknown;
-    _bottom4_5: unknown;
-    _bottom1_6: unknown;
-    _bottom2_6: unknown;
-    _bottom3_6: unknown;
-    _bottom4_6: unknown;
-    _bottom5_6: unknown;
-    _bottomFull: unknown;
-    left0: unknown;
-    leftPx: unknown;
-    left0_5: unknown;
-    left1: unknown;
-    left2: unknown;
-    left3: unknown;
-    left4: unknown;
-    left5: unknown;
-    left6: unknown;
-    left7: unknown;
-    left8: unknown;
-    left9: unknown;
-    left10: unknown;
-    left11: unknown;
-    left12: unknown;
-    left14: unknown;
-    left16: unknown;
-    left20: unknown;
-    left24: unknown;
-    left28: unknown;
-    left32: unknown;
-    left36: unknown;
-    left40: unknown;
-    left44: unknown;
-    left48: unknown;
-    left52: unknown;
-    left56: unknown;
-    left60: unknown;
-    left64: unknown;
-    left72: unknown;
-    left80: unknown;
-    left96: unknown;
-    left1_2: unknown;
-    left1_3: unknown;
-    left2_3: unknown;
-    left1_4: unknown;
-    left2_4: unknown;
-    left3_4: unknown;
-    left1_5: unknown;
-    left2_5: unknown;
-    left3_5: unknown;
-    left4_5: unknown;
-    left1_6: unknown;
-    left2_6: unknown;
-    left3_6: unknown;
-    left4_6: unknown;
-    left5_6: unknown;
-    leftFull: unknown;
-    _left0: unknown;
-    _leftPx: unknown;
-    _left0_5: unknown;
-    _left1: unknown;
-    _left2: unknown;
-    _left3: unknown;
-    _left4: unknown;
-    _left5: unknown;
-    _left6: unknown;
-    _left7: unknown;
-    _left8: unknown;
-    _left9: unknown;
-    _left10: unknown;
-    _left11: unknown;
-    _left12: unknown;
-    _left14: unknown;
-    _left16: unknown;
-    _left20: unknown;
-    _left24: unknown;
-    _left28: unknown;
-    _left32: unknown;
-    _left36: unknown;
-    _left40: unknown;
-    _left44: unknown;
-    _left48: unknown;
-    _left52: unknown;
-    _left56: unknown;
-    _left60: unknown;
-    _left64: unknown;
-    _left72: unknown;
-    _left80: unknown;
-    _left96: unknown;
-    _left1_2: unknown;
-    _left1_3: unknown;
-    _left2_3: unknown;
-    _left1_4: unknown;
-    _left2_4: unknown;
-    _left3_4: unknown;
-    _left1_5: unknown;
-    _left2_5: unknown;
-    _left3_5: unknown;
-    _left4_5: unknown;
-    _left1_6: unknown;
-    _left2_6: unknown;
-    _left3_6: unknown;
-    _left4_6: unknown;
-    _left5_6: unknown;
-    _leftFull: unknown;
-    start0: unknown;
-    startPx: unknown;
-    start0_5: unknown;
-    start1: unknown;
-    start2: unknown;
-    start3: unknown;
-    start4: unknown;
-    start5: unknown;
-    start6: unknown;
-    start7: unknown;
-    start8: unknown;
-    start9: unknown;
-    start10: unknown;
-    start11: unknown;
-    start12: unknown;
-    start14: unknown;
-    start16: unknown;
-    start20: unknown;
-    start24: unknown;
-    start28: unknown;
-    start32: unknown;
-    start36: unknown;
-    start40: unknown;
-    start44: unknown;
-    start48: unknown;
-    start52: unknown;
-    start56: unknown;
-    start60: unknown;
-    start64: unknown;
-    start72: unknown;
-    start80: unknown;
-    start96: unknown;
-    start1_2: unknown;
-    start1_3: unknown;
-    start2_3: unknown;
-    start1_4: unknown;
-    start2_4: unknown;
-    start3_4: unknown;
-    start1_5: unknown;
-    start2_5: unknown;
-    start3_5: unknown;
-    start4_5: unknown;
-    start1_6: unknown;
-    start2_6: unknown;
-    start3_6: unknown;
-    start4_6: unknown;
-    start5_6: unknown;
-    startFull: unknown;
-    _start0: unknown;
-    _startPx: unknown;
-    _start0_5: unknown;
-    _start1: unknown;
-    _start2: unknown;
-    _start3: unknown;
-    _start4: unknown;
-    _start5: unknown;
-    _start6: unknown;
-    _start7: unknown;
-    _start8: unknown;
-    _start9: unknown;
-    _start10: unknown;
-    _start11: unknown;
-    _start12: unknown;
-    _start14: unknown;
-    _start16: unknown;
-    _start20: unknown;
-    _start24: unknown;
-    _start28: unknown;
-    _start32: unknown;
-    _start36: unknown;
-    _start40: unknown;
-    _start44: unknown;
-    _start48: unknown;
-    _start52: unknown;
-    _start56: unknown;
-    _start60: unknown;
-    _start64: unknown;
-    _start72: unknown;
-    _start80: unknown;
-    _start96: unknown;
-    _start1_2: unknown;
-    _start1_3: unknown;
-    _start2_3: unknown;
-    _start1_4: unknown;
-    _start2_4: unknown;
-    _start3_4: unknown;
-    _start1_5: unknown;
-    _start2_5: unknown;
-    _start3_5: unknown;
-    _start4_5: unknown;
-    _start1_6: unknown;
-    _start2_6: unknown;
-    _start3_6: unknown;
-    _start4_6: unknown;
-    _start5_6: unknown;
-    _startFull: unknown;
-    end0: unknown;
-    endPx: unknown;
-    end0_5: unknown;
-    end1: unknown;
-    end2: unknown;
-    end3: unknown;
-    end4: unknown;
-    end5: unknown;
-    end6: unknown;
-    end7: unknown;
-    end8: unknown;
-    end9: unknown;
-    end10: unknown;
-    end11: unknown;
-    end12: unknown;
-    end14: unknown;
-    end16: unknown;
-    end20: unknown;
-    end24: unknown;
-    end28: unknown;
-    end32: unknown;
-    end36: unknown;
-    end40: unknown;
-    end44: unknown;
-    end48: unknown;
-    end52: unknown;
-    end56: unknown;
-    end60: unknown;
-    end64: unknown;
-    end72: unknown;
-    end80: unknown;
-    end96: unknown;
-    end1_2: unknown;
-    end1_3: unknown;
-    end2_3: unknown;
-    end1_4: unknown;
-    end2_4: unknown;
-    end3_4: unknown;
-    end1_5: unknown;
-    end2_5: unknown;
-    end3_5: unknown;
-    end4_5: unknown;
-    end1_6: unknown;
-    end2_6: unknown;
-    end3_6: unknown;
-    end4_6: unknown;
-    end5_6: unknown;
-    endFull: unknown;
-    _end0: unknown;
-    _endPx: unknown;
-    _end0_5: unknown;
-    _end1: unknown;
-    _end2: unknown;
-    _end3: unknown;
-    _end4: unknown;
-    _end5: unknown;
-    _end6: unknown;
-    _end7: unknown;
-    _end8: unknown;
-    _end9: unknown;
-    _end10: unknown;
-    _end11: unknown;
-    _end12: unknown;
-    _end14: unknown;
-    _end16: unknown;
-    _end20: unknown;
-    _end24: unknown;
-    _end28: unknown;
-    _end32: unknown;
-    _end36: unknown;
-    _end40: unknown;
-    _end44: unknown;
-    _end48: unknown;
-    _end52: unknown;
-    _end56: unknown;
-    _end60: unknown;
-    _end64: unknown;
-    _end72: unknown;
-    _end80: unknown;
-    _end96: unknown;
-    _end1_2: unknown;
-    _end1_3: unknown;
-    _end2_3: unknown;
-    _end1_4: unknown;
-    _end2_4: unknown;
-    _end3_4: unknown;
-    _end1_5: unknown;
-    _end2_5: unknown;
-    _end3_5: unknown;
-    _end4_5: unknown;
-    _end1_6: unknown;
-    _end2_6: unknown;
-    _end3_6: unknown;
-    _end4_6: unknown;
-    _end5_6: unknown;
-    _endFull: unknown;
-    tintPrimary: unknown;
-    tintPrimaryLight: unknown;
-    tintPrimaryDark: unknown;
-    tintPrimaryContrast: unknown;
-    tintSecondary: unknown;
-    tintSecondaryLight: unknown;
-    tintSecondaryDark: unknown;
-    tintSecondaryContrast: unknown;
-    tintInfo: unknown;
-    tintInfoLight: unknown;
-    tintInfoDark: unknown;
-    tintInfoContrast: unknown;
-    tintSuccess: unknown;
-    tintSuccessLight: unknown;
-    tintSuccessDark: unknown;
-    tintSuccessContrast: unknown;
-    tintError: unknown;
-    tintErrorLight: unknown;
-    tintErrorDark: unknown;
-    tintErrorContrast: unknown;
-    tintWarning: unknown;
-    tintWarningLight: unknown;
-    tintWarningDark: unknown;
-    tintWarningContrast: unknown;
-    tintPaper: unknown;
-    tintSelected: unknown;
-    tintDisabled: unknown;
-    tintFocused: unknown;
-    tintMuted: unknown;
-    tintWhite: unknown;
-    tintGray100: unknown;
-    tintGray200: unknown;
-    tintGray300: unknown;
-    tintGray400: unknown;
-    tintGray500: unknown;
-    tintGray600: unknown;
-    tintGray700: unknown;
-    tintGray800: unknown;
-    tintGray900: unknown;
-    tintBlack: unknown;
-    tintTransparent: unknown;
-    z0: unknown;
-    z10: unknown;
-    z20: unknown;
-    z30: unknown;
-    z40: unknown;
-    z50: unknown;
-}>;
+declare const _default: (theme: import("../theme").ThemeProps) => {
+    flex: {
+        display: "flex";
+    };
+    hidden: {
+        display: "none";
+    };
+    resizeContain: {
+        resizeMode: "contain";
+    };
+    resizeCover: {
+        resizeMode: "cover";
+    };
+    resizeStretch: {
+        resizeMode: "stretch";
+    };
+    resizeCenter: {
+        resizeMode: "center";
+    };
+    resizeRepeat: {
+        resizeMode: "repeat";
+    };
+    overflowVisible: {
+        overflow: "visible";
+    };
+    overflowHidden: {
+        overflow: "hidden";
+    };
+    relative: {
+        position: "relative";
+    };
+    absolute: {
+        position: "absolute";
+    };
+    inset0: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    insetPx: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset0_5: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset1: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset2: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset3: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset4: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset5: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset6: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset7: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset8: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset9: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset10: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset11: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset12: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset14: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset16: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset20: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset24: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset28: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset32: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset36: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset40: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset44: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset48: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset52: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset56: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset60: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset64: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset72: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset80: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset96: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset1_2: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset1_3: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset2_3: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset1_4: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset2_4: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset3_4: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset1_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset2_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset3_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset4_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    insetY0: {
+        top: number;
+        bottom: number;
+    };
+    insetYPx: {
+        top: number;
+        bottom: number;
+    };
+    insetY0_5: {
+        top: number;
+        bottom: number;
+    };
+    insetY1: {
+        top: number;
+        bottom: number;
+    };
+    insetY2: {
+        top: number;
+        bottom: number;
+    };
+    insetY3: {
+        top: number;
+        bottom: number;
+    };
+    insetY4: {
+        top: number;
+        bottom: number;
+    };
+    insetY5: {
+        top: number;
+        bottom: number;
+    };
+    insetY6: {
+        top: number;
+        bottom: number;
+    };
+    insetY7: {
+        top: number;
+        bottom: number;
+    };
+    insetY8: {
+        top: number;
+        bottom: number;
+    };
+    insetY9: {
+        top: number;
+        bottom: number;
+    };
+    insetY10: {
+        top: number;
+        bottom: number;
+    };
+    insetY11: {
+        top: number;
+        bottom: number;
+    };
+    insetY12: {
+        top: number;
+        bottom: number;
+    };
+    insetY14: {
+        top: number;
+        bottom: number;
+    };
+    insetY16: {
+        top: number;
+        bottom: number;
+    };
+    insetY20: {
+        top: number;
+        bottom: number;
+    };
+    insetY24: {
+        top: number;
+        bottom: number;
+    };
+    insetY28: {
+        top: number;
+        bottom: number;
+    };
+    insetY32: {
+        top: number;
+        bottom: number;
+    };
+    insetY36: {
+        top: number;
+        bottom: number;
+    };
+    insetY40: {
+        top: number;
+        bottom: number;
+    };
+    insetY44: {
+        top: number;
+        bottom: number;
+    };
+    insetY48: {
+        top: number;
+        bottom: number;
+    };
+    insetY52: {
+        top: number;
+        bottom: number;
+    };
+    insetY56: {
+        top: number;
+        bottom: number;
+    };
+    insetY60: {
+        top: number;
+        bottom: number;
+    };
+    insetY64: {
+        top: number;
+        bottom: number;
+    };
+    insetY72: {
+        top: number;
+        bottom: number;
+    };
+    insetY80: {
+        top: number;
+        bottom: number;
+    };
+    insetY96: {
+        top: number;
+        bottom: number;
+    };
+    insetX0: {
+        left: number;
+        right: number;
+    };
+    insetXPx: {
+        left: number;
+        right: number;
+    };
+    insetX0_5: {
+        left: number;
+        right: number;
+    };
+    insetX1: {
+        left: number;
+        right: number;
+    };
+    insetX2: {
+        left: number;
+        right: number;
+    };
+    insetX3: {
+        left: number;
+        right: number;
+    };
+    insetX4: {
+        left: number;
+        right: number;
+    };
+    insetX5: {
+        left: number;
+        right: number;
+    };
+    insetX6: {
+        left: number;
+        right: number;
+    };
+    insetX7: {
+        left: number;
+        right: number;
+    };
+    insetX8: {
+        left: number;
+        right: number;
+    };
+    insetX9: {
+        left: number;
+        right: number;
+    };
+    insetX10: {
+        left: number;
+        right: number;
+    };
+    insetX11: {
+        left: number;
+        right: number;
+    };
+    insetX12: {
+        left: number;
+        right: number;
+    };
+    insetX14: {
+        left: number;
+        right: number;
+    };
+    insetX16: {
+        left: number;
+        right: number;
+    };
+    insetX20: {
+        left: number;
+        right: number;
+    };
+    insetX24: {
+        left: number;
+        right: number;
+    };
+    insetX28: {
+        left: number;
+        right: number;
+    };
+    insetX32: {
+        left: number;
+        right: number;
+    };
+    insetX36: {
+        left: number;
+        right: number;
+    };
+    insetX40: {
+        left: number;
+        right: number;
+    };
+    insetX44: {
+        left: number;
+        right: number;
+    };
+    insetX48: {
+        left: number;
+        right: number;
+    };
+    insetX52: {
+        left: number;
+        right: number;
+    };
+    insetX56: {
+        left: number;
+        right: number;
+    };
+    insetX60: {
+        left: number;
+        right: number;
+    };
+    insetX64: {
+        left: number;
+        right: number;
+    };
+    insetX72: {
+        left: number;
+        right: number;
+    };
+    insetX80: {
+        left: number;
+        right: number;
+    };
+    insetX96: {
+        left: number;
+        right: number;
+    };
+    _inset0: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _insetPx: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset0_5: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset1: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset2: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset3: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset4: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset5: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset6: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset7: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset8: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset9: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset10: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset11: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset12: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset14: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset16: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset20: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset24: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset28: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset32: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset36: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset40: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset44: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset48: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset52: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset56: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset60: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset64: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset72: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset80: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset96: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset1_2: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset1_3: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset2_3: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset1_4: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset2_4: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset3_4: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset1_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset2_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset3_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset4_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _insetY0: {
+        top: number;
+        bottom: number;
+    };
+    _insetYPx: {
+        top: number;
+        bottom: number;
+    };
+    _insetY0_5: {
+        top: number;
+        bottom: number;
+    };
+    _insetY1: {
+        top: number;
+        bottom: number;
+    };
+    _insetY2: {
+        top: number;
+        bottom: number;
+    };
+    _insetY3: {
+        top: number;
+        bottom: number;
+    };
+    _insetY4: {
+        top: number;
+        bottom: number;
+    };
+    _insetY5: {
+        top: number;
+        bottom: number;
+    };
+    _insetY6: {
+        top: number;
+        bottom: number;
+    };
+    _insetY7: {
+        top: number;
+        bottom: number;
+    };
+    _insetY8: {
+        top: number;
+        bottom: number;
+    };
+    _insetY9: {
+        top: number;
+        bottom: number;
+    };
+    _insetY10: {
+        top: number;
+        bottom: number;
+    };
+    _insetY11: {
+        top: number;
+        bottom: number;
+    };
+    _insetY12: {
+        top: number;
+        bottom: number;
+    };
+    _insetY14: {
+        top: number;
+        bottom: number;
+    };
+    _insetY16: {
+        top: number;
+        bottom: number;
+    };
+    _insetY20: {
+        top: number;
+        bottom: number;
+    };
+    _insetY24: {
+        top: number;
+        bottom: number;
+    };
+    _insetY28: {
+        top: number;
+        bottom: number;
+    };
+    _insetY32: {
+        top: number;
+        bottom: number;
+    };
+    _insetY36: {
+        top: number;
+        bottom: number;
+    };
+    _insetY40: {
+        top: number;
+        bottom: number;
+    };
+    _insetY44: {
+        top: number;
+        bottom: number;
+    };
+    _insetY48: {
+        top: number;
+        bottom: number;
+    };
+    _insetY52: {
+        top: number;
+        bottom: number;
+    };
+    _insetY56: {
+        top: number;
+        bottom: number;
+    };
+    _insetY60: {
+        top: number;
+        bottom: number;
+    };
+    _insetY64: {
+        top: number;
+        bottom: number;
+    };
+    _insetY72: {
+        top: number;
+        bottom: number;
+    };
+    _insetY80: {
+        top: number;
+        bottom: number;
+    };
+    _insetY96: {
+        top: number;
+        bottom: number;
+    };
+    _insetX0: {
+        left: number;
+        right: number;
+    };
+    _insetXPx: {
+        left: number;
+        right: number;
+    };
+    _insetX0_5: {
+        left: number;
+        right: number;
+    };
+    _insetX1: {
+        left: number;
+        right: number;
+    };
+    _insetX2: {
+        left: number;
+        right: number;
+    };
+    _insetX3: {
+        left: number;
+        right: number;
+    };
+    _insetX4: {
+        left: number;
+        right: number;
+    };
+    _insetX5: {
+        left: number;
+        right: number;
+    };
+    _insetX6: {
+        left: number;
+        right: number;
+    };
+    _insetX7: {
+        left: number;
+        right: number;
+    };
+    _insetX8: {
+        left: number;
+        right: number;
+    };
+    _insetX9: {
+        left: number;
+        right: number;
+    };
+    _insetX10: {
+        left: number;
+        right: number;
+    };
+    _insetX11: {
+        left: number;
+        right: number;
+    };
+    _insetX12: {
+        left: number;
+        right: number;
+    };
+    _insetX14: {
+        left: number;
+        right: number;
+    };
+    _insetX16: {
+        left: number;
+        right: number;
+    };
+    _insetX20: {
+        left: number;
+        right: number;
+    };
+    _insetX24: {
+        left: number;
+        right: number;
+    };
+    _insetX28: {
+        left: number;
+        right: number;
+    };
+    _insetX32: {
+        left: number;
+        right: number;
+    };
+    _insetX36: {
+        left: number;
+        right: number;
+    };
+    _insetX40: {
+        left: number;
+        right: number;
+    };
+    _insetX44: {
+        left: number;
+        right: number;
+    };
+    _insetX48: {
+        left: number;
+        right: number;
+    };
+    _insetX52: {
+        left: number;
+        right: number;
+    };
+    _insetX56: {
+        left: number;
+        right: number;
+    };
+    _insetX60: {
+        left: number;
+        right: number;
+    };
+    _insetX64: {
+        left: number;
+        right: number;
+    };
+    _insetX72: {
+        left: number;
+        right: number;
+    };
+    _insetX80: {
+        left: number;
+        right: number;
+    };
+    _insetX96: {
+        left: number;
+        right: number;
+    };
+    top0: {
+        top: number;
+    };
+    topPx: {
+        top: number;
+    };
+    top0_5: {
+        top: number;
+    };
+    top1: {
+        top: number;
+    };
+    top2: {
+        top: number;
+    };
+    top3: {
+        top: number;
+    };
+    top4: {
+        top: number;
+    };
+    top5: {
+        top: number;
+    };
+    top6: {
+        top: number;
+    };
+    top7: {
+        top: number;
+    };
+    top8: {
+        top: number;
+    };
+    top9: {
+        top: number;
+    };
+    top10: {
+        top: number;
+    };
+    top11: {
+        top: number;
+    };
+    top12: {
+        top: number;
+    };
+    top14: {
+        top: number;
+    };
+    top16: {
+        top: number;
+    };
+    top20: {
+        top: number;
+    };
+    top24: {
+        top: number;
+    };
+    top28: {
+        top: number;
+    };
+    top32: {
+        top: number;
+    };
+    top36: {
+        top: number;
+    };
+    top40: {
+        top: number;
+    };
+    top44: {
+        top: number;
+    };
+    top48: {
+        top: number;
+    };
+    top52: {
+        top: number;
+    };
+    top56: {
+        top: number;
+    };
+    top60: {
+        top: number;
+    };
+    top64: {
+        top: number;
+    };
+    top72: {
+        top: number;
+    };
+    top80: {
+        top: number;
+    };
+    top96: {
+        top: number;
+    };
+    top1_2: {
+        top: string;
+    };
+    top1_3: {
+        top: string;
+    };
+    top2_3: {
+        top: string;
+    };
+    top1_4: {
+        top: string;
+    };
+    top2_4: {
+        top: string;
+    };
+    top3_4: {
+        top: string;
+    };
+    top1_5: {
+        top: string;
+    };
+    top2_5: {
+        top: string;
+    };
+    top3_5: {
+        top: string;
+    };
+    top4_5: {
+        top: string;
+    };
+    top1_6: {
+        top: string;
+    };
+    top2_6: {
+        top: string;
+    };
+    top3_6: {
+        top: string;
+    };
+    top4_6: {
+        top: string;
+    };
+    top5_6: {
+        top: string;
+    };
+    topFull: {
+        top: string;
+    };
+    _top0: {
+        top: number;
+    };
+    _topPx: {
+        top: number;
+    };
+    _top0_5: {
+        top: number;
+    };
+    _top1: {
+        top: number;
+    };
+    _top2: {
+        top: number;
+    };
+    _top3: {
+        top: number;
+    };
+    _top4: {
+        top: number;
+    };
+    _top5: {
+        top: number;
+    };
+    _top6: {
+        top: number;
+    };
+    _top7: {
+        top: number;
+    };
+    _top8: {
+        top: number;
+    };
+    _top9: {
+        top: number;
+    };
+    _top10: {
+        top: number;
+    };
+    _top11: {
+        top: number;
+    };
+    _top12: {
+        top: number;
+    };
+    _top14: {
+        top: number;
+    };
+    _top16: {
+        top: number;
+    };
+    _top20: {
+        top: number;
+    };
+    _top24: {
+        top: number;
+    };
+    _top28: {
+        top: number;
+    };
+    _top32: {
+        top: number;
+    };
+    _top36: {
+        top: number;
+    };
+    _top40: {
+        top: number;
+    };
+    _top44: {
+        top: number;
+    };
+    _top48: {
+        top: number;
+    };
+    _top52: {
+        top: number;
+    };
+    _top56: {
+        top: number;
+    };
+    _top60: {
+        top: number;
+    };
+    _top64: {
+        top: number;
+    };
+    _top72: {
+        top: number;
+    };
+    _top80: {
+        top: number;
+    };
+    _top96: {
+        top: number;
+    };
+    _top1_2: {
+        top: string;
+    };
+    _top1_3: {
+        top: string;
+    };
+    _top2_3: {
+        top: string;
+    };
+    _top1_4: {
+        top: string;
+    };
+    _top2_4: {
+        top: string;
+    };
+    _top3_4: {
+        top: string;
+    };
+    _top1_5: {
+        top: string;
+    };
+    _top2_5: {
+        top: string;
+    };
+    _top3_5: {
+        top: string;
+    };
+    _top4_5: {
+        top: string;
+    };
+    _top1_6: {
+        top: string;
+    };
+    _top2_6: {
+        top: string;
+    };
+    _top3_6: {
+        top: string;
+    };
+    _top4_6: {
+        top: string;
+    };
+    _top5_6: {
+        top: string;
+    };
+    _topFull: {
+        top: string;
+    };
+    right0: {
+        right: number;
+    };
+    rightPx: {
+        right: number;
+    };
+    right0_5: {
+        right: number;
+    };
+    right1: {
+        right: number;
+    };
+    right2: {
+        right: number;
+    };
+    right3: {
+        right: number;
+    };
+    right4: {
+        right: number;
+    };
+    right5: {
+        right: number;
+    };
+    right6: {
+        right: number;
+    };
+    right7: {
+        right: number;
+    };
+    right8: {
+        right: number;
+    };
+    right9: {
+        right: number;
+    };
+    right10: {
+        right: number;
+    };
+    right11: {
+        right: number;
+    };
+    right12: {
+        right: number;
+    };
+    right14: {
+        right: number;
+    };
+    right16: {
+        right: number;
+    };
+    right20: {
+        right: number;
+    };
+    right24: {
+        right: number;
+    };
+    right28: {
+        right: number;
+    };
+    right32: {
+        right: number;
+    };
+    right36: {
+        right: number;
+    };
+    right40: {
+        right: number;
+    };
+    right44: {
+        right: number;
+    };
+    right48: {
+        right: number;
+    };
+    right52: {
+        right: number;
+    };
+    right56: {
+        right: number;
+    };
+    right60: {
+        right: number;
+    };
+    right64: {
+        right: number;
+    };
+    right72: {
+        right: number;
+    };
+    right80: {
+        right: number;
+    };
+    right96: {
+        right: number;
+    };
+    right1_2: {
+        right: string;
+    };
+    right1_3: {
+        right: string;
+    };
+    right2_3: {
+        right: string;
+    };
+    right1_4: {
+        right: string;
+    };
+    right2_4: {
+        right: string;
+    };
+    right3_4: {
+        right: string;
+    };
+    right1_5: {
+        right: string;
+    };
+    right2_5: {
+        right: string;
+    };
+    right3_5: {
+        right: string;
+    };
+    right4_5: {
+        right: string;
+    };
+    right1_6: {
+        right: string;
+    };
+    right2_6: {
+        right: string;
+    };
+    right3_6: {
+        right: string;
+    };
+    right4_6: {
+        right: string;
+    };
+    right5_6: {
+        right: string;
+    };
+    rightFull: {
+        right: string;
+    };
+    _right0: {
+        right: number;
+    };
+    _rightPx: {
+        right: number;
+    };
+    _right0_5: {
+        right: number;
+    };
+    _right1: {
+        right: number;
+    };
+    _right2: {
+        right: number;
+    };
+    _right3: {
+        right: number;
+    };
+    _right4: {
+        right: number;
+    };
+    _right5: {
+        right: number;
+    };
+    _right6: {
+        right: number;
+    };
+    _right7: {
+        right: number;
+    };
+    _right8: {
+        right: number;
+    };
+    _right9: {
+        right: number;
+    };
+    _right10: {
+        right: number;
+    };
+    _right11: {
+        right: number;
+    };
+    _right12: {
+        right: number;
+    };
+    _right14: {
+        right: number;
+    };
+    _right16: {
+        right: number;
+    };
+    _right20: {
+        right: number;
+    };
+    _right24: {
+        right: number;
+    };
+    _right28: {
+        right: number;
+    };
+    _right32: {
+        right: number;
+    };
+    _right36: {
+        right: number;
+    };
+    _right40: {
+        right: number;
+    };
+    _right44: {
+        right: number;
+    };
+    _right48: {
+        right: number;
+    };
+    _right52: {
+        right: number;
+    };
+    _right56: {
+        right: number;
+    };
+    _right60: {
+        right: number;
+    };
+    _right64: {
+        right: number;
+    };
+    _right72: {
+        right: number;
+    };
+    _right80: {
+        right: number;
+    };
+    _right96: {
+        right: number;
+    };
+    _right1_2: {
+        right: string;
+    };
+    _right1_3: {
+        right: string;
+    };
+    _right2_3: {
+        right: string;
+    };
+    _right1_4: {
+        right: string;
+    };
+    _right2_4: {
+        right: string;
+    };
+    _right3_4: {
+        right: string;
+    };
+    _right1_5: {
+        right: string;
+    };
+    _right2_5: {
+        right: string;
+    };
+    _right3_5: {
+        right: string;
+    };
+    _right4_5: {
+        right: string;
+    };
+    _right1_6: {
+        right: string;
+    };
+    _right2_6: {
+        right: string;
+    };
+    _right3_6: {
+        right: string;
+    };
+    _right4_6: {
+        right: string;
+    };
+    _right5_6: {
+        right: string;
+    };
+    _rightFull: {
+        right: string;
+    };
+    bottom0: {
+        bottom: number;
+    };
+    bottomPx: {
+        bottom: number;
+    };
+    bottom0_5: {
+        bottom: number;
+    };
+    bottom1: {
+        bottom: number;
+    };
+    bottom2: {
+        bottom: number;
+    };
+    bottom3: {
+        bottom: number;
+    };
+    bottom4: {
+        bottom: number;
+    };
+    bottom5: {
+        bottom: number;
+    };
+    bottom6: {
+        bottom: number;
+    };
+    bottom7: {
+        bottom: number;
+    };
+    bottom8: {
+        bottom: number;
+    };
+    bottom9: {
+        bottom: number;
+    };
+    bottom10: {
+        bottom: number;
+    };
+    bottom11: {
+        bottom: number;
+    };
+    bottom12: {
+        bottom: number;
+    };
+    bottom14: {
+        bottom: number;
+    };
+    bottom16: {
+        bottom: number;
+    };
+    bottom20: {
+        bottom: number;
+    };
+    bottom24: {
+        bottom: number;
+    };
+    bottom28: {
+        bottom: number;
+    };
+    bottom32: {
+        bottom: number;
+    };
+    bottom36: {
+        bottom: number;
+    };
+    bottom40: {
+        bottom: number;
+    };
+    bottom44: {
+        bottom: number;
+    };
+    bottom48: {
+        bottom: number;
+    };
+    bottom52: {
+        bottom: number;
+    };
+    bottom56: {
+        bottom: number;
+    };
+    bottom60: {
+        bottom: number;
+    };
+    bottom64: {
+        bottom: number;
+    };
+    bottom72: {
+        bottom: number;
+    };
+    bottom80: {
+        bottom: number;
+    };
+    bottom96: {
+        bottom: number;
+    };
+    bottom1_2: {
+        bottom: string;
+    };
+    bottom1_3: {
+        bottom: string;
+    };
+    bottom2_3: {
+        bottom: string;
+    };
+    bottom1_4: {
+        bottom: string;
+    };
+    bottom2_4: {
+        bottom: string;
+    };
+    bottom3_4: {
+        bottom: string;
+    };
+    bottom1_5: {
+        bottom: string;
+    };
+    bottom2_5: {
+        bottom: string;
+    };
+    bottom3_5: {
+        bottom: string;
+    };
+    bottom4_5: {
+        bottom: string;
+    };
+    bottom1_6: {
+        bottom: string;
+    };
+    bottom2_6: {
+        bottom: string;
+    };
+    bottom3_6: {
+        bottom: string;
+    };
+    bottom4_6: {
+        bottom: string;
+    };
+    bottom5_6: {
+        bottom: string;
+    };
+    bottomFull: {
+        bottom: string;
+    };
+    _bottom0: {
+        bottom: number;
+    };
+    _bottomPx: {
+        bottom: number;
+    };
+    _bottom0_5: {
+        bottom: number;
+    };
+    _bottom1: {
+        bottom: number;
+    };
+    _bottom2: {
+        bottom: number;
+    };
+    _bottom3: {
+        bottom: number;
+    };
+    _bottom4: {
+        bottom: number;
+    };
+    _bottom5: {
+        bottom: number;
+    };
+    _bottom6: {
+        bottom: number;
+    };
+    _bottom7: {
+        bottom: number;
+    };
+    _bottom8: {
+        bottom: number;
+    };
+    _bottom9: {
+        bottom: number;
+    };
+    _bottom10: {
+        bottom: number;
+    };
+    _bottom11: {
+        bottom: number;
+    };
+    _bottom12: {
+        bottom: number;
+    };
+    _bottom14: {
+        bottom: number;
+    };
+    _bottom16: {
+        bottom: number;
+    };
+    _bottom20: {
+        bottom: number;
+    };
+    _bottom24: {
+        bottom: number;
+    };
+    _bottom28: {
+        bottom: number;
+    };
+    _bottom32: {
+        bottom: number;
+    };
+    _bottom36: {
+        bottom: number;
+    };
+    _bottom40: {
+        bottom: number;
+    };
+    _bottom44: {
+        bottom: number;
+    };
+    _bottom48: {
+        bottom: number;
+    };
+    _bottom52: {
+        bottom: number;
+    };
+    _bottom56: {
+        bottom: number;
+    };
+    _bottom60: {
+        bottom: number;
+    };
+    _bottom64: {
+        bottom: number;
+    };
+    _bottom72: {
+        bottom: number;
+    };
+    _bottom80: {
+        bottom: number;
+    };
+    _bottom96: {
+        bottom: number;
+    };
+    _bottom1_2: {
+        bottom: string;
+    };
+    _bottom1_3: {
+        bottom: string;
+    };
+    _bottom2_3: {
+        bottom: string;
+    };
+    _bottom1_4: {
+        bottom: string;
+    };
+    _bottom2_4: {
+        bottom: string;
+    };
+    _bottom3_4: {
+        bottom: string;
+    };
+    _bottom1_5: {
+        bottom: string;
+    };
+    _bottom2_5: {
+        bottom: string;
+    };
+    _bottom3_5: {
+        bottom: string;
+    };
+    _bottom4_5: {
+        bottom: string;
+    };
+    _bottom1_6: {
+        bottom: string;
+    };
+    _bottom2_6: {
+        bottom: string;
+    };
+    _bottom3_6: {
+        bottom: string;
+    };
+    _bottom4_6: {
+        bottom: string;
+    };
+    _bottom5_6: {
+        bottom: string;
+    };
+    _bottomFull: {
+        bottom: string;
+    };
+    left0: {
+        left: number;
+    };
+    leftPx: {
+        left: number;
+    };
+    left0_5: {
+        left: number;
+    };
+    left1: {
+        left: number;
+    };
+    left2: {
+        left: number;
+    };
+    left3: {
+        left: number;
+    };
+    left4: {
+        left: number;
+    };
+    left5: {
+        left: number;
+    };
+    left6: {
+        left: number;
+    };
+    left7: {
+        left: number;
+    };
+    left8: {
+        left: number;
+    };
+    left9: {
+        left: number;
+    };
+    left10: {
+        left: number;
+    };
+    left11: {
+        left: number;
+    };
+    left12: {
+        left: number;
+    };
+    left14: {
+        left: number;
+    };
+    left16: {
+        left: number;
+    };
+    left20: {
+        left: number;
+    };
+    left24: {
+        left: number;
+    };
+    left28: {
+        left: number;
+    };
+    left32: {
+        left: number;
+    };
+    left36: {
+        left: number;
+    };
+    left40: {
+        left: number;
+    };
+    left44: {
+        left: number;
+    };
+    left48: {
+        left: number;
+    };
+    left52: {
+        left: number;
+    };
+    left56: {
+        left: number;
+    };
+    left60: {
+        left: number;
+    };
+    left64: {
+        left: number;
+    };
+    left72: {
+        left: number;
+    };
+    left80: {
+        left: number;
+    };
+    left96: {
+        left: number;
+    };
+    left1_2: {
+        left: string;
+    };
+    left1_3: {
+        left: string;
+    };
+    left2_3: {
+        left: string;
+    };
+    left1_4: {
+        left: string;
+    };
+    left2_4: {
+        left: string;
+    };
+    left3_4: {
+        left: string;
+    };
+    left1_5: {
+        left: string;
+    };
+    left2_5: {
+        left: string;
+    };
+    left3_5: {
+        left: string;
+    };
+    left4_5: {
+        left: string;
+    };
+    left1_6: {
+        left: string;
+    };
+    left2_6: {
+        left: string;
+    };
+    left3_6: {
+        left: string;
+    };
+    left4_6: {
+        left: string;
+    };
+    left5_6: {
+        left: string;
+    };
+    leftFull: {
+        left: string;
+    };
+    _left0: {
+        left: number;
+    };
+    _leftPx: {
+        left: number;
+    };
+    _left0_5: {
+        left: number;
+    };
+    _left1: {
+        left: number;
+    };
+    _left2: {
+        left: number;
+    };
+    _left3: {
+        left: number;
+    };
+    _left4: {
+        left: number;
+    };
+    _left5: {
+        left: number;
+    };
+    _left6: {
+        left: number;
+    };
+    _left7: {
+        left: number;
+    };
+    _left8: {
+        left: number;
+    };
+    _left9: {
+        left: number;
+    };
+    _left10: {
+        left: number;
+    };
+    _left11: {
+        left: number;
+    };
+    _left12: {
+        left: number;
+    };
+    _left14: {
+        left: number;
+    };
+    _left16: {
+        left: number;
+    };
+    _left20: {
+        left: number;
+    };
+    _left24: {
+        left: number;
+    };
+    _left28: {
+        left: number;
+    };
+    _left32: {
+        left: number;
+    };
+    _left36: {
+        left: number;
+    };
+    _left40: {
+        left: number;
+    };
+    _left44: {
+        left: number;
+    };
+    _left48: {
+        left: number;
+    };
+    _left52: {
+        left: number;
+    };
+    _left56: {
+        left: number;
+    };
+    _left60: {
+        left: number;
+    };
+    _left64: {
+        left: number;
+    };
+    _left72: {
+        left: number;
+    };
+    _left80: {
+        left: number;
+    };
+    _left96: {
+        left: number;
+    };
+    _left1_2: {
+        left: string;
+    };
+    _left1_3: {
+        left: string;
+    };
+    _left2_3: {
+        left: string;
+    };
+    _left1_4: {
+        left: string;
+    };
+    _left2_4: {
+        left: string;
+    };
+    _left3_4: {
+        left: string;
+    };
+    _left1_5: {
+        left: string;
+    };
+    _left2_5: {
+        left: string;
+    };
+    _left3_5: {
+        left: string;
+    };
+    _left4_5: {
+        left: string;
+    };
+    _left1_6: {
+        left: string;
+    };
+    _left2_6: {
+        left: string;
+    };
+    _left3_6: {
+        left: string;
+    };
+    _left4_6: {
+        left: string;
+    };
+    _left5_6: {
+        left: string;
+    };
+    _leftFull: {
+        left: string;
+    };
+    start0: {
+        start: number;
+    };
+    startPx: {
+        start: number;
+    };
+    start0_5: {
+        start: number;
+    };
+    start1: {
+        start: number;
+    };
+    start2: {
+        start: number;
+    };
+    start3: {
+        start: number;
+    };
+    start4: {
+        start: number;
+    };
+    start5: {
+        start: number;
+    };
+    start6: {
+        start: number;
+    };
+    start7: {
+        start: number;
+    };
+    start8: {
+        start: number;
+    };
+    start9: {
+        start: number;
+    };
+    start10: {
+        start: number;
+    };
+    start11: {
+        start: number;
+    };
+    start12: {
+        start: number;
+    };
+    start14: {
+        start: number;
+    };
+    start16: {
+        start: number;
+    };
+    start20: {
+        start: number;
+    };
+    start24: {
+        start: number;
+    };
+    start28: {
+        start: number;
+    };
+    start32: {
+        start: number;
+    };
+    start36: {
+        start: number;
+    };
+    start40: {
+        start: number;
+    };
+    start44: {
+        start: number;
+    };
+    start48: {
+        start: number;
+    };
+    start52: {
+        start: number;
+    };
+    start56: {
+        start: number;
+    };
+    start60: {
+        start: number;
+    };
+    start64: {
+        start: number;
+    };
+    start72: {
+        start: number;
+    };
+    start80: {
+        start: number;
+    };
+    start96: {
+        start: number;
+    };
+    start1_2: {
+        start: string;
+    };
+    start1_3: {
+        start: string;
+    };
+    start2_3: {
+        start: string;
+    };
+    start1_4: {
+        start: string;
+    };
+    start2_4: {
+        start: string;
+    };
+    start3_4: {
+        start: string;
+    };
+    start1_5: {
+        start: string;
+    };
+    start2_5: {
+        start: string;
+    };
+    start3_5: {
+        start: string;
+    };
+    start4_5: {
+        start: string;
+    };
+    start1_6: {
+        start: string;
+    };
+    start2_6: {
+        start: string;
+    };
+    start3_6: {
+        start: string;
+    };
+    start4_6: {
+        start: string;
+    };
+    start5_6: {
+        start: string;
+    };
+    startFull: {
+        start: string;
+    };
+    _start0: {
+        start: number;
+    };
+    _startPx: {
+        start: number;
+    };
+    _start0_5: {
+        start: number;
+    };
+    _start1: {
+        start: number;
+    };
+    _start2: {
+        start: number;
+    };
+    _start3: {
+        start: number;
+    };
+    _start4: {
+        start: number;
+    };
+    _start5: {
+        start: number;
+    };
+    _start6: {
+        start: number;
+    };
+    _start7: {
+        start: number;
+    };
+    _start8: {
+        start: number;
+    };
+    _start9: {
+        start: number;
+    };
+    _start10: {
+        start: number;
+    };
+    _start11: {
+        start: number;
+    };
+    _start12: {
+        start: number;
+    };
+    _start14: {
+        start: number;
+    };
+    _start16: {
+        start: number;
+    };
+    _start20: {
+        start: number;
+    };
+    _start24: {
+        start: number;
+    };
+    _start28: {
+        start: number;
+    };
+    _start32: {
+        start: number;
+    };
+    _start36: {
+        start: number;
+    };
+    _start40: {
+        start: number;
+    };
+    _start44: {
+        start: number;
+    };
+    _start48: {
+        start: number;
+    };
+    _start52: {
+        start: number;
+    };
+    _start56: {
+        start: number;
+    };
+    _start60: {
+        start: number;
+    };
+    _start64: {
+        start: number;
+    };
+    _start72: {
+        start: number;
+    };
+    _start80: {
+        start: number;
+    };
+    _start96: {
+        start: number;
+    };
+    _start1_2: {
+        start: string;
+    };
+    _start1_3: {
+        start: string;
+    };
+    _start2_3: {
+        start: string;
+    };
+    _start1_4: {
+        start: string;
+    };
+    _start2_4: {
+        start: string;
+    };
+    _start3_4: {
+        start: string;
+    };
+    _start1_5: {
+        start: string;
+    };
+    _start2_5: {
+        start: string;
+    };
+    _start3_5: {
+        start: string;
+    };
+    _start4_5: {
+        start: string;
+    };
+    _start1_6: {
+        start: string;
+    };
+    _start2_6: {
+        start: string;
+    };
+    _start3_6: {
+        start: string;
+    };
+    _start4_6: {
+        start: string;
+    };
+    _start5_6: {
+        start: string;
+    };
+    _startFull: {
+        start: string;
+    };
+    end0: {
+        end: number;
+    };
+    endPx: {
+        end: number;
+    };
+    end0_5: {
+        end: number;
+    };
+    end1: {
+        end: number;
+    };
+    end2: {
+        end: number;
+    };
+    end3: {
+        end: number;
+    };
+    end4: {
+        end: number;
+    };
+    end5: {
+        end: number;
+    };
+    end6: {
+        end: number;
+    };
+    end7: {
+        end: number;
+    };
+    end8: {
+        end: number;
+    };
+    end9: {
+        end: number;
+    };
+    end10: {
+        end: number;
+    };
+    end11: {
+        end: number;
+    };
+    end12: {
+        end: number;
+    };
+    end14: {
+        end: number;
+    };
+    end16: {
+        end: number;
+    };
+    end20: {
+        end: number;
+    };
+    end24: {
+        end: number;
+    };
+    end28: {
+        end: number;
+    };
+    end32: {
+        end: number;
+    };
+    end36: {
+        end: number;
+    };
+    end40: {
+        end: number;
+    };
+    end44: {
+        end: number;
+    };
+    end48: {
+        end: number;
+    };
+    end52: {
+        end: number;
+    };
+    end56: {
+        end: number;
+    };
+    end60: {
+        end: number;
+    };
+    end64: {
+        end: number;
+    };
+    end72: {
+        end: number;
+    };
+    end80: {
+        end: number;
+    };
+    end96: {
+        end: number;
+    };
+    end1_2: {
+        end: string;
+    };
+    end1_3: {
+        end: string;
+    };
+    end2_3: {
+        end: string;
+    };
+    end1_4: {
+        end: string;
+    };
+    end2_4: {
+        end: string;
+    };
+    end3_4: {
+        end: string;
+    };
+    end1_5: {
+        end: string;
+    };
+    end2_5: {
+        end: string;
+    };
+    end3_5: {
+        end: string;
+    };
+    end4_5: {
+        end: string;
+    };
+    end1_6: {
+        end: string;
+    };
+    end2_6: {
+        end: string;
+    };
+    end3_6: {
+        end: string;
+    };
+    end4_6: {
+        end: string;
+    };
+    end5_6: {
+        end: string;
+    };
+    endFull: {
+        end: string;
+    };
+    _end0: {
+        end: number;
+    };
+    _endPx: {
+        end: number;
+    };
+    _end0_5: {
+        end: number;
+    };
+    _end1: {
+        end: number;
+    };
+    _end2: {
+        end: number;
+    };
+    _end3: {
+        end: number;
+    };
+    _end4: {
+        end: number;
+    };
+    _end5: {
+        end: number;
+    };
+    _end6: {
+        end: number;
+    };
+    _end7: {
+        end: number;
+    };
+    _end8: {
+        end: number;
+    };
+    _end9: {
+        end: number;
+    };
+    _end10: {
+        end: number;
+    };
+    _end11: {
+        end: number;
+    };
+    _end12: {
+        end: number;
+    };
+    _end14: {
+        end: number;
+    };
+    _end16: {
+        end: number;
+    };
+    _end20: {
+        end: number;
+    };
+    _end24: {
+        end: number;
+    };
+    _end28: {
+        end: number;
+    };
+    _end32: {
+        end: number;
+    };
+    _end36: {
+        end: number;
+    };
+    _end40: {
+        end: number;
+    };
+    _end44: {
+        end: number;
+    };
+    _end48: {
+        end: number;
+    };
+    _end52: {
+        end: number;
+    };
+    _end56: {
+        end: number;
+    };
+    _end60: {
+        end: number;
+    };
+    _end64: {
+        end: number;
+    };
+    _end72: {
+        end: number;
+    };
+    _end80: {
+        end: number;
+    };
+    _end96: {
+        end: number;
+    };
+    _end1_2: {
+        end: string;
+    };
+    _end1_3: {
+        end: string;
+    };
+    _end2_3: {
+        end: string;
+    };
+    _end1_4: {
+        end: string;
+    };
+    _end2_4: {
+        end: string;
+    };
+    _end3_4: {
+        end: string;
+    };
+    _end1_5: {
+        end: string;
+    };
+    _end2_5: {
+        end: string;
+    };
+    _end3_5: {
+        end: string;
+    };
+    _end4_5: {
+        end: string;
+    };
+    _end1_6: {
+        end: string;
+    };
+    _end2_6: {
+        end: string;
+    };
+    _end3_6: {
+        end: string;
+    };
+    _end4_6: {
+        end: string;
+    };
+    _end5_6: {
+        end: string;
+    };
+    _endFull: {
+        end: string;
+    };
+    tintPrimary: {
+        tintColor: string;
+    };
+    tintPrimaryLight: {
+        tintColor: string;
+    };
+    tintPrimaryDark: {
+        tintColor: string;
+    };
+    tintPrimaryContrast: {
+        tintColor: string;
+    };
+    tintSecondary: {
+        tintColor: string;
+    };
+    tintSecondaryLight: {
+        tintColor: string;
+    };
+    tintSecondaryDark: {
+        tintColor: string;
+    };
+    tintSecondaryContrast: {
+        tintColor: string;
+    };
+    tintInfo: {
+        tintColor: string;
+    };
+    tintInfoLight: {
+        tintColor: string;
+    };
+    tintInfoDark: {
+        tintColor: string;
+    };
+    tintInfoContrast: {
+        tintColor: string;
+    };
+    tintSuccess: {
+        tintColor: string;
+    };
+    tintSuccessLight: {
+        tintColor: string;
+    };
+    tintSuccessDark: {
+        tintColor: string;
+    };
+    tintSuccessContrast: {
+        tintColor: string;
+    };
+    tintError: {
+        tintColor: string;
+    };
+    tintErrorLight: {
+        tintColor: string;
+    };
+    tintErrorDark: {
+        tintColor: string;
+    };
+    tintErrorContrast: {
+        tintColor: string;
+    };
+    tintWarning: {
+        tintColor: string;
+    };
+    tintWarningLight: {
+        tintColor: string;
+    };
+    tintWarningDark: {
+        tintColor: string;
+    };
+    tintWarningContrast: {
+        tintColor: string;
+    };
+    tintPaper: {
+        tintColor: string;
+    };
+    tintSelected: {
+        tintColor: string;
+    };
+    tintDisabled: {
+        tintColor: string;
+    };
+    tintFocused: {
+        tintColor: string;
+    };
+    tintMuted: {
+        tintColor: string;
+    };
+    tintWhite: {
+        tintColor: string;
+    };
+    tintGray100: {
+        tintColor: string;
+    };
+    tintGray200: {
+        tintColor: string;
+    };
+    tintGray300: {
+        tintColor: string;
+    };
+    tintGray400: {
+        tintColor: string;
+    };
+    tintGray500: {
+        tintColor: string;
+    };
+    tintGray600: {
+        tintColor: string;
+    };
+    tintGray700: {
+        tintColor: string;
+    };
+    tintGray800: {
+        tintColor: string;
+    };
+    tintGray900: {
+        tintColor: string;
+    };
+    tintBlack: {
+        tintColor: string;
+    };
+    tintTransparent: {
+        tintColor: string;
+    };
+    z0: {
+        zIndex: number;
+    };
+    z10: {
+        zIndex: number;
+    };
+    z20: {
+        zIndex: number;
+    };
+    z30: {
+        zIndex: number;
+    };
+    z40: {
+        zIndex: number;
+    };
+    z50: {
+        zIndex: number;
+    };
+};
 export default _default;

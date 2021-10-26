@@ -1,50 +1,144 @@
-declare const _default: (theme: import("../theme").ThemeProps) => import("react-native").StyleSheet.NamedStyles<{
-    flexCol: unknown;
-    flexRow: unknown;
-    flexColReverse: unknown;
-    flexRowReverse: unknown;
-    flexWrap: unknown;
-    flexWrapReverse: unknown;
-    flexNoWrap: unknown;
-    itemsStart: unknown;
-    itemsEnd: unknown;
-    itemsCenter: unknown;
-    itemsStretch: unknown;
-    itemsBaseline: unknown;
-    contentStart: unknown;
-    contentEnd: unknown;
-    contentCenter: unknown;
-    contentStretch: unknown;
-    contentBetween: unknown;
-    contentAround: unknown;
-    selfAuto: unknown;
-    selfStart: unknown;
-    selfEnd: unknown;
-    selfCenter: unknown;
-    selfStretch: unknown;
-    selfBaseline: unknown;
-    justifyStart: unknown;
-    justifyEnd: unknown;
-    justifyCenter: unknown;
-    justifyBetween: unknown;
-    justifyAround: unknown;
-    justifyEvenly: unknown;
-    flexNone: unknown;
-    flex1: unknown;
-    flex2: unknown;
-    flex3: unknown;
-    flex4: unknown;
-    flexGrow: unknown;
-    flexGrow0: unknown;
-    flexGrow1: unknown;
-    flexGrow2: unknown;
-    flexGrow3: unknown;
-    flexGrow4: unknown;
-    flexShrink: unknown;
-    flexShrink0: unknown;
-    flexShrink1: unknown;
-    flexShrink2: unknown;
-    flexShrink3: unknown;
-    flexShrink4: unknown;
-}>;
+declare const _default: (theme: import("../theme").ThemeProps) => {
+    flexCol: {
+        flexDirection: "column";
+    };
+    flexRow: {
+        flexDirection: "row";
+    };
+    flexColReverse: {
+        flexDirection: "column-reverse";
+    };
+    flexRowReverse: {
+        flexDirection: "row-reverse";
+    };
+    flexWrap: {
+        flexWrap: "wrap";
+    };
+    flexWrapReverse: {
+        flexWrap: "wrap-reverse";
+    };
+    flexNoWrap: {
+        flexWrap: "nowrap";
+    };
+    itemsStart: {
+        alignItems: "flex-start";
+    };
+    itemsEnd: {
+        alignItems: "flex-end";
+    };
+    itemsCenter: {
+        alignItems: "center";
+    };
+    itemsStretch: {
+        alignItems: "stretch";
+    };
+    itemsBaseline: {
+        alignItems: "baseline";
+    };
+    contentStart: {
+        alignContent: "flex-start";
+    };
+    contentEnd: {
+        alignContent: "flex-end";
+    };
+    contentCenter: {
+        alignContent: "center";
+    };
+    contentStretch: {
+        alignContent: "stretch";
+    };
+    contentBetween: {
+        alignContent: "space-between";
+    };
+    contentAround: {
+        alignContent: "space-around";
+    };
+    selfAuto: {
+        alignSelf: "auto";
+    };
+    selfStart: {
+        alignSelf: "flex-start";
+    };
+    selfEnd: {
+        alignSelf: "flex-end";
+    };
+    selfCenter: {
+        alignSelf: "center";
+    };
+    selfStretch: {
+        alignSelf: "stretch";
+    };
+    selfBaseline: {
+        alignSelf: "baseline";
+    };
+    justifyStart: {
+        justifyContent: "flex-start";
+    };
+    justifyEnd: {
+        justifyContent: "flex-end";
+    };
+    justifyCenter: {
+        justifyContent: "center";
+    };
+    justifyBetween: {
+        justifyContent: "space-between";
+    };
+    justifyAround: {
+        justifyContent: "space-around";
+    };
+    justifyEvenly: {
+        justifyContent: "space-evenly";
+    };
+    flexNone: {
+        flex: number;
+    };
+    flex1: {
+        flex: number;
+    };
+    flex2: {
+        flex: number;
+    };
+    flex3: {
+        flex: number;
+    };
+    flex4: {
+        flex: number;
+    };
+    flexGrow: {
+        flexGrow: number;
+    };
+    flexGrow0: {
+        flexGrow: number;
+    };
+    flexGrow1: {
+        flexGrow: number;
+    };
+    flexGrow2: {
+        flexGrow: number;
+    };
+    flexGrow3: {
+        flexGrow: number;
+    };
+    flexGrow4: {
+        flexGrow: number;
+    };
+    flexShrink: {
+        flexShrink: number;
+    };
+    flexShrink0: {
+        flexShrink: number;
+    };
+    flexShrink1: {
+        flexShrink: number;
+    };
+    flexShrink2: {
+        flexShrink: number;
+    };
+    flexShrink3: {
+        flexShrink: number;
+    };
+    flexShrink4: {
+        flexShrink: number;
+    };
+};
 export default _default;

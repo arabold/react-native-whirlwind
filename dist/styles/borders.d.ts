@@ -1,235 +1,757 @@
-declare const _default: (theme: import("../theme").ThemeProps) => import("react-native").StyleSheet.NamedStyles<{
-    borderPrimary: unknown;
-    borderPrimaryLight: unknown;
-    borderPrimaryDark: unknown;
-    borderPrimaryContrast: unknown;
-    borderSecondary: unknown;
-    borderSecondaryLight: unknown;
-    borderSecondaryDark: unknown;
-    borderSecondaryContrast: unknown;
-    borderInfo: unknown;
-    borderInfoLight: unknown;
-    borderInfoDark: unknown;
-    borderInfoContrast: unknown;
-    borderSuccess: unknown;
-    borderSuccessLight: unknown;
-    borderSuccessDark: unknown;
-    borderSuccessContrast: unknown;
-    borderError: unknown;
-    borderErrorLight: unknown;
-    borderErrorDark: unknown;
-    borderErrorContrast: unknown;
-    borderWarning: unknown;
-    borderWarningLight: unknown;
-    borderWarningDark: unknown;
-    borderWarningContrast: unknown;
-    borderPaper: unknown;
-    borderSelected: unknown;
-    borderDisabled: unknown;
-    borderFocused: unknown;
-    borderMuted: unknown;
-    borderWhite: unknown;
-    borderGray100: unknown;
-    borderGray200: unknown;
-    borderGray300: unknown;
-    borderGray400: unknown;
-    borderGray500: unknown;
-    borderGray600: unknown;
-    borderGray700: unknown;
-    borderGray800: unknown;
-    borderGray900: unknown;
-    borderBlack: unknown;
-    borderTransparent: unknown;
-    borderSolid: unknown;
-    borderDotted: unknown;
-    borderDashed: unknown;
-    border: unknown;
-    border0_5: unknown;
-    border0: unknown;
-    border1: unknown;
-    border2: unknown;
-    border3: unknown;
-    border4: unknown;
-    border5: unknown;
-    border6: unknown;
-    border7: unknown;
-    border8: unknown;
-    borderX: unknown;
-    borderY: unknown;
-    borderT: unknown;
-    borderR: unknown;
-    borderB: unknown;
-    borderL: unknown;
-    borderE: unknown;
-    borderS: unknown;
-    borderX0: unknown;
-    borderY0: unknown;
-    borderT0: unknown;
-    borderR0: unknown;
-    borderB0: unknown;
-    borderL0: unknown;
-    borderE0: unknown;
-    borderS0: unknown;
-    borderX0_5: unknown;
-    borderY0_5: unknown;
-    borderT0_5: unknown;
-    borderR0_5: unknown;
-    borderB0_5: unknown;
-    borderL0_5: unknown;
-    borderE0_5: unknown;
-    borderS0_5: unknown;
-    borderX1: unknown;
-    borderY1: unknown;
-    borderT1: unknown;
-    borderR1: unknown;
-    borderB1: unknown;
-    borderL1: unknown;
-    borderE1: unknown;
-    borderS1: unknown;
-    borderX2: unknown;
-    borderY2: unknown;
-    borderT2: unknown;
-    borderR2: unknown;
-    borderB2: unknown;
-    borderL2: unknown;
-    borderE2: unknown;
-    borderS2: unknown;
-    borderX3: unknown;
-    borderY3: unknown;
-    borderT3: unknown;
-    borderR3: unknown;
-    borderB3: unknown;
-    borderL3: unknown;
-    borderE3: unknown;
-    borderS3: unknown;
-    borderX4: unknown;
-    borderY4: unknown;
-    borderT4: unknown;
-    borderR4: unknown;
-    borderB4: unknown;
-    borderL4: unknown;
-    borderE4: unknown;
-    borderS4: unknown;
-    borderX5: unknown;
-    borderY5: unknown;
-    borderT5: unknown;
-    borderR5: unknown;
-    borderB5: unknown;
-    borderL5: unknown;
-    borderE5: unknown;
-    borderS5: unknown;
-    borderX6: unknown;
-    borderY6: unknown;
-    borderT6: unknown;
-    borderR6: unknown;
-    borderB6: unknown;
-    borderL6: unknown;
-    borderE6: unknown;
-    borderS6: unknown;
-    borderX7: unknown;
-    borderY7: unknown;
-    borderT7: unknown;
-    borderR7: unknown;
-    borderB7: unknown;
-    borderL7: unknown;
-    borderE7: unknown;
-    borderS7: unknown;
-    borderX8: unknown;
-    borderY8: unknown;
-    borderT8: unknown;
-    borderR8: unknown;
-    borderB8: unknown;
-    borderL8: unknown;
-    borderE8: unknown;
-    borderS8: unknown;
-    roundedNone: unknown;
-    roundedSm: unknown;
-    rounded: unknown;
-    roundedLg: unknown;
-    roundedFull: unknown;
-    roundedTNone: unknown;
-    roundedRNone: unknown;
-    roundedBNone: unknown;
-    roundedLNone: unknown;
-    roundedTlNone: unknown;
-    roundedTrNone: unknown;
-    roundedBrNone: unknown;
-    roundedBlNone: unknown;
-    roundedSNone: unknown;
-    roundedENone: unknown;
-    roundedTsNone: unknown;
-    roundedTeNone: unknown;
-    roundedBeNone: unknown;
-    roundedBsNone: unknown;
-    roundedTSm: unknown;
-    roundedRSm: unknown;
-    roundedBSm: unknown;
-    roundedLSm: unknown;
-    roundedTlSm: unknown;
-    roundedTrSm: unknown;
-    roundedBrSm: unknown;
-    roundedBlSm: unknown;
-    roundedSSm: unknown;
-    roundedESm: unknown;
-    roundedTsSm: unknown;
-    roundedTeSm: unknown;
-    roundedBeSm: unknown;
-    roundedBsSm: unknown;
-    roundedT: unknown;
-    roundedR: unknown;
-    roundedB: unknown;
-    roundedL: unknown;
-    roundedTl: unknown;
-    roundedTr: unknown;
-    roundedBr: unknown;
-    roundedBl: unknown;
-    roundedS: unknown;
-    roundedE: unknown;
-    roundedTs: unknown;
-    roundedTe: unknown;
-    roundedBe: unknown;
-    roundedBs: unknown;
-    roundedTLg: unknown;
-    roundedRLg: unknown;
-    roundedBLg: unknown;
-    roundedLLg: unknown;
-    roundedTlLg: unknown;
-    roundedTrLg: unknown;
-    roundedBrLg: unknown;
-    roundedBlLg: unknown;
-    roundedSLg: unknown;
-    roundedELg: unknown;
-    roundedTsLg: unknown;
-    roundedTeLg: unknown;
-    roundedBeLg: unknown;
-    roundedBsLg: unknown;
-    roundedTXl: unknown;
-    roundedRXl: unknown;
-    roundedBXl: unknown;
-    roundedLXl: unknown;
-    roundedTlXl: unknown;
-    roundedTrXl: unknown;
-    roundedBrXl: unknown;
-    roundedBlXl: unknown;
-    roundedSXl: unknown;
-    roundedEXl: unknown;
-    roundedTsXl: unknown;
-    roundedTeXl: unknown;
-    roundedBeXl: unknown;
-    roundedBsXl: unknown;
-    roundedTFull: unknown;
-    roundedRFull: unknown;
-    roundedBFull: unknown;
-    roundedLFull: unknown;
-    roundedTlFull: unknown;
-    roundedTrFull: unknown;
-    roundedBrFull: unknown;
-    roundedBlFull: unknown;
-    roundedSFull: unknown;
-    roundedEFull: unknown;
-    roundedTsFull: unknown;
-    roundedTeFull: unknown;
-    roundedBeFull: unknown;
-    roundedBsFull: unknown;
-}>;
+declare const _default: (theme: import("../theme").ThemeProps) => {
+    borderPrimary: {
+        borderColor: string;
+    };
+    borderPrimaryLight: {
+        borderColor: string;
+    };
+    borderPrimaryDark: {
+        borderColor: string;
+    };
+    borderPrimaryContrast: {
+        borderColor: string;
+    };
+    borderSecondary: {
+        borderColor: string;
+    };
+    borderSecondaryLight: {
+        borderColor: string;
+    };
+    borderSecondaryDark: {
+        borderColor: string;
+    };
+    borderSecondaryContrast: {
+        borderColor: string;
+    };
+    borderInfo: {
+        borderColor: string;
+    };
+    borderInfoLight: {
+        borderColor: string;
+    };
+    borderInfoDark: {
+        borderColor: string;
+    };
+    borderInfoContrast: {
+        borderColor: string;
+    };
+    borderSuccess: {
+        borderColor: string;
+    };
+    borderSuccessLight: {
+        borderColor: string;
+    };
+    borderSuccessDark: {
+        borderColor: string;
+    };
+    borderSuccessContrast: {
+        borderColor: string;
+    };
+    borderError: {
+        borderColor: string;
+    };
+    borderErrorLight: {
+        borderColor: string;
+    };
+    borderErrorDark: {
+        borderColor: string;
+    };
+    borderErrorContrast: {
+        borderColor: string;
+    };
+    borderWarning: {
+        borderColor: string;
+    };
+    borderWarningLight: {
+        borderColor: string;
+    };
+    borderWarningDark: {
+        borderColor: string;
+    };
+    borderWarningContrast: {
+        borderColor: string;
+    };
+    borderPaper: {
+        borderColor: string;
+    };
+    borderSelected: {
+        borderColor: string;
+    };
+    borderDisabled: {
+        borderColor: string;
+    };
+    borderFocused: {
+        borderColor: string;
+    };
+    borderMuted: {
+        borderColor: string;
+    };
+    borderWhite: {
+        borderColor: string;
+    };
+    borderGray100: {
+        borderColor: string;
+    };
+    borderGray200: {
+        borderColor: string;
+    };
+    borderGray300: {
+        borderColor: string;
+    };
+    borderGray400: {
+        borderColor: string;
+    };
+    borderGray500: {
+        borderColor: string;
+    };
+    borderGray600: {
+        borderColor: string;
+    };
+    borderGray700: {
+        borderColor: string;
+    };
+    borderGray800: {
+        borderColor: string;
+    };
+    borderGray900: {
+        borderColor: string;
+    };
+    borderBlack: {
+        borderColor: string;
+    };
+    borderTransparent: {
+        borderColor: string;
+    };
+    borderSolid: {
+        borderStyle: "solid";
+    };
+    borderDotted: {
+        borderStyle: "dotted";
+    };
+    borderDashed: {
+        borderStyle: "dashed";
+    };
+    border: {
+        borderWidth: number;
+    };
+    border0_5: {
+        borderWidth: number;
+    };
+    border0: {
+        borderWidth: number;
+    };
+    border1: {
+        borderWidth: number;
+    };
+    border2: {
+        borderWidth: number;
+    };
+    border3: {
+        borderWidth: number;
+    };
+    border4: {
+        borderWidth: number;
+    };
+    border5: {
+        borderWidth: number;
+    };
+    border6: {
+        borderWidth: number;
+    };
+    border7: {
+        borderWidth: number;
+    };
+    border8: {
+        borderWidth: number;
+    };
+    borderX: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT: {
+        borderTopWidth: number;
+    };
+    borderR: {
+        borderRightWidth: number;
+    };
+    borderB: {
+        borderBottomWidth: number;
+    };
+    borderL: {
+        borderLeftWidth: number;
+    };
+    borderE: {
+        borderEndWidth: number;
+    };
+    borderS: {
+        borderStartWidth: number;
+    };
+    borderX0: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY0: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT0: {
+        borderTopWidth: number;
+    };
+    borderR0: {
+        borderRightWidth: number;
+    };
+    borderB0: {
+        borderBottomWidth: number;
+    };
+    borderL0: {
+        borderLeftWidth: number;
+    };
+    borderE0: {
+        borderEndWidth: number;
+    };
+    borderS0: {
+        borderStartWidth: number;
+    };
+    borderX0_5: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY0_5: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT0_5: {
+        borderTopWidth: number;
+    };
+    borderR0_5: {
+        borderRightWidth: number;
+    };
+    borderB0_5: {
+        borderBottomWidth: number;
+    };
+    borderL0_5: {
+        borderLeftWidth: number;
+    };
+    borderE0_5: {
+        borderEndWidth: number;
+    };
+    borderS0_5: {
+        borderStartWidth: number;
+    };
+    borderX1: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY1: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT1: {
+        borderTopWidth: number;
+    };
+    borderR1: {
+        borderRightWidth: number;
+    };
+    borderB1: {
+        borderBottomWidth: number;
+    };
+    borderL1: {
+        borderLeftWidth: number;
+    };
+    borderE1: {
+        borderEndWidth: number;
+    };
+    borderS1: {
+        borderStartWidth: number;
+    };
+    borderX2: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY2: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT2: {
+        borderTopWidth: number;
+    };
+    borderR2: {
+        borderRightWidth: number;
+    };
+    borderB2: {
+        borderBottomWidth: number;
+    };
+    borderL2: {
+        borderLeftWidth: number;
+    };
+    borderE2: {
+        borderEndWidth: number;
+    };
+    borderS2: {
+        borderStartWidth: number;
+    };
+    borderX3: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY3: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT3: {
+        borderTopWidth: number;
+    };
+    borderR3: {
+        borderRightWidth: number;
+    };
+    borderB3: {
+        borderBottomWidth: number;
+    };
+    borderL3: {
+        borderLeftWidth: number;
+    };
+    borderE3: {
+        borderEndWidth: number;
+    };
+    borderS3: {
+        borderStartWidth: number;
+    };
+    borderX4: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY4: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT4: {
+        borderTopWidth: number;
+    };
+    borderR4: {
+        borderRightWidth: number;
+    };
+    borderB4: {
+        borderBottomWidth: number;
+    };
+    borderL4: {
+        borderLeftWidth: number;
+    };
+    borderE4: {
+        borderEndWidth: number;
+    };
+    borderS4: {
+        borderStartWidth: number;
+    };
+    borderX5: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY5: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT5: {
+        borderTopWidth: number;
+    };
+    borderR5: {
+        borderRightWidth: number;
+    };
+    borderB5: {
+        borderBottomWidth: number;
+    };
+    borderL5: {
+        borderLeftWidth: number;
+    };
+    borderE5: {
+        borderEndWidth: number;
+    };
+    borderS5: {
+        borderStartWidth: number;
+    };
+    borderX6: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY6: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT6: {
+        borderTopWidth: number;
+    };
+    borderR6: {
+        borderRightWidth: number;
+    };
+    borderB6: {
+        borderBottomWidth: number;
+    };
+    borderL6: {
+        borderLeftWidth: number;
+    };
+    borderE6: {
+        borderEndWidth: number;
+    };
+    borderS6: {
+        borderStartWidth: number;
+    };
+    borderX7: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY7: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT7: {
+        borderTopWidth: number;
+    };
+    borderR7: {
+        borderRightWidth: number;
+    };
+    borderB7: {
+        borderBottomWidth: number;
+    };
+    borderL7: {
+        borderLeftWidth: number;
+    };
+    borderE7: {
+        borderEndWidth: number;
+    };
+    borderS7: {
+        borderStartWidth: number;
+    };
+    borderX8: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY8: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT8: {
+        borderTopWidth: number;
+    };
+    borderR8: {
+        borderRightWidth: number;
+    };
+    borderB8: {
+        borderBottomWidth: number;
+    };
+    borderL8: {
+        borderLeftWidth: number;
+    };
+    borderE8: {
+        borderEndWidth: number;
+    };
+    borderS8: {
+        borderStartWidth: number;
+    };
+    roundedNone: {
+        borderRadius: number;
+    };
+    roundedSm: {
+        borderRadius: number;
+    };
+    rounded: {
+        borderRadius: number;
+    };
+    roundedLg: {
+        borderRadius: number;
+    };
+    roundedFull: {
+        borderRadius: number;
+    };
+    roundedTNone: {
+        borderTopLeftRadius: number;
+        borderTopRightRadius: number;
+    };
+    roundedRNone: {
+        borderTopRightRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedBNone: {
+        borderBottomLeftRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedLNone: {
+        borderTopLeftRadius: number;
+        borderBottomLeftRadius: number;
+    };
+    roundedTlNone: {
+        borderTopLeftRadius: number;
+    };
+    roundedTrNone: {
+        borderTopRightRadius: number;
+    };
+    roundedBrNone: {
+        borderBottomRightRadius: number;
+    };
+    roundedBlNone: {
+        borderBottomLeftRadius: number;
+    };
+    roundedSNone: {
+        borderTopStartRadius: number;
+        borderBottomStartRadius: number;
+    };
+    roundedENone: {
+        borderTopEndRadius: number;
+        borderBottomEndRadius: number;
+    };
+    roundedTsNone: {
+        borderTopStartRadius: number;
+    };
+    roundedTeNone: {
+        borderTopEndRadius: number;
+    };
+    roundedBeNone: {
+        borderBottomEndRadius: number;
+    };
+    roundedBsNone: {
+        borderBottomStartRadius: number;
+    };
+    roundedTSm: {
+        borderTopLeftRadius: number;
+        borderTopRightRadius: number;
+    };
+    roundedRSm: {
+        borderTopRightRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedBSm: {
+        borderBottomLeftRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedLSm: {
+        borderTopLeftRadius: number;
+        borderBottomLeftRadius: number;
+    };
+    roundedTlSm: {
+        borderTopLeftRadius: number;
+    };
+    roundedTrSm: {
+        borderTopRightRadius: number;
+    };
+    roundedBrSm: {
+        borderBottomRightRadius: number;
+    };
+    roundedBlSm: {
+        borderBottomLeftRadius: number;
+    };
+    roundedSSm: {
+        borderTopStartRadius: number;
+        borderBottomStartRadius: number;
+    };
+    roundedESm: {
+        borderTopEndRadius: number;
+        borderBottomEndRadius: number;
+    };
+    roundedTsSm: {
+        borderTopStartRadius: number;
+    };
+    roundedTeSm: {
+        borderTopEndRadius: number;
+    };
+    roundedBeSm: {
+        borderBottomEndRadius: number;
+    };
+    roundedBsSm: {
+        borderBottomStartRadius: number;
+    };
+    roundedT: {
+        borderTopLeftRadius: number;
+        borderTopRightRadius: number;
+    };
+    roundedR: {
+        borderTopRightRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedB: {
+        borderBottomLeftRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedL: {
+        borderTopLeftRadius: number;
+        borderBottomLeftRadius: number;
+    };
+    roundedTl: {
+        borderTopLeftRadius: number;
+    };
+    roundedTr: {
+        borderTopRightRadius: number;
+    };
+    roundedBr: {
+        borderBottomRightRadius: number;
+    };
+    roundedBl: {
+        borderBottomLeftRadius: number;
+    };
+    roundedS: {
+        borderTopStartRadius: number;
+        borderBottomStartRadius: number;
+    };
+    roundedE: {
+        borderTopEndRadius: number;
+        borderBottomEndRadius: number;
+    };
+    roundedTs: {
+        borderTopStartRadius: number;
+    };
+    roundedTe: {
+        borderTopEndRadius: number;
+    };
+    roundedBe: {
+        borderBottomEndRadius: number;
+    };
+    roundedBs: {
+        borderBottomStartRadius: number;
+    };
+    roundedTLg: {
+        borderTopLeftRadius: number;
+        borderTopRightRadius: number;
+    };
+    roundedRLg: {
+        borderTopRightRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedBLg: {
+        borderBottomLeftRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedLLg: {
+        borderTopLeftRadius: number;
+        borderBottomLeftRadius: number;
+    };
+    roundedTlLg: {
+        borderTopLeftRadius: number;
+    };
+    roundedTrLg: {
+        borderTopRightRadius: number;
+    };
+    roundedBrLg: {
+        borderBottomRightRadius: number;
+    };
+    roundedBlLg: {
+        borderBottomLeftRadius: number;
+    };
+    roundedSLg: {
+        borderTopStartRadius: number;
+        borderBottomStartRadius: number;
+    };
+    roundedELg: {
+        borderTopEndRadius: number;
+        borderBottomEndRadius: number;
+    };
+    roundedTsLg: {
+        borderTopStartRadius: number;
+    };
+    roundedTeLg: {
+        borderTopEndRadius: number;
+    };
+    roundedBeLg: {
+        borderBottomEndRadius: number;
+    };
+    roundedBsLg: {
+        borderBottomStartRadius: number;
+    };
+    roundedTXl: {
+        borderTopLeftRadius: number;
+        borderTopRightRadius: number;
+    };
+    roundedRXl: {
+        borderTopRightRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedBXl: {
+        borderBottomLeftRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedLXl: {
+        borderTopLeftRadius: number;
+        borderBottomLeftRadius: number;
+    };
+    roundedTlXl: {
+        borderTopLeftRadius: number;
+    };
+    roundedTrXl: {
+        borderTopRightRadius: number;
+    };
+    roundedBrXl: {
+        borderBottomRightRadius: number;
+    };
+    roundedBlXl: {
+        borderBottomLeftRadius: number;
+    };
+    roundedSXl: {
+        borderTopStartRadius: number;
+        borderBottomStartRadius: number;
+    };
+    roundedEXl: {
+        borderTopEndRadius: number;
+        borderBottomEndRadius: number;
+    };
+    roundedTsXl: {
+        borderTopStartRadius: number;
+    };
+    roundedTeXl: {
+        borderTopEndRadius: number;
+    };
+    roundedBeXl: {
+        borderBottomEndRadius: number;
+    };
+    roundedBsXl: {
+        borderBottomStartRadius: number;
+    };
+    roundedTFull: {
+        borderTopLeftRadius: number;
+        borderTopRightRadius: number;
+    };
+    roundedRFull: {
+        borderTopRightRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedBFull: {
+        borderBottomLeftRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedLFull: {
+        borderTopLeftRadius: number;
+        borderBottomLeftRadius: number;
+    };
+    roundedTlFull: {
+        borderTopLeftRadius: number;
+    };
+    roundedTrFull: {
+        borderTopRightRadius: number;
+    };
+    roundedBrFull: {
+        borderBottomRightRadius: number;
+    };
+    roundedBlFull: {
+        borderBottomLeftRadius: number;
+    };
+    roundedSFull: {
+        borderTopStartRadius: number;
+        borderBottomStartRadius: number;
+    };
+    roundedEFull: {
+        borderTopEndRadius: number;
+        borderBottomEndRadius: number;
+    };
+    roundedTsFull: {
+        borderTopStartRadius: number;
+    };
+    roundedTeFull: {
+        borderTopEndRadius: number;
+    };
+    roundedBeFull: {
+        borderBottomEndRadius: number;
+    };
+    roundedBsFull: {
+        borderBottomStartRadius: number;
+    };
+};
 export default _default;

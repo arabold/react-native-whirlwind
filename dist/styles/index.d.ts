@@ -3,2681 +3,8631 @@ declare type MakeOptional<T> = {
     [P in keyof T]?: MakeOptional<T[P]>;
 };
 export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
-    fontSans: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontSansItalic: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontSansMedium: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontSansMediumItalic: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontSansBold: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontSansBoldItalic: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontMono: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontMonoItalic: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontMonoMedium: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontMonoMediumItalic: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontMonoBold: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontMonoBoldItalic: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontSerif: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontSerifItalic: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontSerifMedium: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontSerifMediumItalic: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontSerifBold: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontSerifBoldItalic: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textXxs: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textXs: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textBase: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    text2xl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    text3xl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    text4xl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    text5xl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    fontNormal: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    trackingTighter: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    trackingTight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    trackingNormal: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    trackingWide: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    trackingWider: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    trackingWidest: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leadingNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leadingTight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leadingSnug: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leadingNormal: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leadingRelaxed: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leadingLoose: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leading96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textLeft: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textRight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textCenter: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textJustify: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textPrimary: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textPrimaryLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textPrimaryDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textPrimaryContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textSecondary: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textSecondaryLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textSecondaryDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textSecondaryContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textInfo: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textInfoLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textInfoDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textInfoContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textSuccess: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textSuccessLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textSuccessDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textSuccessContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textError: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textErrorLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textErrorDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textErrorContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textWarning: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textWarningLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textWarningDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textWarningContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textPaper: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textSelected: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textDisabled: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textFocused: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textMuted: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textWhite: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textGray100: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textGray200: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textGray300: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textGray400: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textGray500: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textGray600: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textGray700: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textGray800: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textGray900: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textBlack: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textTransparent: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    noUnderline: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    underline: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    lineThrough: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    underlineLineThrough: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    normalCase: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    uppercase: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    lowercase: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    capitalize: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    alignAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    alignTop: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    alignBottom: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    alignCenter: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    p96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pTAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pTPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pT96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pBAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pBPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pB96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pLAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pLPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pL96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pRAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pRPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pR96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pXAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pXPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pX96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pYAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pYPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pY96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pSAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pSPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pS96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pEAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pEPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    pE96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _p96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pTPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pT96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pBPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pB96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pLPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pL96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pRPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pR96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pXPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pX96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pYPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pY96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pSPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pS96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pEPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _pE96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    m96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mTAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mTPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mT96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mBAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mBPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mB96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mLAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mLPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mL96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mRAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mRPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mR96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mXAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mXPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mX96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mYAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mYPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mY96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mSAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mSPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mS96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mEAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mEPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    mE96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _m96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mTPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mT96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mBPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mB96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mLPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mL96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mRPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mR96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mXPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mX96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mYPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mY96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mSPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mS96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mEPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _mE96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    wFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    wPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    w5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minWPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minW96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minWFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxWPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxW5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxWFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxWScreenSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxWScreenMd: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxWScreenLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxWScreenXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxWScreen2xl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    hFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    hScreen: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    hPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    h96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minHFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    minH0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxHFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxHPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    maxH96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flex: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    hidden: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    resizeContain: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    resizeCover: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    resizeStretch: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    resizeCenter: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    resizeRepeat: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    overflowVisible: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    overflowHidden: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    relative: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    absolute: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    inset4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetYPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetY96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetXPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    insetX96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _inset4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetYPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetY96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetXPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _insetX96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    topPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    top5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    topFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _topPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _top5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _topFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    rightPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    right5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    rightFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _rightPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _right5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _rightFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottomPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottom5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bottomFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottomPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottom5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _bottomFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leftPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    left5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    leftFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _leftPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _left5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _leftFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    startPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    start5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    startFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _startPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _start5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _startFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    endPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    end5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    endFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _endPx: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end9: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end11: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end12: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end14: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end16: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end24: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end28: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end32: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end36: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end44: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end48: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end52: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end56: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end64: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end72: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end96: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end1_2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end1_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end2_3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end1_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end2_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end3_4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end1_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end2_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end3_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end4_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end1_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end2_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end3_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end4_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _end5_6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    _endFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintPrimary: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintPrimaryLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintPrimaryDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintPrimaryContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintSecondary: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintSecondaryLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintSecondaryDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintSecondaryContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintInfo: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintInfoLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintInfoDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintInfoContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintSuccess: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintSuccessLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintSuccessDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintSuccessContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintError: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintErrorLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintErrorDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintErrorContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintWarning: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintWarningLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintWarningDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintWarningContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintPaper: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintSelected: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintDisabled: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintFocused: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintMuted: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintWhite: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintGray100: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintGray200: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintGray300: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintGray400: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintGray500: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintGray600: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintGray700: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintGray800: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintGray900: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintBlack: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    tintTransparent: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    z0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    z10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    z20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    z30: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    z40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    z50: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexCol: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexRow: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexColReverse: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexRowReverse: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexWrap: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexWrapReverse: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexNoWrap: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    itemsStart: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    itemsEnd: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    itemsCenter: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    itemsStretch: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    itemsBaseline: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    contentStart: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    contentEnd: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    contentCenter: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    contentStretch: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    contentBetween: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    contentAround: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    selfAuto: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    selfStart: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    selfEnd: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    selfCenter: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    selfStretch: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    selfBaseline: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    justifyStart: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    justifyEnd: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    justifyCenter: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    justifyBetween: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    justifyAround: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    justifyEvenly: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flex1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flex2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flex3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flex4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexGrow: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexGrow0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexGrow1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexGrow2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexGrow3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexGrow4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexShrink: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexShrink0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexShrink1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexShrink2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexShrink3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    flexShrink4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    shadow: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    shadowMd: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    shadowLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    shadowXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    shadow2xl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    shadowInner: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    shadowOutline: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    shadowNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textShadow: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textShadowMd: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textShadowLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textShadowXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textShadow2xl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textShadowInner: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textShadowOutline: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    textShadowNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    opacity100: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    opacity90: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    opacity80: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    opacity75: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    opacity70: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    opacity60: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    opacity50: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    opacity40: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    opacity30: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    opacity25: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    opacity20: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    opacity10: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    opacity0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderPrimary: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderPrimaryLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderPrimaryDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderPrimaryContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderSecondary: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderSecondaryLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderSecondaryDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderSecondaryContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderInfo: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderInfoLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderInfoDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderInfoContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderSuccess: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderSuccessLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderSuccessDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderSuccessContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderError: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderErrorLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderErrorDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderErrorContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderWarning: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderWarningLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderWarningDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderWarningContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderPaper: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderSelected: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderDisabled: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderFocused: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderMuted: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderWhite: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderGray100: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderGray200: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderGray300: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderGray400: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderGray500: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderGray600: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderGray700: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderGray800: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderGray900: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderBlack: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderTransparent: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderSolid: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderDotted: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderDashed: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    border: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    border0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    border0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    border1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    border2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    border3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    border4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    border5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    border6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    border7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    border8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderX: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderY: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderT: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderR: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderB: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderL: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderE: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderS: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderX0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderY0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderT0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderR0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderB0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderL0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderE0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderS0: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderX0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderY0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderT0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderR0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderB0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderL0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderE0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderS0_5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderX1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderY1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderT1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderR1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderB1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderL1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderE1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderS1: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderX2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderY2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderT2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderR2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderB2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderL2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderE2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderS2: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderX3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderY3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderT3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderR3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderB3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderL3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderE3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderS3: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderX4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderY4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderT4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderR4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderB4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderL4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderE4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderS4: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderX5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderY5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderT5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderR5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderB5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderL5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderE5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderS5: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderX6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderY6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderT6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderR6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderB6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderL6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderE6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderS6: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderX7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderY7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderT7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderR7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderB7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderL7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderE7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderS7: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderX8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderY8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderT8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderR8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderB8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderL8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderE8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    borderS8: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    rounded: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedRNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedLNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTlNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTrNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBrNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBlNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedSNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedENone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTsNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTeNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBeNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBsNone: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedRSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedLSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTlSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTrSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBrSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBlSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedSSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedESm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTsSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTeSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBeSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBsSm: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedT: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedR: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedB: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedL: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTr: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBr: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedS: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedE: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTs: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTe: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBe: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBs: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedRLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedLLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTlLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTrLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBrLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBlLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedSLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedELg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTsLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTeLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBeLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBsLg: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedRXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedLXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTlXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTrXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBrXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBlXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedSXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedEXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTsXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTeXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBeXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBsXl: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedRFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedLFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTlFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTrFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBrFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBlFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedSFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedEFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTsFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedTeFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBeFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    roundedBsFull: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgPrimary: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgPrimaryLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgPrimaryDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgPrimaryContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgSecondary: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgSecondaryLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgSecondaryDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgSecondaryContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgInfo: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgInfoLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgInfoDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgInfoContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgSuccess: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgSuccessLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgSuccessDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgSuccessContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgError: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgErrorLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgErrorDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgErrorContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgWarning: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgWarningLight: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgWarningDark: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgWarningContrast: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgPaper: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgSelected: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgDisabled: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgFocused: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgMuted: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgWhite: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgGray100: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgGray200: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgGray300: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgGray400: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgGray500: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgGray600: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgGray700: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgGray800: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgGray900: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgBlack: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
-    bgTransparent: import("react-native").ViewStyle | import("react-native").TextStyle | import("react-native").ImageStyle;
+    fontSans: {
+        fontFamily: string;
+    };
+    fontSansItalic: {
+        fontFamily: string;
+        fontStyle?: undefined;
+    } | {
+        fontStyle: "italic";
+        fontFamily: string;
+    };
+    fontSansMedium: {
+        fontFamily: string;
+        fontWeight?: undefined;
+    } | {
+        fontWeight: "500";
+        fontFamily: string;
+    };
+    fontSansMediumItalic: {
+        fontFamily: string;
+        fontWeight?: undefined;
+        fontStyle?: undefined;
+    } | {
+        fontWeight: "500";
+        fontStyle: "italic";
+        fontFamily: string;
+    };
+    fontSansBold: {
+        fontFamily: string;
+        fontWeight?: undefined;
+    } | {
+        fontWeight: "bold";
+        fontFamily: string;
+    };
+    fontSansBoldItalic: {
+        fontFamily: string;
+        fontWeight?: undefined;
+        fontStyle?: undefined;
+    } | {
+        fontWeight: "bold";
+        fontStyle: "italic";
+        fontFamily: string;
+    };
+    fontMono: {
+        fontFamily: string;
+    };
+    fontMonoItalic: {
+        fontFamily: string;
+        fontStyle?: undefined;
+    } | {
+        fontStyle: "italic";
+        fontFamily: string;
+    };
+    fontMonoMedium: {
+        fontFamily: string;
+        fontWeight?: undefined;
+    } | {
+        fontWeight: "500";
+        fontFamily: string;
+    };
+    fontMonoMediumItalic: {
+        fontFamily: string;
+        fontWeight?: undefined;
+        fontStyle?: undefined;
+    } | {
+        fontWeight: "500";
+        fontStyle: "italic";
+        fontFamily: string;
+    };
+    fontMonoBold: {
+        fontFamily: string;
+        fontWeight?: undefined;
+    } | {
+        fontWeight: "bold";
+        fontFamily: string;
+    };
+    fontMonoBoldItalic: {
+        fontFamily: string;
+        fontWeight?: undefined;
+        fontStyle?: undefined;
+    } | {
+        fontWeight: "bold";
+        fontStyle: "italic";
+        fontFamily: string;
+    };
+    fontSerif: {
+        fontFamily: string;
+    };
+    fontSerifItalic: {
+        fontFamily: string;
+        fontStyle?: undefined;
+    } | {
+        fontStyle: "italic";
+        fontFamily: string;
+    };
+    fontSerifMedium: {
+        fontFamily: string;
+        fontWeight?: undefined;
+    } | {
+        fontWeight: "500";
+        fontFamily: string;
+    };
+    fontSerifMediumItalic: {
+        fontFamily: string;
+        fontWeight?: undefined;
+        fontStyle?: undefined;
+    } | {
+        fontWeight: "500";
+        fontStyle: "italic";
+        fontFamily: string;
+    };
+    fontSerifBold: {
+        fontFamily: string;
+        fontWeight?: undefined;
+    } | {
+        fontWeight: "bold";
+        fontFamily: string;
+    };
+    fontSerifBoldItalic: {
+        fontFamily: string;
+        fontWeight?: undefined;
+        fontStyle?: undefined;
+    } | {
+        fontWeight: "bold";
+        fontStyle: "italic";
+        fontFamily: string;
+    };
+    textXxs: {
+        fontSize: number;
+    };
+    textXs: {
+        fontSize: number;
+    };
+    textSm: {
+        fontSize: number;
+    };
+    textBase: {
+        fontSize: number;
+    };
+    textLg: {
+        fontSize: number;
+    };
+    textXl: {
+        fontSize: number;
+    };
+    text2xl: {
+        fontSize: number;
+    };
+    text3xl: {
+        fontSize: number;
+    };
+    text4xl: {
+        fontSize: number;
+    };
+    text5xl: {
+        fontSize: number;
+    };
+    fontNormal: {
+        fontWeight: "normal";
+    };
+    trackingTighter: {
+        letterSpacing: number;
+    };
+    trackingTight: {
+        letterSpacing: number;
+    };
+    trackingNormal: {
+        letterSpacing: number;
+    };
+    trackingWide: {
+        letterSpacing: number;
+    };
+    trackingWider: {
+        letterSpacing: number;
+    };
+    trackingWidest: {
+        letterSpacing: number;
+    };
+    leadingNone: {
+        lineHeight: number;
+    };
+    leadingTight: {
+        lineHeight: number;
+    };
+    leadingSnug: {
+        lineHeight: number;
+    };
+    leadingNormal: {
+        lineHeight: number;
+    };
+    leadingRelaxed: {
+        lineHeight: number;
+    };
+    leadingLoose: {
+        lineHeight: number;
+    };
+    leading3: {
+        lineHeight: number;
+    };
+    leading4: {
+        lineHeight: number;
+    };
+    leading5: {
+        lineHeight: number;
+    };
+    leading6: {
+        lineHeight: number;
+    };
+    leading7: {
+        lineHeight: number;
+    };
+    leading8: {
+        lineHeight: number;
+    };
+    leading9: {
+        lineHeight: number;
+    };
+    leading10: {
+        lineHeight: number;
+    };
+    leading11: {
+        lineHeight: number;
+    };
+    leading12: {
+        lineHeight: number;
+    };
+    leading14: {
+        lineHeight: number;
+    };
+    leading16: {
+        lineHeight: number;
+    };
+    leading20: {
+        lineHeight: number;
+    };
+    leading24: {
+        lineHeight: number;
+    };
+    leading28: {
+        lineHeight: number;
+    };
+    leading32: {
+        lineHeight: number;
+    };
+    leading36: {
+        lineHeight: number;
+    };
+    leading40: {
+        lineHeight: number;
+    };
+    leading44: {
+        lineHeight: number;
+    };
+    leading48: {
+        lineHeight: number;
+    };
+    leading52: {
+        lineHeight: number;
+    };
+    leading56: {
+        lineHeight: number;
+    };
+    leading60: {
+        lineHeight: number;
+    };
+    leading64: {
+        lineHeight: number;
+    };
+    leading72: {
+        lineHeight: number;
+    };
+    leading80: {
+        lineHeight: number;
+    };
+    leading96: {
+        lineHeight: number;
+    };
+    textAuto: {
+        textAlign: "auto";
+    };
+    textLeft: {
+        textAlign: "left";
+    };
+    textRight: {
+        textAlign: "right";
+    };
+    textCenter: {
+        textAlign: "center";
+    };
+    textJustify: {
+        textAlign: "justify";
+    };
+    textPrimary: {
+        color: string;
+    };
+    textPrimaryLight: {
+        color: string;
+    };
+    textPrimaryDark: {
+        color: string;
+    };
+    textPrimaryContrast: {
+        color: string;
+    };
+    textSecondary: {
+        color: string;
+    };
+    textSecondaryLight: {
+        color: string;
+    };
+    textSecondaryDark: {
+        color: string;
+    };
+    textSecondaryContrast: {
+        color: string;
+    };
+    textInfo: {
+        color: string;
+    };
+    textInfoLight: {
+        color: string;
+    };
+    textInfoDark: {
+        color: string;
+    };
+    textInfoContrast: {
+        color: string;
+    };
+    textSuccess: {
+        color: string;
+    };
+    textSuccessLight: {
+        color: string;
+    };
+    textSuccessDark: {
+        color: string;
+    };
+    textSuccessContrast: {
+        color: string;
+    };
+    textError: {
+        color: string;
+    };
+    textErrorLight: {
+        color: string;
+    };
+    textErrorDark: {
+        color: string;
+    };
+    textErrorContrast: {
+        color: string;
+    };
+    textWarning: {
+        color: string;
+    };
+    textWarningLight: {
+        color: string;
+    };
+    textWarningDark: {
+        color: string;
+    };
+    textWarningContrast: {
+        color: string;
+    };
+    textPaper: {
+        color: string;
+    };
+    textSelected: {
+        color: string;
+    };
+    textDisabled: {
+        color: string;
+    };
+    textFocused: {
+        color: string;
+    };
+    textMuted: {
+        color: string;
+    };
+    textWhite: {
+        color: string;
+    };
+    textGray100: {
+        color: string;
+    };
+    textGray200: {
+        color: string;
+    };
+    textGray300: {
+        color: string;
+    };
+    textGray400: {
+        color: string;
+    };
+    textGray500: {
+        color: string;
+    };
+    textGray600: {
+        color: string;
+    };
+    textGray700: {
+        color: string;
+    };
+    textGray800: {
+        color: string;
+    };
+    textGray900: {
+        color: string;
+    };
+    textBlack: {
+        color: string;
+    };
+    textTransparent: {
+        color: string;
+    };
+    noUnderline: {
+        textDecorationLine: "none";
+    };
+    underline: {
+        textDecorationLine: "underline";
+    };
+    lineThrough: {
+        textDecorationLine: "line-through";
+    };
+    underlineLineThrough: {
+        textDecorationLine: "underline line-through";
+    };
+    normalCase: {
+        textTransform: "none";
+    };
+    uppercase: {
+        textTransform: "uppercase";
+    };
+    lowercase: {
+        textTransform: "lowercase";
+    };
+    capitalize: {
+        textTransform: "capitalize";
+    };
+    alignAuto: {
+        textAlignVertical: "auto";
+    };
+    alignTop: {
+        textAlignVertical: "top";
+    };
+    alignBottom: {
+        textAlignVertical: "bottom";
+    };
+    alignCenter: {
+        textAlignVertical: "center";
+    };
+    pAuto: {
+        padding: string;
+    };
+    p0: {
+        padding: number;
+    };
+    pPx: {
+        padding: number;
+    };
+    p0_5: {
+        padding: number;
+    };
+    p1: {
+        padding: number;
+    };
+    p2: {
+        padding: number;
+    };
+    p3: {
+        padding: number;
+    };
+    p4: {
+        padding: number;
+    };
+    p5: {
+        padding: number;
+    };
+    p6: {
+        padding: number;
+    };
+    p7: {
+        padding: number;
+    };
+    p8: {
+        padding: number;
+    };
+    p9: {
+        padding: number;
+    };
+    p10: {
+        padding: number;
+    };
+    p11: {
+        padding: number;
+    };
+    p12: {
+        padding: number;
+    };
+    p14: {
+        padding: number;
+    };
+    p16: {
+        padding: number;
+    };
+    p20: {
+        padding: number;
+    };
+    p24: {
+        padding: number;
+    };
+    p28: {
+        padding: number;
+    };
+    p32: {
+        padding: number;
+    };
+    p36: {
+        padding: number;
+    };
+    p40: {
+        padding: number;
+    };
+    p44: {
+        padding: number;
+    };
+    p48: {
+        padding: number;
+    };
+    p52: {
+        padding: number;
+    };
+    p56: {
+        padding: number;
+    };
+    p60: {
+        padding: number;
+    };
+    p64: {
+        padding: number;
+    };
+    p72: {
+        padding: number;
+    };
+    p80: {
+        padding: number;
+    };
+    p96: {
+        padding: number;
+    };
+    pTAuto: {
+        paddingTop: string;
+    };
+    pT0: {
+        paddingTop: number;
+    };
+    pTPx: {
+        paddingTop: number;
+    };
+    pT0_5: {
+        paddingTop: number;
+    };
+    pT1: {
+        paddingTop: number;
+    };
+    pT2: {
+        paddingTop: number;
+    };
+    pT3: {
+        paddingTop: number;
+    };
+    pT4: {
+        paddingTop: number;
+    };
+    pT5: {
+        paddingTop: number;
+    };
+    pT6: {
+        paddingTop: number;
+    };
+    pT7: {
+        paddingTop: number;
+    };
+    pT8: {
+        paddingTop: number;
+    };
+    pT9: {
+        paddingTop: number;
+    };
+    pT10: {
+        paddingTop: number;
+    };
+    pT11: {
+        paddingTop: number;
+    };
+    pT12: {
+        paddingTop: number;
+    };
+    pT14: {
+        paddingTop: number;
+    };
+    pT16: {
+        paddingTop: number;
+    };
+    pT20: {
+        paddingTop: number;
+    };
+    pT24: {
+        paddingTop: number;
+    };
+    pT28: {
+        paddingTop: number;
+    };
+    pT32: {
+        paddingTop: number;
+    };
+    pT36: {
+        paddingTop: number;
+    };
+    pT40: {
+        paddingTop: number;
+    };
+    pT44: {
+        paddingTop: number;
+    };
+    pT48: {
+        paddingTop: number;
+    };
+    pT52: {
+        paddingTop: number;
+    };
+    pT56: {
+        paddingTop: number;
+    };
+    pT60: {
+        paddingTop: number;
+    };
+    pT64: {
+        paddingTop: number;
+    };
+    pT72: {
+        paddingTop: number;
+    };
+    pT80: {
+        paddingTop: number;
+    };
+    pT96: {
+        paddingTop: number;
+    };
+    pBAuto: {
+        paddingBottom: string;
+    };
+    pB0: {
+        paddingBottom: number;
+    };
+    pBPx: {
+        paddingBottom: number;
+    };
+    pB0_5: {
+        paddingBottom: number;
+    };
+    pB1: {
+        paddingBottom: number;
+    };
+    pB2: {
+        paddingBottom: number;
+    };
+    pB3: {
+        paddingBottom: number;
+    };
+    pB4: {
+        paddingBottom: number;
+    };
+    pB5: {
+        paddingBottom: number;
+    };
+    pB6: {
+        paddingBottom: number;
+    };
+    pB7: {
+        paddingBottom: number;
+    };
+    pB8: {
+        paddingBottom: number;
+    };
+    pB9: {
+        paddingBottom: number;
+    };
+    pB10: {
+        paddingBottom: number;
+    };
+    pB11: {
+        paddingBottom: number;
+    };
+    pB12: {
+        paddingBottom: number;
+    };
+    pB14: {
+        paddingBottom: number;
+    };
+    pB16: {
+        paddingBottom: number;
+    };
+    pB20: {
+        paddingBottom: number;
+    };
+    pB24: {
+        paddingBottom: number;
+    };
+    pB28: {
+        paddingBottom: number;
+    };
+    pB32: {
+        paddingBottom: number;
+    };
+    pB36: {
+        paddingBottom: number;
+    };
+    pB40: {
+        paddingBottom: number;
+    };
+    pB44: {
+        paddingBottom: number;
+    };
+    pB48: {
+        paddingBottom: number;
+    };
+    pB52: {
+        paddingBottom: number;
+    };
+    pB56: {
+        paddingBottom: number;
+    };
+    pB60: {
+        paddingBottom: number;
+    };
+    pB64: {
+        paddingBottom: number;
+    };
+    pB72: {
+        paddingBottom: number;
+    };
+    pB80: {
+        paddingBottom: number;
+    };
+    pB96: {
+        paddingBottom: number;
+    };
+    pLAuto: {
+        paddingLeft: string;
+    };
+    pL0: {
+        paddingLeft: number;
+    };
+    pLPx: {
+        paddingLeft: number;
+    };
+    pL0_5: {
+        paddingLeft: number;
+    };
+    pL1: {
+        paddingLeft: number;
+    };
+    pL2: {
+        paddingLeft: number;
+    };
+    pL3: {
+        paddingLeft: number;
+    };
+    pL4: {
+        paddingLeft: number;
+    };
+    pL5: {
+        paddingLeft: number;
+    };
+    pL6: {
+        paddingLeft: number;
+    };
+    pL7: {
+        paddingLeft: number;
+    };
+    pL8: {
+        paddingLeft: number;
+    };
+    pL9: {
+        paddingLeft: number;
+    };
+    pL10: {
+        paddingLeft: number;
+    };
+    pL11: {
+        paddingLeft: number;
+    };
+    pL12: {
+        paddingLeft: number;
+    };
+    pL14: {
+        paddingLeft: number;
+    };
+    pL16: {
+        paddingLeft: number;
+    };
+    pL20: {
+        paddingLeft: number;
+    };
+    pL24: {
+        paddingLeft: number;
+    };
+    pL28: {
+        paddingLeft: number;
+    };
+    pL32: {
+        paddingLeft: number;
+    };
+    pL36: {
+        paddingLeft: number;
+    };
+    pL40: {
+        paddingLeft: number;
+    };
+    pL44: {
+        paddingLeft: number;
+    };
+    pL48: {
+        paddingLeft: number;
+    };
+    pL52: {
+        paddingLeft: number;
+    };
+    pL56: {
+        paddingLeft: number;
+    };
+    pL60: {
+        paddingLeft: number;
+    };
+    pL64: {
+        paddingLeft: number;
+    };
+    pL72: {
+        paddingLeft: number;
+    };
+    pL80: {
+        paddingLeft: number;
+    };
+    pL96: {
+        paddingLeft: number;
+    };
+    pRAuto: {
+        paddingRight: string;
+    };
+    pR0: {
+        paddingRight: number;
+    };
+    pRPx: {
+        paddingRight: number;
+    };
+    pR0_5: {
+        paddingRight: number;
+    };
+    pR1: {
+        paddingRight: number;
+    };
+    pR2: {
+        paddingRight: number;
+    };
+    pR3: {
+        paddingRight: number;
+    };
+    pR4: {
+        paddingRight: number;
+    };
+    pR5: {
+        paddingRight: number;
+    };
+    pR6: {
+        paddingRight: number;
+    };
+    pR7: {
+        paddingRight: number;
+    };
+    pR8: {
+        paddingRight: number;
+    };
+    pR9: {
+        paddingRight: number;
+    };
+    pR10: {
+        paddingRight: number;
+    };
+    pR11: {
+        paddingRight: number;
+    };
+    pR12: {
+        paddingRight: number;
+    };
+    pR14: {
+        paddingRight: number;
+    };
+    pR16: {
+        paddingRight: number;
+    };
+    pR20: {
+        paddingRight: number;
+    };
+    pR24: {
+        paddingRight: number;
+    };
+    pR28: {
+        paddingRight: number;
+    };
+    pR32: {
+        paddingRight: number;
+    };
+    pR36: {
+        paddingRight: number;
+    };
+    pR40: {
+        paddingRight: number;
+    };
+    pR44: {
+        paddingRight: number;
+    };
+    pR48: {
+        paddingRight: number;
+    };
+    pR52: {
+        paddingRight: number;
+    };
+    pR56: {
+        paddingRight: number;
+    };
+    pR60: {
+        paddingRight: number;
+    };
+    pR64: {
+        paddingRight: number;
+    };
+    pR72: {
+        paddingRight: number;
+    };
+    pR80: {
+        paddingRight: number;
+    };
+    pR96: {
+        paddingRight: number;
+    };
+    pXAuto: {
+        paddingHorizontal: string;
+    };
+    pX0: {
+        paddingHorizontal: number;
+    };
+    pXPx: {
+        paddingHorizontal: number;
+    };
+    pX0_5: {
+        paddingHorizontal: number;
+    };
+    pX1: {
+        paddingHorizontal: number;
+    };
+    pX2: {
+        paddingHorizontal: number;
+    };
+    pX3: {
+        paddingHorizontal: number;
+    };
+    pX4: {
+        paddingHorizontal: number;
+    };
+    pX5: {
+        paddingHorizontal: number;
+    };
+    pX6: {
+        paddingHorizontal: number;
+    };
+    pX7: {
+        paddingHorizontal: number;
+    };
+    pX8: {
+        paddingHorizontal: number;
+    };
+    pX9: {
+        paddingHorizontal: number;
+    };
+    pX10: {
+        paddingHorizontal: number;
+    };
+    pX11: {
+        paddingHorizontal: number;
+    };
+    pX12: {
+        paddingHorizontal: number;
+    };
+    pX14: {
+        paddingHorizontal: number;
+    };
+    pX16: {
+        paddingHorizontal: number;
+    };
+    pX20: {
+        paddingHorizontal: number;
+    };
+    pX24: {
+        paddingHorizontal: number;
+    };
+    pX28: {
+        paddingHorizontal: number;
+    };
+    pX32: {
+        paddingHorizontal: number;
+    };
+    pX36: {
+        paddingHorizontal: number;
+    };
+    pX40: {
+        paddingHorizontal: number;
+    };
+    pX44: {
+        paddingHorizontal: number;
+    };
+    pX48: {
+        paddingHorizontal: number;
+    };
+    pX52: {
+        paddingHorizontal: number;
+    };
+    pX56: {
+        paddingHorizontal: number;
+    };
+    pX60: {
+        paddingHorizontal: number;
+    };
+    pX64: {
+        paddingHorizontal: number;
+    };
+    pX72: {
+        paddingHorizontal: number;
+    };
+    pX80: {
+        paddingHorizontal: number;
+    };
+    pX96: {
+        paddingHorizontal: number;
+    };
+    pYAuto: {
+        paddingVertical: string;
+    };
+    pY0: {
+        paddingVertical: number;
+    };
+    pYPx: {
+        paddingVertical: number;
+    };
+    pY0_5: {
+        paddingVertical: number;
+    };
+    pY1: {
+        paddingVertical: number;
+    };
+    pY2: {
+        paddingVertical: number;
+    };
+    pY3: {
+        paddingVertical: number;
+    };
+    pY4: {
+        paddingVertical: number;
+    };
+    pY5: {
+        paddingVertical: number;
+    };
+    pY6: {
+        paddingVertical: number;
+    };
+    pY7: {
+        paddingVertical: number;
+    };
+    pY8: {
+        paddingVertical: number;
+    };
+    pY9: {
+        paddingVertical: number;
+    };
+    pY10: {
+        paddingVertical: number;
+    };
+    pY11: {
+        paddingVertical: number;
+    };
+    pY12: {
+        paddingVertical: number;
+    };
+    pY14: {
+        paddingVertical: number;
+    };
+    pY16: {
+        paddingVertical: number;
+    };
+    pY20: {
+        paddingVertical: number;
+    };
+    pY24: {
+        paddingVertical: number;
+    };
+    pY28: {
+        paddingVertical: number;
+    };
+    pY32: {
+        paddingVertical: number;
+    };
+    pY36: {
+        paddingVertical: number;
+    };
+    pY40: {
+        paddingVertical: number;
+    };
+    pY44: {
+        paddingVertical: number;
+    };
+    pY48: {
+        paddingVertical: number;
+    };
+    pY52: {
+        paddingVertical: number;
+    };
+    pY56: {
+        paddingVertical: number;
+    };
+    pY60: {
+        paddingVertical: number;
+    };
+    pY64: {
+        paddingVertical: number;
+    };
+    pY72: {
+        paddingVertical: number;
+    };
+    pY80: {
+        paddingVertical: number;
+    };
+    pY96: {
+        paddingVertical: number;
+    };
+    pSAuto: {
+        paddingStart: string;
+    };
+    pS0: {
+        paddingStart: number;
+    };
+    pSPx: {
+        paddingStart: number;
+    };
+    pS0_5: {
+        paddingStart: number;
+    };
+    pS1: {
+        paddingStart: number;
+    };
+    pS2: {
+        paddingStart: number;
+    };
+    pS3: {
+        paddingStart: number;
+    };
+    pS4: {
+        paddingStart: number;
+    };
+    pS5: {
+        paddingStart: number;
+    };
+    pS6: {
+        paddingStart: number;
+    };
+    pS7: {
+        paddingStart: number;
+    };
+    pS8: {
+        paddingStart: number;
+    };
+    pS9: {
+        paddingStart: number;
+    };
+    pS10: {
+        paddingStart: number;
+    };
+    pS11: {
+        paddingStart: number;
+    };
+    pS12: {
+        paddingStart: number;
+    };
+    pS14: {
+        paddingStart: number;
+    };
+    pS16: {
+        paddingStart: number;
+    };
+    pS20: {
+        paddingStart: number;
+    };
+    pS24: {
+        paddingStart: number;
+    };
+    pS28: {
+        paddingStart: number;
+    };
+    pS32: {
+        paddingStart: number;
+    };
+    pS36: {
+        paddingStart: number;
+    };
+    pS40: {
+        paddingStart: number;
+    };
+    pS44: {
+        paddingStart: number;
+    };
+    pS48: {
+        paddingStart: number;
+    };
+    pS52: {
+        paddingStart: number;
+    };
+    pS56: {
+        paddingStart: number;
+    };
+    pS60: {
+        paddingStart: number;
+    };
+    pS64: {
+        paddingStart: number;
+    };
+    pS72: {
+        paddingStart: number;
+    };
+    pS80: {
+        paddingStart: number;
+    };
+    pS96: {
+        paddingStart: number;
+    };
+    pEAuto: {
+        paddingEnd: string;
+    };
+    pE0: {
+        paddingEnd: number;
+    };
+    pEPx: {
+        paddingEnd: number;
+    };
+    pE0_5: {
+        paddingEnd: number;
+    };
+    pE1: {
+        paddingEnd: number;
+    };
+    pE2: {
+        paddingEnd: number;
+    };
+    pE3: {
+        paddingEnd: number;
+    };
+    pE4: {
+        paddingEnd: number;
+    };
+    pE5: {
+        paddingEnd: number;
+    };
+    pE6: {
+        paddingEnd: number;
+    };
+    pE7: {
+        paddingEnd: number;
+    };
+    pE8: {
+        paddingEnd: number;
+    };
+    pE9: {
+        paddingEnd: number;
+    };
+    pE10: {
+        paddingEnd: number;
+    };
+    pE11: {
+        paddingEnd: number;
+    };
+    pE12: {
+        paddingEnd: number;
+    };
+    pE14: {
+        paddingEnd: number;
+    };
+    pE16: {
+        paddingEnd: number;
+    };
+    pE20: {
+        paddingEnd: number;
+    };
+    pE24: {
+        paddingEnd: number;
+    };
+    pE28: {
+        paddingEnd: number;
+    };
+    pE32: {
+        paddingEnd: number;
+    };
+    pE36: {
+        paddingEnd: number;
+    };
+    pE40: {
+        paddingEnd: number;
+    };
+    pE44: {
+        paddingEnd: number;
+    };
+    pE48: {
+        paddingEnd: number;
+    };
+    pE52: {
+        paddingEnd: number;
+    };
+    pE56: {
+        paddingEnd: number;
+    };
+    pE60: {
+        paddingEnd: number;
+    };
+    pE64: {
+        paddingEnd: number;
+    };
+    pE72: {
+        paddingEnd: number;
+    };
+    pE80: {
+        paddingEnd: number;
+    };
+    pE96: {
+        paddingEnd: number;
+    };
+    _pPx: {
+        padding: number;
+    };
+    _p0_5: {
+        padding: number;
+    };
+    _p1: {
+        padding: number;
+    };
+    _p2: {
+        padding: number;
+    };
+    _p3: {
+        padding: number;
+    };
+    _p4: {
+        padding: number;
+    };
+    _p5: {
+        padding: number;
+    };
+    _p6: {
+        padding: number;
+    };
+    _p7: {
+        padding: number;
+    };
+    _p8: {
+        padding: number;
+    };
+    _p9: {
+        padding: number;
+    };
+    _p10: {
+        padding: number;
+    };
+    _p11: {
+        padding: number;
+    };
+    _p12: {
+        padding: number;
+    };
+    _p14: {
+        padding: number;
+    };
+    _p16: {
+        padding: number;
+    };
+    _p20: {
+        padding: number;
+    };
+    _p24: {
+        padding: number;
+    };
+    _p28: {
+        padding: number;
+    };
+    _p32: {
+        padding: number;
+    };
+    _p36: {
+        padding: number;
+    };
+    _p40: {
+        padding: number;
+    };
+    _p44: {
+        padding: number;
+    };
+    _p48: {
+        padding: number;
+    };
+    _p52: {
+        padding: number;
+    };
+    _p56: {
+        padding: number;
+    };
+    _p60: {
+        padding: number;
+    };
+    _p64: {
+        padding: number;
+    };
+    _p72: {
+        padding: number;
+    };
+    _p80: {
+        padding: number;
+    };
+    _p96: {
+        padding: number;
+    };
+    _pTPx: {
+        paddingTop: number;
+    };
+    _pT0_5: {
+        paddingTop: number;
+    };
+    _pT1: {
+        paddingTop: number;
+    };
+    _pT2: {
+        paddingTop: number;
+    };
+    _pT3: {
+        paddingTop: number;
+    };
+    _pT4: {
+        paddingTop: number;
+    };
+    _pT5: {
+        paddingTop: number;
+    };
+    _pT6: {
+        paddingTop: number;
+    };
+    _pT7: {
+        paddingTop: number;
+    };
+    _pT8: {
+        paddingTop: number;
+    };
+    _pT9: {
+        paddingTop: number;
+    };
+    _pT10: {
+        paddingTop: number;
+    };
+    _pT11: {
+        paddingTop: number;
+    };
+    _pT12: {
+        paddingTop: number;
+    };
+    _pT14: {
+        paddingTop: number;
+    };
+    _pT16: {
+        paddingTop: number;
+    };
+    _pT20: {
+        paddingTop: number;
+    };
+    _pT24: {
+        paddingTop: number;
+    };
+    _pT28: {
+        paddingTop: number;
+    };
+    _pT32: {
+        paddingTop: number;
+    };
+    _pT36: {
+        paddingTop: number;
+    };
+    _pT40: {
+        paddingTop: number;
+    };
+    _pT44: {
+        paddingTop: number;
+    };
+    _pT48: {
+        paddingTop: number;
+    };
+    _pT52: {
+        paddingTop: number;
+    };
+    _pT56: {
+        paddingTop: number;
+    };
+    _pT60: {
+        paddingTop: number;
+    };
+    _pT64: {
+        paddingTop: number;
+    };
+    _pT72: {
+        paddingTop: number;
+    };
+    _pT80: {
+        paddingTop: number;
+    };
+    _pT96: {
+        paddingTop: number;
+    };
+    _pBPx: {
+        paddingBottom: number;
+    };
+    _pB0_5: {
+        paddingBottom: number;
+    };
+    _pB1: {
+        paddingBottom: number;
+    };
+    _pB2: {
+        paddingBottom: number;
+    };
+    _pB3: {
+        paddingBottom: number;
+    };
+    _pB4: {
+        paddingBottom: number;
+    };
+    _pB5: {
+        paddingBottom: number;
+    };
+    _pB6: {
+        paddingBottom: number;
+    };
+    _pB7: {
+        paddingBottom: number;
+    };
+    _pB8: {
+        paddingBottom: number;
+    };
+    _pB9: {
+        paddingBottom: number;
+    };
+    _pB10: {
+        paddingBottom: number;
+    };
+    _pB11: {
+        paddingBottom: number;
+    };
+    _pB12: {
+        paddingBottom: number;
+    };
+    _pB14: {
+        paddingBottom: number;
+    };
+    _pB16: {
+        paddingBottom: number;
+    };
+    _pB20: {
+        paddingBottom: number;
+    };
+    _pB24: {
+        paddingBottom: number;
+    };
+    _pB28: {
+        paddingBottom: number;
+    };
+    _pB32: {
+        paddingBottom: number;
+    };
+    _pB36: {
+        paddingBottom: number;
+    };
+    _pB40: {
+        paddingBottom: number;
+    };
+    _pB44: {
+        paddingBottom: number;
+    };
+    _pB48: {
+        paddingBottom: number;
+    };
+    _pB52: {
+        paddingBottom: number;
+    };
+    _pB56: {
+        paddingBottom: number;
+    };
+    _pB60: {
+        paddingBottom: number;
+    };
+    _pB64: {
+        paddingBottom: number;
+    };
+    _pB72: {
+        paddingBottom: number;
+    };
+    _pB80: {
+        paddingBottom: number;
+    };
+    _pB96: {
+        paddingBottom: number;
+    };
+    _pLPx: {
+        paddingLeft: number;
+    };
+    _pL0_5: {
+        paddingLeft: number;
+    };
+    _pL1: {
+        paddingLeft: number;
+    };
+    _pL2: {
+        paddingLeft: number;
+    };
+    _pL3: {
+        paddingLeft: number;
+    };
+    _pL4: {
+        paddingLeft: number;
+    };
+    _pL5: {
+        paddingLeft: number;
+    };
+    _pL6: {
+        paddingLeft: number;
+    };
+    _pL7: {
+        paddingLeft: number;
+    };
+    _pL8: {
+        paddingLeft: number;
+    };
+    _pL9: {
+        paddingLeft: number;
+    };
+    _pL10: {
+        paddingLeft: number;
+    };
+    _pL11: {
+        paddingLeft: number;
+    };
+    _pL12: {
+        paddingLeft: number;
+    };
+    _pL14: {
+        paddingLeft: number;
+    };
+    _pL16: {
+        paddingLeft: number;
+    };
+    _pL20: {
+        paddingLeft: number;
+    };
+    _pL24: {
+        paddingLeft: number;
+    };
+    _pL28: {
+        paddingLeft: number;
+    };
+    _pL32: {
+        paddingLeft: number;
+    };
+    _pL36: {
+        paddingLeft: number;
+    };
+    _pL40: {
+        paddingLeft: number;
+    };
+    _pL44: {
+        paddingLeft: number;
+    };
+    _pL48: {
+        paddingLeft: number;
+    };
+    _pL52: {
+        paddingLeft: number;
+    };
+    _pL56: {
+        paddingLeft: number;
+    };
+    _pL60: {
+        paddingLeft: number;
+    };
+    _pL64: {
+        paddingLeft: number;
+    };
+    _pL72: {
+        paddingLeft: number;
+    };
+    _pL80: {
+        paddingLeft: number;
+    };
+    _pL96: {
+        paddingLeft: number;
+    };
+    _pRPx: {
+        paddingRight: number;
+    };
+    _pR0_5: {
+        paddingRight: number;
+    };
+    _pR1: {
+        paddingRight: number;
+    };
+    _pR2: {
+        paddingRight: number;
+    };
+    _pR3: {
+        paddingRight: number;
+    };
+    _pR4: {
+        paddingRight: number;
+    };
+    _pR5: {
+        paddingRight: number;
+    };
+    _pR6: {
+        paddingRight: number;
+    };
+    _pR7: {
+        paddingRight: number;
+    };
+    _pR8: {
+        paddingRight: number;
+    };
+    _pR9: {
+        paddingRight: number;
+    };
+    _pR10: {
+        paddingRight: number;
+    };
+    _pR11: {
+        paddingRight: number;
+    };
+    _pR12: {
+        paddingRight: number;
+    };
+    _pR14: {
+        paddingRight: number;
+    };
+    _pR16: {
+        paddingRight: number;
+    };
+    _pR20: {
+        paddingRight: number;
+    };
+    _pR24: {
+        paddingRight: number;
+    };
+    _pR28: {
+        paddingRight: number;
+    };
+    _pR32: {
+        paddingRight: number;
+    };
+    _pR36: {
+        paddingRight: number;
+    };
+    _pR40: {
+        paddingRight: number;
+    };
+    _pR44: {
+        paddingRight: number;
+    };
+    _pR48: {
+        paddingRight: number;
+    };
+    _pR52: {
+        paddingRight: number;
+    };
+    _pR56: {
+        paddingRight: number;
+    };
+    _pR60: {
+        paddingRight: number;
+    };
+    _pR64: {
+        paddingRight: number;
+    };
+    _pR72: {
+        paddingRight: number;
+    };
+    _pR80: {
+        paddingRight: number;
+    };
+    _pR96: {
+        paddingRight: number;
+    };
+    _pXPx: {
+        paddingHorizontal: number;
+    };
+    _pX0_5: {
+        paddingHorizontal: number;
+    };
+    _pX1: {
+        paddingHorizontal: number;
+    };
+    _pX2: {
+        paddingHorizontal: number;
+    };
+    _pX3: {
+        paddingHorizontal: number;
+    };
+    _pX4: {
+        paddingHorizontal: number;
+    };
+    _pX5: {
+        paddingHorizontal: number;
+    };
+    _pX6: {
+        paddingHorizontal: number;
+    };
+    _pX7: {
+        paddingHorizontal: number;
+    };
+    _pX8: {
+        paddingHorizontal: number;
+    };
+    _pX9: {
+        paddingHorizontal: number;
+    };
+    _pX10: {
+        paddingHorizontal: number;
+    };
+    _pX11: {
+        paddingHorizontal: number;
+    };
+    _pX12: {
+        paddingHorizontal: number;
+    };
+    _pX14: {
+        paddingHorizontal: number;
+    };
+    _pX16: {
+        paddingHorizontal: number;
+    };
+    _pX20: {
+        paddingHorizontal: number;
+    };
+    _pX24: {
+        paddingHorizontal: number;
+    };
+    _pX28: {
+        paddingHorizontal: number;
+    };
+    _pX32: {
+        paddingHorizontal: number;
+    };
+    _pX36: {
+        paddingHorizontal: number;
+    };
+    _pX40: {
+        paddingHorizontal: number;
+    };
+    _pX44: {
+        paddingHorizontal: number;
+    };
+    _pX48: {
+        paddingHorizontal: number;
+    };
+    _pX52: {
+        paddingHorizontal: number;
+    };
+    _pX56: {
+        paddingHorizontal: number;
+    };
+    _pX60: {
+        paddingHorizontal: number;
+    };
+    _pX64: {
+        paddingHorizontal: number;
+    };
+    _pX72: {
+        paddingHorizontal: number;
+    };
+    _pX80: {
+        paddingHorizontal: number;
+    };
+    _pX96: {
+        paddingHorizontal: number;
+    };
+    _pYPx: {
+        paddingVertical: number;
+    };
+    _pY0_5: {
+        paddingVertical: number;
+    };
+    _pY1: {
+        paddingVertical: number;
+    };
+    _pY2: {
+        paddingVertical: number;
+    };
+    _pY3: {
+        paddingVertical: number;
+    };
+    _pY4: {
+        paddingVertical: number;
+    };
+    _pY5: {
+        paddingVertical: number;
+    };
+    _pY6: {
+        paddingVertical: number;
+    };
+    _pY7: {
+        paddingVertical: number;
+    };
+    _pY8: {
+        paddingVertical: number;
+    };
+    _pY9: {
+        paddingVertical: number;
+    };
+    _pY10: {
+        paddingVertical: number;
+    };
+    _pY11: {
+        paddingVertical: number;
+    };
+    _pY12: {
+        paddingVertical: number;
+    };
+    _pY14: {
+        paddingVertical: number;
+    };
+    _pY16: {
+        paddingVertical: number;
+    };
+    _pY20: {
+        paddingVertical: number;
+    };
+    _pY24: {
+        paddingVertical: number;
+    };
+    _pY28: {
+        paddingVertical: number;
+    };
+    _pY32: {
+        paddingVertical: number;
+    };
+    _pY36: {
+        paddingVertical: number;
+    };
+    _pY40: {
+        paddingVertical: number;
+    };
+    _pY44: {
+        paddingVertical: number;
+    };
+    _pY48: {
+        paddingVertical: number;
+    };
+    _pY52: {
+        paddingVertical: number;
+    };
+    _pY56: {
+        paddingVertical: number;
+    };
+    _pY60: {
+        paddingVertical: number;
+    };
+    _pY64: {
+        paddingVertical: number;
+    };
+    _pY72: {
+        paddingVertical: number;
+    };
+    _pY80: {
+        paddingVertical: number;
+    };
+    _pY96: {
+        paddingVertical: number;
+    };
+    _pSPx: {
+        paddingStart: number;
+    };
+    _pS0_5: {
+        paddingStart: number;
+    };
+    _pS1: {
+        paddingStart: number;
+    };
+    _pS2: {
+        paddingStart: number;
+    };
+    _pS3: {
+        paddingStart: number;
+    };
+    _pS4: {
+        paddingStart: number;
+    };
+    _pS5: {
+        paddingStart: number;
+    };
+    _pS6: {
+        paddingStart: number;
+    };
+    _pS7: {
+        paddingStart: number;
+    };
+    _pS8: {
+        paddingStart: number;
+    };
+    _pS9: {
+        paddingStart: number;
+    };
+    _pS10: {
+        paddingStart: number;
+    };
+    _pS11: {
+        paddingStart: number;
+    };
+    _pS12: {
+        paddingStart: number;
+    };
+    _pS14: {
+        paddingStart: number;
+    };
+    _pS16: {
+        paddingStart: number;
+    };
+    _pS20: {
+        paddingStart: number;
+    };
+    _pS24: {
+        paddingStart: number;
+    };
+    _pS28: {
+        paddingStart: number;
+    };
+    _pS32: {
+        paddingStart: number;
+    };
+    _pS36: {
+        paddingStart: number;
+    };
+    _pS40: {
+        paddingStart: number;
+    };
+    _pS44: {
+        paddingStart: number;
+    };
+    _pS48: {
+        paddingStart: number;
+    };
+    _pS52: {
+        paddingStart: number;
+    };
+    _pS56: {
+        paddingStart: number;
+    };
+    _pS60: {
+        paddingStart: number;
+    };
+    _pS64: {
+        paddingStart: number;
+    };
+    _pS72: {
+        paddingStart: number;
+    };
+    _pS80: {
+        paddingStart: number;
+    };
+    _pS96: {
+        paddingStart: number;
+    };
+    _pEPx: {
+        paddingEnd: number;
+    };
+    _pE0_5: {
+        paddingEnd: number;
+    };
+    _pE1: {
+        paddingEnd: number;
+    };
+    _pE2: {
+        paddingEnd: number;
+    };
+    _pE3: {
+        paddingEnd: number;
+    };
+    _pE4: {
+        paddingEnd: number;
+    };
+    _pE5: {
+        paddingEnd: number;
+    };
+    _pE6: {
+        paddingEnd: number;
+    };
+    _pE7: {
+        paddingEnd: number;
+    };
+    _pE8: {
+        paddingEnd: number;
+    };
+    _pE9: {
+        paddingEnd: number;
+    };
+    _pE10: {
+        paddingEnd: number;
+    };
+    _pE11: {
+        paddingEnd: number;
+    };
+    _pE12: {
+        paddingEnd: number;
+    };
+    _pE14: {
+        paddingEnd: number;
+    };
+    _pE16: {
+        paddingEnd: number;
+    };
+    _pE20: {
+        paddingEnd: number;
+    };
+    _pE24: {
+        paddingEnd: number;
+    };
+    _pE28: {
+        paddingEnd: number;
+    };
+    _pE32: {
+        paddingEnd: number;
+    };
+    _pE36: {
+        paddingEnd: number;
+    };
+    _pE40: {
+        paddingEnd: number;
+    };
+    _pE44: {
+        paddingEnd: number;
+    };
+    _pE48: {
+        paddingEnd: number;
+    };
+    _pE52: {
+        paddingEnd: number;
+    };
+    _pE56: {
+        paddingEnd: number;
+    };
+    _pE60: {
+        paddingEnd: number;
+    };
+    _pE64: {
+        paddingEnd: number;
+    };
+    _pE72: {
+        paddingEnd: number;
+    };
+    _pE80: {
+        paddingEnd: number;
+    };
+    _pE96: {
+        paddingEnd: number;
+    };
+    mAuto: {
+        margin: string;
+    };
+    m0: {
+        margin: number;
+    };
+    mPx: {
+        margin: number;
+    };
+    m0_5: {
+        margin: number;
+    };
+    m1: {
+        margin: number;
+    };
+    m2: {
+        margin: number;
+    };
+    m3: {
+        margin: number;
+    };
+    m4: {
+        margin: number;
+    };
+    m5: {
+        margin: number;
+    };
+    m6: {
+        margin: number;
+    };
+    m7: {
+        margin: number;
+    };
+    m8: {
+        margin: number;
+    };
+    m9: {
+        margin: number;
+    };
+    m10: {
+        margin: number;
+    };
+    m11: {
+        margin: number;
+    };
+    m12: {
+        margin: number;
+    };
+    m14: {
+        margin: number;
+    };
+    m16: {
+        margin: number;
+    };
+    m20: {
+        margin: number;
+    };
+    m24: {
+        margin: number;
+    };
+    m28: {
+        margin: number;
+    };
+    m32: {
+        margin: number;
+    };
+    m36: {
+        margin: number;
+    };
+    m40: {
+        margin: number;
+    };
+    m44: {
+        margin: number;
+    };
+    m48: {
+        margin: number;
+    };
+    m52: {
+        margin: number;
+    };
+    m56: {
+        margin: number;
+    };
+    m60: {
+        margin: number;
+    };
+    m64: {
+        margin: number;
+    };
+    m72: {
+        margin: number;
+    };
+    m80: {
+        margin: number;
+    };
+    m96: {
+        margin: number;
+    };
+    mTAuto: {
+        marginTop: string;
+    };
+    mT0: {
+        marginTop: number;
+    };
+    mTPx: {
+        marginTop: number;
+    };
+    mT0_5: {
+        marginTop: number;
+    };
+    mT1: {
+        marginTop: number;
+    };
+    mT2: {
+        marginTop: number;
+    };
+    mT3: {
+        marginTop: number;
+    };
+    mT4: {
+        marginTop: number;
+    };
+    mT5: {
+        marginTop: number;
+    };
+    mT6: {
+        marginTop: number;
+    };
+    mT7: {
+        marginTop: number;
+    };
+    mT8: {
+        marginTop: number;
+    };
+    mT9: {
+        marginTop: number;
+    };
+    mT10: {
+        marginTop: number;
+    };
+    mT11: {
+        marginTop: number;
+    };
+    mT12: {
+        marginTop: number;
+    };
+    mT14: {
+        marginTop: number;
+    };
+    mT16: {
+        marginTop: number;
+    };
+    mT20: {
+        marginTop: number;
+    };
+    mT24: {
+        marginTop: number;
+    };
+    mT28: {
+        marginTop: number;
+    };
+    mT32: {
+        marginTop: number;
+    };
+    mT36: {
+        marginTop: number;
+    };
+    mT40: {
+        marginTop: number;
+    };
+    mT44: {
+        marginTop: number;
+    };
+    mT48: {
+        marginTop: number;
+    };
+    mT52: {
+        marginTop: number;
+    };
+    mT56: {
+        marginTop: number;
+    };
+    mT60: {
+        marginTop: number;
+    };
+    mT64: {
+        marginTop: number;
+    };
+    mT72: {
+        marginTop: number;
+    };
+    mT80: {
+        marginTop: number;
+    };
+    mT96: {
+        marginTop: number;
+    };
+    mBAuto: {
+        marginBottom: string;
+    };
+    mB0: {
+        marginBottom: number;
+    };
+    mBPx: {
+        marginBottom: number;
+    };
+    mB0_5: {
+        marginBottom: number;
+    };
+    mB1: {
+        marginBottom: number;
+    };
+    mB2: {
+        marginBottom: number;
+    };
+    mB3: {
+        marginBottom: number;
+    };
+    mB4: {
+        marginBottom: number;
+    };
+    mB5: {
+        marginBottom: number;
+    };
+    mB6: {
+        marginBottom: number;
+    };
+    mB7: {
+        marginBottom: number;
+    };
+    mB8: {
+        marginBottom: number;
+    };
+    mB9: {
+        marginBottom: number;
+    };
+    mB10: {
+        marginBottom: number;
+    };
+    mB11: {
+        marginBottom: number;
+    };
+    mB12: {
+        marginBottom: number;
+    };
+    mB14: {
+        marginBottom: number;
+    };
+    mB16: {
+        marginBottom: number;
+    };
+    mB20: {
+        marginBottom: number;
+    };
+    mB24: {
+        marginBottom: number;
+    };
+    mB28: {
+        marginBottom: number;
+    };
+    mB32: {
+        marginBottom: number;
+    };
+    mB36: {
+        marginBottom: number;
+    };
+    mB40: {
+        marginBottom: number;
+    };
+    mB44: {
+        marginBottom: number;
+    };
+    mB48: {
+        marginBottom: number;
+    };
+    mB52: {
+        marginBottom: number;
+    };
+    mB56: {
+        marginBottom: number;
+    };
+    mB60: {
+        marginBottom: number;
+    };
+    mB64: {
+        marginBottom: number;
+    };
+    mB72: {
+        marginBottom: number;
+    };
+    mB80: {
+        marginBottom: number;
+    };
+    mB96: {
+        marginBottom: number;
+    };
+    mLAuto: {
+        marginLeft: string;
+    };
+    mL0: {
+        marginLeft: number;
+    };
+    mLPx: {
+        marginLeft: number;
+    };
+    mL0_5: {
+        marginLeft: number;
+    };
+    mL1: {
+        marginLeft: number;
+    };
+    mL2: {
+        marginLeft: number;
+    };
+    mL3: {
+        marginLeft: number;
+    };
+    mL4: {
+        marginLeft: number;
+    };
+    mL5: {
+        marginLeft: number;
+    };
+    mL6: {
+        marginLeft: number;
+    };
+    mL7: {
+        marginLeft: number;
+    };
+    mL8: {
+        marginLeft: number;
+    };
+    mL9: {
+        marginLeft: number;
+    };
+    mL10: {
+        marginLeft: number;
+    };
+    mL11: {
+        marginLeft: number;
+    };
+    mL12: {
+        marginLeft: number;
+    };
+    mL14: {
+        marginLeft: number;
+    };
+    mL16: {
+        marginLeft: number;
+    };
+    mL20: {
+        marginLeft: number;
+    };
+    mL24: {
+        marginLeft: number;
+    };
+    mL28: {
+        marginLeft: number;
+    };
+    mL32: {
+        marginLeft: number;
+    };
+    mL36: {
+        marginLeft: number;
+    };
+    mL40: {
+        marginLeft: number;
+    };
+    mL44: {
+        marginLeft: number;
+    };
+    mL48: {
+        marginLeft: number;
+    };
+    mL52: {
+        marginLeft: number;
+    };
+    mL56: {
+        marginLeft: number;
+    };
+    mL60: {
+        marginLeft: number;
+    };
+    mL64: {
+        marginLeft: number;
+    };
+    mL72: {
+        marginLeft: number;
+    };
+    mL80: {
+        marginLeft: number;
+    };
+    mL96: {
+        marginLeft: number;
+    };
+    mRAuto: {
+        marginRight: string;
+    };
+    mR0: {
+        marginRight: number;
+    };
+    mRPx: {
+        marginRight: number;
+    };
+    mR0_5: {
+        marginRight: number;
+    };
+    mR1: {
+        marginRight: number;
+    };
+    mR2: {
+        marginRight: number;
+    };
+    mR3: {
+        marginRight: number;
+    };
+    mR4: {
+        marginRight: number;
+    };
+    mR5: {
+        marginRight: number;
+    };
+    mR6: {
+        marginRight: number;
+    };
+    mR7: {
+        marginRight: number;
+    };
+    mR8: {
+        marginRight: number;
+    };
+    mR9: {
+        marginRight: number;
+    };
+    mR10: {
+        marginRight: number;
+    };
+    mR11: {
+        marginRight: number;
+    };
+    mR12: {
+        marginRight: number;
+    };
+    mR14: {
+        marginRight: number;
+    };
+    mR16: {
+        marginRight: number;
+    };
+    mR20: {
+        marginRight: number;
+    };
+    mR24: {
+        marginRight: number;
+    };
+    mR28: {
+        marginRight: number;
+    };
+    mR32: {
+        marginRight: number;
+    };
+    mR36: {
+        marginRight: number;
+    };
+    mR40: {
+        marginRight: number;
+    };
+    mR44: {
+        marginRight: number;
+    };
+    mR48: {
+        marginRight: number;
+    };
+    mR52: {
+        marginRight: number;
+    };
+    mR56: {
+        marginRight: number;
+    };
+    mR60: {
+        marginRight: number;
+    };
+    mR64: {
+        marginRight: number;
+    };
+    mR72: {
+        marginRight: number;
+    };
+    mR80: {
+        marginRight: number;
+    };
+    mR96: {
+        marginRight: number;
+    };
+    mXAuto: {
+        marginHorizontal: string;
+    };
+    mX0: {
+        marginHorizontal: number;
+    };
+    mXPx: {
+        marginHorizontal: number;
+    };
+    mX0_5: {
+        marginHorizontal: number;
+    };
+    mX1: {
+        marginHorizontal: number;
+    };
+    mX2: {
+        marginHorizontal: number;
+    };
+    mX3: {
+        marginHorizontal: number;
+    };
+    mX4: {
+        marginHorizontal: number;
+    };
+    mX5: {
+        marginHorizontal: number;
+    };
+    mX6: {
+        marginHorizontal: number;
+    };
+    mX7: {
+        marginHorizontal: number;
+    };
+    mX8: {
+        marginHorizontal: number;
+    };
+    mX9: {
+        marginHorizontal: number;
+    };
+    mX10: {
+        marginHorizontal: number;
+    };
+    mX11: {
+        marginHorizontal: number;
+    };
+    mX12: {
+        marginHorizontal: number;
+    };
+    mX14: {
+        marginHorizontal: number;
+    };
+    mX16: {
+        marginHorizontal: number;
+    };
+    mX20: {
+        marginHorizontal: number;
+    };
+    mX24: {
+        marginHorizontal: number;
+    };
+    mX28: {
+        marginHorizontal: number;
+    };
+    mX32: {
+        marginHorizontal: number;
+    };
+    mX36: {
+        marginHorizontal: number;
+    };
+    mX40: {
+        marginHorizontal: number;
+    };
+    mX44: {
+        marginHorizontal: number;
+    };
+    mX48: {
+        marginHorizontal: number;
+    };
+    mX52: {
+        marginHorizontal: number;
+    };
+    mX56: {
+        marginHorizontal: number;
+    };
+    mX60: {
+        marginHorizontal: number;
+    };
+    mX64: {
+        marginHorizontal: number;
+    };
+    mX72: {
+        marginHorizontal: number;
+    };
+    mX80: {
+        marginHorizontal: number;
+    };
+    mX96: {
+        marginHorizontal: number;
+    };
+    mYAuto: {
+        marginVertical: string;
+    };
+    mY0: {
+        marginVertical: number;
+    };
+    mYPx: {
+        marginVertical: number;
+    };
+    mY0_5: {
+        marginVertical: number;
+    };
+    mY1: {
+        marginVertical: number;
+    };
+    mY2: {
+        marginVertical: number;
+    };
+    mY3: {
+        marginVertical: number;
+    };
+    mY4: {
+        marginVertical: number;
+    };
+    mY5: {
+        marginVertical: number;
+    };
+    mY6: {
+        marginVertical: number;
+    };
+    mY7: {
+        marginVertical: number;
+    };
+    mY8: {
+        marginVertical: number;
+    };
+    mY9: {
+        marginVertical: number;
+    };
+    mY10: {
+        marginVertical: number;
+    };
+    mY11: {
+        marginVertical: number;
+    };
+    mY12: {
+        marginVertical: number;
+    };
+    mY14: {
+        marginVertical: number;
+    };
+    mY16: {
+        marginVertical: number;
+    };
+    mY20: {
+        marginVertical: number;
+    };
+    mY24: {
+        marginVertical: number;
+    };
+    mY28: {
+        marginVertical: number;
+    };
+    mY32: {
+        marginVertical: number;
+    };
+    mY36: {
+        marginVertical: number;
+    };
+    mY40: {
+        marginVertical: number;
+    };
+    mY44: {
+        marginVertical: number;
+    };
+    mY48: {
+        marginVertical: number;
+    };
+    mY52: {
+        marginVertical: number;
+    };
+    mY56: {
+        marginVertical: number;
+    };
+    mY60: {
+        marginVertical: number;
+    };
+    mY64: {
+        marginVertical: number;
+    };
+    mY72: {
+        marginVertical: number;
+    };
+    mY80: {
+        marginVertical: number;
+    };
+    mY96: {
+        marginVertical: number;
+    };
+    mSAuto: {
+        marginStart: string;
+    };
+    mS0: {
+        marginStart: number;
+    };
+    mSPx: {
+        marginStart: number;
+    };
+    mS0_5: {
+        marginStart: number;
+    };
+    mS1: {
+        marginStart: number;
+    };
+    mS2: {
+        marginStart: number;
+    };
+    mS3: {
+        marginStart: number;
+    };
+    mS4: {
+        marginStart: number;
+    };
+    mS5: {
+        marginStart: number;
+    };
+    mS6: {
+        marginStart: number;
+    };
+    mS7: {
+        marginStart: number;
+    };
+    mS8: {
+        marginStart: number;
+    };
+    mS9: {
+        marginStart: number;
+    };
+    mS10: {
+        marginStart: number;
+    };
+    mS11: {
+        marginStart: number;
+    };
+    mS12: {
+        marginStart: number;
+    };
+    mS14: {
+        marginStart: number;
+    };
+    mS16: {
+        marginStart: number;
+    };
+    mS20: {
+        marginStart: number;
+    };
+    mS24: {
+        marginStart: number;
+    };
+    mS28: {
+        marginStart: number;
+    };
+    mS32: {
+        marginStart: number;
+    };
+    mS36: {
+        marginStart: number;
+    };
+    mS40: {
+        marginStart: number;
+    };
+    mS44: {
+        marginStart: number;
+    };
+    mS48: {
+        marginStart: number;
+    };
+    mS52: {
+        marginStart: number;
+    };
+    mS56: {
+        marginStart: number;
+    };
+    mS60: {
+        marginStart: number;
+    };
+    mS64: {
+        marginStart: number;
+    };
+    mS72: {
+        marginStart: number;
+    };
+    mS80: {
+        marginStart: number;
+    };
+    mS96: {
+        marginStart: number;
+    };
+    mEAuto: {
+        marginEnd: string;
+    };
+    mE0: {
+        marginEnd: number;
+    };
+    mEPx: {
+        marginEnd: number;
+    };
+    mE0_5: {
+        marginEnd: number;
+    };
+    mE1: {
+        marginEnd: number;
+    };
+    mE2: {
+        marginEnd: number;
+    };
+    mE3: {
+        marginEnd: number;
+    };
+    mE4: {
+        marginEnd: number;
+    };
+    mE5: {
+        marginEnd: number;
+    };
+    mE6: {
+        marginEnd: number;
+    };
+    mE7: {
+        marginEnd: number;
+    };
+    mE8: {
+        marginEnd: number;
+    };
+    mE9: {
+        marginEnd: number;
+    };
+    mE10: {
+        marginEnd: number;
+    };
+    mE11: {
+        marginEnd: number;
+    };
+    mE12: {
+        marginEnd: number;
+    };
+    mE14: {
+        marginEnd: number;
+    };
+    mE16: {
+        marginEnd: number;
+    };
+    mE20: {
+        marginEnd: number;
+    };
+    mE24: {
+        marginEnd: number;
+    };
+    mE28: {
+        marginEnd: number;
+    };
+    mE32: {
+        marginEnd: number;
+    };
+    mE36: {
+        marginEnd: number;
+    };
+    mE40: {
+        marginEnd: number;
+    };
+    mE44: {
+        marginEnd: number;
+    };
+    mE48: {
+        marginEnd: number;
+    };
+    mE52: {
+        marginEnd: number;
+    };
+    mE56: {
+        marginEnd: number;
+    };
+    mE60: {
+        marginEnd: number;
+    };
+    mE64: {
+        marginEnd: number;
+    };
+    mE72: {
+        marginEnd: number;
+    };
+    mE80: {
+        marginEnd: number;
+    };
+    mE96: {
+        marginEnd: number;
+    };
+    _mPx: {
+        margin: number;
+    };
+    _m0_5: {
+        margin: number;
+    };
+    _m1: {
+        margin: number;
+    };
+    _m2: {
+        margin: number;
+    };
+    _m3: {
+        margin: number;
+    };
+    _m4: {
+        margin: number;
+    };
+    _m5: {
+        margin: number;
+    };
+    _m6: {
+        margin: number;
+    };
+    _m7: {
+        margin: number;
+    };
+    _m8: {
+        margin: number;
+    };
+    _m9: {
+        margin: number;
+    };
+    _m10: {
+        margin: number;
+    };
+    _m11: {
+        margin: number;
+    };
+    _m12: {
+        margin: number;
+    };
+    _m14: {
+        margin: number;
+    };
+    _m16: {
+        margin: number;
+    };
+    _m20: {
+        margin: number;
+    };
+    _m24: {
+        margin: number;
+    };
+    _m28: {
+        margin: number;
+    };
+    _m32: {
+        margin: number;
+    };
+    _m36: {
+        margin: number;
+    };
+    _m40: {
+        margin: number;
+    };
+    _m44: {
+        margin: number;
+    };
+    _m48: {
+        margin: number;
+    };
+    _m52: {
+        margin: number;
+    };
+    _m56: {
+        margin: number;
+    };
+    _m60: {
+        margin: number;
+    };
+    _m64: {
+        margin: number;
+    };
+    _m72: {
+        margin: number;
+    };
+    _m80: {
+        margin: number;
+    };
+    _m96: {
+        margin: number;
+    };
+    _mTPx: {
+        marginTop: number;
+    };
+    _mT0_5: {
+        marginTop: number;
+    };
+    _mT1: {
+        marginTop: number;
+    };
+    _mT2: {
+        marginTop: number;
+    };
+    _mT3: {
+        marginTop: number;
+    };
+    _mT4: {
+        marginTop: number;
+    };
+    _mT5: {
+        marginTop: number;
+    };
+    _mT6: {
+        marginTop: number;
+    };
+    _mT7: {
+        marginTop: number;
+    };
+    _mT8: {
+        marginTop: number;
+    };
+    _mT9: {
+        marginTop: number;
+    };
+    _mT10: {
+        marginTop: number;
+    };
+    _mT11: {
+        marginTop: number;
+    };
+    _mT12: {
+        marginTop: number;
+    };
+    _mT14: {
+        marginTop: number;
+    };
+    _mT16: {
+        marginTop: number;
+    };
+    _mT20: {
+        marginTop: number;
+    };
+    _mT24: {
+        marginTop: number;
+    };
+    _mT28: {
+        marginTop: number;
+    };
+    _mT32: {
+        marginTop: number;
+    };
+    _mT36: {
+        marginTop: number;
+    };
+    _mT40: {
+        marginTop: number;
+    };
+    _mT44: {
+        marginTop: number;
+    };
+    _mT48: {
+        marginTop: number;
+    };
+    _mT52: {
+        marginTop: number;
+    };
+    _mT56: {
+        marginTop: number;
+    };
+    _mT60: {
+        marginTop: number;
+    };
+    _mT64: {
+        marginTop: number;
+    };
+    _mT72: {
+        marginTop: number;
+    };
+    _mT80: {
+        marginTop: number;
+    };
+    _mT96: {
+        marginTop: number;
+    };
+    _mBPx: {
+        marginBottom: number;
+    };
+    _mB0_5: {
+        marginBottom: number;
+    };
+    _mB1: {
+        marginBottom: number;
+    };
+    _mB2: {
+        marginBottom: number;
+    };
+    _mB3: {
+        marginBottom: number;
+    };
+    _mB4: {
+        marginBottom: number;
+    };
+    _mB5: {
+        marginBottom: number;
+    };
+    _mB6: {
+        marginBottom: number;
+    };
+    _mB7: {
+        marginBottom: number;
+    };
+    _mB8: {
+        marginBottom: number;
+    };
+    _mB9: {
+        marginBottom: number;
+    };
+    _mB10: {
+        marginBottom: number;
+    };
+    _mB11: {
+        marginBottom: number;
+    };
+    _mB12: {
+        marginBottom: number;
+    };
+    _mB14: {
+        marginBottom: number;
+    };
+    _mB16: {
+        marginBottom: number;
+    };
+    _mB20: {
+        marginBottom: number;
+    };
+    _mB24: {
+        marginBottom: number;
+    };
+    _mB28: {
+        marginBottom: number;
+    };
+    _mB32: {
+        marginBottom: number;
+    };
+    _mB36: {
+        marginBottom: number;
+    };
+    _mB40: {
+        marginBottom: number;
+    };
+    _mB44: {
+        marginBottom: number;
+    };
+    _mB48: {
+        marginBottom: number;
+    };
+    _mB52: {
+        marginBottom: number;
+    };
+    _mB56: {
+        marginBottom: number;
+    };
+    _mB60: {
+        marginBottom: number;
+    };
+    _mB64: {
+        marginBottom: number;
+    };
+    _mB72: {
+        marginBottom: number;
+    };
+    _mB80: {
+        marginBottom: number;
+    };
+    _mB96: {
+        marginBottom: number;
+    };
+    _mLPx: {
+        marginLeft: number;
+    };
+    _mL0_5: {
+        marginLeft: number;
+    };
+    _mL1: {
+        marginLeft: number;
+    };
+    _mL2: {
+        marginLeft: number;
+    };
+    _mL3: {
+        marginLeft: number;
+    };
+    _mL4: {
+        marginLeft: number;
+    };
+    _mL5: {
+        marginLeft: number;
+    };
+    _mL6: {
+        marginLeft: number;
+    };
+    _mL7: {
+        marginLeft: number;
+    };
+    _mL8: {
+        marginLeft: number;
+    };
+    _mL9: {
+        marginLeft: number;
+    };
+    _mL10: {
+        marginLeft: number;
+    };
+    _mL11: {
+        marginLeft: number;
+    };
+    _mL12: {
+        marginLeft: number;
+    };
+    _mL14: {
+        marginLeft: number;
+    };
+    _mL16: {
+        marginLeft: number;
+    };
+    _mL20: {
+        marginLeft: number;
+    };
+    _mL24: {
+        marginLeft: number;
+    };
+    _mL28: {
+        marginLeft: number;
+    };
+    _mL32: {
+        marginLeft: number;
+    };
+    _mL36: {
+        marginLeft: number;
+    };
+    _mL40: {
+        marginLeft: number;
+    };
+    _mL44: {
+        marginLeft: number;
+    };
+    _mL48: {
+        marginLeft: number;
+    };
+    _mL52: {
+        marginLeft: number;
+    };
+    _mL56: {
+        marginLeft: number;
+    };
+    _mL60: {
+        marginLeft: number;
+    };
+    _mL64: {
+        marginLeft: number;
+    };
+    _mL72: {
+        marginLeft: number;
+    };
+    _mL80: {
+        marginLeft: number;
+    };
+    _mL96: {
+        marginLeft: number;
+    };
+    _mRPx: {
+        marginRight: number;
+    };
+    _mR0_5: {
+        marginRight: number;
+    };
+    _mR1: {
+        marginRight: number;
+    };
+    _mR2: {
+        marginRight: number;
+    };
+    _mR3: {
+        marginRight: number;
+    };
+    _mR4: {
+        marginRight: number;
+    };
+    _mR5: {
+        marginRight: number;
+    };
+    _mR6: {
+        marginRight: number;
+    };
+    _mR7: {
+        marginRight: number;
+    };
+    _mR8: {
+        marginRight: number;
+    };
+    _mR9: {
+        marginRight: number;
+    };
+    _mR10: {
+        marginRight: number;
+    };
+    _mR11: {
+        marginRight: number;
+    };
+    _mR12: {
+        marginRight: number;
+    };
+    _mR14: {
+        marginRight: number;
+    };
+    _mR16: {
+        marginRight: number;
+    };
+    _mR20: {
+        marginRight: number;
+    };
+    _mR24: {
+        marginRight: number;
+    };
+    _mR28: {
+        marginRight: number;
+    };
+    _mR32: {
+        marginRight: number;
+    };
+    _mR36: {
+        marginRight: number;
+    };
+    _mR40: {
+        marginRight: number;
+    };
+    _mR44: {
+        marginRight: number;
+    };
+    _mR48: {
+        marginRight: number;
+    };
+    _mR52: {
+        marginRight: number;
+    };
+    _mR56: {
+        marginRight: number;
+    };
+    _mR60: {
+        marginRight: number;
+    };
+    _mR64: {
+        marginRight: number;
+    };
+    _mR72: {
+        marginRight: number;
+    };
+    _mR80: {
+        marginRight: number;
+    };
+    _mR96: {
+        marginRight: number;
+    };
+    _mXPx: {
+        marginHorizontal: number;
+    };
+    _mX0_5: {
+        marginHorizontal: number;
+    };
+    _mX1: {
+        marginHorizontal: number;
+    };
+    _mX2: {
+        marginHorizontal: number;
+    };
+    _mX3: {
+        marginHorizontal: number;
+    };
+    _mX4: {
+        marginHorizontal: number;
+    };
+    _mX5: {
+        marginHorizontal: number;
+    };
+    _mX6: {
+        marginHorizontal: number;
+    };
+    _mX7: {
+        marginHorizontal: number;
+    };
+    _mX8: {
+        marginHorizontal: number;
+    };
+    _mX9: {
+        marginHorizontal: number;
+    };
+    _mX10: {
+        marginHorizontal: number;
+    };
+    _mX11: {
+        marginHorizontal: number;
+    };
+    _mX12: {
+        marginHorizontal: number;
+    };
+    _mX14: {
+        marginHorizontal: number;
+    };
+    _mX16: {
+        marginHorizontal: number;
+    };
+    _mX20: {
+        marginHorizontal: number;
+    };
+    _mX24: {
+        marginHorizontal: number;
+    };
+    _mX28: {
+        marginHorizontal: number;
+    };
+    _mX32: {
+        marginHorizontal: number;
+    };
+    _mX36: {
+        marginHorizontal: number;
+    };
+    _mX40: {
+        marginHorizontal: number;
+    };
+    _mX44: {
+        marginHorizontal: number;
+    };
+    _mX48: {
+        marginHorizontal: number;
+    };
+    _mX52: {
+        marginHorizontal: number;
+    };
+    _mX56: {
+        marginHorizontal: number;
+    };
+    _mX60: {
+        marginHorizontal: number;
+    };
+    _mX64: {
+        marginHorizontal: number;
+    };
+    _mX72: {
+        marginHorizontal: number;
+    };
+    _mX80: {
+        marginHorizontal: number;
+    };
+    _mX96: {
+        marginHorizontal: number;
+    };
+    _mYPx: {
+        marginVertical: number;
+    };
+    _mY0_5: {
+        marginVertical: number;
+    };
+    _mY1: {
+        marginVertical: number;
+    };
+    _mY2: {
+        marginVertical: number;
+    };
+    _mY3: {
+        marginVertical: number;
+    };
+    _mY4: {
+        marginVertical: number;
+    };
+    _mY5: {
+        marginVertical: number;
+    };
+    _mY6: {
+        marginVertical: number;
+    };
+    _mY7: {
+        marginVertical: number;
+    };
+    _mY8: {
+        marginVertical: number;
+    };
+    _mY9: {
+        marginVertical: number;
+    };
+    _mY10: {
+        marginVertical: number;
+    };
+    _mY11: {
+        marginVertical: number;
+    };
+    _mY12: {
+        marginVertical: number;
+    };
+    _mY14: {
+        marginVertical: number;
+    };
+    _mY16: {
+        marginVertical: number;
+    };
+    _mY20: {
+        marginVertical: number;
+    };
+    _mY24: {
+        marginVertical: number;
+    };
+    _mY28: {
+        marginVertical: number;
+    };
+    _mY32: {
+        marginVertical: number;
+    };
+    _mY36: {
+        marginVertical: number;
+    };
+    _mY40: {
+        marginVertical: number;
+    };
+    _mY44: {
+        marginVertical: number;
+    };
+    _mY48: {
+        marginVertical: number;
+    };
+    _mY52: {
+        marginVertical: number;
+    };
+    _mY56: {
+        marginVertical: number;
+    };
+    _mY60: {
+        marginVertical: number;
+    };
+    _mY64: {
+        marginVertical: number;
+    };
+    _mY72: {
+        marginVertical: number;
+    };
+    _mY80: {
+        marginVertical: number;
+    };
+    _mY96: {
+        marginVertical: number;
+    };
+    _mSPx: {
+        marginStart: number;
+    };
+    _mS0_5: {
+        marginStart: number;
+    };
+    _mS1: {
+        marginStart: number;
+    };
+    _mS2: {
+        marginStart: number;
+    };
+    _mS3: {
+        marginStart: number;
+    };
+    _mS4: {
+        marginStart: number;
+    };
+    _mS5: {
+        marginStart: number;
+    };
+    _mS6: {
+        marginStart: number;
+    };
+    _mS7: {
+        marginStart: number;
+    };
+    _mS8: {
+        marginStart: number;
+    };
+    _mS9: {
+        marginStart: number;
+    };
+    _mS10: {
+        marginStart: number;
+    };
+    _mS11: {
+        marginStart: number;
+    };
+    _mS12: {
+        marginStart: number;
+    };
+    _mS14: {
+        marginStart: number;
+    };
+    _mS16: {
+        marginStart: number;
+    };
+    _mS20: {
+        marginStart: number;
+    };
+    _mS24: {
+        marginStart: number;
+    };
+    _mS28: {
+        marginStart: number;
+    };
+    _mS32: {
+        marginStart: number;
+    };
+    _mS36: {
+        marginStart: number;
+    };
+    _mS40: {
+        marginStart: number;
+    };
+    _mS44: {
+        marginStart: number;
+    };
+    _mS48: {
+        marginStart: number;
+    };
+    _mS52: {
+        marginStart: number;
+    };
+    _mS56: {
+        marginStart: number;
+    };
+    _mS60: {
+        marginStart: number;
+    };
+    _mS64: {
+        marginStart: number;
+    };
+    _mS72: {
+        marginStart: number;
+    };
+    _mS80: {
+        marginStart: number;
+    };
+    _mS96: {
+        marginStart: number;
+    };
+    _mEPx: {
+        marginEnd: number;
+    };
+    _mE0_5: {
+        marginEnd: number;
+    };
+    _mE1: {
+        marginEnd: number;
+    };
+    _mE2: {
+        marginEnd: number;
+    };
+    _mE3: {
+        marginEnd: number;
+    };
+    _mE4: {
+        marginEnd: number;
+    };
+    _mE5: {
+        marginEnd: number;
+    };
+    _mE6: {
+        marginEnd: number;
+    };
+    _mE7: {
+        marginEnd: number;
+    };
+    _mE8: {
+        marginEnd: number;
+    };
+    _mE9: {
+        marginEnd: number;
+    };
+    _mE10: {
+        marginEnd: number;
+    };
+    _mE11: {
+        marginEnd: number;
+    };
+    _mE12: {
+        marginEnd: number;
+    };
+    _mE14: {
+        marginEnd: number;
+    };
+    _mE16: {
+        marginEnd: number;
+    };
+    _mE20: {
+        marginEnd: number;
+    };
+    _mE24: {
+        marginEnd: number;
+    };
+    _mE28: {
+        marginEnd: number;
+    };
+    _mE32: {
+        marginEnd: number;
+    };
+    _mE36: {
+        marginEnd: number;
+    };
+    _mE40: {
+        marginEnd: number;
+    };
+    _mE44: {
+        marginEnd: number;
+    };
+    _mE48: {
+        marginEnd: number;
+    };
+    _mE52: {
+        marginEnd: number;
+    };
+    _mE56: {
+        marginEnd: number;
+    };
+    _mE60: {
+        marginEnd: number;
+    };
+    _mE64: {
+        marginEnd: number;
+    };
+    _mE72: {
+        marginEnd: number;
+    };
+    _mE80: {
+        marginEnd: number;
+    };
+    _mE96: {
+        marginEnd: number;
+    };
+    wFull: {
+        width: string;
+    };
+    w0: {
+        width: number;
+    };
+    wPx: {
+        width: number;
+    };
+    w0_5: {
+        width: number;
+    };
+    w1: {
+        width: number;
+    };
+    w2: {
+        width: number;
+    };
+    w3: {
+        width: number;
+    };
+    w4: {
+        width: number;
+    };
+    w5: {
+        width: number;
+    };
+    w6: {
+        width: number;
+    };
+    w7: {
+        width: number;
+    };
+    w8: {
+        width: number;
+    };
+    w9: {
+        width: number;
+    };
+    w10: {
+        width: number;
+    };
+    w11: {
+        width: number;
+    };
+    w12: {
+        width: number;
+    };
+    w14: {
+        width: number;
+    };
+    w16: {
+        width: number;
+    };
+    w20: {
+        width: number;
+    };
+    w24: {
+        width: number;
+    };
+    w28: {
+        width: number;
+    };
+    w32: {
+        width: number;
+    };
+    w36: {
+        width: number;
+    };
+    w40: {
+        width: number;
+    };
+    w44: {
+        width: number;
+    };
+    w48: {
+        width: number;
+    };
+    w52: {
+        width: number;
+    };
+    w56: {
+        width: number;
+    };
+    w60: {
+        width: number;
+    };
+    w64: {
+        width: number;
+    };
+    w72: {
+        width: number;
+    };
+    w80: {
+        width: number;
+    };
+    w96: {
+        width: number;
+    };
+    w1_2: {
+        width: string;
+    };
+    w1_3: {
+        width: string;
+    };
+    w2_3: {
+        width: string;
+    };
+    w1_4: {
+        width: string;
+    };
+    w2_4: {
+        width: string;
+    };
+    w3_4: {
+        width: string;
+    };
+    w1_5: {
+        width: string;
+    };
+    w2_5: {
+        width: string;
+    };
+    w3_5: {
+        width: string;
+    };
+    w4_5: {
+        width: string;
+    };
+    w1_6: {
+        width: string;
+    };
+    w2_6: {
+        width: string;
+    };
+    w3_6: {
+        width: string;
+    };
+    w4_6: {
+        width: string;
+    };
+    w5_6: {
+        width: string;
+    };
+    minW0: {
+        minWidth: number;
+    };
+    minWPx: {
+        minWidth: number;
+    };
+    minW0_5: {
+        minWidth: number;
+    };
+    minW1: {
+        minWidth: number;
+    };
+    minW2: {
+        minWidth: number;
+    };
+    minW3: {
+        minWidth: number;
+    };
+    minW4: {
+        minWidth: number;
+    };
+    minW5: {
+        minWidth: number;
+    };
+    minW6: {
+        minWidth: number;
+    };
+    minW7: {
+        minWidth: number;
+    };
+    minW8: {
+        minWidth: number;
+    };
+    minW9: {
+        minWidth: number;
+    };
+    minW10: {
+        minWidth: number;
+    };
+    minW11: {
+        minWidth: number;
+    };
+    minW12: {
+        minWidth: number;
+    };
+    minW14: {
+        minWidth: number;
+    };
+    minW16: {
+        minWidth: number;
+    };
+    minW20: {
+        minWidth: number;
+    };
+    minW24: {
+        minWidth: number;
+    };
+    minW28: {
+        minWidth: number;
+    };
+    minW32: {
+        minWidth: number;
+    };
+    minW36: {
+        minWidth: number;
+    };
+    minW40: {
+        minWidth: number;
+    };
+    minW44: {
+        minWidth: number;
+    };
+    minW48: {
+        minWidth: number;
+    };
+    minW52: {
+        minWidth: number;
+    };
+    minW56: {
+        minWidth: number;
+    };
+    minW60: {
+        minWidth: number;
+    };
+    minW64: {
+        minWidth: number;
+    };
+    minW72: {
+        minWidth: number;
+    };
+    minW80: {
+        minWidth: number;
+    };
+    minW96: {
+        minWidth: number;
+    };
+    minWFull: {
+        minWidth: string;
+    };
+    maxW0: {
+        maxWidth: number;
+    };
+    maxWPx: {
+        maxWidth: number;
+    };
+    maxW0_5: {
+        maxWidth: number;
+    };
+    maxW1: {
+        maxWidth: number;
+    };
+    maxW2: {
+        maxWidth: number;
+    };
+    maxW3: {
+        maxWidth: number;
+    };
+    maxW4: {
+        maxWidth: number;
+    };
+    maxW5: {
+        maxWidth: number;
+    };
+    maxW6: {
+        maxWidth: number;
+    };
+    maxW7: {
+        maxWidth: number;
+    };
+    maxW8: {
+        maxWidth: number;
+    };
+    maxW9: {
+        maxWidth: number;
+    };
+    maxW10: {
+        maxWidth: number;
+    };
+    maxW11: {
+        maxWidth: number;
+    };
+    maxW12: {
+        maxWidth: number;
+    };
+    maxW14: {
+        maxWidth: number;
+    };
+    maxW16: {
+        maxWidth: number;
+    };
+    maxW20: {
+        maxWidth: number;
+    };
+    maxW24: {
+        maxWidth: number;
+    };
+    maxW28: {
+        maxWidth: number;
+    };
+    maxW32: {
+        maxWidth: number;
+    };
+    maxW36: {
+        maxWidth: number;
+    };
+    maxW40: {
+        maxWidth: number;
+    };
+    maxW44: {
+        maxWidth: number;
+    };
+    maxW48: {
+        maxWidth: number;
+    };
+    maxW52: {
+        maxWidth: number;
+    };
+    maxW56: {
+        maxWidth: number;
+    };
+    maxW60: {
+        maxWidth: number;
+    };
+    maxW64: {
+        maxWidth: number;
+    };
+    maxW72: {
+        maxWidth: number;
+    };
+    maxW80: {
+        maxWidth: number;
+    };
+    maxW96: {
+        maxWidth: number;
+    };
+    maxW1_2: {
+        maxWidth: string;
+    };
+    maxW1_3: {
+        maxWidth: string;
+    };
+    maxW2_3: {
+        maxWidth: string;
+    };
+    maxW1_4: {
+        maxWidth: string;
+    };
+    maxW2_4: {
+        maxWidth: string;
+    };
+    maxW3_4: {
+        maxWidth: string;
+    };
+    maxW1_5: {
+        maxWidth: string;
+    };
+    maxW2_5: {
+        maxWidth: string;
+    };
+    maxW3_5: {
+        maxWidth: string;
+    };
+    maxW4_5: {
+        maxWidth: string;
+    };
+    maxW1_6: {
+        maxWidth: string;
+    };
+    maxW2_6: {
+        maxWidth: string;
+    };
+    maxW3_6: {
+        maxWidth: string;
+    };
+    maxW4_6: {
+        maxWidth: string;
+    };
+    maxW5_6: {
+        maxWidth: string;
+    };
+    maxWFull: {
+        maxWidth: string;
+    };
+    maxWScreenSm: {
+        maxWidth: number;
+    };
+    maxWScreenMd: {
+        maxWidth: number;
+    };
+    maxWScreenLg: {
+        maxWidth: number;
+    };
+    maxWScreenXl: {
+        maxWidth: number;
+    };
+    maxWScreen2xl: {
+        maxWidth: number;
+    };
+    hFull: {
+        height: string;
+    };
+    hScreen: {
+        height: string;
+    };
+    h0: {
+        height: number;
+    };
+    hPx: {
+        height: number;
+    };
+    h0_5: {
+        height: number;
+    };
+    h1: {
+        height: number;
+    };
+    h2: {
+        height: number;
+    };
+    h3: {
+        height: number;
+    };
+    h4: {
+        height: number;
+    };
+    h5: {
+        height: number;
+    };
+    h6: {
+        height: number;
+    };
+    h7: {
+        height: number;
+    };
+    h8: {
+        height: number;
+    };
+    h9: {
+        height: number;
+    };
+    h10: {
+        height: number;
+    };
+    h11: {
+        height: number;
+    };
+    h12: {
+        height: number;
+    };
+    h14: {
+        height: number;
+    };
+    h16: {
+        height: number;
+    };
+    h20: {
+        height: number;
+    };
+    h24: {
+        height: number;
+    };
+    h28: {
+        height: number;
+    };
+    h32: {
+        height: number;
+    };
+    h36: {
+        height: number;
+    };
+    h40: {
+        height: number;
+    };
+    h44: {
+        height: number;
+    };
+    h48: {
+        height: number;
+    };
+    h52: {
+        height: number;
+    };
+    h56: {
+        height: number;
+    };
+    h60: {
+        height: number;
+    };
+    h64: {
+        height: number;
+    };
+    h72: {
+        height: number;
+    };
+    h80: {
+        height: number;
+    };
+    h96: {
+        height: number;
+    };
+    minHFull: {
+        minHeight: string;
+    };
+    minH0: {
+        minHeight: number;
+    };
+    maxHFull: {
+        maxHeight: string;
+    };
+    maxH0: {
+        maxHeight: number;
+    };
+    maxHPx: {
+        maxHeight: number;
+    };
+    maxH0_5: {
+        maxHeight: number;
+    };
+    maxH1: {
+        maxHeight: number;
+    };
+    maxH2: {
+        maxHeight: number;
+    };
+    maxH3: {
+        maxHeight: number;
+    };
+    maxH4: {
+        maxHeight: number;
+    };
+    maxH5: {
+        maxHeight: number;
+    };
+    maxH6: {
+        maxHeight: number;
+    };
+    maxH7: {
+        maxHeight: number;
+    };
+    maxH8: {
+        maxHeight: number;
+    };
+    maxH9: {
+        maxHeight: number;
+    };
+    maxH10: {
+        maxHeight: number;
+    };
+    maxH11: {
+        maxHeight: number;
+    };
+    maxH12: {
+        maxHeight: number;
+    };
+    maxH14: {
+        maxHeight: number;
+    };
+    maxH16: {
+        maxHeight: number;
+    };
+    maxH20: {
+        maxHeight: number;
+    };
+    maxH24: {
+        maxHeight: number;
+    };
+    maxH28: {
+        maxHeight: number;
+    };
+    maxH32: {
+        maxHeight: number;
+    };
+    maxH36: {
+        maxHeight: number;
+    };
+    maxH40: {
+        maxHeight: number;
+    };
+    maxH44: {
+        maxHeight: number;
+    };
+    maxH48: {
+        maxHeight: number;
+    };
+    maxH52: {
+        maxHeight: number;
+    };
+    maxH56: {
+        maxHeight: number;
+    };
+    maxH60: {
+        maxHeight: number;
+    };
+    maxH64: {
+        maxHeight: number;
+    };
+    maxH72: {
+        maxHeight: number;
+    };
+    maxH80: {
+        maxHeight: number;
+    };
+    maxH96: {
+        maxHeight: number;
+    };
+    flex: {
+        display: "flex";
+    };
+    hidden: {
+        display: "none";
+    };
+    resizeContain: {
+        resizeMode: "contain";
+    };
+    resizeCover: {
+        resizeMode: "cover";
+    };
+    resizeStretch: {
+        resizeMode: "stretch";
+    };
+    resizeCenter: {
+        resizeMode: "center";
+    };
+    resizeRepeat: {
+        resizeMode: "repeat";
+    };
+    overflowVisible: {
+        overflow: "visible";
+    };
+    overflowHidden: {
+        overflow: "hidden";
+    };
+    relative: {
+        position: "relative";
+    };
+    absolute: {
+        position: "absolute";
+    };
+    inset0: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    insetPx: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset0_5: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset1: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset2: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset3: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset4: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset5: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset6: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset7: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset8: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset9: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset10: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset11: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset12: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset14: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset16: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset20: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset24: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset28: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset32: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset36: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset40: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset44: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset48: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset52: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset56: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset60: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset64: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset72: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset80: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset96: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    inset1_2: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset1_3: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset2_3: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset1_4: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset2_4: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset3_4: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset1_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset2_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset3_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    inset4_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    insetY0: {
+        top: number;
+        bottom: number;
+    };
+    insetYPx: {
+        top: number;
+        bottom: number;
+    };
+    insetY0_5: {
+        top: number;
+        bottom: number;
+    };
+    insetY1: {
+        top: number;
+        bottom: number;
+    };
+    insetY2: {
+        top: number;
+        bottom: number;
+    };
+    insetY3: {
+        top: number;
+        bottom: number;
+    };
+    insetY4: {
+        top: number;
+        bottom: number;
+    };
+    insetY5: {
+        top: number;
+        bottom: number;
+    };
+    insetY6: {
+        top: number;
+        bottom: number;
+    };
+    insetY7: {
+        top: number;
+        bottom: number;
+    };
+    insetY8: {
+        top: number;
+        bottom: number;
+    };
+    insetY9: {
+        top: number;
+        bottom: number;
+    };
+    insetY10: {
+        top: number;
+        bottom: number;
+    };
+    insetY11: {
+        top: number;
+        bottom: number;
+    };
+    insetY12: {
+        top: number;
+        bottom: number;
+    };
+    insetY14: {
+        top: number;
+        bottom: number;
+    };
+    insetY16: {
+        top: number;
+        bottom: number;
+    };
+    insetY20: {
+        top: number;
+        bottom: number;
+    };
+    insetY24: {
+        top: number;
+        bottom: number;
+    };
+    insetY28: {
+        top: number;
+        bottom: number;
+    };
+    insetY32: {
+        top: number;
+        bottom: number;
+    };
+    insetY36: {
+        top: number;
+        bottom: number;
+    };
+    insetY40: {
+        top: number;
+        bottom: number;
+    };
+    insetY44: {
+        top: number;
+        bottom: number;
+    };
+    insetY48: {
+        top: number;
+        bottom: number;
+    };
+    insetY52: {
+        top: number;
+        bottom: number;
+    };
+    insetY56: {
+        top: number;
+        bottom: number;
+    };
+    insetY60: {
+        top: number;
+        bottom: number;
+    };
+    insetY64: {
+        top: number;
+        bottom: number;
+    };
+    insetY72: {
+        top: number;
+        bottom: number;
+    };
+    insetY80: {
+        top: number;
+        bottom: number;
+    };
+    insetY96: {
+        top: number;
+        bottom: number;
+    };
+    insetX0: {
+        left: number;
+        right: number;
+    };
+    insetXPx: {
+        left: number;
+        right: number;
+    };
+    insetX0_5: {
+        left: number;
+        right: number;
+    };
+    insetX1: {
+        left: number;
+        right: number;
+    };
+    insetX2: {
+        left: number;
+        right: number;
+    };
+    insetX3: {
+        left: number;
+        right: number;
+    };
+    insetX4: {
+        left: number;
+        right: number;
+    };
+    insetX5: {
+        left: number;
+        right: number;
+    };
+    insetX6: {
+        left: number;
+        right: number;
+    };
+    insetX7: {
+        left: number;
+        right: number;
+    };
+    insetX8: {
+        left: number;
+        right: number;
+    };
+    insetX9: {
+        left: number;
+        right: number;
+    };
+    insetX10: {
+        left: number;
+        right: number;
+    };
+    insetX11: {
+        left: number;
+        right: number;
+    };
+    insetX12: {
+        left: number;
+        right: number;
+    };
+    insetX14: {
+        left: number;
+        right: number;
+    };
+    insetX16: {
+        left: number;
+        right: number;
+    };
+    insetX20: {
+        left: number;
+        right: number;
+    };
+    insetX24: {
+        left: number;
+        right: number;
+    };
+    insetX28: {
+        left: number;
+        right: number;
+    };
+    insetX32: {
+        left: number;
+        right: number;
+    };
+    insetX36: {
+        left: number;
+        right: number;
+    };
+    insetX40: {
+        left: number;
+        right: number;
+    };
+    insetX44: {
+        left: number;
+        right: number;
+    };
+    insetX48: {
+        left: number;
+        right: number;
+    };
+    insetX52: {
+        left: number;
+        right: number;
+    };
+    insetX56: {
+        left: number;
+        right: number;
+    };
+    insetX60: {
+        left: number;
+        right: number;
+    };
+    insetX64: {
+        left: number;
+        right: number;
+    };
+    insetX72: {
+        left: number;
+        right: number;
+    };
+    insetX80: {
+        left: number;
+        right: number;
+    };
+    insetX96: {
+        left: number;
+        right: number;
+    };
+    _inset0: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _insetPx: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset0_5: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset1: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset2: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset3: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset4: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset5: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset6: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset7: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset8: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset9: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset10: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset11: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset12: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset14: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset16: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset20: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset24: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset28: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset32: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset36: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset40: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset44: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset48: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset52: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset56: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset60: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset64: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset72: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset80: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset96: {
+        top: number;
+        bottom: number;
+        left: number;
+        right: number;
+    };
+    _inset1_2: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset1_3: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset2_3: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset1_4: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset2_4: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset3_4: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset1_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset2_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset3_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _inset4_5: {
+        top: string;
+        bottom: string;
+        left: string;
+        right: string;
+    };
+    _insetY0: {
+        top: number;
+        bottom: number;
+    };
+    _insetYPx: {
+        top: number;
+        bottom: number;
+    };
+    _insetY0_5: {
+        top: number;
+        bottom: number;
+    };
+    _insetY1: {
+        top: number;
+        bottom: number;
+    };
+    _insetY2: {
+        top: number;
+        bottom: number;
+    };
+    _insetY3: {
+        top: number;
+        bottom: number;
+    };
+    _insetY4: {
+        top: number;
+        bottom: number;
+    };
+    _insetY5: {
+        top: number;
+        bottom: number;
+    };
+    _insetY6: {
+        top: number;
+        bottom: number;
+    };
+    _insetY7: {
+        top: number;
+        bottom: number;
+    };
+    _insetY8: {
+        top: number;
+        bottom: number;
+    };
+    _insetY9: {
+        top: number;
+        bottom: number;
+    };
+    _insetY10: {
+        top: number;
+        bottom: number;
+    };
+    _insetY11: {
+        top: number;
+        bottom: number;
+    };
+    _insetY12: {
+        top: number;
+        bottom: number;
+    };
+    _insetY14: {
+        top: number;
+        bottom: number;
+    };
+    _insetY16: {
+        top: number;
+        bottom: number;
+    };
+    _insetY20: {
+        top: number;
+        bottom: number;
+    };
+    _insetY24: {
+        top: number;
+        bottom: number;
+    };
+    _insetY28: {
+        top: number;
+        bottom: number;
+    };
+    _insetY32: {
+        top: number;
+        bottom: number;
+    };
+    _insetY36: {
+        top: number;
+        bottom: number;
+    };
+    _insetY40: {
+        top: number;
+        bottom: number;
+    };
+    _insetY44: {
+        top: number;
+        bottom: number;
+    };
+    _insetY48: {
+        top: number;
+        bottom: number;
+    };
+    _insetY52: {
+        top: number;
+        bottom: number;
+    };
+    _insetY56: {
+        top: number;
+        bottom: number;
+    };
+    _insetY60: {
+        top: number;
+        bottom: number;
+    };
+    _insetY64: {
+        top: number;
+        bottom: number;
+    };
+    _insetY72: {
+        top: number;
+        bottom: number;
+    };
+    _insetY80: {
+        top: number;
+        bottom: number;
+    };
+    _insetY96: {
+        top: number;
+        bottom: number;
+    };
+    _insetX0: {
+        left: number;
+        right: number;
+    };
+    _insetXPx: {
+        left: number;
+        right: number;
+    };
+    _insetX0_5: {
+        left: number;
+        right: number;
+    };
+    _insetX1: {
+        left: number;
+        right: number;
+    };
+    _insetX2: {
+        left: number;
+        right: number;
+    };
+    _insetX3: {
+        left: number;
+        right: number;
+    };
+    _insetX4: {
+        left: number;
+        right: number;
+    };
+    _insetX5: {
+        left: number;
+        right: number;
+    };
+    _insetX6: {
+        left: number;
+        right: number;
+    };
+    _insetX7: {
+        left: number;
+        right: number;
+    };
+    _insetX8: {
+        left: number;
+        right: number;
+    };
+    _insetX9: {
+        left: number;
+        right: number;
+    };
+    _insetX10: {
+        left: number;
+        right: number;
+    };
+    _insetX11: {
+        left: number;
+        right: number;
+    };
+    _insetX12: {
+        left: number;
+        right: number;
+    };
+    _insetX14: {
+        left: number;
+        right: number;
+    };
+    _insetX16: {
+        left: number;
+        right: number;
+    };
+    _insetX20: {
+        left: number;
+        right: number;
+    };
+    _insetX24: {
+        left: number;
+        right: number;
+    };
+    _insetX28: {
+        left: number;
+        right: number;
+    };
+    _insetX32: {
+        left: number;
+        right: number;
+    };
+    _insetX36: {
+        left: number;
+        right: number;
+    };
+    _insetX40: {
+        left: number;
+        right: number;
+    };
+    _insetX44: {
+        left: number;
+        right: number;
+    };
+    _insetX48: {
+        left: number;
+        right: number;
+    };
+    _insetX52: {
+        left: number;
+        right: number;
+    };
+    _insetX56: {
+        left: number;
+        right: number;
+    };
+    _insetX60: {
+        left: number;
+        right: number;
+    };
+    _insetX64: {
+        left: number;
+        right: number;
+    };
+    _insetX72: {
+        left: number;
+        right: number;
+    };
+    _insetX80: {
+        left: number;
+        right: number;
+    };
+    _insetX96: {
+        left: number;
+        right: number;
+    };
+    top0: {
+        top: number;
+    };
+    topPx: {
+        top: number;
+    };
+    top0_5: {
+        top: number;
+    };
+    top1: {
+        top: number;
+    };
+    top2: {
+        top: number;
+    };
+    top3: {
+        top: number;
+    };
+    top4: {
+        top: number;
+    };
+    top5: {
+        top: number;
+    };
+    top6: {
+        top: number;
+    };
+    top7: {
+        top: number;
+    };
+    top8: {
+        top: number;
+    };
+    top9: {
+        top: number;
+    };
+    top10: {
+        top: number;
+    };
+    top11: {
+        top: number;
+    };
+    top12: {
+        top: number;
+    };
+    top14: {
+        top: number;
+    };
+    top16: {
+        top: number;
+    };
+    top20: {
+        top: number;
+    };
+    top24: {
+        top: number;
+    };
+    top28: {
+        top: number;
+    };
+    top32: {
+        top: number;
+    };
+    top36: {
+        top: number;
+    };
+    top40: {
+        top: number;
+    };
+    top44: {
+        top: number;
+    };
+    top48: {
+        top: number;
+    };
+    top52: {
+        top: number;
+    };
+    top56: {
+        top: number;
+    };
+    top60: {
+        top: number;
+    };
+    top64: {
+        top: number;
+    };
+    top72: {
+        top: number;
+    };
+    top80: {
+        top: number;
+    };
+    top96: {
+        top: number;
+    };
+    top1_2: {
+        top: string;
+    };
+    top1_3: {
+        top: string;
+    };
+    top2_3: {
+        top: string;
+    };
+    top1_4: {
+        top: string;
+    };
+    top2_4: {
+        top: string;
+    };
+    top3_4: {
+        top: string;
+    };
+    top1_5: {
+        top: string;
+    };
+    top2_5: {
+        top: string;
+    };
+    top3_5: {
+        top: string;
+    };
+    top4_5: {
+        top: string;
+    };
+    top1_6: {
+        top: string;
+    };
+    top2_6: {
+        top: string;
+    };
+    top3_6: {
+        top: string;
+    };
+    top4_6: {
+        top: string;
+    };
+    top5_6: {
+        top: string;
+    };
+    topFull: {
+        top: string;
+    };
+    _top0: {
+        top: number;
+    };
+    _topPx: {
+        top: number;
+    };
+    _top0_5: {
+        top: number;
+    };
+    _top1: {
+        top: number;
+    };
+    _top2: {
+        top: number;
+    };
+    _top3: {
+        top: number;
+    };
+    _top4: {
+        top: number;
+    };
+    _top5: {
+        top: number;
+    };
+    _top6: {
+        top: number;
+    };
+    _top7: {
+        top: number;
+    };
+    _top8: {
+        top: number;
+    };
+    _top9: {
+        top: number;
+    };
+    _top10: {
+        top: number;
+    };
+    _top11: {
+        top: number;
+    };
+    _top12: {
+        top: number;
+    };
+    _top14: {
+        top: number;
+    };
+    _top16: {
+        top: number;
+    };
+    _top20: {
+        top: number;
+    };
+    _top24: {
+        top: number;
+    };
+    _top28: {
+        top: number;
+    };
+    _top32: {
+        top: number;
+    };
+    _top36: {
+        top: number;
+    };
+    _top40: {
+        top: number;
+    };
+    _top44: {
+        top: number;
+    };
+    _top48: {
+        top: number;
+    };
+    _top52: {
+        top: number;
+    };
+    _top56: {
+        top: number;
+    };
+    _top60: {
+        top: number;
+    };
+    _top64: {
+        top: number;
+    };
+    _top72: {
+        top: number;
+    };
+    _top80: {
+        top: number;
+    };
+    _top96: {
+        top: number;
+    };
+    _top1_2: {
+        top: string;
+    };
+    _top1_3: {
+        top: string;
+    };
+    _top2_3: {
+        top: string;
+    };
+    _top1_4: {
+        top: string;
+    };
+    _top2_4: {
+        top: string;
+    };
+    _top3_4: {
+        top: string;
+    };
+    _top1_5: {
+        top: string;
+    };
+    _top2_5: {
+        top: string;
+    };
+    _top3_5: {
+        top: string;
+    };
+    _top4_5: {
+        top: string;
+    };
+    _top1_6: {
+        top: string;
+    };
+    _top2_6: {
+        top: string;
+    };
+    _top3_6: {
+        top: string;
+    };
+    _top4_6: {
+        top: string;
+    };
+    _top5_6: {
+        top: string;
+    };
+    _topFull: {
+        top: string;
+    };
+    right0: {
+        right: number;
+    };
+    rightPx: {
+        right: number;
+    };
+    right0_5: {
+        right: number;
+    };
+    right1: {
+        right: number;
+    };
+    right2: {
+        right: number;
+    };
+    right3: {
+        right: number;
+    };
+    right4: {
+        right: number;
+    };
+    right5: {
+        right: number;
+    };
+    right6: {
+        right: number;
+    };
+    right7: {
+        right: number;
+    };
+    right8: {
+        right: number;
+    };
+    right9: {
+        right: number;
+    };
+    right10: {
+        right: number;
+    };
+    right11: {
+        right: number;
+    };
+    right12: {
+        right: number;
+    };
+    right14: {
+        right: number;
+    };
+    right16: {
+        right: number;
+    };
+    right20: {
+        right: number;
+    };
+    right24: {
+        right: number;
+    };
+    right28: {
+        right: number;
+    };
+    right32: {
+        right: number;
+    };
+    right36: {
+        right: number;
+    };
+    right40: {
+        right: number;
+    };
+    right44: {
+        right: number;
+    };
+    right48: {
+        right: number;
+    };
+    right52: {
+        right: number;
+    };
+    right56: {
+        right: number;
+    };
+    right60: {
+        right: number;
+    };
+    right64: {
+        right: number;
+    };
+    right72: {
+        right: number;
+    };
+    right80: {
+        right: number;
+    };
+    right96: {
+        right: number;
+    };
+    right1_2: {
+        right: string;
+    };
+    right1_3: {
+        right: string;
+    };
+    right2_3: {
+        right: string;
+    };
+    right1_4: {
+        right: string;
+    };
+    right2_4: {
+        right: string;
+    };
+    right3_4: {
+        right: string;
+    };
+    right1_5: {
+        right: string;
+    };
+    right2_5: {
+        right: string;
+    };
+    right3_5: {
+        right: string;
+    };
+    right4_5: {
+        right: string;
+    };
+    right1_6: {
+        right: string;
+    };
+    right2_6: {
+        right: string;
+    };
+    right3_6: {
+        right: string;
+    };
+    right4_6: {
+        right: string;
+    };
+    right5_6: {
+        right: string;
+    };
+    rightFull: {
+        right: string;
+    };
+    _right0: {
+        right: number;
+    };
+    _rightPx: {
+        right: number;
+    };
+    _right0_5: {
+        right: number;
+    };
+    _right1: {
+        right: number;
+    };
+    _right2: {
+        right: number;
+    };
+    _right3: {
+        right: number;
+    };
+    _right4: {
+        right: number;
+    };
+    _right5: {
+        right: number;
+    };
+    _right6: {
+        right: number;
+    };
+    _right7: {
+        right: number;
+    };
+    _right8: {
+        right: number;
+    };
+    _right9: {
+        right: number;
+    };
+    _right10: {
+        right: number;
+    };
+    _right11: {
+        right: number;
+    };
+    _right12: {
+        right: number;
+    };
+    _right14: {
+        right: number;
+    };
+    _right16: {
+        right: number;
+    };
+    _right20: {
+        right: number;
+    };
+    _right24: {
+        right: number;
+    };
+    _right28: {
+        right: number;
+    };
+    _right32: {
+        right: number;
+    };
+    _right36: {
+        right: number;
+    };
+    _right40: {
+        right: number;
+    };
+    _right44: {
+        right: number;
+    };
+    _right48: {
+        right: number;
+    };
+    _right52: {
+        right: number;
+    };
+    _right56: {
+        right: number;
+    };
+    _right60: {
+        right: number;
+    };
+    _right64: {
+        right: number;
+    };
+    _right72: {
+        right: number;
+    };
+    _right80: {
+        right: number;
+    };
+    _right96: {
+        right: number;
+    };
+    _right1_2: {
+        right: string;
+    };
+    _right1_3: {
+        right: string;
+    };
+    _right2_3: {
+        right: string;
+    };
+    _right1_4: {
+        right: string;
+    };
+    _right2_4: {
+        right: string;
+    };
+    _right3_4: {
+        right: string;
+    };
+    _right1_5: {
+        right: string;
+    };
+    _right2_5: {
+        right: string;
+    };
+    _right3_5: {
+        right: string;
+    };
+    _right4_5: {
+        right: string;
+    };
+    _right1_6: {
+        right: string;
+    };
+    _right2_6: {
+        right: string;
+    };
+    _right3_6: {
+        right: string;
+    };
+    _right4_6: {
+        right: string;
+    };
+    _right5_6: {
+        right: string;
+    };
+    _rightFull: {
+        right: string;
+    };
+    bottom0: {
+        bottom: number;
+    };
+    bottomPx: {
+        bottom: number;
+    };
+    bottom0_5: {
+        bottom: number;
+    };
+    bottom1: {
+        bottom: number;
+    };
+    bottom2: {
+        bottom: number;
+    };
+    bottom3: {
+        bottom: number;
+    };
+    bottom4: {
+        bottom: number;
+    };
+    bottom5: {
+        bottom: number;
+    };
+    bottom6: {
+        bottom: number;
+    };
+    bottom7: {
+        bottom: number;
+    };
+    bottom8: {
+        bottom: number;
+    };
+    bottom9: {
+        bottom: number;
+    };
+    bottom10: {
+        bottom: number;
+    };
+    bottom11: {
+        bottom: number;
+    };
+    bottom12: {
+        bottom: number;
+    };
+    bottom14: {
+        bottom: number;
+    };
+    bottom16: {
+        bottom: number;
+    };
+    bottom20: {
+        bottom: number;
+    };
+    bottom24: {
+        bottom: number;
+    };
+    bottom28: {
+        bottom: number;
+    };
+    bottom32: {
+        bottom: number;
+    };
+    bottom36: {
+        bottom: number;
+    };
+    bottom40: {
+        bottom: number;
+    };
+    bottom44: {
+        bottom: number;
+    };
+    bottom48: {
+        bottom: number;
+    };
+    bottom52: {
+        bottom: number;
+    };
+    bottom56: {
+        bottom: number;
+    };
+    bottom60: {
+        bottom: number;
+    };
+    bottom64: {
+        bottom: number;
+    };
+    bottom72: {
+        bottom: number;
+    };
+    bottom80: {
+        bottom: number;
+    };
+    bottom96: {
+        bottom: number;
+    };
+    bottom1_2: {
+        bottom: string;
+    };
+    bottom1_3: {
+        bottom: string;
+    };
+    bottom2_3: {
+        bottom: string;
+    };
+    bottom1_4: {
+        bottom: string;
+    };
+    bottom2_4: {
+        bottom: string;
+    };
+    bottom3_4: {
+        bottom: string;
+    };
+    bottom1_5: {
+        bottom: string;
+    };
+    bottom2_5: {
+        bottom: string;
+    };
+    bottom3_5: {
+        bottom: string;
+    };
+    bottom4_5: {
+        bottom: string;
+    };
+    bottom1_6: {
+        bottom: string;
+    };
+    bottom2_6: {
+        bottom: string;
+    };
+    bottom3_6: {
+        bottom: string;
+    };
+    bottom4_6: {
+        bottom: string;
+    };
+    bottom5_6: {
+        bottom: string;
+    };
+    bottomFull: {
+        bottom: string;
+    };
+    _bottom0: {
+        bottom: number;
+    };
+    _bottomPx: {
+        bottom: number;
+    };
+    _bottom0_5: {
+        bottom: number;
+    };
+    _bottom1: {
+        bottom: number;
+    };
+    _bottom2: {
+        bottom: number;
+    };
+    _bottom3: {
+        bottom: number;
+    };
+    _bottom4: {
+        bottom: number;
+    };
+    _bottom5: {
+        bottom: number;
+    };
+    _bottom6: {
+        bottom: number;
+    };
+    _bottom7: {
+        bottom: number;
+    };
+    _bottom8: {
+        bottom: number;
+    };
+    _bottom9: {
+        bottom: number;
+    };
+    _bottom10: {
+        bottom: number;
+    };
+    _bottom11: {
+        bottom: number;
+    };
+    _bottom12: {
+        bottom: number;
+    };
+    _bottom14: {
+        bottom: number;
+    };
+    _bottom16: {
+        bottom: number;
+    };
+    _bottom20: {
+        bottom: number;
+    };
+    _bottom24: {
+        bottom: number;
+    };
+    _bottom28: {
+        bottom: number;
+    };
+    _bottom32: {
+        bottom: number;
+    };
+    _bottom36: {
+        bottom: number;
+    };
+    _bottom40: {
+        bottom: number;
+    };
+    _bottom44: {
+        bottom: number;
+    };
+    _bottom48: {
+        bottom: number;
+    };
+    _bottom52: {
+        bottom: number;
+    };
+    _bottom56: {
+        bottom: number;
+    };
+    _bottom60: {
+        bottom: number;
+    };
+    _bottom64: {
+        bottom: number;
+    };
+    _bottom72: {
+        bottom: number;
+    };
+    _bottom80: {
+        bottom: number;
+    };
+    _bottom96: {
+        bottom: number;
+    };
+    _bottom1_2: {
+        bottom: string;
+    };
+    _bottom1_3: {
+        bottom: string;
+    };
+    _bottom2_3: {
+        bottom: string;
+    };
+    _bottom1_4: {
+        bottom: string;
+    };
+    _bottom2_4: {
+        bottom: string;
+    };
+    _bottom3_4: {
+        bottom: string;
+    };
+    _bottom1_5: {
+        bottom: string;
+    };
+    _bottom2_5: {
+        bottom: string;
+    };
+    _bottom3_5: {
+        bottom: string;
+    };
+    _bottom4_5: {
+        bottom: string;
+    };
+    _bottom1_6: {
+        bottom: string;
+    };
+    _bottom2_6: {
+        bottom: string;
+    };
+    _bottom3_6: {
+        bottom: string;
+    };
+    _bottom4_6: {
+        bottom: string;
+    };
+    _bottom5_6: {
+        bottom: string;
+    };
+    _bottomFull: {
+        bottom: string;
+    };
+    left0: {
+        left: number;
+    };
+    leftPx: {
+        left: number;
+    };
+    left0_5: {
+        left: number;
+    };
+    left1: {
+        left: number;
+    };
+    left2: {
+        left: number;
+    };
+    left3: {
+        left: number;
+    };
+    left4: {
+        left: number;
+    };
+    left5: {
+        left: number;
+    };
+    left6: {
+        left: number;
+    };
+    left7: {
+        left: number;
+    };
+    left8: {
+        left: number;
+    };
+    left9: {
+        left: number;
+    };
+    left10: {
+        left: number;
+    };
+    left11: {
+        left: number;
+    };
+    left12: {
+        left: number;
+    };
+    left14: {
+        left: number;
+    };
+    left16: {
+        left: number;
+    };
+    left20: {
+        left: number;
+    };
+    left24: {
+        left: number;
+    };
+    left28: {
+        left: number;
+    };
+    left32: {
+        left: number;
+    };
+    left36: {
+        left: number;
+    };
+    left40: {
+        left: number;
+    };
+    left44: {
+        left: number;
+    };
+    left48: {
+        left: number;
+    };
+    left52: {
+        left: number;
+    };
+    left56: {
+        left: number;
+    };
+    left60: {
+        left: number;
+    };
+    left64: {
+        left: number;
+    };
+    left72: {
+        left: number;
+    };
+    left80: {
+        left: number;
+    };
+    left96: {
+        left: number;
+    };
+    left1_2: {
+        left: string;
+    };
+    left1_3: {
+        left: string;
+    };
+    left2_3: {
+        left: string;
+    };
+    left1_4: {
+        left: string;
+    };
+    left2_4: {
+        left: string;
+    };
+    left3_4: {
+        left: string;
+    };
+    left1_5: {
+        left: string;
+    };
+    left2_5: {
+        left: string;
+    };
+    left3_5: {
+        left: string;
+    };
+    left4_5: {
+        left: string;
+    };
+    left1_6: {
+        left: string;
+    };
+    left2_6: {
+        left: string;
+    };
+    left3_6: {
+        left: string;
+    };
+    left4_6: {
+        left: string;
+    };
+    left5_6: {
+        left: string;
+    };
+    leftFull: {
+        left: string;
+    };
+    _left0: {
+        left: number;
+    };
+    _leftPx: {
+        left: number;
+    };
+    _left0_5: {
+        left: number;
+    };
+    _left1: {
+        left: number;
+    };
+    _left2: {
+        left: number;
+    };
+    _left3: {
+        left: number;
+    };
+    _left4: {
+        left: number;
+    };
+    _left5: {
+        left: number;
+    };
+    _left6: {
+        left: number;
+    };
+    _left7: {
+        left: number;
+    };
+    _left8: {
+        left: number;
+    };
+    _left9: {
+        left: number;
+    };
+    _left10: {
+        left: number;
+    };
+    _left11: {
+        left: number;
+    };
+    _left12: {
+        left: number;
+    };
+    _left14: {
+        left: number;
+    };
+    _left16: {
+        left: number;
+    };
+    _left20: {
+        left: number;
+    };
+    _left24: {
+        left: number;
+    };
+    _left28: {
+        left: number;
+    };
+    _left32: {
+        left: number;
+    };
+    _left36: {
+        left: number;
+    };
+    _left40: {
+        left: number;
+    };
+    _left44: {
+        left: number;
+    };
+    _left48: {
+        left: number;
+    };
+    _left52: {
+        left: number;
+    };
+    _left56: {
+        left: number;
+    };
+    _left60: {
+        left: number;
+    };
+    _left64: {
+        left: number;
+    };
+    _left72: {
+        left: number;
+    };
+    _left80: {
+        left: number;
+    };
+    _left96: {
+        left: number;
+    };
+    _left1_2: {
+        left: string;
+    };
+    _left1_3: {
+        left: string;
+    };
+    _left2_3: {
+        left: string;
+    };
+    _left1_4: {
+        left: string;
+    };
+    _left2_4: {
+        left: string;
+    };
+    _left3_4: {
+        left: string;
+    };
+    _left1_5: {
+        left: string;
+    };
+    _left2_5: {
+        left: string;
+    };
+    _left3_5: {
+        left: string;
+    };
+    _left4_5: {
+        left: string;
+    };
+    _left1_6: {
+        left: string;
+    };
+    _left2_6: {
+        left: string;
+    };
+    _left3_6: {
+        left: string;
+    };
+    _left4_6: {
+        left: string;
+    };
+    _left5_6: {
+        left: string;
+    };
+    _leftFull: {
+        left: string;
+    };
+    start0: {
+        start: number;
+    };
+    startPx: {
+        start: number;
+    };
+    start0_5: {
+        start: number;
+    };
+    start1: {
+        start: number;
+    };
+    start2: {
+        start: number;
+    };
+    start3: {
+        start: number;
+    };
+    start4: {
+        start: number;
+    };
+    start5: {
+        start: number;
+    };
+    start6: {
+        start: number;
+    };
+    start7: {
+        start: number;
+    };
+    start8: {
+        start: number;
+    };
+    start9: {
+        start: number;
+    };
+    start10: {
+        start: number;
+    };
+    start11: {
+        start: number;
+    };
+    start12: {
+        start: number;
+    };
+    start14: {
+        start: number;
+    };
+    start16: {
+        start: number;
+    };
+    start20: {
+        start: number;
+    };
+    start24: {
+        start: number;
+    };
+    start28: {
+        start: number;
+    };
+    start32: {
+        start: number;
+    };
+    start36: {
+        start: number;
+    };
+    start40: {
+        start: number;
+    };
+    start44: {
+        start: number;
+    };
+    start48: {
+        start: number;
+    };
+    start52: {
+        start: number;
+    };
+    start56: {
+        start: number;
+    };
+    start60: {
+        start: number;
+    };
+    start64: {
+        start: number;
+    };
+    start72: {
+        start: number;
+    };
+    start80: {
+        start: number;
+    };
+    start96: {
+        start: number;
+    };
+    start1_2: {
+        start: string;
+    };
+    start1_3: {
+        start: string;
+    };
+    start2_3: {
+        start: string;
+    };
+    start1_4: {
+        start: string;
+    };
+    start2_4: {
+        start: string;
+    };
+    start3_4: {
+        start: string;
+    };
+    start1_5: {
+        start: string;
+    };
+    start2_5: {
+        start: string;
+    };
+    start3_5: {
+        start: string;
+    };
+    start4_5: {
+        start: string;
+    };
+    start1_6: {
+        start: string;
+    };
+    start2_6: {
+        start: string;
+    };
+    start3_6: {
+        start: string;
+    };
+    start4_6: {
+        start: string;
+    };
+    start5_6: {
+        start: string;
+    };
+    startFull: {
+        start: string;
+    };
+    _start0: {
+        start: number;
+    };
+    _startPx: {
+        start: number;
+    };
+    _start0_5: {
+        start: number;
+    };
+    _start1: {
+        start: number;
+    };
+    _start2: {
+        start: number;
+    };
+    _start3: {
+        start: number;
+    };
+    _start4: {
+        start: number;
+    };
+    _start5: {
+        start: number;
+    };
+    _start6: {
+        start: number;
+    };
+    _start7: {
+        start: number;
+    };
+    _start8: {
+        start: number;
+    };
+    _start9: {
+        start: number;
+    };
+    _start10: {
+        start: number;
+    };
+    _start11: {
+        start: number;
+    };
+    _start12: {
+        start: number;
+    };
+    _start14: {
+        start: number;
+    };
+    _start16: {
+        start: number;
+    };
+    _start20: {
+        start: number;
+    };
+    _start24: {
+        start: number;
+    };
+    _start28: {
+        start: number;
+    };
+    _start32: {
+        start: number;
+    };
+    _start36: {
+        start: number;
+    };
+    _start40: {
+        start: number;
+    };
+    _start44: {
+        start: number;
+    };
+    _start48: {
+        start: number;
+    };
+    _start52: {
+        start: number;
+    };
+    _start56: {
+        start: number;
+    };
+    _start60: {
+        start: number;
+    };
+    _start64: {
+        start: number;
+    };
+    _start72: {
+        start: number;
+    };
+    _start80: {
+        start: number;
+    };
+    _start96: {
+        start: number;
+    };
+    _start1_2: {
+        start: string;
+    };
+    _start1_3: {
+        start: string;
+    };
+    _start2_3: {
+        start: string;
+    };
+    _start1_4: {
+        start: string;
+    };
+    _start2_4: {
+        start: string;
+    };
+    _start3_4: {
+        start: string;
+    };
+    _start1_5: {
+        start: string;
+    };
+    _start2_5: {
+        start: string;
+    };
+    _start3_5: {
+        start: string;
+    };
+    _start4_5: {
+        start: string;
+    };
+    _start1_6: {
+        start: string;
+    };
+    _start2_6: {
+        start: string;
+    };
+    _start3_6: {
+        start: string;
+    };
+    _start4_6: {
+        start: string;
+    };
+    _start5_6: {
+        start: string;
+    };
+    _startFull: {
+        start: string;
+    };
+    end0: {
+        end: number;
+    };
+    endPx: {
+        end: number;
+    };
+    end0_5: {
+        end: number;
+    };
+    end1: {
+        end: number;
+    };
+    end2: {
+        end: number;
+    };
+    end3: {
+        end: number;
+    };
+    end4: {
+        end: number;
+    };
+    end5: {
+        end: number;
+    };
+    end6: {
+        end: number;
+    };
+    end7: {
+        end: number;
+    };
+    end8: {
+        end: number;
+    };
+    end9: {
+        end: number;
+    };
+    end10: {
+        end: number;
+    };
+    end11: {
+        end: number;
+    };
+    end12: {
+        end: number;
+    };
+    end14: {
+        end: number;
+    };
+    end16: {
+        end: number;
+    };
+    end20: {
+        end: number;
+    };
+    end24: {
+        end: number;
+    };
+    end28: {
+        end: number;
+    };
+    end32: {
+        end: number;
+    };
+    end36: {
+        end: number;
+    };
+    end40: {
+        end: number;
+    };
+    end44: {
+        end: number;
+    };
+    end48: {
+        end: number;
+    };
+    end52: {
+        end: number;
+    };
+    end56: {
+        end: number;
+    };
+    end60: {
+        end: number;
+    };
+    end64: {
+        end: number;
+    };
+    end72: {
+        end: number;
+    };
+    end80: {
+        end: number;
+    };
+    end96: {
+        end: number;
+    };
+    end1_2: {
+        end: string;
+    };
+    end1_3: {
+        end: string;
+    };
+    end2_3: {
+        end: string;
+    };
+    end1_4: {
+        end: string;
+    };
+    end2_4: {
+        end: string;
+    };
+    end3_4: {
+        end: string;
+    };
+    end1_5: {
+        end: string;
+    };
+    end2_5: {
+        end: string;
+    };
+    end3_5: {
+        end: string;
+    };
+    end4_5: {
+        end: string;
+    };
+    end1_6: {
+        end: string;
+    };
+    end2_6: {
+        end: string;
+    };
+    end3_6: {
+        end: string;
+    };
+    end4_6: {
+        end: string;
+    };
+    end5_6: {
+        end: string;
+    };
+    endFull: {
+        end: string;
+    };
+    _end0: {
+        end: number;
+    };
+    _endPx: {
+        end: number;
+    };
+    _end0_5: {
+        end: number;
+    };
+    _end1: {
+        end: number;
+    };
+    _end2: {
+        end: number;
+    };
+    _end3: {
+        end: number;
+    };
+    _end4: {
+        end: number;
+    };
+    _end5: {
+        end: number;
+    };
+    _end6: {
+        end: number;
+    };
+    _end7: {
+        end: number;
+    };
+    _end8: {
+        end: number;
+    };
+    _end9: {
+        end: number;
+    };
+    _end10: {
+        end: number;
+    };
+    _end11: {
+        end: number;
+    };
+    _end12: {
+        end: number;
+    };
+    _end14: {
+        end: number;
+    };
+    _end16: {
+        end: number;
+    };
+    _end20: {
+        end: number;
+    };
+    _end24: {
+        end: number;
+    };
+    _end28: {
+        end: number;
+    };
+    _end32: {
+        end: number;
+    };
+    _end36: {
+        end: number;
+    };
+    _end40: {
+        end: number;
+    };
+    _end44: {
+        end: number;
+    };
+    _end48: {
+        end: number;
+    };
+    _end52: {
+        end: number;
+    };
+    _end56: {
+        end: number;
+    };
+    _end60: {
+        end: number;
+    };
+    _end64: {
+        end: number;
+    };
+    _end72: {
+        end: number;
+    };
+    _end80: {
+        end: number;
+    };
+    _end96: {
+        end: number;
+    };
+    _end1_2: {
+        end: string;
+    };
+    _end1_3: {
+        end: string;
+    };
+    _end2_3: {
+        end: string;
+    };
+    _end1_4: {
+        end: string;
+    };
+    _end2_4: {
+        end: string;
+    };
+    _end3_4: {
+        end: string;
+    };
+    _end1_5: {
+        end: string;
+    };
+    _end2_5: {
+        end: string;
+    };
+    _end3_5: {
+        end: string;
+    };
+    _end4_5: {
+        end: string;
+    };
+    _end1_6: {
+        end: string;
+    };
+    _end2_6: {
+        end: string;
+    };
+    _end3_6: {
+        end: string;
+    };
+    _end4_6: {
+        end: string;
+    };
+    _end5_6: {
+        end: string;
+    };
+    _endFull: {
+        end: string;
+    };
+    tintPrimary: {
+        tintColor: string;
+    };
+    tintPrimaryLight: {
+        tintColor: string;
+    };
+    tintPrimaryDark: {
+        tintColor: string;
+    };
+    tintPrimaryContrast: {
+        tintColor: string;
+    };
+    tintSecondary: {
+        tintColor: string;
+    };
+    tintSecondaryLight: {
+        tintColor: string;
+    };
+    tintSecondaryDark: {
+        tintColor: string;
+    };
+    tintSecondaryContrast: {
+        tintColor: string;
+    };
+    tintInfo: {
+        tintColor: string;
+    };
+    tintInfoLight: {
+        tintColor: string;
+    };
+    tintInfoDark: {
+        tintColor: string;
+    };
+    tintInfoContrast: {
+        tintColor: string;
+    };
+    tintSuccess: {
+        tintColor: string;
+    };
+    tintSuccessLight: {
+        tintColor: string;
+    };
+    tintSuccessDark: {
+        tintColor: string;
+    };
+    tintSuccessContrast: {
+        tintColor: string;
+    };
+    tintError: {
+        tintColor: string;
+    };
+    tintErrorLight: {
+        tintColor: string;
+    };
+    tintErrorDark: {
+        tintColor: string;
+    };
+    tintErrorContrast: {
+        tintColor: string;
+    };
+    tintWarning: {
+        tintColor: string;
+    };
+    tintWarningLight: {
+        tintColor: string;
+    };
+    tintWarningDark: {
+        tintColor: string;
+    };
+    tintWarningContrast: {
+        tintColor: string;
+    };
+    tintPaper: {
+        tintColor: string;
+    };
+    tintSelected: {
+        tintColor: string;
+    };
+    tintDisabled: {
+        tintColor: string;
+    };
+    tintFocused: {
+        tintColor: string;
+    };
+    tintMuted: {
+        tintColor: string;
+    };
+    tintWhite: {
+        tintColor: string;
+    };
+    tintGray100: {
+        tintColor: string;
+    };
+    tintGray200: {
+        tintColor: string;
+    };
+    tintGray300: {
+        tintColor: string;
+    };
+    tintGray400: {
+        tintColor: string;
+    };
+    tintGray500: {
+        tintColor: string;
+    };
+    tintGray600: {
+        tintColor: string;
+    };
+    tintGray700: {
+        tintColor: string;
+    };
+    tintGray800: {
+        tintColor: string;
+    };
+    tintGray900: {
+        tintColor: string;
+    };
+    tintBlack: {
+        tintColor: string;
+    };
+    tintTransparent: {
+        tintColor: string;
+    };
+    z0: {
+        zIndex: number;
+    };
+    z10: {
+        zIndex: number;
+    };
+    z20: {
+        zIndex: number;
+    };
+    z30: {
+        zIndex: number;
+    };
+    z40: {
+        zIndex: number;
+    };
+    z50: {
+        zIndex: number;
+    };
+    flexCol: {
+        flexDirection: "column";
+    };
+    flexRow: {
+        flexDirection: "row";
+    };
+    flexColReverse: {
+        flexDirection: "column-reverse";
+    };
+    flexRowReverse: {
+        flexDirection: "row-reverse";
+    };
+    flexWrap: {
+        flexWrap: "wrap";
+    };
+    flexWrapReverse: {
+        flexWrap: "wrap-reverse";
+    };
+    flexNoWrap: {
+        flexWrap: "nowrap";
+    };
+    itemsStart: {
+        alignItems: "flex-start";
+    };
+    itemsEnd: {
+        alignItems: "flex-end";
+    };
+    itemsCenter: {
+        alignItems: "center";
+    };
+    itemsStretch: {
+        alignItems: "stretch";
+    };
+    itemsBaseline: {
+        alignItems: "baseline";
+    };
+    contentStart: {
+        alignContent: "flex-start";
+    };
+    contentEnd: {
+        alignContent: "flex-end";
+    };
+    contentCenter: {
+        alignContent: "center";
+    };
+    contentStretch: {
+        alignContent: "stretch";
+    };
+    contentBetween: {
+        alignContent: "space-between";
+    };
+    contentAround: {
+        alignContent: "space-around";
+    };
+    selfAuto: {
+        alignSelf: "auto";
+    };
+    selfStart: {
+        alignSelf: "flex-start";
+    };
+    selfEnd: {
+        alignSelf: "flex-end";
+    };
+    selfCenter: {
+        alignSelf: "center";
+    };
+    selfStretch: {
+        alignSelf: "stretch";
+    };
+    selfBaseline: {
+        alignSelf: "baseline";
+    };
+    justifyStart: {
+        justifyContent: "flex-start";
+    };
+    justifyEnd: {
+        justifyContent: "flex-end";
+    };
+    justifyCenter: {
+        justifyContent: "center";
+    };
+    justifyBetween: {
+        justifyContent: "space-between";
+    };
+    justifyAround: {
+        justifyContent: "space-around";
+    };
+    justifyEvenly: {
+        justifyContent: "space-evenly";
+    };
+    flexNone: {
+        flex: number;
+    };
+    flex1: {
+        flex: number;
+    };
+    flex2: {
+        flex: number;
+    };
+    flex3: {
+        flex: number;
+    };
+    flex4: {
+        flex: number;
+    };
+    flexGrow: {
+        flexGrow: number;
+    };
+    flexGrow0: {
+        flexGrow: number;
+    };
+    flexGrow1: {
+        flexGrow: number;
+    };
+    flexGrow2: {
+        flexGrow: number;
+    };
+    flexGrow3: {
+        flexGrow: number;
+    };
+    flexGrow4: {
+        flexGrow: number;
+    };
+    flexShrink: {
+        flexShrink: number;
+    };
+    flexShrink0: {
+        flexShrink: number;
+    };
+    flexShrink1: {
+        flexShrink: number;
+    };
+    flexShrink2: {
+        flexShrink: number;
+    };
+    flexShrink3: {
+        flexShrink: number;
+    };
+    flexShrink4: {
+        flexShrink: number;
+    };
+    shadow: {
+        shadowColor: string;
+        shadowOffset: {
+            width: number;
+            height: number;
+        };
+        shadowRadius: number;
+        elevation: number;
+    };
+    shadowMd: {
+        shadowColor: string;
+        shadowOffset: {
+            width: number;
+            height: number;
+        };
+        shadowRadius: number;
+        elevation: number;
+    };
+    shadowLg: {
+        shadowColor: string;
+        shadowOffset: {
+            width: number;
+            height: number;
+        };
+        shadowRadius: number;
+        elevation: number;
+    };
+    shadowXl: {
+        shadowColor: string;
+        shadowOffset: {
+            width: number;
+            height: number;
+        };
+        shadowRadius: number;
+        elevation: number;
+    };
+    shadow2xl: {
+        shadowColor: string;
+        shadowOffset: {
+            width: number;
+            height: number;
+        };
+        shadowRadius: number;
+        elevation: number;
+    };
+    shadowInner: {
+        shadowColor: string;
+        shadowOffset: {
+            width: number;
+            height: number;
+        };
+        shadowRadius: number;
+        elevation: number;
+    };
+    shadowOutline: {
+        shadowColor: string;
+        shadowOffset: {
+            width: number;
+            height: number;
+        };
+        shadowRadius: number;
+        elevation: number;
+    };
+    shadowNone: {
+        shadowColor: string;
+        shadowOffset: {
+            width: number;
+            height: number;
+        };
+        shadowRadius: number;
+        elevation: number;
+    };
+    textShadow: {
+        textShadowColor: string;
+        textShadowOffset: {
+            width: number;
+            height: number;
+        };
+        textShadowRadius: number;
+    };
+    textShadowMd: {
+        textShadowColor: string;
+        textShadowOffset: {
+            width: number;
+            height: number;
+        };
+        textShadowRadius: number;
+    };
+    textShadowLg: {
+        textShadowColor: string;
+        textShadowOffset: {
+            width: number;
+            height: number;
+        };
+        textShadowRadius: number;
+    };
+    textShadowXl: {
+        textShadowColor: string;
+        textShadowOffset: {
+            width: number;
+            height: number;
+        };
+        textShadowRadius: number;
+    };
+    textShadow2xl: {
+        textShadowColor: string;
+        textShadowOffset: {
+            width: number;
+            height: number;
+        };
+        textShadowRadius: number;
+    };
+    textShadowInner: {
+        textShadowColor: string;
+        textShadowOffset: {
+            width: number;
+            height: number;
+        };
+        textShadowRadius: number;
+    };
+    textShadowOutline: {
+        textShadowColor: string;
+        textShadowOffset: {
+            width: number;
+            height: number;
+        };
+        textShadowRadius: number;
+    };
+    textShadowNone: {
+        textShadowColor: string;
+        textShadowOffset: {
+            width: number;
+            height: number;
+        };
+        textShadowRadius: number;
+    };
+    opacity100: {
+        opacity: number;
+    };
+    opacity90: {
+        opacity: number;
+    };
+    opacity80: {
+        opacity: number;
+    };
+    opacity75: {
+        opacity: number;
+    };
+    opacity70: {
+        opacity: number;
+    };
+    opacity60: {
+        opacity: number;
+    };
+    opacity50: {
+        opacity: number;
+    };
+    opacity40: {
+        opacity: number;
+    };
+    opacity30: {
+        opacity: number;
+    };
+    opacity25: {
+        opacity: number;
+    };
+    opacity20: {
+        opacity: number;
+    };
+    opacity10: {
+        opacity: number;
+    };
+    opacity0: {
+        opacity: number;
+    };
+    borderPrimary: {
+        borderColor: string;
+    };
+    borderPrimaryLight: {
+        borderColor: string;
+    };
+    borderPrimaryDark: {
+        borderColor: string;
+    };
+    borderPrimaryContrast: {
+        borderColor: string;
+    };
+    borderSecondary: {
+        borderColor: string;
+    };
+    borderSecondaryLight: {
+        borderColor: string;
+    };
+    borderSecondaryDark: {
+        borderColor: string;
+    };
+    borderSecondaryContrast: {
+        borderColor: string;
+    };
+    borderInfo: {
+        borderColor: string;
+    };
+    borderInfoLight: {
+        borderColor: string;
+    };
+    borderInfoDark: {
+        borderColor: string;
+    };
+    borderInfoContrast: {
+        borderColor: string;
+    };
+    borderSuccess: {
+        borderColor: string;
+    };
+    borderSuccessLight: {
+        borderColor: string;
+    };
+    borderSuccessDark: {
+        borderColor: string;
+    };
+    borderSuccessContrast: {
+        borderColor: string;
+    };
+    borderError: {
+        borderColor: string;
+    };
+    borderErrorLight: {
+        borderColor: string;
+    };
+    borderErrorDark: {
+        borderColor: string;
+    };
+    borderErrorContrast: {
+        borderColor: string;
+    };
+    borderWarning: {
+        borderColor: string;
+    };
+    borderWarningLight: {
+        borderColor: string;
+    };
+    borderWarningDark: {
+        borderColor: string;
+    };
+    borderWarningContrast: {
+        borderColor: string;
+    };
+    borderPaper: {
+        borderColor: string;
+    };
+    borderSelected: {
+        borderColor: string;
+    };
+    borderDisabled: {
+        borderColor: string;
+    };
+    borderFocused: {
+        borderColor: string;
+    };
+    borderMuted: {
+        borderColor: string;
+    };
+    borderWhite: {
+        borderColor: string;
+    };
+    borderGray100: {
+        borderColor: string;
+    };
+    borderGray200: {
+        borderColor: string;
+    };
+    borderGray300: {
+        borderColor: string;
+    };
+    borderGray400: {
+        borderColor: string;
+    };
+    borderGray500: {
+        borderColor: string;
+    };
+    borderGray600: {
+        borderColor: string;
+    };
+    borderGray700: {
+        borderColor: string;
+    };
+    borderGray800: {
+        borderColor: string;
+    };
+    borderGray900: {
+        borderColor: string;
+    };
+    borderBlack: {
+        borderColor: string;
+    };
+    borderTransparent: {
+        borderColor: string;
+    };
+    borderSolid: {
+        borderStyle: "solid";
+    };
+    borderDotted: {
+        borderStyle: "dotted";
+    };
+    borderDashed: {
+        borderStyle: "dashed";
+    };
+    border: {
+        borderWidth: number;
+    };
+    border0_5: {
+        borderWidth: number;
+    };
+    border0: {
+        borderWidth: number;
+    };
+    border1: {
+        borderWidth: number;
+    };
+    border2: {
+        borderWidth: number;
+    };
+    border3: {
+        borderWidth: number;
+    };
+    border4: {
+        borderWidth: number;
+    };
+    border5: {
+        borderWidth: number;
+    };
+    border6: {
+        borderWidth: number;
+    };
+    border7: {
+        borderWidth: number;
+    };
+    border8: {
+        borderWidth: number;
+    };
+    borderX: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT: {
+        borderTopWidth: number;
+    };
+    borderR: {
+        borderRightWidth: number;
+    };
+    borderB: {
+        borderBottomWidth: number;
+    };
+    borderL: {
+        borderLeftWidth: number;
+    };
+    borderE: {
+        borderEndWidth: number;
+    };
+    borderS: {
+        borderStartWidth: number;
+    };
+    borderX0: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY0: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT0: {
+        borderTopWidth: number;
+    };
+    borderR0: {
+        borderRightWidth: number;
+    };
+    borderB0: {
+        borderBottomWidth: number;
+    };
+    borderL0: {
+        borderLeftWidth: number;
+    };
+    borderE0: {
+        borderEndWidth: number;
+    };
+    borderS0: {
+        borderStartWidth: number;
+    };
+    borderX0_5: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY0_5: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT0_5: {
+        borderTopWidth: number;
+    };
+    borderR0_5: {
+        borderRightWidth: number;
+    };
+    borderB0_5: {
+        borderBottomWidth: number;
+    };
+    borderL0_5: {
+        borderLeftWidth: number;
+    };
+    borderE0_5: {
+        borderEndWidth: number;
+    };
+    borderS0_5: {
+        borderStartWidth: number;
+    };
+    borderX1: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY1: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT1: {
+        borderTopWidth: number;
+    };
+    borderR1: {
+        borderRightWidth: number;
+    };
+    borderB1: {
+        borderBottomWidth: number;
+    };
+    borderL1: {
+        borderLeftWidth: number;
+    };
+    borderE1: {
+        borderEndWidth: number;
+    };
+    borderS1: {
+        borderStartWidth: number;
+    };
+    borderX2: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY2: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT2: {
+        borderTopWidth: number;
+    };
+    borderR2: {
+        borderRightWidth: number;
+    };
+    borderB2: {
+        borderBottomWidth: number;
+    };
+    borderL2: {
+        borderLeftWidth: number;
+    };
+    borderE2: {
+        borderEndWidth: number;
+    };
+    borderS2: {
+        borderStartWidth: number;
+    };
+    borderX3: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY3: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT3: {
+        borderTopWidth: number;
+    };
+    borderR3: {
+        borderRightWidth: number;
+    };
+    borderB3: {
+        borderBottomWidth: number;
+    };
+    borderL3: {
+        borderLeftWidth: number;
+    };
+    borderE3: {
+        borderEndWidth: number;
+    };
+    borderS3: {
+        borderStartWidth: number;
+    };
+    borderX4: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY4: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT4: {
+        borderTopWidth: number;
+    };
+    borderR4: {
+        borderRightWidth: number;
+    };
+    borderB4: {
+        borderBottomWidth: number;
+    };
+    borderL4: {
+        borderLeftWidth: number;
+    };
+    borderE4: {
+        borderEndWidth: number;
+    };
+    borderS4: {
+        borderStartWidth: number;
+    };
+    borderX5: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY5: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT5: {
+        borderTopWidth: number;
+    };
+    borderR5: {
+        borderRightWidth: number;
+    };
+    borderB5: {
+        borderBottomWidth: number;
+    };
+    borderL5: {
+        borderLeftWidth: number;
+    };
+    borderE5: {
+        borderEndWidth: number;
+    };
+    borderS5: {
+        borderStartWidth: number;
+    };
+    borderX6: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY6: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT6: {
+        borderTopWidth: number;
+    };
+    borderR6: {
+        borderRightWidth: number;
+    };
+    borderB6: {
+        borderBottomWidth: number;
+    };
+    borderL6: {
+        borderLeftWidth: number;
+    };
+    borderE6: {
+        borderEndWidth: number;
+    };
+    borderS6: {
+        borderStartWidth: number;
+    };
+    borderX7: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY7: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT7: {
+        borderTopWidth: number;
+    };
+    borderR7: {
+        borderRightWidth: number;
+    };
+    borderB7: {
+        borderBottomWidth: number;
+    };
+    borderL7: {
+        borderLeftWidth: number;
+    };
+    borderE7: {
+        borderEndWidth: number;
+    };
+    borderS7: {
+        borderStartWidth: number;
+    };
+    borderX8: {
+        borderRightWidth: number;
+        borderLeftWidth: number;
+    };
+    borderY8: {
+        borderTopWidth: number;
+        borderBottomWidth: number;
+    };
+    borderT8: {
+        borderTopWidth: number;
+    };
+    borderR8: {
+        borderRightWidth: number;
+    };
+    borderB8: {
+        borderBottomWidth: number;
+    };
+    borderL8: {
+        borderLeftWidth: number;
+    };
+    borderE8: {
+        borderEndWidth: number;
+    };
+    borderS8: {
+        borderStartWidth: number;
+    };
+    roundedNone: {
+        borderRadius: number;
+    };
+    roundedSm: {
+        borderRadius: number;
+    };
+    rounded: {
+        borderRadius: number;
+    };
+    roundedLg: {
+        borderRadius: number;
+    };
+    roundedFull: {
+        borderRadius: number;
+    };
+    roundedTNone: {
+        borderTopLeftRadius: number;
+        borderTopRightRadius: number;
+    };
+    roundedRNone: {
+        borderTopRightRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedBNone: {
+        borderBottomLeftRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedLNone: {
+        borderTopLeftRadius: number;
+        borderBottomLeftRadius: number;
+    };
+    roundedTlNone: {
+        borderTopLeftRadius: number;
+    };
+    roundedTrNone: {
+        borderTopRightRadius: number;
+    };
+    roundedBrNone: {
+        borderBottomRightRadius: number;
+    };
+    roundedBlNone: {
+        borderBottomLeftRadius: number;
+    };
+    roundedSNone: {
+        borderTopStartRadius: number;
+        borderBottomStartRadius: number;
+    };
+    roundedENone: {
+        borderTopEndRadius: number;
+        borderBottomEndRadius: number;
+    };
+    roundedTsNone: {
+        borderTopStartRadius: number;
+    };
+    roundedTeNone: {
+        borderTopEndRadius: number;
+    };
+    roundedBeNone: {
+        borderBottomEndRadius: number;
+    };
+    roundedBsNone: {
+        borderBottomStartRadius: number;
+    };
+    roundedTSm: {
+        borderTopLeftRadius: number;
+        borderTopRightRadius: number;
+    };
+    roundedRSm: {
+        borderTopRightRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedBSm: {
+        borderBottomLeftRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedLSm: {
+        borderTopLeftRadius: number;
+        borderBottomLeftRadius: number;
+    };
+    roundedTlSm: {
+        borderTopLeftRadius: number;
+    };
+    roundedTrSm: {
+        borderTopRightRadius: number;
+    };
+    roundedBrSm: {
+        borderBottomRightRadius: number;
+    };
+    roundedBlSm: {
+        borderBottomLeftRadius: number;
+    };
+    roundedSSm: {
+        borderTopStartRadius: number;
+        borderBottomStartRadius: number;
+    };
+    roundedESm: {
+        borderTopEndRadius: number;
+        borderBottomEndRadius: number;
+    };
+    roundedTsSm: {
+        borderTopStartRadius: number;
+    };
+    roundedTeSm: {
+        borderTopEndRadius: number;
+    };
+    roundedBeSm: {
+        borderBottomEndRadius: number;
+    };
+    roundedBsSm: {
+        borderBottomStartRadius: number;
+    };
+    roundedT: {
+        borderTopLeftRadius: number;
+        borderTopRightRadius: number;
+    };
+    roundedR: {
+        borderTopRightRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedB: {
+        borderBottomLeftRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedL: {
+        borderTopLeftRadius: number;
+        borderBottomLeftRadius: number;
+    };
+    roundedTl: {
+        borderTopLeftRadius: number;
+    };
+    roundedTr: {
+        borderTopRightRadius: number;
+    };
+    roundedBr: {
+        borderBottomRightRadius: number;
+    };
+    roundedBl: {
+        borderBottomLeftRadius: number;
+    };
+    roundedS: {
+        borderTopStartRadius: number;
+        borderBottomStartRadius: number;
+    };
+    roundedE: {
+        borderTopEndRadius: number;
+        borderBottomEndRadius: number;
+    };
+    roundedTs: {
+        borderTopStartRadius: number;
+    };
+    roundedTe: {
+        borderTopEndRadius: number;
+    };
+    roundedBe: {
+        borderBottomEndRadius: number;
+    };
+    roundedBs: {
+        borderBottomStartRadius: number;
+    };
+    roundedTLg: {
+        borderTopLeftRadius: number;
+        borderTopRightRadius: number;
+    };
+    roundedRLg: {
+        borderTopRightRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedBLg: {
+        borderBottomLeftRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedLLg: {
+        borderTopLeftRadius: number;
+        borderBottomLeftRadius: number;
+    };
+    roundedTlLg: {
+        borderTopLeftRadius: number;
+    };
+    roundedTrLg: {
+        borderTopRightRadius: number;
+    };
+    roundedBrLg: {
+        borderBottomRightRadius: number;
+    };
+    roundedBlLg: {
+        borderBottomLeftRadius: number;
+    };
+    roundedSLg: {
+        borderTopStartRadius: number;
+        borderBottomStartRadius: number;
+    };
+    roundedELg: {
+        borderTopEndRadius: number;
+        borderBottomEndRadius: number;
+    };
+    roundedTsLg: {
+        borderTopStartRadius: number;
+    };
+    roundedTeLg: {
+        borderTopEndRadius: number;
+    };
+    roundedBeLg: {
+        borderBottomEndRadius: number;
+    };
+    roundedBsLg: {
+        borderBottomStartRadius: number;
+    };
+    roundedTXl: {
+        borderTopLeftRadius: number;
+        borderTopRightRadius: number;
+    };
+    roundedRXl: {
+        borderTopRightRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedBXl: {
+        borderBottomLeftRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedLXl: {
+        borderTopLeftRadius: number;
+        borderBottomLeftRadius: number;
+    };
+    roundedTlXl: {
+        borderTopLeftRadius: number;
+    };
+    roundedTrXl: {
+        borderTopRightRadius: number;
+    };
+    roundedBrXl: {
+        borderBottomRightRadius: number;
+    };
+    roundedBlXl: {
+        borderBottomLeftRadius: number;
+    };
+    roundedSXl: {
+        borderTopStartRadius: number;
+        borderBottomStartRadius: number;
+    };
+    roundedEXl: {
+        borderTopEndRadius: number;
+        borderBottomEndRadius: number;
+    };
+    roundedTsXl: {
+        borderTopStartRadius: number;
+    };
+    roundedTeXl: {
+        borderTopEndRadius: number;
+    };
+    roundedBeXl: {
+        borderBottomEndRadius: number;
+    };
+    roundedBsXl: {
+        borderBottomStartRadius: number;
+    };
+    roundedTFull: {
+        borderTopLeftRadius: number;
+        borderTopRightRadius: number;
+    };
+    roundedRFull: {
+        borderTopRightRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedBFull: {
+        borderBottomLeftRadius: number;
+        borderBottomRightRadius: number;
+    };
+    roundedLFull: {
+        borderTopLeftRadius: number;
+        borderBottomLeftRadius: number;
+    };
+    roundedTlFull: {
+        borderTopLeftRadius: number;
+    };
+    roundedTrFull: {
+        borderTopRightRadius: number;
+    };
+    roundedBrFull: {
+        borderBottomRightRadius: number;
+    };
+    roundedBlFull: {
+        borderBottomLeftRadius: number;
+    };
+    roundedSFull: {
+        borderTopStartRadius: number;
+        borderBottomStartRadius: number;
+    };
+    roundedEFull: {
+        borderTopEndRadius: number;
+        borderBottomEndRadius: number;
+    };
+    roundedTsFull: {
+        borderTopStartRadius: number;
+    };
+    roundedTeFull: {
+        borderTopEndRadius: number;
+    };
+    roundedBeFull: {
+        borderBottomEndRadius: number;
+    };
+    roundedBsFull: {
+        borderBottomStartRadius: number;
+    };
+    bgPrimary: {
+        backgroundColor: string;
+    };
+    bgPrimaryLight: {
+        backgroundColor: string;
+    };
+    bgPrimaryDark: {
+        backgroundColor: string;
+    };
+    bgPrimaryContrast: {
+        backgroundColor: string;
+    };
+    bgSecondary: {
+        backgroundColor: string;
+    };
+    bgSecondaryLight: {
+        backgroundColor: string;
+    };
+    bgSecondaryDark: {
+        backgroundColor: string;
+    };
+    bgSecondaryContrast: {
+        backgroundColor: string;
+    };
+    bgInfo: {
+        backgroundColor: string;
+    };
+    bgInfoLight: {
+        backgroundColor: string;
+    };
+    bgInfoDark: {
+        backgroundColor: string;
+    };
+    bgInfoContrast: {
+        backgroundColor: string;
+    };
+    bgSuccess: {
+        backgroundColor: string;
+    };
+    bgSuccessLight: {
+        backgroundColor: string;
+    };
+    bgSuccessDark: {
+        backgroundColor: string;
+    };
+    bgSuccessContrast: {
+        backgroundColor: string;
+    };
+    bgError: {
+        backgroundColor: string;
+    };
+    bgErrorLight: {
+        backgroundColor: string;
+    };
+    bgErrorDark: {
+        backgroundColor: string;
+    };
+    bgErrorContrast: {
+        backgroundColor: string;
+    };
+    bgWarning: {
+        backgroundColor: string;
+    };
+    bgWarningLight: {
+        backgroundColor: string;
+    };
+    bgWarningDark: {
+        backgroundColor: string;
+    };
+    bgWarningContrast: {
+        backgroundColor: string;
+    };
+    bgPaper: {
+        backgroundColor: string;
+    };
+    bgSelected: {
+        backgroundColor: string;
+    };
+    bgDisabled: {
+        backgroundColor: string;
+    };
+    bgFocused: {
+        backgroundColor: string;
+    };
+    bgMuted: {
+        backgroundColor: string;
+    };
+    bgWhite: {
+        backgroundColor: string;
+    };
+    bgGray100: {
+        backgroundColor: string;
+    };
+    bgGray200: {
+        backgroundColor: string;
+    };
+    bgGray300: {
+        backgroundColor: string;
+    };
+    bgGray400: {
+        backgroundColor: string;
+    };
+    bgGray500: {
+        backgroundColor: string;
+    };
+    bgGray600: {
+        backgroundColor: string;
+    };
+    bgGray700: {
+        backgroundColor: string;
+    };
+    bgGray800: {
+        backgroundColor: string;
+    };
+    bgGray900: {
+        backgroundColor: string;
+    };
+    bgBlack: {
+        backgroundColor: string;
+    };
+    bgTransparent: {
+        backgroundColor: string;
+    };
 };
 export {};
