@@ -2,12 +2,12 @@
 
 A utility-first CSS framework designed for React Native.
 
-<p>
-  <!-- <a href="https://github.com/arabold/react-native-whirlwind/actions"><img src="https://img.shields.io/github/workflow/status/arabold/react-native-whirlwind/Node.js%20CI" alt="Build Status"></a> -->
-  <a href="https://www.npmjs.com/package/react-native-whirlwind"><img src="https://img.shields.io/npm/dt/react-native-whirlwind.svg" alt="Total Downloads"></a>
-  <a href="https://github.com/arabold/react-native-whirlwind/releases"><img src="https://img.shields.io/npm/v/react-native-whirlwind.svg" alt="Latest Release"></a>
-  <a href="https://github.com/arabold/react-native-whirlwind/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/react-native-whirlwind.svg" alt="License"></a>
-</p>
+[![license](https://img.shields.io/github/license/arabold/react-native-whirlwind.svg)](https://github.com/arabold/react-native-whirlwind/blob/master/LICENSE)
+[![react-native](https://img.shields.io/npm/dependency-version/react-native-whirlwind/peer/react-native.svg?style=flat-square)](https://sentry.io/)
+[![npm](https://img.shields.io/npm/v/react-native-whirlwind.svg)](https://www.npmjs.com/package/react-native-whirlwind)
+[![dependencies](https://img.shields.io/librariesio/github/arabold/react-native-whirlwind.svg)](https://www.npmjs.com/package/react-native-whirlwind)
+[![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
+[![downloads](https://img.shields.io/npm/dt/react-native-whirlwind.svg)](https://www.npmjs.com/package/react-native-whirlwind)
 
 ---
 
