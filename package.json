@@ -32,7 +32,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rimraf dist/ && tsc",
     "lint": "tsc --noemit && npx eslint 'src/**/*.{ts,tsx}'",
-    "preversion": "npm run lint && npm run build && git add dist/"
+    "preversion": "npm run lint && npm run build && git add dist/",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
