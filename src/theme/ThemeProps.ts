@@ -1,5 +1,3 @@
-import letterSpacing from './defaultTheme/letterSpacing'
-
 export default interface ThemeProps {
   colors: {
     primary: string

@@ -1,0 +1,28 @@
+---
+env:
+  'react-native/react-native': true
+plugins:
+  - prettier
+  - '@typescript-eslint'
+  - react
+  - react-native
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:@typescript-eslint/recommended-requiring-type-checking
+  - plugin:react/recommended
+  - plugin:react-native/all
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaFeatures: { 'jsx': true }
+  ecmaVersion: 2018
+  project:
+    - ./tsconfig.json
+  sourceType: module
+settings:
+  react:
+    version: detect
+rules:
+  'no-unused-vars': 'off'
+  '@typescript-eslint/no-unused-vars': ['error', { 'vars': 'all', 'args': 'none', 'ignoreRestSiblings': false }]
