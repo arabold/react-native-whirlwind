@@ -5,7 +5,6 @@ A utility-first CSS framework designed for React Native.
 [![license](https://img.shields.io/github/license/arabold/react-native-whirlwind.svg)](https://github.com/arabold/react-native-whirlwind/blob/master/LICENSE)
 [![react-native](https://img.shields.io/npm/dependency-version/react-native-whirlwind/peer/react-native.svg?style=flat-square)](https://sentry.io/)
 [![npm](https://img.shields.io/npm/v/react-native-whirlwind.svg)](https://www.npmjs.com/package/react-native-whirlwind)
-[![dependencies](https://img.shields.io/librariesio/github/arabold/react-native-whirlwind.svg)](https://www.npmjs.com/package/react-native-whirlwind)
 [![prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
 [![downloads](https://img.shields.io/npm/dt/react-native-whirlwind.svg)](https://www.npmjs.com/package/react-native-whirlwind)
 
