@@ -454,7 +454,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         textAlignVertical: "center";
     };
     pAuto: {
-        padding: string;
+        padding: "auto";
     };
     p0: {
         padding: number;
@@ -553,7 +553,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         padding: number;
     };
     pTAuto: {
-        paddingTop: string;
+        paddingTop: "auto";
     };
     pT0: {
         paddingTop: number;
@@ -652,7 +652,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         paddingTop: number;
     };
     pBAuto: {
-        paddingBottom: string;
+        paddingBottom: "auto";
     };
     pB0: {
         paddingBottom: number;
@@ -751,7 +751,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         paddingBottom: number;
     };
     pLAuto: {
-        paddingLeft: string;
+        paddingLeft: "auto";
     };
     pL0: {
         paddingLeft: number;
@@ -850,7 +850,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         paddingLeft: number;
     };
     pRAuto: {
-        paddingRight: string;
+        paddingRight: "auto";
     };
     pR0: {
         paddingRight: number;
@@ -949,7 +949,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         paddingRight: number;
     };
     pXAuto: {
-        paddingHorizontal: string;
+        paddingHorizontal: "auto";
     };
     pX0: {
         paddingHorizontal: number;
@@ -1048,7 +1048,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         paddingHorizontal: number;
     };
     pYAuto: {
-        paddingVertical: string;
+        paddingVertical: "auto";
     };
     pY0: {
         paddingVertical: number;
@@ -1147,7 +1147,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         paddingVertical: number;
     };
     pSAuto: {
-        paddingStart: string;
+        paddingStart: "auto";
     };
     pS0: {
         paddingStart: number;
@@ -1246,7 +1246,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         paddingStart: number;
     };
     pEAuto: {
-        paddingEnd: string;
+        paddingEnd: "auto";
     };
     pE0: {
         paddingEnd: number;
@@ -2182,7 +2182,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         paddingEnd: number;
     };
     mAuto: {
-        margin: string;
+        margin: "auto";
     };
     m0: {
         margin: number;
@@ -2281,7 +2281,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         margin: number;
     };
     mTAuto: {
-        marginTop: string;
+        marginTop: "auto";
     };
     mT0: {
         marginTop: number;
@@ -2380,7 +2380,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         marginTop: number;
     };
     mBAuto: {
-        marginBottom: string;
+        marginBottom: "auto";
     };
     mB0: {
         marginBottom: number;
@@ -2479,7 +2479,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         marginBottom: number;
     };
     mLAuto: {
-        marginLeft: string;
+        marginLeft: "auto";
     };
     mL0: {
         marginLeft: number;
@@ -2578,7 +2578,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         marginLeft: number;
     };
     mRAuto: {
-        marginRight: string;
+        marginRight: "auto";
     };
     mR0: {
         marginRight: number;
@@ -2677,7 +2677,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         marginRight: number;
     };
     mXAuto: {
-        marginHorizontal: string;
+        marginHorizontal: "auto";
     };
     mX0: {
         marginHorizontal: number;
@@ -2776,7 +2776,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         marginHorizontal: number;
     };
     mYAuto: {
-        marginVertical: string;
+        marginVertical: "auto";
     };
     mY0: {
         marginVertical: number;
@@ -2875,7 +2875,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         marginVertical: number;
     };
     mSAuto: {
-        marginStart: string;
+        marginStart: "auto";
     };
     mS0: {
         marginStart: number;
@@ -2974,7 +2974,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         marginStart: number;
     };
     mEAuto: {
-        marginEnd: string;
+        marginEnd: "auto";
     };
     mE0: {
         marginEnd: number;
@@ -3910,7 +3910,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         marginEnd: number;
     };
     wFull: {
-        width: string;
+        width: "100%";
     };
     w0: {
         width: number;
@@ -4009,49 +4009,49 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         width: number;
     };
     w1_2: {
-        width: string;
+        width: "50%";
     };
     w1_3: {
-        width: string;
+        width: "33.333333%";
     };
     w2_3: {
-        width: string;
+        width: "66.666667%";
     };
     w1_4: {
-        width: string;
+        width: "25%";
     };
     w2_4: {
-        width: string;
+        width: "50%";
     };
     w3_4: {
-        width: string;
+        width: "75%";
     };
     w1_5: {
-        width: string;
+        width: "20%";
     };
     w2_5: {
-        width: string;
+        width: "40%";
     };
     w3_5: {
-        width: string;
+        width: "60%";
     };
     w4_5: {
-        width: string;
+        width: "80%";
     };
     w1_6: {
-        width: string;
+        width: "16.666667%";
     };
     w2_6: {
-        width: string;
+        width: "33.333333%";
     };
     w3_6: {
-        width: string;
+        width: "50%";
     };
     w4_6: {
-        width: string;
+        width: "66.666667%";
     };
     w5_6: {
-        width: string;
+        width: "83.333333%";
     };
     minW0: {
         minWidth: number;
@@ -4150,7 +4150,7 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         minWidth: number;
     };
     minWFull: {
-        minWidth: string;
+        minWidth: "100%";
     };
     maxW0: {
         maxWidth: number;
@@ -4249,52 +4249,52 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         maxWidth: number;
     };
     maxW1_2: {
-        maxWidth: string;
+        maxWidth: "50%";
     };
     maxW1_3: {
-        maxWidth: string;
+        maxWidth: "33.333333%";
     };
     maxW2_3: {
-        maxWidth: string;
+        maxWidth: "66.666667%";
     };
     maxW1_4: {
-        maxWidth: string;
+        maxWidth: "25%";
     };
     maxW2_4: {
-        maxWidth: string;
+        maxWidth: "50%";
     };
     maxW3_4: {
-        maxWidth: string;
+        maxWidth: "75%";
     };
     maxW1_5: {
-        maxWidth: string;
+        maxWidth: "20%";
     };
     maxW2_5: {
-        maxWidth: string;
+        maxWidth: "40%";
     };
     maxW3_5: {
-        maxWidth: string;
+        maxWidth: "60%";
     };
     maxW4_5: {
-        maxWidth: string;
+        maxWidth: "80%";
     };
     maxW1_6: {
-        maxWidth: string;
+        maxWidth: "16.666667%";
     };
     maxW2_6: {
-        maxWidth: string;
+        maxWidth: "33.333333%";
     };
     maxW3_6: {
-        maxWidth: string;
+        maxWidth: "50%";
     };
     maxW4_6: {
-        maxWidth: string;
+        maxWidth: "66.666667%";
     };
     maxW5_6: {
-        maxWidth: string;
+        maxWidth: "83.333333%";
     };
     maxWFull: {
-        maxWidth: string;
+        maxWidth: "100%";
     };
     maxWScreenSm: {
         maxWidth: number;
@@ -4312,10 +4312,10 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         maxWidth: number;
     };
     hFull: {
-        height: string;
+        height: "100%";
     };
     hScreen: {
-        height: string;
+        height: number;
     };
     h0: {
         height: number;
@@ -4414,13 +4414,13 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         height: number;
     };
     minHFull: {
-        minHeight: string;
+        minHeight: "100%";
     };
     minH0: {
         minHeight: number;
     };
     maxHFull: {
-        maxHeight: string;
+        maxHeight: "100%";
     };
     maxH0: {
         maxHeight: number;
@@ -4744,64 +4744,64 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         right: number;
     };
     inset1_2: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "50%";
+        bottom: "50%";
+        left: "50%";
+        right: "50%";
     };
     inset1_3: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "33.333333%";
+        bottom: "33.333333%";
+        left: "33.333333%";
+        right: "33.333333%";
     };
     inset2_3: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "66.666667%";
+        bottom: "66.666667%";
+        left: "66.666667%";
+        right: "66.666667%";
     };
     inset1_4: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "25%";
+        bottom: "25%";
+        left: "25%";
+        right: "25%";
     };
     inset2_4: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "50%";
+        bottom: "50%";
+        left: "50%";
+        right: "50%";
     };
     inset3_4: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "75%";
+        bottom: "75%";
+        left: "75%";
+        right: "75%";
     };
     inset1_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "20%";
+        bottom: "20%";
+        left: "20%";
+        right: "20%";
     };
     inset2_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "40%";
+        bottom: "40%";
+        left: "40%";
+        right: "40%";
     };
     inset3_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "60%";
+        bottom: "60%";
+        left: "60%";
+        right: "60%";
     };
     inset4_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "80%";
+        bottom: "80%";
+        left: "80%";
+        right: "80%";
     };
     insetY0: {
         top: number;
@@ -5252,64 +5252,64 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         right: number;
     };
     _inset1_2: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-50%";
+        bottom: "-50%";
+        left: "-50%";
+        right: "-50%";
     };
     _inset1_3: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-33.333333%";
+        bottom: "-33.333333%";
+        left: "-33.333333%";
+        right: "-33.333333%";
     };
     _inset2_3: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-66.666667%";
+        bottom: "-66.666667%";
+        left: "-66.666667%";
+        right: "-66.666667%";
     };
     _inset1_4: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-25%";
+        bottom: "-25%";
+        left: "-25%";
+        right: "-25%";
     };
     _inset2_4: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-50%";
+        bottom: "-50%";
+        left: "-50%";
+        right: "-50%";
     };
     _inset3_4: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-75%";
+        bottom: "-75%";
+        left: "-75%";
+        right: "-75%";
     };
     _inset1_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-20%";
+        bottom: "-20%";
+        left: "-20%";
+        right: "-20%";
     };
     _inset2_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-40%";
+        bottom: "-40%";
+        left: "-40%";
+        right: "-40%";
     };
     _inset3_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-60%";
+        bottom: "-60%";
+        left: "-60%";
+        right: "-60%";
     };
     _inset4_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-80%";
+        bottom: "-80%";
+        left: "-80%";
+        right: "-80%";
     };
     _insetY0: {
         top: number;
@@ -5664,52 +5664,52 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         top: number;
     };
     top1_2: {
-        top: string;
+        top: "50%";
     };
     top1_3: {
-        top: string;
+        top: "33.333333%";
     };
     top2_3: {
-        top: string;
+        top: "66.666667%";
     };
     top1_4: {
-        top: string;
+        top: "25%";
     };
     top2_4: {
-        top: string;
+        top: "50%";
     };
     top3_4: {
-        top: string;
+        top: "75%";
     };
     top1_5: {
-        top: string;
+        top: "20%";
     };
     top2_5: {
-        top: string;
+        top: "40%";
     };
     top3_5: {
-        top: string;
+        top: "60%";
     };
     top4_5: {
-        top: string;
+        top: "80%";
     };
     top1_6: {
-        top: string;
+        top: "16.666667%";
     };
     top2_6: {
-        top: string;
+        top: "33.333333%";
     };
     top3_6: {
-        top: string;
+        top: "50%";
     };
     top4_6: {
-        top: string;
+        top: "66.666667%";
     };
     top5_6: {
-        top: string;
+        top: "83.333333%";
     };
     topFull: {
-        top: string;
+        top: "100%";
     };
     _top0: {
         top: number;
@@ -5808,52 +5808,52 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         top: number;
     };
     _top1_2: {
-        top: string;
+        top: "-50%";
     };
     _top1_3: {
-        top: string;
+        top: "-33.333333%";
     };
     _top2_3: {
-        top: string;
+        top: "-66.666667%";
     };
     _top1_4: {
-        top: string;
+        top: "-25%";
     };
     _top2_4: {
-        top: string;
+        top: "-50%";
     };
     _top3_4: {
-        top: string;
+        top: "-75%";
     };
     _top1_5: {
-        top: string;
+        top: "-20%";
     };
     _top2_5: {
-        top: string;
+        top: "-40%";
     };
     _top3_5: {
-        top: string;
+        top: "-60%";
     };
     _top4_5: {
-        top: string;
+        top: "-80%";
     };
     _top1_6: {
-        top: string;
+        top: "-16.666667%";
     };
     _top2_6: {
-        top: string;
+        top: "-33.333333%";
     };
     _top3_6: {
-        top: string;
+        top: "-50%";
     };
     _top4_6: {
-        top: string;
+        top: "-66.666667%";
     };
     _top5_6: {
-        top: string;
+        top: "-83.333333%";
     };
     _topFull: {
-        top: string;
+        top: "-100%";
     };
     right0: {
         right: number;
@@ -5952,52 +5952,52 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         right: number;
     };
     right1_2: {
-        right: string;
+        right: "50%";
     };
     right1_3: {
-        right: string;
+        right: "33.333333%";
     };
     right2_3: {
-        right: string;
+        right: "66.666667%";
     };
     right1_4: {
-        right: string;
+        right: "25%";
     };
     right2_4: {
-        right: string;
+        right: "50%";
     };
     right3_4: {
-        right: string;
+        right: "75%";
     };
     right1_5: {
-        right: string;
+        right: "20%";
     };
     right2_5: {
-        right: string;
+        right: "40%";
     };
     right3_5: {
-        right: string;
+        right: "60%";
     };
     right4_5: {
-        right: string;
+        right: "80%";
     };
     right1_6: {
-        right: string;
+        right: "16.666667%";
     };
     right2_6: {
-        right: string;
+        right: "33.333333%";
     };
     right3_6: {
-        right: string;
+        right: "50%";
     };
     right4_6: {
-        right: string;
+        right: "66.666667%";
     };
     right5_6: {
-        right: string;
+        right: "83.333333%";
     };
     rightFull: {
-        right: string;
+        right: "100%";
     };
     _right0: {
         right: number;
@@ -6096,52 +6096,52 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         right: number;
     };
     _right1_2: {
-        right: string;
+        right: "-50%";
     };
     _right1_3: {
-        right: string;
+        right: "-33.333333%";
     };
     _right2_3: {
-        right: string;
+        right: "-66.666667%";
     };
     _right1_4: {
-        right: string;
+        right: "-25%";
     };
     _right2_4: {
-        right: string;
+        right: "-50%";
     };
     _right3_4: {
-        right: string;
+        right: "-75%";
     };
     _right1_5: {
-        right: string;
+        right: "-20%";
     };
     _right2_5: {
-        right: string;
+        right: "-40%";
     };
     _right3_5: {
-        right: string;
+        right: "-60%";
     };
     _right4_5: {
-        right: string;
+        right: "-80%";
     };
     _right1_6: {
-        right: string;
+        right: "-16.666667%";
     };
     _right2_6: {
-        right: string;
+        right: "-33.333333%";
     };
     _right3_6: {
-        right: string;
+        right: "-50%";
     };
     _right4_6: {
-        right: string;
+        right: "-66.666667%";
     };
     _right5_6: {
-        right: string;
+        right: "-83.333333%";
     };
     _rightFull: {
-        right: string;
+        right: "-100%";
     };
     bottom0: {
         bottom: number;
@@ -6240,52 +6240,52 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         bottom: number;
     };
     bottom1_2: {
-        bottom: string;
+        bottom: "50%";
     };
     bottom1_3: {
-        bottom: string;
+        bottom: "33.333333%";
     };
     bottom2_3: {
-        bottom: string;
+        bottom: "66.666667%";
     };
     bottom1_4: {
-        bottom: string;
+        bottom: "25%";
     };
     bottom2_4: {
-        bottom: string;
+        bottom: "50%";
     };
     bottom3_4: {
-        bottom: string;
+        bottom: "75%";
     };
     bottom1_5: {
-        bottom: string;
+        bottom: "20%";
     };
     bottom2_5: {
-        bottom: string;
+        bottom: "40%";
     };
     bottom3_5: {
-        bottom: string;
+        bottom: "60%";
     };
     bottom4_5: {
-        bottom: string;
+        bottom: "80%";
     };
     bottom1_6: {
-        bottom: string;
+        bottom: "16.666667%";
     };
     bottom2_6: {
-        bottom: string;
+        bottom: "33.333333%";
     };
     bottom3_6: {
-        bottom: string;
+        bottom: "50%";
     };
     bottom4_6: {
-        bottom: string;
+        bottom: "66.666667%";
     };
     bottom5_6: {
-        bottom: string;
+        bottom: "83.333333%";
     };
     bottomFull: {
-        bottom: string;
+        bottom: "100%";
     };
     _bottom0: {
         bottom: number;
@@ -6384,52 +6384,52 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         bottom: number;
     };
     _bottom1_2: {
-        bottom: string;
+        bottom: "-50%";
     };
     _bottom1_3: {
-        bottom: string;
+        bottom: "-33.333333%";
     };
     _bottom2_3: {
-        bottom: string;
+        bottom: "-66.666667%";
     };
     _bottom1_4: {
-        bottom: string;
+        bottom: "-25%";
     };
     _bottom2_4: {
-        bottom: string;
+        bottom: "-50%";
     };
     _bottom3_4: {
-        bottom: string;
+        bottom: "-75%";
     };
     _bottom1_5: {
-        bottom: string;
+        bottom: "-20%";
     };
     _bottom2_5: {
-        bottom: string;
+        bottom: "-40%";
     };
     _bottom3_5: {
-        bottom: string;
+        bottom: "-60%";
     };
     _bottom4_5: {
-        bottom: string;
+        bottom: "-80%";
     };
     _bottom1_6: {
-        bottom: string;
+        bottom: "-16.666667%";
     };
     _bottom2_6: {
-        bottom: string;
+        bottom: "-33.333333%";
     };
     _bottom3_6: {
-        bottom: string;
+        bottom: "-50%";
     };
     _bottom4_6: {
-        bottom: string;
+        bottom: "-66.666667%";
     };
     _bottom5_6: {
-        bottom: string;
+        bottom: "-83.333333%";
     };
     _bottomFull: {
-        bottom: string;
+        bottom: "-100%";
     };
     left0: {
         left: number;
@@ -6528,52 +6528,52 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         left: number;
     };
     left1_2: {
-        left: string;
+        left: "50%";
     };
     left1_3: {
-        left: string;
+        left: "33.333333%";
     };
     left2_3: {
-        left: string;
+        left: "66.666667%";
     };
     left1_4: {
-        left: string;
+        left: "25%";
     };
     left2_4: {
-        left: string;
+        left: "50%";
     };
     left3_4: {
-        left: string;
+        left: "75%";
     };
     left1_5: {
-        left: string;
+        left: "20%";
     };
     left2_5: {
-        left: string;
+        left: "40%";
     };
     left3_5: {
-        left: string;
+        left: "60%";
     };
     left4_5: {
-        left: string;
+        left: "80%";
     };
     left1_6: {
-        left: string;
+        left: "16.666667%";
     };
     left2_6: {
-        left: string;
+        left: "33.333333%";
     };
     left3_6: {
-        left: string;
+        left: "50%";
     };
     left4_6: {
-        left: string;
+        left: "66.666667%";
     };
     left5_6: {
-        left: string;
+        left: "83.333333%";
     };
     leftFull: {
-        left: string;
+        left: "100%";
     };
     _left0: {
         left: number;
@@ -6672,52 +6672,52 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         left: number;
     };
     _left1_2: {
-        left: string;
+        left: "-50%";
     };
     _left1_3: {
-        left: string;
+        left: "-33.333333%";
     };
     _left2_3: {
-        left: string;
+        left: "-66.666667%";
     };
     _left1_4: {
-        left: string;
+        left: "-25%";
     };
     _left2_4: {
-        left: string;
+        left: "-50%";
     };
     _left3_4: {
-        left: string;
+        left: "-75%";
     };
     _left1_5: {
-        left: string;
+        left: "-20%";
     };
     _left2_5: {
-        left: string;
+        left: "-40%";
     };
     _left3_5: {
-        left: string;
+        left: "-60%";
     };
     _left4_5: {
-        left: string;
+        left: "-80%";
     };
     _left1_6: {
-        left: string;
+        left: "-16.666667%";
     };
     _left2_6: {
-        left: string;
+        left: "-33.333333%";
     };
     _left3_6: {
-        left: string;
+        left: "-50%";
     };
     _left4_6: {
-        left: string;
+        left: "-66.666667%";
     };
     _left5_6: {
-        left: string;
+        left: "-83.333333%";
     };
     _leftFull: {
-        left: string;
+        left: "-100%";
     };
     start0: {
         start: number;
@@ -6816,52 +6816,52 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         start: number;
     };
     start1_2: {
-        start: string;
+        start: "50%";
     };
     start1_3: {
-        start: string;
+        start: "33.333333%";
     };
     start2_3: {
-        start: string;
+        start: "66.666667%";
     };
     start1_4: {
-        start: string;
+        start: "25%";
     };
     start2_4: {
-        start: string;
+        start: "50%";
     };
     start3_4: {
-        start: string;
+        start: "75%";
     };
     start1_5: {
-        start: string;
+        start: "20%";
     };
     start2_5: {
-        start: string;
+        start: "40%";
     };
     start3_5: {
-        start: string;
+        start: "60%";
     };
     start4_5: {
-        start: string;
+        start: "80%";
     };
     start1_6: {
-        start: string;
+        start: "16.666667%";
     };
     start2_6: {
-        start: string;
+        start: "33.333333%";
     };
     start3_6: {
-        start: string;
+        start: "50%";
     };
     start4_6: {
-        start: string;
+        start: "66.666667%";
     };
     start5_6: {
-        start: string;
+        start: "83.333333%";
     };
     startFull: {
-        start: string;
+        start: "100%";
     };
     _start0: {
         start: number;
@@ -6960,52 +6960,52 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         start: number;
     };
     _start1_2: {
-        start: string;
+        start: "-50%";
     };
     _start1_3: {
-        start: string;
+        start: "-33.333333%";
     };
     _start2_3: {
-        start: string;
+        start: "-66.666667%";
     };
     _start1_4: {
-        start: string;
+        start: "-25%";
     };
     _start2_4: {
-        start: string;
+        start: "-50%";
     };
     _start3_4: {
-        start: string;
+        start: "-75%";
     };
     _start1_5: {
-        start: string;
+        start: "-20%";
     };
     _start2_5: {
-        start: string;
+        start: "-40%";
     };
     _start3_5: {
-        start: string;
+        start: "-60%";
     };
     _start4_5: {
-        start: string;
+        start: "-80%";
     };
     _start1_6: {
-        start: string;
+        start: "-16.666667%";
     };
     _start2_6: {
-        start: string;
+        start: "-33.333333%";
     };
     _start3_6: {
-        start: string;
+        start: "-50%";
     };
     _start4_6: {
-        start: string;
+        start: "-66.666667%";
     };
     _start5_6: {
-        start: string;
+        start: "-83.333333%";
     };
     _startFull: {
-        start: string;
+        start: "-100%";
     };
     end0: {
         end: number;
@@ -7104,52 +7104,52 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         end: number;
     };
     end1_2: {
-        end: string;
+        end: "50%";
     };
     end1_3: {
-        end: string;
+        end: "33.333333%";
     };
     end2_3: {
-        end: string;
+        end: "66.666667%";
     };
     end1_4: {
-        end: string;
+        end: "25%";
     };
     end2_4: {
-        end: string;
+        end: "50%";
     };
     end3_4: {
-        end: string;
+        end: "75%";
     };
     end1_5: {
-        end: string;
+        end: "20%";
     };
     end2_5: {
-        end: string;
+        end: "40%";
     };
     end3_5: {
-        end: string;
+        end: "60%";
     };
     end4_5: {
-        end: string;
+        end: "80%";
     };
     end1_6: {
-        end: string;
+        end: "16.666667%";
     };
     end2_6: {
-        end: string;
+        end: "33.333333%";
     };
     end3_6: {
-        end: string;
+        end: "50%";
     };
     end4_6: {
-        end: string;
+        end: "66.666667%";
     };
     end5_6: {
-        end: string;
+        end: "83.333333%";
     };
     endFull: {
-        end: string;
+        end: "100%";
     };
     _end0: {
         end: number;
@@ -7248,52 +7248,52 @@ export declare function createTheme(newTheme?: MakeOptional<ThemeProps>): {
         end: number;
     };
     _end1_2: {
-        end: string;
+        end: "-50%";
     };
     _end1_3: {
-        end: string;
+        end: "-33.333333%";
     };
     _end2_3: {
-        end: string;
+        end: "-66.666667%";
     };
     _end1_4: {
-        end: string;
+        end: "-25%";
     };
     _end2_4: {
-        end: string;
+        end: "-50%";
     };
     _end3_4: {
-        end: string;
+        end: "-75%";
     };
     _end1_5: {
-        end: string;
+        end: "-20%";
     };
     _end2_5: {
-        end: string;
+        end: "-40%";
     };
     _end3_5: {
-        end: string;
+        end: "-60%";
     };
     _end4_5: {
-        end: string;
+        end: "-80%";
     };
     _end1_6: {
-        end: string;
+        end: "-16.666667%";
     };
     _end2_6: {
-        end: string;
+        end: "-33.333333%";
     };
     _end3_6: {
-        end: string;
+        end: "-50%";
     };
     _end4_6: {
-        end: string;
+        end: "-66.666667%";
     };
     _end5_6: {
-        end: string;
+        end: "-83.333333%";
     };
     _endFull: {
-        end: string;
+        end: "-100%";
     };
     tintPrimary: {
         tintColor: string;

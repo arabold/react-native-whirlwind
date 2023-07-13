@@ -225,64 +225,64 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         right: number;
     };
     inset1_2: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "50%";
+        bottom: "50%";
+        left: "50%";
+        right: "50%";
     };
     inset1_3: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "33.333333%";
+        bottom: "33.333333%";
+        left: "33.333333%";
+        right: "33.333333%";
     };
     inset2_3: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "66.666667%";
+        bottom: "66.666667%";
+        left: "66.666667%";
+        right: "66.666667%";
     };
     inset1_4: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "25%";
+        bottom: "25%";
+        left: "25%";
+        right: "25%";
     };
     inset2_4: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "50%";
+        bottom: "50%";
+        left: "50%";
+        right: "50%";
     };
     inset3_4: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "75%";
+        bottom: "75%";
+        left: "75%";
+        right: "75%";
     };
     inset1_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "20%";
+        bottom: "20%";
+        left: "20%";
+        right: "20%";
     };
     inset2_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "40%";
+        bottom: "40%";
+        left: "40%";
+        right: "40%";
     };
     inset3_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "60%";
+        bottom: "60%";
+        left: "60%";
+        right: "60%";
     };
     inset4_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "80%";
+        bottom: "80%";
+        left: "80%";
+        right: "80%";
     };
     insetY0: {
         top: number;
@@ -733,64 +733,64 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         right: number;
     };
     _inset1_2: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-50%";
+        bottom: "-50%";
+        left: "-50%";
+        right: "-50%";
     };
     _inset1_3: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-33.333333%";
+        bottom: "-33.333333%";
+        left: "-33.333333%";
+        right: "-33.333333%";
     };
     _inset2_3: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-66.666667%";
+        bottom: "-66.666667%";
+        left: "-66.666667%";
+        right: "-66.666667%";
     };
     _inset1_4: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-25%";
+        bottom: "-25%";
+        left: "-25%";
+        right: "-25%";
     };
     _inset2_4: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-50%";
+        bottom: "-50%";
+        left: "-50%";
+        right: "-50%";
     };
     _inset3_4: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-75%";
+        bottom: "-75%";
+        left: "-75%";
+        right: "-75%";
     };
     _inset1_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-20%";
+        bottom: "-20%";
+        left: "-20%";
+        right: "-20%";
     };
     _inset2_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-40%";
+        bottom: "-40%";
+        left: "-40%";
+        right: "-40%";
     };
     _inset3_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-60%";
+        bottom: "-60%";
+        left: "-60%";
+        right: "-60%";
     };
     _inset4_5: {
-        top: string;
-        bottom: string;
-        left: string;
-        right: string;
+        top: "-80%";
+        bottom: "-80%";
+        left: "-80%";
+        right: "-80%";
     };
     _insetY0: {
         top: number;
@@ -1145,52 +1145,52 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         top: number;
     };
     top1_2: {
-        top: string;
+        top: "50%";
     };
     top1_3: {
-        top: string;
+        top: "33.333333%";
     };
     top2_3: {
-        top: string;
+        top: "66.666667%";
     };
     top1_4: {
-        top: string;
+        top: "25%";
     };
     top2_4: {
-        top: string;
+        top: "50%";
     };
     top3_4: {
-        top: string;
+        top: "75%";
     };
     top1_5: {
-        top: string;
+        top: "20%";
     };
     top2_5: {
-        top: string;
+        top: "40%";
     };
     top3_5: {
-        top: string;
+        top: "60%";
     };
     top4_5: {
-        top: string;
+        top: "80%";
     };
     top1_6: {
-        top: string;
+        top: "16.666667%";
     };
     top2_6: {
-        top: string;
+        top: "33.333333%";
     };
     top3_6: {
-        top: string;
+        top: "50%";
     };
     top4_6: {
-        top: string;
+        top: "66.666667%";
     };
     top5_6: {
-        top: string;
+        top: "83.333333%";
     };
     topFull: {
-        top: string;
+        top: "100%";
     };
     _top0: {
         top: number;
@@ -1289,52 +1289,52 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         top: number;
     };
     _top1_2: {
-        top: string;
+        top: "-50%";
     };
     _top1_3: {
-        top: string;
+        top: "-33.333333%";
     };
     _top2_3: {
-        top: string;
+        top: "-66.666667%";
     };
     _top1_4: {
-        top: string;
+        top: "-25%";
     };
     _top2_4: {
-        top: string;
+        top: "-50%";
     };
     _top3_4: {
-        top: string;
+        top: "-75%";
     };
     _top1_5: {
-        top: string;
+        top: "-20%";
     };
     _top2_5: {
-        top: string;
+        top: "-40%";
     };
     _top3_5: {
-        top: string;
+        top: "-60%";
     };
     _top4_5: {
-        top: string;
+        top: "-80%";
     };
     _top1_6: {
-        top: string;
+        top: "-16.666667%";
     };
     _top2_6: {
-        top: string;
+        top: "-33.333333%";
     };
     _top3_6: {
-        top: string;
+        top: "-50%";
     };
     _top4_6: {
-        top: string;
+        top: "-66.666667%";
     };
     _top5_6: {
-        top: string;
+        top: "-83.333333%";
     };
     _topFull: {
-        top: string;
+        top: "-100%";
     };
     right0: {
         right: number;
@@ -1433,52 +1433,52 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         right: number;
     };
     right1_2: {
-        right: string;
+        right: "50%";
     };
     right1_3: {
-        right: string;
+        right: "33.333333%";
     };
     right2_3: {
-        right: string;
+        right: "66.666667%";
     };
     right1_4: {
-        right: string;
+        right: "25%";
     };
     right2_4: {
-        right: string;
+        right: "50%";
     };
     right3_4: {
-        right: string;
+        right: "75%";
     };
     right1_5: {
-        right: string;
+        right: "20%";
     };
     right2_5: {
-        right: string;
+        right: "40%";
     };
     right3_5: {
-        right: string;
+        right: "60%";
     };
     right4_5: {
-        right: string;
+        right: "80%";
     };
     right1_6: {
-        right: string;
+        right: "16.666667%";
     };
     right2_6: {
-        right: string;
+        right: "33.333333%";
     };
     right3_6: {
-        right: string;
+        right: "50%";
     };
     right4_6: {
-        right: string;
+        right: "66.666667%";
     };
     right5_6: {
-        right: string;
+        right: "83.333333%";
     };
     rightFull: {
-        right: string;
+        right: "100%";
     };
     _right0: {
         right: number;
@@ -1577,52 +1577,52 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         right: number;
     };
     _right1_2: {
-        right: string;
+        right: "-50%";
     };
     _right1_3: {
-        right: string;
+        right: "-33.333333%";
     };
     _right2_3: {
-        right: string;
+        right: "-66.666667%";
     };
     _right1_4: {
-        right: string;
+        right: "-25%";
     };
     _right2_4: {
-        right: string;
+        right: "-50%";
     };
     _right3_4: {
-        right: string;
+        right: "-75%";
     };
     _right1_5: {
-        right: string;
+        right: "-20%";
     };
     _right2_5: {
-        right: string;
+        right: "-40%";
     };
     _right3_5: {
-        right: string;
+        right: "-60%";
     };
     _right4_5: {
-        right: string;
+        right: "-80%";
     };
     _right1_6: {
-        right: string;
+        right: "-16.666667%";
     };
     _right2_6: {
-        right: string;
+        right: "-33.333333%";
     };
     _right3_6: {
-        right: string;
+        right: "-50%";
     };
     _right4_6: {
-        right: string;
+        right: "-66.666667%";
     };
     _right5_6: {
-        right: string;
+        right: "-83.333333%";
     };
     _rightFull: {
-        right: string;
+        right: "-100%";
     };
     bottom0: {
         bottom: number;
@@ -1721,52 +1721,52 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         bottom: number;
     };
     bottom1_2: {
-        bottom: string;
+        bottom: "50%";
     };
     bottom1_3: {
-        bottom: string;
+        bottom: "33.333333%";
     };
     bottom2_3: {
-        bottom: string;
+        bottom: "66.666667%";
     };
     bottom1_4: {
-        bottom: string;
+        bottom: "25%";
     };
     bottom2_4: {
-        bottom: string;
+        bottom: "50%";
     };
     bottom3_4: {
-        bottom: string;
+        bottom: "75%";
     };
     bottom1_5: {
-        bottom: string;
+        bottom: "20%";
     };
     bottom2_5: {
-        bottom: string;
+        bottom: "40%";
     };
     bottom3_5: {
-        bottom: string;
+        bottom: "60%";
     };
     bottom4_5: {
-        bottom: string;
+        bottom: "80%";
     };
     bottom1_6: {
-        bottom: string;
+        bottom: "16.666667%";
     };
     bottom2_6: {
-        bottom: string;
+        bottom: "33.333333%";
     };
     bottom3_6: {
-        bottom: string;
+        bottom: "50%";
     };
     bottom4_6: {
-        bottom: string;
+        bottom: "66.666667%";
     };
     bottom5_6: {
-        bottom: string;
+        bottom: "83.333333%";
     };
     bottomFull: {
-        bottom: string;
+        bottom: "100%";
     };
     _bottom0: {
         bottom: number;
@@ -1865,52 +1865,52 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         bottom: number;
     };
     _bottom1_2: {
-        bottom: string;
+        bottom: "-50%";
     };
     _bottom1_3: {
-        bottom: string;
+        bottom: "-33.333333%";
     };
     _bottom2_3: {
-        bottom: string;
+        bottom: "-66.666667%";
     };
     _bottom1_4: {
-        bottom: string;
+        bottom: "-25%";
     };
     _bottom2_4: {
-        bottom: string;
+        bottom: "-50%";
     };
     _bottom3_4: {
-        bottom: string;
+        bottom: "-75%";
     };
     _bottom1_5: {
-        bottom: string;
+        bottom: "-20%";
     };
     _bottom2_5: {
-        bottom: string;
+        bottom: "-40%";
     };
     _bottom3_5: {
-        bottom: string;
+        bottom: "-60%";
     };
     _bottom4_5: {
-        bottom: string;
+        bottom: "-80%";
     };
     _bottom1_6: {
-        bottom: string;
+        bottom: "-16.666667%";
     };
     _bottom2_6: {
-        bottom: string;
+        bottom: "-33.333333%";
     };
     _bottom3_6: {
-        bottom: string;
+        bottom: "-50%";
     };
     _bottom4_6: {
-        bottom: string;
+        bottom: "-66.666667%";
     };
     _bottom5_6: {
-        bottom: string;
+        bottom: "-83.333333%";
     };
     _bottomFull: {
-        bottom: string;
+        bottom: "-100%";
     };
     left0: {
         left: number;
@@ -2009,52 +2009,52 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         left: number;
     };
     left1_2: {
-        left: string;
+        left: "50%";
     };
     left1_3: {
-        left: string;
+        left: "33.333333%";
     };
     left2_3: {
-        left: string;
+        left: "66.666667%";
     };
     left1_4: {
-        left: string;
+        left: "25%";
     };
     left2_4: {
-        left: string;
+        left: "50%";
     };
     left3_4: {
-        left: string;
+        left: "75%";
     };
     left1_5: {
-        left: string;
+        left: "20%";
     };
     left2_5: {
-        left: string;
+        left: "40%";
     };
     left3_5: {
-        left: string;
+        left: "60%";
     };
     left4_5: {
-        left: string;
+        left: "80%";
     };
     left1_6: {
-        left: string;
+        left: "16.666667%";
     };
     left2_6: {
-        left: string;
+        left: "33.333333%";
     };
     left3_6: {
-        left: string;
+        left: "50%";
     };
     left4_6: {
-        left: string;
+        left: "66.666667%";
     };
     left5_6: {
-        left: string;
+        left: "83.333333%";
     };
     leftFull: {
-        left: string;
+        left: "100%";
     };
     _left0: {
         left: number;
@@ -2153,52 +2153,52 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         left: number;
     };
     _left1_2: {
-        left: string;
+        left: "-50%";
     };
     _left1_3: {
-        left: string;
+        left: "-33.333333%";
     };
     _left2_3: {
-        left: string;
+        left: "-66.666667%";
     };
     _left1_4: {
-        left: string;
+        left: "-25%";
     };
     _left2_4: {
-        left: string;
+        left: "-50%";
     };
     _left3_4: {
-        left: string;
+        left: "-75%";
     };
     _left1_5: {
-        left: string;
+        left: "-20%";
     };
     _left2_5: {
-        left: string;
+        left: "-40%";
     };
     _left3_5: {
-        left: string;
+        left: "-60%";
     };
     _left4_5: {
-        left: string;
+        left: "-80%";
     };
     _left1_6: {
-        left: string;
+        left: "-16.666667%";
     };
     _left2_6: {
-        left: string;
+        left: "-33.333333%";
     };
     _left3_6: {
-        left: string;
+        left: "-50%";
     };
     _left4_6: {
-        left: string;
+        left: "-66.666667%";
     };
     _left5_6: {
-        left: string;
+        left: "-83.333333%";
     };
     _leftFull: {
-        left: string;
+        left: "-100%";
     };
     start0: {
         start: number;
@@ -2297,52 +2297,52 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         start: number;
     };
     start1_2: {
-        start: string;
+        start: "50%";
     };
     start1_3: {
-        start: string;
+        start: "33.333333%";
     };
     start2_3: {
-        start: string;
+        start: "66.666667%";
     };
     start1_4: {
-        start: string;
+        start: "25%";
     };
     start2_4: {
-        start: string;
+        start: "50%";
     };
     start3_4: {
-        start: string;
+        start: "75%";
     };
     start1_5: {
-        start: string;
+        start: "20%";
     };
     start2_5: {
-        start: string;
+        start: "40%";
     };
     start3_5: {
-        start: string;
+        start: "60%";
     };
     start4_5: {
-        start: string;
+        start: "80%";
     };
     start1_6: {
-        start: string;
+        start: "16.666667%";
     };
     start2_6: {
-        start: string;
+        start: "33.333333%";
     };
     start3_6: {
-        start: string;
+        start: "50%";
     };
     start4_6: {
-        start: string;
+        start: "66.666667%";
     };
     start5_6: {
-        start: string;
+        start: "83.333333%";
     };
     startFull: {
-        start: string;
+        start: "100%";
     };
     _start0: {
         start: number;
@@ -2441,52 +2441,52 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         start: number;
     };
     _start1_2: {
-        start: string;
+        start: "-50%";
     };
     _start1_3: {
-        start: string;
+        start: "-33.333333%";
     };
     _start2_3: {
-        start: string;
+        start: "-66.666667%";
     };
     _start1_4: {
-        start: string;
+        start: "-25%";
     };
     _start2_4: {
-        start: string;
+        start: "-50%";
     };
     _start3_4: {
-        start: string;
+        start: "-75%";
     };
     _start1_5: {
-        start: string;
+        start: "-20%";
     };
     _start2_5: {
-        start: string;
+        start: "-40%";
     };
     _start3_5: {
-        start: string;
+        start: "-60%";
     };
     _start4_5: {
-        start: string;
+        start: "-80%";
     };
     _start1_6: {
-        start: string;
+        start: "-16.666667%";
     };
     _start2_6: {
-        start: string;
+        start: "-33.333333%";
     };
     _start3_6: {
-        start: string;
+        start: "-50%";
     };
     _start4_6: {
-        start: string;
+        start: "-66.666667%";
     };
     _start5_6: {
-        start: string;
+        start: "-83.333333%";
     };
     _startFull: {
-        start: string;
+        start: "-100%";
     };
     end0: {
         end: number;
@@ -2585,52 +2585,52 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         end: number;
     };
     end1_2: {
-        end: string;
+        end: "50%";
     };
     end1_3: {
-        end: string;
+        end: "33.333333%";
     };
     end2_3: {
-        end: string;
+        end: "66.666667%";
     };
     end1_4: {
-        end: string;
+        end: "25%";
     };
     end2_4: {
-        end: string;
+        end: "50%";
     };
     end3_4: {
-        end: string;
+        end: "75%";
     };
     end1_5: {
-        end: string;
+        end: "20%";
     };
     end2_5: {
-        end: string;
+        end: "40%";
     };
     end3_5: {
-        end: string;
+        end: "60%";
     };
     end4_5: {
-        end: string;
+        end: "80%";
     };
     end1_6: {
-        end: string;
+        end: "16.666667%";
     };
     end2_6: {
-        end: string;
+        end: "33.333333%";
     };
     end3_6: {
-        end: string;
+        end: "50%";
     };
     end4_6: {
-        end: string;
+        end: "66.666667%";
     };
     end5_6: {
-        end: string;
+        end: "83.333333%";
     };
     endFull: {
-        end: string;
+        end: "100%";
     };
     _end0: {
         end: number;
@@ -2729,52 +2729,52 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         end: number;
     };
     _end1_2: {
-        end: string;
+        end: "-50%";
     };
     _end1_3: {
-        end: string;
+        end: "-33.333333%";
     };
     _end2_3: {
-        end: string;
+        end: "-66.666667%";
     };
     _end1_4: {
-        end: string;
+        end: "-25%";
     };
     _end2_4: {
-        end: string;
+        end: "-50%";
     };
     _end3_4: {
-        end: string;
+        end: "-75%";
     };
     _end1_5: {
-        end: string;
+        end: "-20%";
     };
     _end2_5: {
-        end: string;
+        end: "-40%";
     };
     _end3_5: {
-        end: string;
+        end: "-60%";
     };
     _end4_5: {
-        end: string;
+        end: "-80%";
     };
     _end1_6: {
-        end: string;
+        end: "-16.666667%";
     };
     _end2_6: {
-        end: string;
+        end: "-33.333333%";
     };
     _end3_6: {
-        end: string;
+        end: "-50%";
     };
     _end4_6: {
-        end: string;
+        end: "-66.666667%";
     };
     _end5_6: {
-        end: string;
+        end: "-83.333333%";
     };
     _endFull: {
-        end: string;
+        end: "-100%";
     };
     tintPrimary: {
         tintColor: string;
