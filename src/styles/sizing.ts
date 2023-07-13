@@ -1,3 +1,4 @@
+import { Dimensions } from 'react-native'
 import { createStyles } from '../theme'
 
 export default createStyles(theme => ({
@@ -140,7 +141,7 @@ export default createStyles(theme => ({
   maxWScreen2xl: { maxWidth: theme.screens['2xl'] },
   // Height
   hFull: { height: '100%' },
-  hScreen: { height: '100vh' },
+  hScreen: { height: Dimensions.get('screen').height },
   h0: { height: theme.spacing[0] },
   hPx: { height: theme.spacing.px },
   h0_5: { height: theme.spacing[0.5] },

@@ -1,6 +1,6 @@
 declare const _default: (theme: import("../theme").ThemeProps) => {
     pAuto: {
-        padding: string;
+        padding: "auto";
     };
     p0: {
         padding: number;
@@ -99,7 +99,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         padding: number;
     };
     pTAuto: {
-        paddingTop: string;
+        paddingTop: "auto";
     };
     pT0: {
         paddingTop: number;
@@ -198,7 +198,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         paddingTop: number;
     };
     pBAuto: {
-        paddingBottom: string;
+        paddingBottom: "auto";
     };
     pB0: {
         paddingBottom: number;
@@ -297,7 +297,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         paddingBottom: number;
     };
     pLAuto: {
-        paddingLeft: string;
+        paddingLeft: "auto";
     };
     pL0: {
         paddingLeft: number;
@@ -396,7 +396,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         paddingLeft: number;
     };
     pRAuto: {
-        paddingRight: string;
+        paddingRight: "auto";
     };
     pR0: {
         paddingRight: number;
@@ -495,7 +495,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         paddingRight: number;
     };
     pXAuto: {
-        paddingHorizontal: string;
+        paddingHorizontal: "auto";
     };
     pX0: {
         paddingHorizontal: number;
@@ -594,7 +594,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         paddingHorizontal: number;
     };
     pYAuto: {
-        paddingVertical: string;
+        paddingVertical: "auto";
     };
     pY0: {
         paddingVertical: number;
@@ -693,7 +693,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         paddingVertical: number;
     };
     pSAuto: {
-        paddingStart: string;
+        paddingStart: "auto";
     };
     pS0: {
         paddingStart: number;
@@ -792,7 +792,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         paddingStart: number;
     };
     pEAuto: {
-        paddingEnd: string;
+        paddingEnd: "auto";
     };
     pE0: {
         paddingEnd: number;
@@ -1728,7 +1728,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         paddingEnd: number;
     };
     mAuto: {
-        margin: string;
+        margin: "auto";
     };
     m0: {
         margin: number;
@@ -1827,7 +1827,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         margin: number;
     };
     mTAuto: {
-        marginTop: string;
+        marginTop: "auto";
     };
     mT0: {
         marginTop: number;
@@ -1926,7 +1926,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         marginTop: number;
     };
     mBAuto: {
-        marginBottom: string;
+        marginBottom: "auto";
     };
     mB0: {
         marginBottom: number;
@@ -2025,7 +2025,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         marginBottom: number;
     };
     mLAuto: {
-        marginLeft: string;
+        marginLeft: "auto";
     };
     mL0: {
         marginLeft: number;
@@ -2124,7 +2124,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         marginLeft: number;
     };
     mRAuto: {
-        marginRight: string;
+        marginRight: "auto";
     };
     mR0: {
         marginRight: number;
@@ -2223,7 +2223,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         marginRight: number;
     };
     mXAuto: {
-        marginHorizontal: string;
+        marginHorizontal: "auto";
     };
     mX0: {
         marginHorizontal: number;
@@ -2322,7 +2322,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         marginHorizontal: number;
     };
     mYAuto: {
-        marginVertical: string;
+        marginVertical: "auto";
     };
     mY0: {
         marginVertical: number;
@@ -2421,7 +2421,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         marginVertical: number;
     };
     mSAuto: {
-        marginStart: string;
+        marginStart: "auto";
     };
     mS0: {
         marginStart: number;
@@ -2520,7 +2520,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         marginStart: number;
     };
     mEAuto: {
-        marginEnd: string;
+        marginEnd: "auto";
     };
     mE0: {
         marginEnd: number;

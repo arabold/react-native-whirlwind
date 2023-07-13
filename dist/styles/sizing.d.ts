@@ -1,6 +1,6 @@
 declare const _default: (theme: import("../theme").ThemeProps) => {
     wFull: {
-        width: string;
+        width: "100%";
     };
     w0: {
         width: number;
@@ -99,49 +99,49 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         width: number;
     };
     w1_2: {
-        width: string;
+        width: "50%";
     };
     w1_3: {
-        width: string;
+        width: "33.333333%";
     };
     w2_3: {
-        width: string;
+        width: "66.666667%";
     };
     w1_4: {
-        width: string;
+        width: "25%";
     };
     w2_4: {
-        width: string;
+        width: "50%";
     };
     w3_4: {
-        width: string;
+        width: "75%";
     };
     w1_5: {
-        width: string;
+        width: "20%";
     };
     w2_5: {
-        width: string;
+        width: "40%";
     };
     w3_5: {
-        width: string;
+        width: "60%";
     };
     w4_5: {
-        width: string;
+        width: "80%";
     };
     w1_6: {
-        width: string;
+        width: "16.666667%";
     };
     w2_6: {
-        width: string;
+        width: "33.333333%";
     };
     w3_6: {
-        width: string;
+        width: "50%";
     };
     w4_6: {
-        width: string;
+        width: "66.666667%";
     };
     w5_6: {
-        width: string;
+        width: "83.333333%";
     };
     minW0: {
         minWidth: number;
@@ -240,7 +240,7 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         minWidth: number;
     };
     minWFull: {
-        minWidth: string;
+        minWidth: "100%";
     };
     maxW0: {
         maxWidth: number;
@@ -339,52 +339,52 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         maxWidth: number;
     };
     maxW1_2: {
-        maxWidth: string;
+        maxWidth: "50%";
     };
     maxW1_3: {
-        maxWidth: string;
+        maxWidth: "33.333333%";
     };
     maxW2_3: {
-        maxWidth: string;
+        maxWidth: "66.666667%";
     };
     maxW1_4: {
-        maxWidth: string;
+        maxWidth: "25%";
     };
     maxW2_4: {
-        maxWidth: string;
+        maxWidth: "50%";
     };
     maxW3_4: {
-        maxWidth: string;
+        maxWidth: "75%";
     };
     maxW1_5: {
-        maxWidth: string;
+        maxWidth: "20%";
     };
     maxW2_5: {
-        maxWidth: string;
+        maxWidth: "40%";
     };
     maxW3_5: {
-        maxWidth: string;
+        maxWidth: "60%";
     };
     maxW4_5: {
-        maxWidth: string;
+        maxWidth: "80%";
     };
     maxW1_6: {
-        maxWidth: string;
+        maxWidth: "16.666667%";
     };
     maxW2_6: {
-        maxWidth: string;
+        maxWidth: "33.333333%";
     };
     maxW3_6: {
-        maxWidth: string;
+        maxWidth: "50%";
     };
     maxW4_6: {
-        maxWidth: string;
+        maxWidth: "66.666667%";
     };
     maxW5_6: {
-        maxWidth: string;
+        maxWidth: "83.333333%";
     };
     maxWFull: {
-        maxWidth: string;
+        maxWidth: "100%";
     };
     maxWScreenSm: {
         maxWidth: number;
@@ -402,10 +402,10 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         maxWidth: number;
     };
     hFull: {
-        height: string;
+        height: "100%";
     };
     hScreen: {
-        height: string;
+        height: number;
     };
     h0: {
         height: number;
@@ -504,13 +504,13 @@ declare const _default: (theme: import("../theme").ThemeProps) => {
         height: number;
     };
     minHFull: {
-        minHeight: string;
+        minHeight: "100%";
     };
     minH0: {
         minHeight: number;
     };
     maxHFull: {
-        maxHeight: string;
+        maxHeight: "100%";
     };
     maxH0: {
         maxHeight: number;
